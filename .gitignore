@@ -1,0 +1,21 @@
+# Eiffel compilation artifacts
+EIFGENs/
+*.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Build outputs
+*.exe
+*.dll
+
+# Logs
+*.log
