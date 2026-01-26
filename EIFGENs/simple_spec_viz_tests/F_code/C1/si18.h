@@ -1,0 +1,27 @@
+
+#ifndef _C1_si18_
+#define _C1_si18_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern void F21_401(EIF_REFERENCE, EIF_REFERENCE);
+extern void F21_402(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F21_403(EIF_REFERENCE);
+extern EIF_BOOLEAN F21_404(EIF_REFERENCE);
+extern EIF_REFERENCE F21_405(EIF_REFERENCE);
+static EIF_REFERENCE F21_406_body(EIF_REFERENCE);
+extern EIF_REFERENCE F21_406(EIF_REFERENCE);
+extern EIF_BOOLEAN F21_407(EIF_REFERENCE);
+extern EIF_BOOLEAN F21_408(EIF_REFERENCE);
+extern void F21_1(EIF_REFERENCE, int);
+extern void EIF_Minit18(void);
+extern EIF_BOOLEAN F667_4976(EIF_REFERENCE);
+extern void F1076_7601(EIF_REFERENCE);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

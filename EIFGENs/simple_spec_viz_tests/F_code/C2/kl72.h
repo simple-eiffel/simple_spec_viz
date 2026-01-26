@@ -1,0 +1,20 @@
+
+#ifndef _C2_kl72_
+#define _C2_kl72_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_BOOLEAN F92_1351(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F92_1352(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F92_1353(EIF_REFERENCE, EIF_REFERENCE);
+extern void EIF_Minit72(void);
+extern EIF_BOOLEAN F1125_8895(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F1125_8893(EIF_REFERENCE, EIF_REFERENCE);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

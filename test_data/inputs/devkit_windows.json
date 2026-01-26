@@ -1,0 +1,578 @@
+{
+  "name": "DevKit Windows GUI",
+  "version": "1.0.0",
+  "description": "Windows GUI for DevKit utility suite (Base64, Hash, UUID, Timestamp, JWT)",
+  "states": [
+    {
+      "id": "S-001",
+      "name": "main_idle",
+      "description": "Main window ready for input",
+      "is_initial": true,
+      "screen": "SCR-001",
+      "entry_actions": []
+    },
+    {
+      "id": "S-002",
+      "name": "processing",
+      "description": "Operation in progress",
+      "screen": "SCR-002",
+      "entry_actions": ["show_progress_spinner", "disable_input_fields"]
+    },
+    {
+      "id": "S-003",
+      "name": "success",
+      "description": "Operation completed successfully",
+      "screen": "SCR-003",
+      "entry_actions": ["show_success_message", "enable_copy_button"]
+    },
+    {
+      "id": "S-004",
+      "name": "error",
+      "description": "Operation failed with error",
+      "screen": "SCR-004",
+      "entry_actions": ["show_error_details", "enable_retry_button"]
+    },
+    {
+      "id": "S-005",
+      "name": "settings",
+      "description": "Application settings panel",
+      "screen": "SCR-005",
+      "entry_actions": []
+    }
+  ],
+  "transitions": [
+    {
+      "id": "T-001",
+      "event": "execute_operation",
+      "from": "S-001",
+      "to": "S-002",
+      "label": "User clicks operation button",
+      "requirements": ["FR-090", "FR-091"]
+    },
+    {
+      "id": "T-002",
+      "event": "operation_success",
+      "from": "S-002",
+      "to": "S-003",
+      "label": "Operation completed",
+      "requirements": ["FR-001", "FR-020", "FR-030"]
+    },
+    {
+      "id": "T-003",
+      "event": "operation_error",
+      "from": "S-002",
+      "to": "S-004",
+      "label": "Operation failed",
+      "requirements": ["FR-095"]
+    },
+    {
+      "id": "T-004",
+      "event": "retry_operation",
+      "from": "S-004",
+      "to": "S-002",
+      "label": "User clicks retry",
+      "requirements": []
+    },
+    {
+      "id": "T-005",
+      "event": "back_to_main",
+      "from": "S-003",
+      "to": "S-001",
+      "label": "User clicks back to main",
+      "requirements": []
+    },
+    {
+      "id": "T-006",
+      "event": "back_to_main",
+      "from": "S-004",
+      "to": "S-001",
+      "label": "User clicks back to main",
+      "requirements": []
+    },
+    {
+      "id": "T-007",
+      "event": "open_settings",
+      "from": "S-001",
+      "to": "S-005",
+      "label": "User clicks settings icon",
+      "requirements": []
+    },
+    {
+      "id": "T-008",
+      "event": "close_settings",
+      "from": "S-005",
+      "to": "S-001",
+      "label": "User saves and closes settings",
+      "requirements": []
+    }
+  ],
+  "screens": [
+    {
+      "id": "SCR-001",
+      "name": "Main Utility Panel",
+      "description": "Primary interface with tabs for Base64, Hash, UUID, Timestamp, JWT",
+      "layout_type": "grid",
+      "layout_columns": 12,
+      "widgets": [
+        {
+          "id": "W-001",
+          "type": "tab_control",
+          "name": "operation_tabs",
+          "description": "Tabs for different utility operations",
+          "position_x": 0,
+          "position_y": 0,
+          "width": 12,
+          "height": 8,
+          "properties": {
+            "tabs": [
+              {"name": "Base64", "label": "Base64 Encode/Decode"},
+              {"name": "Hash", "label": "Hash Generator"},
+              {"name": "UUID", "label": "UUID Generator"},
+              {"name": "Timestamp", "label": "Timestamp Converter"},
+              {"name": "JWT", "label": "JWT Decoder"}
+            ]
+          }
+        },
+        {
+          "id": "W-002",
+          "type": "text_area",
+          "name": "input_field",
+          "description": "Input data (text, Base64, hash, etc)",
+          "position_x": 0,
+          "position_y": 1,
+          "width": 8,
+          "height": 4,
+          "properties": {
+            "placeholder": "Enter data to process",
+            "multiline": true,
+            "read_only": false
+          }
+        },
+        {
+          "id": "W-003",
+          "type": "text_area",
+          "name": "output_field",
+          "description": "Result output (read-only)",
+          "position_x": 0,
+          "position_y": 5,
+          "width": 8,
+          "height": 3,
+          "properties": {
+            "placeholder": "Operation result appears here",
+            "multiline": true,
+            "read_only": true
+          }
+        },
+        {
+          "id": "W-004",
+          "type": "button",
+          "name": "execute_button",
+          "description": "Execute the selected operation",
+          "position_x": 0,
+          "position_y": 8,
+          "width": 2,
+          "height": 1,
+          "properties": {
+            "label": "Execute",
+            "is_default": true
+          }
+        },
+        {
+          "id": "W-005",
+          "type": "button",
+          "name": "copy_button",
+          "description": "Copy output to clipboard",
+          "position_x": 2,
+          "position_y": 8,
+          "width": 2,
+          "height": 1,
+          "properties": {
+            "label": "Copy Output"
+          }
+        },
+        {
+          "id": "W-006",
+          "type": "button",
+          "name": "clear_button",
+          "description": "Clear input and output fields",
+          "position_x": 4,
+          "position_y": 8,
+          "width": 2,
+          "height": 1,
+          "properties": {
+            "label": "Clear"
+          }
+        },
+        {
+          "id": "W-007",
+          "type": "button",
+          "name": "settings_button",
+          "description": "Open application settings",
+          "position_x": 10,
+          "position_y": 0,
+          "width": 2,
+          "height": 1,
+          "properties": {
+            "label": "⚙ Settings"
+          }
+        },
+        {
+          "id": "W-008",
+          "type": "combo_box",
+          "name": "base64_variant",
+          "description": "Select Base64 variant (standard or URL-safe)",
+          "position_x": 8,
+          "position_y": 1,
+          "width": 4,
+          "height": 1,
+          "properties": {
+            "items": ["Standard Base64", "URL-Safe Base64"],
+            "selected_index": 0,
+            "visible_when": "tabs.selected == 'Base64'"
+          }
+        },
+        {
+          "id": "W-009",
+          "type": "combo_box",
+          "name": "hash_algorithm",
+          "description": "Select hash algorithm",
+          "position_x": 8,
+          "position_y": 1,
+          "width": 4,
+          "height": 1,
+          "properties": {
+            "items": ["MD5", "SHA1", "SHA256", "SHA512"],
+            "selected_index": 2,
+            "visible_when": "tabs.selected == 'Hash'"
+          }
+        },
+        {
+          "id": "W-010",
+          "type": "radio_button",
+          "name": "encode_decode",
+          "description": "Choose encode or decode for Base64",
+          "position_x": 8,
+          "position_y": 2,
+          "width": 4,
+          "height": 1,
+          "properties": {
+            "options": ["Encode", "Decode"],
+            "selected": "Encode",
+            "visible_when": "tabs.selected == 'Base64'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SCR-002",
+      "name": "Processing View",
+      "description": "Shows progress indicator during operation",
+      "layout_type": "grid",
+      "layout_columns": 12,
+      "widgets": [
+        {
+          "id": "W-011",
+          "type": "label",
+          "name": "processing_label",
+          "description": "Processing status message",
+          "position_x": 2,
+          "position_y": 4,
+          "width": 8,
+          "height": 1,
+          "properties": {
+            "text": "Processing... Please wait",
+            "text_align": "center",
+            "font_style": "bold"
+          }
+        },
+        {
+          "id": "W-012",
+          "type": "progress_bar",
+          "name": "progress",
+          "description": "Indeterminate progress indicator",
+          "position_x": 2,
+          "position_y": 5,
+          "width": 8,
+          "height": 1,
+          "properties": {
+            "style": "marquee"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SCR-003",
+      "name": "Success Result View",
+      "description": "Displays successful operation result",
+      "layout_type": "grid",
+      "layout_columns": 12,
+      "widgets": [
+        {
+          "id": "W-013",
+          "type": "label",
+          "name": "success_label",
+          "description": "Success message",
+          "position_x": 1,
+          "position_y": 2,
+          "width": 10,
+          "height": 1,
+          "properties": {
+            "text": "✓ Operation Successful",
+            "text_align": "center",
+            "font_color": "green",
+            "font_style": "bold"
+          }
+        },
+        {
+          "id": "W-014",
+          "type": "text_area",
+          "name": "result_output",
+          "description": "Result data",
+          "position_x": 1,
+          "position_y": 3,
+          "width": 10,
+          "height": 4,
+          "properties": {
+            "multiline": true,
+            "read_only": true
+          }
+        },
+        {
+          "id": "W-015",
+          "type": "button",
+          "name": "copy_result_button",
+          "description": "Copy result to clipboard",
+          "position_x": 1,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Copy to Clipboard"
+          }
+        },
+        {
+          "id": "W-016",
+          "type": "button",
+          "name": "back_button",
+          "description": "Return to main panel",
+          "position_x": 5,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Back to Main"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SCR-004",
+      "name": "Error View",
+      "description": "Displays error message when operation fails",
+      "layout_type": "grid",
+      "layout_columns": 12,
+      "widgets": [
+        {
+          "id": "W-017",
+          "type": "label",
+          "name": "error_label",
+          "description": "Error indicator",
+          "position_x": 1,
+          "position_y": 2,
+          "width": 10,
+          "height": 1,
+          "properties": {
+            "text": "✗ Operation Failed",
+            "text_align": "center",
+            "font_color": "red",
+            "font_style": "bold"
+          }
+        },
+        {
+          "id": "W-018",
+          "type": "text_area",
+          "name": "error_message",
+          "description": "Error details",
+          "position_x": 1,
+          "position_y": 3,
+          "width": 10,
+          "height": 4,
+          "properties": {
+            "multiline": true,
+            "read_only": true,
+            "font_color": "dark_red"
+          }
+        },
+        {
+          "id": "W-019",
+          "type": "button",
+          "name": "retry_button",
+          "description": "Retry the operation",
+          "position_x": 1,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Retry"
+          }
+        },
+        {
+          "id": "W-020",
+          "type": "button",
+          "name": "error_back_button",
+          "description": "Return to main panel",
+          "position_x": 5,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Back to Main"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SCR-005",
+      "name": "Settings Panel",
+      "description": "Application settings and preferences",
+      "layout_type": "grid",
+      "layout_columns": 12,
+      "widgets": [
+        {
+          "id": "W-021",
+          "type": "label",
+          "name": "settings_title",
+          "description": "Settings panel title",
+          "position_x": 1,
+          "position_y": 1,
+          "width": 10,
+          "height": 1,
+          "properties": {
+            "text": "Application Settings",
+            "font_style": "bold",
+            "font_size": 14
+          }
+        },
+        {
+          "id": "W-022",
+          "type": "checkbox",
+          "name": "auto_copy_checkbox",
+          "description": "Auto-copy result to clipboard",
+          "position_x": 2,
+          "position_y": 3,
+          "width": 8,
+          "height": 1,
+          "properties": {
+            "label": "Auto-copy results to clipboard",
+            "checked": false
+          }
+        },
+        {
+          "id": "W-023",
+          "type": "checkbox",
+          "name": "dark_mode_checkbox",
+          "description": "Enable dark mode",
+          "position_x": 2,
+          "position_y": 4,
+          "width": 8,
+          "height": 1,
+          "properties": {
+            "label": "Dark mode",
+            "checked": false
+          }
+        },
+        {
+          "id": "W-024",
+          "type": "combo_box",
+          "name": "font_size_combo",
+          "description": "Select font size",
+          "position_x": 2,
+          "position_y": 5,
+          "width": 8,
+          "height": 1,
+          "properties": {
+            "label": "Font Size:",
+            "items": ["Small", "Medium", "Large"],
+            "selected_index": 1
+          }
+        },
+        {
+          "id": "W-025",
+          "type": "button",
+          "name": "save_settings_button",
+          "description": "Save settings and close",
+          "position_x": 2,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Save & Close"
+          }
+        },
+        {
+          "id": "W-026",
+          "type": "button",
+          "name": "cancel_settings_button",
+          "description": "Discard changes and close",
+          "position_x": 6,
+          "position_y": 7,
+          "width": 3,
+          "height": 1,
+          "properties": {
+            "label": "Cancel"
+          }
+        }
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "FR-001",
+      "type": "functional",
+      "title": "Base64 Encode",
+      "description": "Encode text to Base64"
+    },
+    {
+      "id": "FR-002",
+      "type": "functional",
+      "title": "Base64 Decode",
+      "description": "Decode Base64 to text"
+    },
+    {
+      "id": "FR-020",
+      "type": "functional",
+      "title": "Hash Generation",
+      "description": "Generate MD5, SHA1, SHA256, SHA512 hashes"
+    },
+    {
+      "id": "FR-030",
+      "type": "functional",
+      "title": "UUID Generation",
+      "description": "Generate UUID v4"
+    },
+    {
+      "id": "FR-040",
+      "type": "functional",
+      "title": "Timestamp Conversion",
+      "description": "Convert between Unix and ISO8601"
+    },
+    {
+      "id": "FR-090",
+      "type": "functional",
+      "title": "User Input",
+      "description": "Accept user input from text fields"
+    },
+    {
+      "id": "FR-091",
+      "type": "functional",
+      "title": "Result Display",
+      "description": "Display operation results"
+    },
+    {
+      "id": "FR-095",
+      "type": "functional",
+      "title": "Error Handling",
+      "description": "Display error messages when operations fail"
+    }
+  ]
+}

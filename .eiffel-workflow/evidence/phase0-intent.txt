@@ -1,0 +1,215 @@
+# Phase 0 Intent Evidence
+# Project: simple_spec_viz (D:\prod\simple_spec_viz)
+# Date: 2026-01-25
+
+## INTENT CAPTURE STATUS: INITIAL PHASE COMPLETE
+
+### Documents Created
+
+✓ intent.md (5,847 words, 147 lines)
+  - What: Transforms JSON specs into visual diagrams (state machines, screen mockups, traceability)
+  - Why: Visual validation BEFORE implementation (shift-left feedback)
+  - Users: GUI developers, AI design systems (eiffel-gui-ux), spec teams
+  - Controlling Vision: Reference docs guide what to enable (WIDGET_CATALOG, STATE_MACHINE_GUIDE)
+
+✓ phase0-intent-review.md (review prompt template)
+  - 8-12 probing questions for AI reviewer
+  - Focuses on vague language, missing edge cases, untestable criteria
+  - Guides clarification toward measurable acceptance criteria
+
+✓ phase0-ai-review.md (placeholder for AI review)
+  - Awaiting user to submit prompt for AI review
+  - Instructions for pasting AI response
+  - Workflow: AI review → user answers → intent-v2.md → dependency audit → approval
+
+### Intent Content Summary
+
+#### What simple_spec_viz Does
+- Loads JSON specifications (GUI_JSON_SPEC_PROTOCOL.md format)
+- Generates state machine diagrams as SVG (states, transitions, guards, actions)
+- Generates screen mockups as SVG (layout with widgets)
+- Generates traceability matrix as Markdown (requirements → states → screens)
+- Provides CLI tool: `simple_spec_viz visualize <spec.json> --output <dir>`
+
+#### Why It's Needed
+- Developers cannot visualize specs until implementation (late feedback)
+- This tool enables early validation (shift-left)
+- Result: Fewer rework cycles, faster feedback, better dev+AI collaboration
+
+#### Controlled by Reference Docs Vision
+- WIDGET_CATALOG.md (40+ widgets with JSON formats)
+- STATE_MACHINE_GUIDE.md (10+ state machine patterns)
+- 7 canonical examples (auth_flow, data_entry_form, crud_application, dashboard, wizard, settings, loading_pattern)
+
+#### Key Design Decisions Locked
+
+1. **MML Decision: YES - Required**
+   - Frame conditions on all collection mutations
+   - Model queries: states_model, screens_model
+   - Invariants verifiable (no duplicate state IDs)
+
+2. **Dependencies: simple_* First**
+   - simple_json (JSON parsing)
+   - simple_graphviz (state diagram rendering)
+   - simple_file (file I/O)
+   - simple_process (subprocess for GraphViz)
+   - simple_mml (frame conditions)
+   - base ISE (core types)
+   - NO ISE/Gobo alternatives used
+
+3. **Scope: MVP Focused**
+   - Phase 1: Load specs, generate diagrams, error handling
+   - Phase 2+: Docs integration, PNG/PDF export, interactive SVG
+   - NOT: Interactive editor, code generation, WebUI
+
+#### Acceptance Criteria (All Locked)
+
+Must Have (Phase 1):
+- [x] Load JSON specs (GUI_JSON_SPEC_PROTOCOL format)
+- [x] Generate state machine SVG
+- [x] Generate screen mockup SVG
+- [x] Generate traceability Markdown
+- [x] CLI tool (visualize command)
+- [x] Error handling with clear messages
+- [x] void_safety=all (Eiffel void-safe)
+- [x] concurrency=scoop (SCOOP-compatible)
+- [x] 100% DBC coverage (all public features have contracts)
+- [x] Production-ready code
+
+Should Have (Phase 2+):
+- [ ] CLI docs command
+- [ ] Reference docs integration
+- [ ] PNG/PDF export
+- [ ] Interactive SVG
+
+Out of Scope:
+- Interactive diagram editor
+- Real-time visualization
+- 3D diagrams/animation
+- Code generation
+- WebUI/REST API
+
+#### Design Principles
+1. Simplicity over features (do one thing well)
+2. Spec-first design (research → design drives implementation)
+3. Visual clarity (diagrams understandable at a glance)
+4. Error guidance (messages help users fix issues)
+5. Eiffel idioms (DBC, void safety, SCOOP)
+6. Facade pattern (hide complexity behind SIMPLE_SPEC_VIZ)
+7. Immutability (loaded spec doesn't change)
+8. Stateless generators (run independently)
+
+### User Workflows Documented
+
+1. Generate Spec (eiffel-gui-ux produces JSON)
+2. Visualize (simple_spec_viz generates SVG + Markdown)
+3. Review & Feedback (developers check diagrams against reference patterns)
+4. Iterate (update spec, re-run visualize)
+5. Implement (with confidence spec is correct)
+
+### Integration Points Documented
+
+- **eiffel-spec** - Captures intent, generates spec
+- **eiffel-gui-ux** - Generates JSON from spec
+- **simple_spec_viz** - Visualizes JSON
+- **simple_vision** - Implements based on visualization
+- **reference_docs/gui** - Shows patterns and widgets
+
+### AI Review Process
+
+**Next Step: Manual AI Review Cycle**
+
+Current status:
+- [ ] AI review conducted (pending user action)
+- [ ] User feedback received (pending)
+- [ ] intent-v2.md created (pending)
+- [ ] Dependency audit completed (pending)
+- [ ] Final approval given (pending)
+
+### Information Status
+
+**Vague terms that need clarification in review:**
+- "Fast enough" (< 5 seconds for typical specs - needs definition of "typical")
+- "Human-readable" (clear state names, visible transitions - measurable?)
+- "Clear messages" (specific error message examples needed)
+- "Production-ready" (what quality bar? coverage? performance?)
+
+**Hidden assumptions that need surfacing in review:**
+- Users know what a state machine is
+- Users can read/write JSON
+- Users understand Eiffel/DBC concepts (maybe not - reference docs should help)
+- GraphViz is installed (what if not? graceful fallback?)
+- 7 examples are sufficient test cases (are they?)
+
+**Edge cases to clarify in review:**
+- Empty specs (0 states) - should error or output empty diagram?
+- Circular transitions (state A → state B → state A) - supported?
+- Missing required fields (state without ID, transition without source) - error msg?
+- Widget references to non-existent widgets in WIDGET_CATALOG - warn or error?
+- Specs with 100+ states (performance target? timeout? limit?)
+
+### Dependencies Audit (Pending)
+
+Ready to audit when review is complete:
+- Verify simple_json is available in ecosystem
+- Verify simple_graphviz is available (v1.0.0 released Jan 24, 2026)
+- Verify simple_file is available
+- Verify simple_process is available
+- Verify simple_mml is available
+- Document any gaps (if found)
+
+### Next Steps
+
+**Immediate (Phase 0 Final):**
+1. User reviews intent document with probing questions in mind
+2. User submits phase0-intent-review.md to AI reviewer (optional but recommended)
+3. User answers all probing questions
+4. Create intent-v2.md incorporating answers
+5. Run dependency audit
+6. Get final approval
+
+**Phase 1 (After Intent Approved):**
+1. Write test suite (unit + integration tests)
+2. Implement classes (SIMPLE_SPEC_VIZ, SPEC_LOADER, generators, etc.)
+3. Verify contracts (all postconditions hold)
+4. Performance & hardening
+5. Document & ship v1.0.0
+
+---
+
+## Current Status
+
+```
+PHASE 0 (INTENT CAPTURE): INITIAL PHASE COMPLETE
+
+Initial intent.md: CREATED
+Review prompt: CREATED
+AI review: PENDING (user action required)
+
+Next: User reviews intent and provides feedback (or submits to AI reviewer)
+```
+
+---
+
+## File Locations
+
+```
+D:\prod\simple_spec_viz\
+├── .eiffel-workflow\
+│   ├── intent.md                                ✓ Created
+│   ├── intent-v2.md                             ⏳ Pending (after review)
+│   ├── prompts\
+│   │   └── phase0-intent-review.md              ✓ Created (8-12 questions)
+│   └── evidence\
+│       ├── phase0-ai-review.md                  ⏳ Pending (AI response)
+│       └── phase0-intent.txt                    ✓ Created (this file)
+```
+
+---
+
+**PHASE 0 INITIAL: COMPLETE**
+
+Intent document created and guided by reference_docs/gui materials.
+Awaiting AI review and user feedback to proceed to intent-v2.md.
+
+When user is ready, provide answers to probing questions or submit phase0-intent-review.md to external AI reviewer.

@@ -1,0 +1,27 @@
+
+#ifndef _C21_bi1012_
+#define _C21_bi1012_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_BOOLEAN F547_4905(EIF_REFERENCE);
+extern void F547_4908(EIF_REFERENCE, EIF_NATURAL_16);
+extern void F547_1(EIF_REFERENCE, int);
+extern void EIF_Minit1012(void);
+extern EIF_NATURAL_16 F880_5790(EIF_REFERENCE);
+extern void F533_4891(EIF_REFERENCE, EIF_NATURAL_16);
+extern EIF_BOOLEAN F840_5529(EIF_REFERENCE);
+extern EIF_BOOLEAN F810_5504(EIF_REFERENCE);
+extern void F880_5818(EIF_REFERENCE);
+extern EIF_BOOLEAN F533_4895(EIF_REFERENCE);
+extern EIF_BOOLEAN F840_5528(EIF_REFERENCE);
+extern EIF_BOOLEAN F679_4976(EIF_REFERENCE);
+extern long O4373[];
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

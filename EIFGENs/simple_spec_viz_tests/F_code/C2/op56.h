@@ -1,0 +1,24 @@
+
+#ifndef _C2_op56_
+#define _C2_op56_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+static EIF_CHARACTER_8 F74_991_body(EIF_REFERENCE);
+extern EIF_CHARACTER_8 F74_991(EIF_REFERENCE);
+static EIF_REFERENCE F74_992_body(EIF_REFERENCE);
+extern EIF_REFERENCE F74_992(EIF_REFERENCE);
+extern EIF_BOOLEAN F74_993(EIF_REFERENCE);
+extern EIF_BOOLEAN F74_994(EIF_REFERENCE);
+extern EIF_BOOLEAN F74_995(EIF_REFERENCE);
+extern EIF_CHARACTER_8 F74_996(EIF_REFERENCE);
+extern EIF_REFERENCE F74_997(EIF_REFERENCE);
+extern void EIF_Minit56(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,26 @@
+
+#ifndef _C8_ti388_
+#define _C8_ti388_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_BOOLEAN F1115_8635(EIF_REFERENCE, EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F1115_8636(EIF_REFERENCE, EIF_INTEGER_32);
+extern EIF_BOOLEAN F1115_8637(EIF_REFERENCE, EIF_INTEGER_32, EIF_INTEGER_32, EIF_REAL_64, EIF_BOOLEAN);
+extern void EIF_Minit388(void);
+extern EIF_BOOLEAN F1107_8414(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F1107_8428(EIF_REFERENCE);
+extern EIF_BOOLEAN F1107_8419(EIF_REFERENCE, EIF_REFERENCE);
+extern void F1107_8409(EIF_REFERENCE, EIF_REFERENCE);
+extern char *(*R1870[])();
+extern char *(*R1871[])();
+extern char *(*R1872[])();
+extern long O1880[];
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,104 @@
+New environment value for ISE_LIBRARY will be used
+because of the -stop/-batch option.
+Eiffel Compilation Manager
+Version 25.02.9.8732 - win64
+
+Degree 6: Examining System
+Degree 5: Parsing Classes
+Degree 4: Analyzing Inheritance
+Degree 3: Checking Types
+Degree 2: Generating Byte Code
+System Recompiled.
+note
+	description: "Facade for simple_spec_viz - GUI specification visualization"
+	author: "Larry Rix"
+	date: "2026-01-24"
+
+class interface
+	SIMPLE_SPEC_VIZ
+
+create 
+	make
+			-- Initialize specification visualizer.
+		ensure
+			loader_created: loader /= Void
+			state_diagram_gen_created: state_diagram_gen /= Void
+			screen_mockup_gen_created: screen_mockup_gen /= Void
+			traceability_gen_created: traceability_gen /= Void
+
+feature -- Access
+
+	generating_type: TYPE [detachable SIMPLE_SPEC_VIZ]
+			-- Type of current object
+			-- (type of which it is a direct instance)
+			-- (from ANY)
+		ensure -- from ANY
+			generating_type_not_void: Result /= Void
+
+	generator: STRING_8
+			-- Name of current object's generating class
+			-- (base class of the type of which it is a direct instance)
+			-- (from ANY)
+		ensure -- from ANY
+			generator_not_void: Result /= Void
+			generator_not_empty: not Result.is_empty
+
+	last_error: detachable STRING_8
+			-- Last error message, if any.
+
+	loader: SPEC_LOADER
+			-- JSON specification loader.
+
+	screen_mockup_gen: SCREEN_MOCKUP_GENERATOR
+			-- Screen mockup generator.
+
+	state_diagram_gen: STATE_DIAGRAM_GENERATOR
+			-- State machine diagram generator.
+
+	traceability_gen: TRACEABILITY_REPORT_GENERATOR
+			-- Traceability report generator.
+	
+feature -- Comparison
+
+	frozen deep_equal (a: detachable ANY; b: like arg #1): BOOLEAN
+			-- Are `a` and `b` either both void
+			-- or attached to isomorphic object structures?
+			-- (from ANY)
+		ensure -- from ANY
+			instance_free: class
+			shallow_implies_deep: standard_equal (a, b) implies Result
+			both_or_none_void: (a = Void) implies (Result = (b = Void))
+			same_type: (Result and (a /= Void)) implies (b /= Void and then a.same_type (b))
+			symmetric: Result implies deep_equal (b, a)
+
+	frozen equal (a: detachable ANY; b: like arg #1): BOOLEAN
+			-- Are `a` and `b` either both void or attached
+			-- to objects considered equal?
+			-- (from ANY)
+		ensure -- from ANY
+			instance_free: class
+			definition: Result = (a = Void and b = Void) or else ((a /= Void and b /= Void) and then a.is_equal (b))
+
+	frozen is_deep_equal alias "נננ" (other: SIMPLE_SPEC_VIZ): BOOLEAN
+			-- Are `Current` and `other` attached to isomorphic object structures?
+			-- (from ANY)
+		require -- from ANY
+			other_not_void: other /= Void
+		ensure -- from ANY
+			shallow_implies_deep: standard_is_equal (other) implies Result
+			same_type: Result implies same_type (other)
+			symmetric: Result implies other.is_deep_equal (Current)
+
+	is_equal (other: SIMPLE_SPEC_VIZ): BOOLEAN
+			-- Is `other` attached to an object considered
+			-- equal to current object?
+			-- (from ANY)
+		require -- from ANY
+			other_not_void: other /= Void
+		ensure -- from ANY
+			symmetric: Result implies other ~ Current
+			consistent: standard_is_equal (other) implies Result
+
+	frozen standard_equal (a: detachable ANY; b: like arg #1): BOOLEAN
+			-- Are `a` and `b` either both void or attached to
+			-- field-by-field identical objects 

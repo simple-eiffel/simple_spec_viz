@@ -1,0 +1,101 @@
+/*
+ * Class STATE_MACHINE_BUILDER
+ */
+
+#include "eif_macros.h"
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+static const EIF_TYPE_INDEX egt_0_29 [] = {0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_29 [] = {0xFF01,402,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_3_29 [] = {0,0xFFFF};
+static const EIF_TYPE_INDEX egt_4_29 [] = {0,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_7_29 [] = {0,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_29 [] = {0xFF01,56,0xFFFF};
+static const EIF_TYPE_INDEX egt_9_29 [] = {0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_10_29 [] = {0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_29 [] = {0xFF01,55,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_29 [] = {0xFF01,14,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_29 [] = {0xFF01,26,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_29 [] = {0xFF01,915,0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_29 [] = {0xFF01,28,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_29 [] = {0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_24_29 [] = {0xFF01,29,0xFFFF};
+static const EIF_TYPE_INDEX egt_25_29 [] = {0xFF01,29,0xFFFF};
+
+
+static const struct desc_info desc_29[] = {
+	{EIF_GENERIC(NULL), 593, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_0_29), 0, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_1_29), 1, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 2, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 3, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 4, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 5, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 6, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 7, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 8, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 9, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_2_29), 10, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 11, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 12, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_3_29), 13, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_4_29), 14, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_5_29), 15, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_6_29), 16, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_7_29), 17, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 18, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 19, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_8_29), 20, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_9_29), 21, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_10_29), 22, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_11_29), 24, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 25, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x39 /*28*/), 28, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_12_29), 30, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 576, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_29), 577, 0},
+	{EIF_GENERIC(egt_14_29), 578, 8},
+	{EIF_NON_GENERIC(0x02CB /*357*/), 579, 16},
+	{EIF_GENERIC(egt_15_29), 580, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 581, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_29), 582, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_17_29), 583, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_29), 584, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_19_29), 585, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_20_29), 586, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_21_29), 587, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_22_29), 588, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_23_29), 589, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_24_29), 590, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_25_29), 591, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 592, 0xFFFFFFFF},
+};
+void Init29(void)
+{
+	IDSC(desc_29, 0, 28);
+	IDSC(desc_29 + 1, 4, 28);
+	IDSC(desc_29 + 32, 262, 28);
+}
+
+
+#ifdef __cplusplus
+}
+#endif

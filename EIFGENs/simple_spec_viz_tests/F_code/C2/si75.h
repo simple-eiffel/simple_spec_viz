@@ -1,0 +1,22 @@
+
+#ifndef _C2_si75_
+#define _C2_si75_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_CHARACTER_8 F95_1386(EIF_REFERENCE, EIF_CHARACTER_32);
+extern EIF_BOOLEAN F95_1387(EIF_REFERENCE, EIF_CHARACTER_32);
+extern EIF_CHARACTER_32 F95_1388(EIF_REFERENCE, EIF_CHARACTER_8);
+extern void F95_1(EIF_REFERENCE, int);
+extern void EIF_Minit75(void);
+extern EIF_REFERENCE F96_1391(EIF_REFERENCE);
+extern EIF_INTEGER_32 F913_6149(EIF_REFERENCE);
+extern EIF_CHARACTER_32 F913_6139(EIF_REFERENCE, EIF_INTEGER_32);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

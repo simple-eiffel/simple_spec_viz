@@ -1,0 +1,23 @@
+
+#ifndef _C1_co33_
+#define _C1_co33_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_REFERENCE F36_731(EIF_REFERENCE);
+extern EIF_REFERENCE F36_732(EIF_REFERENCE);
+extern EIF_REFERENCE F36_733(EIF_REFERENCE);
+extern EIF_REFERENCE F36_734(EIF_REFERENCE);
+extern EIF_REFERENCE F36_735(EIF_REFERENCE);
+extern EIF_REFERENCE F36_736(EIF_REFERENCE);
+extern EIF_REFERENCE F36_737(EIF_REFERENCE);
+extern EIF_REFERENCE F36_738(EIF_REFERENCE);
+extern void EIF_Minit33(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

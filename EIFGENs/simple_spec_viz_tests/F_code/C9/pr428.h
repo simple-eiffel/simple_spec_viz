@@ -1,0 +1,20 @@
+
+#ifndef _C9_pr428_
+#define _C9_pr428_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern void F1071_7587(EIF_REFERENCE);
+extern void F1071_7588(EIF_REFERENCE, EIF_REFERENCE);
+extern void F1071_7589(EIF_REFERENCE, EIF_POINTER, EIF_POINTER, EIF_POINTER, EIF_POINTER, EIF_INTEGER_32, EIF_BOOLEAN, EIF_INTEGER_32, EIF_INTEGER_32, EIF_INTEGER_32, EIF_POINTER);
+extern void EIF_Minit428(void);
+extern EIF_INTEGER_32 F1070_7569(EIF_REFERENCE);
+extern EIF_BOOLEAN F1070_7557(EIF_REFERENCE, EIF_REFERENCE);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

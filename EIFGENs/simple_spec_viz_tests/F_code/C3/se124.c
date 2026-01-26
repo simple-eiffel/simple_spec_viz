@@ -1,0 +1,381 @@
+/*
+ * Code for class SED_RECOVERABLE_SERIALIZER
+ */
+
+#include "eif_eiffel.h"
+#include "../E1/estructure.h"
+#include "../E1/eoffsets.h"
+
+#include "se124.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* {SED_RECOVERABLE_SERIALIZER}.write_header */
+void F150_2023 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
+{
+	GTCX
+	RTEX;
+	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
+	EIF_INTEGER_32 loc2 = (EIF_INTEGER_32) 0;
+	EIF_REFERENCE loc3 = (EIF_REFERENCE) 0;
+	EIF_REFERENCE loc4 = (EIF_REFERENCE) 0;
+	EIF_BOOLEAN loc5 = (EIF_BOOLEAN) 0;
+	EIF_REFERENCE loc6 = (EIF_REFERENCE) 0;
+	EIF_REFERENCE tr1 = NULL;
+	EIF_INTEGER_32 ti4_1;
+	EIF_NATURAL_32 tu4_1;
+	EIF_BOOLEAN tb1;
+	EIF_BOOLEAN tb2;
+	EIF_BOOLEAN tb3;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(8);
+	RTLR(0,arg1);
+	RTLR(1,loc3);
+	RTLR(2,Current);
+	RTLR(3,loc4);
+	RTLR(4,loc1);
+	RTLR(5,arg2);
+	RTLR(6,tr1);
+	RTLR(7,loc6);
+	RTLIU(8);
+	
+	RTEAA("write_header", 149, Current, 6, 2, 2037);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTGC;
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("a_list_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
+		RTCK;
+		RTHOOK(2);
+		RTCT("a_list_not_empty", EX_PRE);
+		tb1 = (nstcall = 1, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4371[Dtype(RTCW(arg1))-663])(arg1));
+		RTTE((EIF_BOOLEAN) !tb1, label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTHOOK(3);
+	loc3 = *(EIF_REFERENCE *)(Current);
+	RTHOOK(4);
+	loc4 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
+	RTHOOK(5);
+	(nstcall = 0, F148_2000(Current));
+	RTHOOK(6);
+	loc5 = (nstcall = 0, F148_1997(Current));
+	loc5 = (EIF_BOOLEAN) (EIF_BOOLEAN) !loc5;
+	RTHOOK(7);
+	loc1 = (nstcall = 0, F150_2024(Current, arg2));
+	RTHOOK(8);
+	ti4_1 = *(EIF_INTEGER_32 *)(RTCW(arg2)+ _LNGOFF_4_3_0_9_);
+	tu4_1 = (EIF_NATURAL_32) ti4_1;
+	(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+	RTHOOK(9);
+	(nstcall = 1, F889_5941(RTCW(arg2)));
+	for (;;) {
+		RTHOOK(10);
+		tb1 = (nstcall = 1, F889_5936(RTCW(arg2)));
+		if (tb1) break;
+		RTHOOK(11);
+		ti4_1 = (nstcall = 1, F889_5914(RTCW(arg2)));
+		loc2 = (EIF_INTEGER_32) ti4_1;
+		RTHOOK(12);
+		tu4_1 = (EIF_NATURAL_32) loc2;
+		(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+		RTHOOK(13);
+		tr1 = (nstcall = 1, F277_3639(RTCW(loc4), loc2));
+		(nstcall = 1, F109_1528(RTCW(loc3), tr1));
+		RTHOOK(14);
+		(nstcall = 1, F889_5942(RTCW(arg2)));
+		RTHOOK(15);
+		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !loc5 && (EIF_BOOLEAN) (*(EIF_NATURAL_32 *)(Current+ _LNGOFF_5_2_0_0_) >= ((EIF_NATURAL_32) 3U)))) {
+			RTHOOK(16);
+			tb2 = '\0';
+			tr1 = (nstcall = 1, F277_3644(RTCW(loc4), loc2));
+			loc6 = tr1;
+			if (EIF_TEST(loc6)) {
+				tb3 = (nstcall = 1, F1080_7800(loc6));
+				tb2 = (EIF_BOOLEAN) !tb3;
+			}
+			if (tb2) {
+				RTHOOK(17);
+				(nstcall = 1, F109_1531(RTCW(loc3), (EIF_BOOLEAN) 1));
+				RTHOOK(18);
+				(nstcall = 1, F109_1528(RTCW(loc3), loc6));
+			} else {
+				RTHOOK(19);
+				(nstcall = 1, F109_1531(RTCW(loc3), (EIF_BOOLEAN) 0));
+			}
+		}
+	}
+	RTHOOK(20);
+	ti4_1 = *(EIF_INTEGER_32 *)(RTCW(loc1)+ _LNGOFF_4_3_0_9_);
+	tu4_1 = (EIF_NATURAL_32) ti4_1;
+	(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+	RTHOOK(21);
+	(nstcall = 1, F889_5941(RTCW(loc1)));
+	for (;;) {
+		RTHOOK(22);
+		tb2 = (nstcall = 1, F889_5936(RTCW(loc1)));
+		if (tb2) break;
+		RTHOOK(23);
+		ti4_1 = (nstcall = 1, F889_5914(RTCW(loc1)));
+		loc2 = (EIF_INTEGER_32) ti4_1;
+		RTHOOK(24);
+		tu4_1 = (EIF_NATURAL_32) loc2;
+		(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+		RTHOOK(25);
+		tr1 = (nstcall = 1, F277_3639(RTCW(loc4), loc2));
+		(nstcall = 1, F109_1528(RTCW(loc3), tr1));
+		RTHOOK(26);
+		(nstcall = 1, F889_5942(RTCW(loc1)));
+	}
+	RTHOOK(27);
+	ti4_1 = *(EIF_INTEGER_32 *)(RTCW(arg2)+ _LNGOFF_4_3_0_9_);
+	tu4_1 = (EIF_NATURAL_32) ti4_1;
+	(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+	RTHOOK(28);
+	(nstcall = 1, F889_5941(RTCW(arg2)));
+	for (;;) {
+		RTHOOK(29);
+		tb3 = (nstcall = 1, F889_5936(RTCW(arg2)));
+		if (tb3) break;
+		RTHOOK(30);
+		ti4_1 = (nstcall = 1, F889_5914(RTCW(arg2)));
+		loc2 = (EIF_INTEGER_32) ti4_1;
+		RTHOOK(31);
+		tu4_1 = (EIF_NATURAL_32) loc2;
+		(nstcall = 1, F109_1544(RTCW(loc3), tu4_1));
+		RTHOOK(32);
+		(nstcall = 0, F150_2025(Current, loc2));
+		RTHOOK(33);
+		(nstcall = 1, F889_5942(RTCW(arg2)));
+	}
+	RTHOOK(34);
+	(nstcall = 0, F148_2001(Current, arg1));
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(35);
+	RTLE;
+	RTEE;
+}
+
+/* {SED_RECOVERABLE_SERIALIZER}.attributes_dynamic_types */
+EIF_REFERENCE F150_2024 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	GTCX
+	RTEX;
+	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
+	EIF_INTEGER_32 loc2 = (EIF_INTEGER_32) 0;
+	EIF_INTEGER_32 loc3 = (EIF_INTEGER_32) 0;
+	EIF_INTEGER_32 loc4 = (EIF_INTEGER_32) 0;
+	EIF_INTEGER_32 loc5 = (EIF_INTEGER_32) 0;
+	EIF_INTEGER_32 ti4_1;
+	EIF_BOOLEAN tb1;
+	EIF_BOOLEAN tb2;
+	EIF_REFERENCE Result = ((EIF_REFERENCE) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(4);
+	RTLR(0,arg1);
+	RTLR(1,loc1);
+	RTLR(2,Current);
+	RTLR(3,Result);
+	RTLIU(4);
+	
+	RTEAA("attributes_dynamic_types", 149, Current, 5, 1, 2038);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTGC;
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("a_type_table_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTHOOK(2);
+	loc1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
+	RTHOOK(3);
+	(nstcall = 1, F889_5941(RTCW(arg1)));
+	RTHOOK(4);
+	{
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,888,1005,1005,0xFFFF};
+		EIF_TYPE typres0;
+		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
+		
+		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
+		Result = RTLNS(typres0.id, 888, _OBJSIZ_4_3_0_10_0_0_0_0_);
+	}
+	(nstcall = -1, F889_5902(RTCW(Result), ((EIF_INTEGER_32) 500L)));
+	for (;;) {
+		RTHOOK(5);
+		tb1 = (nstcall = 1, F889_5936(RTCW(arg1)));
+		if (tb1) break;
+		RTHOOK(6);
+		loc2 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
+		RTHOOK(7);
+		ti4_1 = (nstcall = 1, F889_5914(RTCW(arg1)));
+		loc5 = (EIF_INTEGER_32) ti4_1;
+		RTHOOK(8);
+		ti4_1 = (nstcall = 1, F277_3650(RTCW(loc1), loc5));
+		loc3 = (EIF_INTEGER_32) ti4_1;
+		RTHOOK(9);
+		loc3++;
+		for (;;) {
+			RTHOOK(10);
+			if ((EIF_BOOLEAN)(loc2 == loc3)) break;
+			RTHOOK(11);
+			tb2 = (nstcall = 1, F277_3634(RTCW(loc1), loc2, loc5));
+			if ((EIF_BOOLEAN) !tb2) {
+				RTHOOK(12);
+				ti4_1 = (nstcall = 1, F277_3648(RTCW(loc1), loc2, loc5));
+				loc4 = (EIF_INTEGER_32) ti4_1;
+				RTHOOK(13);
+				tb2 = (nstcall = 1, F889_5910(RTCW(arg1), loc4));
+				if ((EIF_BOOLEAN) !tb2) {
+					RTHOOK(14);
+					tb2 = (nstcall = 1, F277_3635(RTCW(loc1), loc2, loc5));
+					if (tb2) {
+						RTHOOK(15);
+						(nstcall = 1, F889_5948(RTCW(arg1), loc4, loc4));
+					} else {
+						RTHOOK(16);
+						(nstcall = 1, F889_5948(RTCW(Result), loc4, loc4));
+					}
+				}
+			}
+			RTHOOK(17);
+			loc2++;
+		}
+		RTHOOK(18);
+		(nstcall = 1, F889_5942(RTCW(arg1)));
+	}
+	if (RTAL & CK_ENSURE) {
+		RTHOOK(19);
+		RTCT("attributes_dynamic_types_not_void", EX_POST);
+		if ((EIF_BOOLEAN)(Result != NULL)) {
+			RTCK;
+		} else {
+			RTCF;
+		}
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(20);
+	RTLE;
+	RTEE;
+	return Result;
+}
+
+/* {SED_RECOVERABLE_SERIALIZER}.write_attributes */
+void F150_2025 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	RTEX;
+	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
+	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
+	EIF_INTEGER_32 loc3 = (EIF_INTEGER_32) 0;
+	EIF_INTEGER_32 loc4 = (EIF_INTEGER_32) 0;
+	EIF_REFERENCE tr1 = NULL;
+	EIF_INTEGER_32 ti4_1;
+	EIF_NATURAL_32 tu4_1;
+	EIF_BOOLEAN tb1;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(4);
+	RTLR(0,loc1);
+	RTLR(1,Current);
+	RTLR(2,loc2);
+	RTLR(3,tr1);
+	RTLIU(4);
+	
+	RTEAA("write_attributes", 149, Current, 4, 1, 2039);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTGC;
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("a_dtype_non_negative", EX_PRE);
+		RTTE((EIF_BOOLEAN) (arg1 >= ((EIF_INTEGER_32) 0L)), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTHOOK(2);
+	loc1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
+	RTHOOK(3);
+	loc2 = *(EIF_REFERENCE *)(Current);
+	RTHOOK(4);
+	loc3 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
+	RTHOOK(5);
+	ti4_1 = (nstcall = 1, F277_3651(RTCW(loc1), arg1));
+	tu4_1 = (EIF_NATURAL_32) ti4_1;
+	(nstcall = 1, F109_1544(RTCW(loc2), tu4_1));
+	RTHOOK(6);
+	ti4_1 = (nstcall = 1, F277_3650(RTCW(loc1), arg1));
+	loc4 = (EIF_INTEGER_32) (EIF_INTEGER_32) (ti4_1 + ((EIF_INTEGER_32) 1L));
+	for (;;) {
+		RTHOOK(7);
+		if ((EIF_BOOLEAN)(loc3 == loc4)) break;
+		RTHOOK(8);
+		tb1 = (nstcall = 1, F277_3634(RTCW(loc1), loc3, arg1));
+		if ((EIF_BOOLEAN) !tb1) {
+			RTHOOK(9);
+			ti4_1 = (nstcall = 1, F277_3648(RTCW(loc1), loc3, arg1));
+			tu4_1 = (EIF_NATURAL_32) ti4_1;
+			(nstcall = 1, F109_1544(RTCW(loc2), tu4_1));
+			RTHOOK(10);
+			tr1 = (nstcall = 1, F277_3646(RTCW(loc1), loc3, arg1));
+			(nstcall = 1, F109_1528(RTCW(loc2), tr1));
+		}
+		RTHOOK(11);
+		loc3++;
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(12);
+	RTLE;
+	RTEE;
+}
+
+void EIF_Minit124 (void)
+{
+	GTCX
+}
+
+
+#ifdef __cplusplus
+}
+#endif

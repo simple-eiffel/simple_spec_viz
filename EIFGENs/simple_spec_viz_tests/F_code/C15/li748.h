@@ -1,0 +1,28 @@
+
+#ifndef _C15_li748_
+#define _C15_li748_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_BOOLEAN F833_5527(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_BOOLEAN F833_5528(EIF_REFERENCE);
+extern EIF_BOOLEAN F833_5529(EIF_REFERENCE);
+extern void F833_1(EIF_REFERENCE, int);
+extern void EIF_Minit748(void);
+extern void F873_5816(EIF_REFERENCE);
+extern EIF_BOOLEAN F1_9(EIF_REFERENCE, EIF_REFERENCE);
+extern void F873_5821(EIF_REFERENCE, EIF_REFERENCE);
+extern EIF_POINTER F873_5790(EIF_REFERENCE);
+extern EIF_REFERENCE F873_5796(EIF_REFERENCE);
+extern void F873_5818(EIF_REFERENCE);
+extern EIF_BOOLEAN F672_4976(EIF_REFERENCE);
+extern EIF_INTEGER_32 F873_5806(EIF_REFERENCE);
+extern long O4373[];
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
