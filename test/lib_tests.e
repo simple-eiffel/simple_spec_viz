@@ -686,10 +686,19 @@ feature -- End-to-End File Tests
 			l_traceability_path: STRING
 			l_state_file: PLAIN_TEXT_FILE
 			l_trace_file: PLAIN_TEXT_FILE
+			l_env: EXECUTION_ENVIRONMENT
+			l_base_path: STRING
 		do
-			-- Set up absolute paths using Windows format
-			l_output_dir := "D:\prod\simple_spec_viz\test\test_data\outputs"
-			l_input_path := "D:\prod\simple_spec_viz\test\test_data\inputs\" + a_input_path
+			-- Set up absolute paths using $SIMPLE_EIFFEL environment variable
+			create l_env
+			if attached l_env.get ("SIMPLE_EIFFEL") as l_simple_eiffel then
+				l_base_path := l_simple_eiffel
+			else
+				-- Fallback to default if environment variable not set
+				l_base_path := "D:/prod"
+			end
+			l_output_dir := l_base_path + "/simple_spec_viz/test/test_data/outputs"
+			l_input_path := l_base_path + "/simple_spec_viz/test/test_data/inputs/" + a_input_path
 			l_state_machine_path := l_output_dir + "/state_machine.svg"
 			l_traceability_path := l_output_dir + "/traceability.md"
 
