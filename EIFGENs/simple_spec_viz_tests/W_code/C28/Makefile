@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C28_c.obj 
 
-OLDOBJECTS =  sp918.obj sp918d.obj na914.obj na914d.obj sp919.obj sp919d.obj re922.obj re922d.obj \
-	ar913.obj ar913d.obj it923.obj it923d.obj li897.obj li897d.obj re910.obj re910d.obj \
-	in905.obj in905d.obj to912.obj to912d.obj dy907.obj dy907d.obj li909.obj li909d.obj \
-	ge920.obj ge920d.obj cu898.obj cu898d.obj tr899.obj tr899d.obj se891.obj se891d.obj \
-	dy902.obj dy902d.obj bo911.obj bo911d.obj ta906.obj ta906d.obj fi895.obj fi895d.obj \
-	un908.obj un908d.obj mm916.obj mm916d.obj ch904.obj ch904d.obj ty921.obj ty921d.obj \
-	ac892.obj ac892d.obj co894.obj co894d.obj bi901.obj bi901d.obj dy903.obj dy903d.obj \
-	ba893.obj ba893d.obj bo896.obj bo896d.obj mm915.obj mm915d.obj co900.obj co900d.obj \
-	mm917.obj mm917d.obj 
+OLDOBJECTS =  sp908.obj sp908d.obj ar917.obj ar917d.obj na907.obj na907d.obj sp909.obj sp909d.obj \
+	re912.obj re912d.obj ar906.obj ar906d.obj it915.obj it915d.obj li921.obj li921d.obj \
+	it914.obj it914d.obj ar918.obj ar918d.obj re903.obj re903d.obj in898.obj in898d.obj \
+	to905.obj to905d.obj dy900.obj dy900d.obj li902.obj li902d.obj ge910.obj ge910d.obj \
+	in916.obj in916d.obj re913.obj re913d.obj cu922.obj cu922d.obj tr893.obj tr893d.obj \
+	se920.obj se920d.obj ar919.obj ar919d.obj dy895.obj dy895d.obj bo904.obj bo904d.obj \
+	ta899.obj ta899d.obj un901.obj un901d.obj ch897.obj ch897d.obj ty911.obj ty911d.obj \
+	co923.obj co923d.obj bi894.obj bi894d.obj dy896.obj dy896d.obj ba891.obj ba891d.obj \
+	co892.obj co892d.obj 
 
 all::  Cobj28.lib
 

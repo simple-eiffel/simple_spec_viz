@@ -3799,7 +3799,7 @@ EIF_BOOLEAN F1128_9087 (EIF_REFERENCE Current, EIF_CHARACTER_8 arg1)
 		RTCT("not_found_in_empty", EX_POST);
 		tb1 = '\01';
 		if (Result) {
-			tb1 = (EIF_BOOLEAN) !(nstcall = 0, F666_4976(Current));
+			tb1 = (EIF_BOOLEAN) !(nstcall = 0, F670_4976(Current));
 		}
 		if (tb1) {
 			RTCK;
@@ -6148,11 +6148,11 @@ body:;
 			RTHOOK(8);
 			(nstcall = 0, F1081_7893(Current, *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_3_)));
 			RTHOOK(9);
-			loc6 = (nstcall = 0, F76_1080(Current, (EIF_BOOLEAN) 0));
+			loc6 = (nstcall = 0, F78_1151(Current, (EIF_BOOLEAN) 0));
 			RTHOOK(10);
 			(nstcall = 0, F1081_7844(Current, arg1));
 			RTHOOK(11);
-			tb1 = (nstcall = 0, F76_1080(Current, loc6));
+			tb1 = (nstcall = 0, F78_1151(Current, loc6));
 			loc6 = (EIF_BOOLEAN) tb1;
 			RTHOOK(12);
 			ti4_3 = (nstcall = 0, F1128_9084(Current));
@@ -6198,11 +6198,11 @@ body:;
 					RTHOOK(23);
 					(nstcall = 0, F1081_7893(Current, *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_3_)));
 					RTHOOK(24);
-					loc6 = (nstcall = 0, F76_1080(Current, (EIF_BOOLEAN) 0));
+					loc6 = (nstcall = 0, F78_1151(Current, (EIF_BOOLEAN) 0));
 					RTHOOK(25);
 					(nstcall = 0, F1081_7844(Current, arg1));
 					RTHOOK(26);
-					tb1 = (nstcall = 0, F76_1080(Current, loc6));
+					tb1 = (nstcall = 0, F78_1151(Current, loc6));
 					loc6 = (EIF_BOOLEAN) tb1;
 					RTHOOK(27);
 					ti4_3 = (nstcall = 0, F1128_9084(Current));
@@ -6234,11 +6234,11 @@ body:;
 					RTHOOK(37);
 					(nstcall = 0, F1081_7893(Current, *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_3_)));
 					RTHOOK(38);
-					loc6 = (nstcall = 0, F76_1080(Current, (EIF_BOOLEAN) 0));
+					loc6 = (nstcall = 0, F78_1151(Current, (EIF_BOOLEAN) 0));
 					RTHOOK(39);
 					(nstcall = 0, F1081_7844(Current, arg1));
 					RTHOOK(40);
-					tb1 = (nstcall = 0, F76_1080(Current, loc6));
+					tb1 = (nstcall = 0, F78_1151(Current, loc6));
 					loc6 = (EIF_BOOLEAN) tb1;
 					RTHOOK(41);
 					ti4_3 = (nstcall = 0, F1128_9084(Current));
@@ -8023,7 +8023,7 @@ body:;
 			RTHOOK(15);
 			if ((EIF_BOOLEAN) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc6 + loc2) - ((EIF_INTEGER_32) 1L)) > loc1)) break;
 			RTHOOK(16);
-			tb1 = (nstcall = 1, F903_6152(RTCW(loc4), loc5, ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) (loc6 - ((EIF_INTEGER_32) 1L)), loc2));
+			tb1 = (nstcall = 1, F904_6152(RTCW(loc4), loc5, ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) (loc6 - ((EIF_INTEGER_32) 1L)), loc2));
 			if (tb1) {
 				RTHOOK(17);
 				if ((EIF_BOOLEAN)(loc3 == loc2)) {
@@ -8052,7 +8052,7 @@ body:;
 				loc1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_3_);
 				RTHOOK(27);
 				tr1 = *(EIF_REFERENCE *)(RTCW(arg2));
-				(nstcall = 1, F903_6161(RTCW(loc4), tr1, ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) (loc6 - ((EIF_INTEGER_32) 1L)), loc3));
+				(nstcall = 1, F904_6161(RTCW(loc4), tr1, ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) (loc6 - ((EIF_INTEGER_32) 1L)), loc3));
 				RTHOOK(28);
 				ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_2_);
 				ti4_2 = *(EIF_INTEGER_32 *)(RTCW(arg1) + O6269[Dtype(arg1)-1078]);
@@ -8361,7 +8361,7 @@ label_1:
 		RTCK;
 		RTHOOK(2);
 		RTCT("prunable", EX_PRE);
-		RTTE((nstcall = 0, F604_4931(Current)), label_2);
+		RTTE((nstcall = 0, F605_4931(Current)), label_2);
 		RTCK;
 		RTHOOK(3);
 		RTCT("valid_key", EX_PRE);
@@ -11754,7 +11754,7 @@ void F1128_9178 (EIF_REFERENCE Current)
 		}
 		RTHOOK(6);
 		RTCT("wiped_out", EX_POST);
-		if ((nstcall = 0, F666_4976(Current))) {
+		if ((nstcall = 0, F670_4976(Current))) {
 			RTCK;
 		} else {
 			RTCF;
@@ -11890,7 +11890,7 @@ void F1128_9180 (EIF_REFERENCE Current)
 		RTHOOK(9);
 		RTCT("new_count", EX_POST);
 		tb1 = '\01';
-		if ((EIF_BOOLEAN) !(nstcall = 0, F666_4976(Current))) {
+		if ((EIF_BOOLEAN) !(nstcall = 0, F670_4976(Current))) {
 			tw1 = (nstcall = 0, F1081_7812(Current, ((EIF_INTEGER_32) 1L)));
 			tr1 = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_CHARACTER_32 *)tr1 = tw1;
@@ -11978,7 +11978,7 @@ void F1128_9181 (EIF_REFERENCE Current)
 		RTHOOK(9);
 		RTCT("new_count", EX_POST);
 		tb1 = '\01';
-		if ((EIF_BOOLEAN) !(nstcall = 0, F666_4976(Current))) {
+		if ((EIF_BOOLEAN) !(nstcall = 0, F670_4976(Current))) {
 			tw1 = (nstcall = 0, F1081_7812(Current, *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_1_0_2_)));
 			tr1 = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_CHARACTER_32 *)tr1 = tw1;

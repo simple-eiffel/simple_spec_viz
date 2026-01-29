@@ -1069,7 +1069,7 @@ void F249_3860 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(248, Current, 3972);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,692,344,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,681,344,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1123,7 +1123,7 @@ body:;
 	} else {
 		RTHOOK(10);
 		ur1 = RTCCL(arg1);
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1280, 1122))(Current, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1280, 1120))(Current, ur1x);
 	}
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(11);

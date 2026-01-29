@@ -220,7 +220,7 @@ body:;
 			}
 		}
 		RTHOOK(12);
-		RTDBGAL(7, 0xF800026F, 0, 0); /* loc7 */
+		RTDBGAL(7, 0xF8000280, 0, 0); /* loc7 */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6266, "area", arg1))(arg1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		loc7 = (EIF_REFERENCE) tr1;
 		RTHOOK(13);
@@ -231,7 +231,7 @@ body:;
 		RTDBGAL(1, 0x10000000, 1, 0); /* loc1 */
 		loc1 = (EIF_INTEGER_32) (EIF_INTEGER_32) (arg3 + loc8);
 		RTHOOK(15);
-		RTDBGAL(6, 0xF8000236, 0, 0); /* loc6 */
+		RTDBGAL(6, 0xF800020D, 0, 0); /* loc6 */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2142, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		loc6 = (EIF_REFERENCE) tr1;
 		RTHOOK(16);
@@ -463,7 +463,7 @@ body:;
 			ui4_1 = arg5;
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(2145, dtype))(Current, ur1x, ui4_1x);
 			RTHOOK(14);
-			RTDBGAL(9, 0xF80001C8, 0, 0); /* loc9 */
+			RTDBGAL(9, 0xF80001C7, 0, 0); /* loc9 */
 			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2143, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			loc9 = (EIF_REFERENCE) tr1;
 			RTHOOK(15);
@@ -473,7 +473,7 @@ body:;
 				ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6146, "count", arg2))(arg2)).it_i4);
 				loc5 = (EIF_INTEGER_32) ti4_1;
 				RTHOOK(17);
-				RTDBGAL(10, 0xF800026F, 0, 0); /* loc10 */
+				RTDBGAL(10, 0xF8000280, 0, 0); /* loc10 */
 				tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6266, "area", arg1))(arg1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 				loc10 = (EIF_REFERENCE) tr1;
 				RTHOOK(18);
@@ -576,7 +576,7 @@ body:;
 				}
 			}
 			RTHOOK(44);
-			RTDBGAA(Current, dtype, 2143, 0xF80001C8, 0); /* deltas_array */
+			RTDBGAA(Current, dtype, 2143, 0xF80001C7, 0); /* deltas_array */
 			*(EIF_REFERENCE *)(Current + RTWA(2143, dtype)) = (EIF_REFERENCE) NULL;
 		}
 	}

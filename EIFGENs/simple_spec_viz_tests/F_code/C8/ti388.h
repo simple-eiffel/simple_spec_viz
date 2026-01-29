@@ -14,10 +14,10 @@ extern EIF_BOOLEAN F1107_8414(EIF_REFERENCE, EIF_REFERENCE);
 extern EIF_BOOLEAN F1107_8428(EIF_REFERENCE);
 extern EIF_BOOLEAN F1107_8419(EIF_REFERENCE, EIF_REFERENCE);
 extern void F1107_8409(EIF_REFERENCE, EIF_REFERENCE);
-extern char *(*R1870[])();
-extern char *(*R1871[])();
-extern char *(*R1872[])();
-extern long O1880[];
+extern char *(*R1844[])();
+extern char *(*R1845[])();
+extern char *(*R1846[])();
+extern long O1854[];
 
 #ifdef __cplusplus
 }

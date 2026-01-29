@@ -314,7 +314,7 @@ EIF_REFERENCE F746_5358 (EIF_REFERENCE Current)
 		tr1 = (nstcall = 0, F746_5356(Current));
 		(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R6293[Dtype(RTCW(Result))-1080])(Result, tr1));
 		RTHOOK(4);
-		tr1 = RTOUCR(146,(nstcall = 0, F746_5383), (Current));
+		tr1 = RTOUCR(151,(nstcall = 0, F746_5383), (Current));
 		(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R6293[Dtype(RTCW(Result))-1080])(Result, tr1));
 		RTHOOK(5);
 		tr1 = (nstcall = 0, F746_5357(Current));
@@ -435,7 +435,7 @@ EIF_BOOLEAN F746_5364 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	Result = (nstcall = 0, F717_5000(Current));
+	Result = (nstcall = 0, F718_5000(Current));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -1421,7 +1421,7 @@ void F746_5382 (EIF_REFERENCE Current, EIF_POINTER arg1)
 EIF_REFERENCE F746_5383 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOUC (146,RTMS_EX_H("\012\012---------------------------\012Truncated section\012---------------------------\012\012",77,1121374730));
+	RTOUC (151,RTMS_EX_H("\012\012---------------------------\012Truncated section\012---------------------------\012\012",77,1121374730));
 }
 
 /* {EQA_TEST_OUTPUT_BUFFER}._invariant */

@@ -72,7 +72,7 @@ static const struct desc_info desc_74[] = {
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 1446, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_74), 1447, 0},
 	{EIF_NON_GENERIC(0x02B1 /*344*/), 1448, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1449, 8},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1449, 8},
 };
 void Init74(void)
 {

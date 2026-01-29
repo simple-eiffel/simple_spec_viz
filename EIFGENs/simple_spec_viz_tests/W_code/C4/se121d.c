@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_121 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_121 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_121 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_121 [] = {0xFF01,120,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_121 [] = {0xFF01,699,317,317,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_121 [] = {0xFF01,1121,314,314,0xFFFF};
 
 
 static const struct desc_info desc_121[] = {
@@ -61,7 +61,7 @@ static const struct desc_info desc_121[] = {
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 1987, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0299 /*332*/), 1988, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0299 /*332*/), 1989, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1990, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1990, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_121), 1991, 0xFFFFFFFF},
 };
 void Init121(void)

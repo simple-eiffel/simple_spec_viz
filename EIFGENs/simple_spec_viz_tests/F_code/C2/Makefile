@@ -56,10 +56,10 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C2_c.obj 
 
-OLDOBJECTS =  te62.obj li98.obj eq96.obj eq61.obj ut60.obj ut59.obj is58.obj st57.obj op56.obj \
+OLDOBJECTS =  te62.obj li98.obj eq96.obj eq61.obj is60.obj ut59.obj ut58.obj st57.obj op56.obj \
 	rt55.obj sy54.obj tr53.obj si52.obj sp51.obj sp50.obj te97.obj ad94.obj eq92.obj ob91.obj \
 	se89.obj do84.obj re88.obj eq93.obj so87.obj se90.obj sy86.obj so82.obj gr81.obj se80.obj \
-	en79.obj co78.obj si75.obj si76.obj js74.obj js73.obj kl72.obj kl71.obj kl70.obj da68.obj \
+	en79.obj co78.obj si76.obj si75.obj js74.obj js73.obj kl72.obj kl71.obj kl70.obj da68.obj \
 	ma69.obj uc99.obj uc63.obj 
 
 all::  Cobj2.lib

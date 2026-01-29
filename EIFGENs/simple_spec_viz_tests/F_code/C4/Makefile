@@ -58,8 +58,8 @@ OBJECTS = big_file_C4_c.obj
 
 OLDOBJECTS =  is192.obj ex152.obj ex196.obj in150.obj er198.obj ad183.obj ol167.obj se175.obj \
 	ex195.obj vo180.obj no171.obj pr190.obj po189.obj fl156.obj in188.obj ch187.obj \
-	ro179.obj ba178.obj va186.obj lo185.obj op160.obj ei166.obj re164.obj re163.obj \
-	cr182.obj ex170.obj co159.obj vo177.obj ex162.obj io174.obj op158.obj mi173.obj \
+	ro179.obj ba178.obj va186.obj lo185.obj op160.obj ei166.obj re164.obj cr182.obj \
+	re163.obj ex170.obj co159.obj vo177.obj ex162.obj io174.obj op158.obj mi173.obj \
 	de153.obj ex191.obj ex151.obj se194.obj se193.obj it199.obj kl197.obj 
 
 all::  Cobj4.lib

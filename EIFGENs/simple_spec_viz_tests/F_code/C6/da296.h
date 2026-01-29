@@ -19,14 +19,14 @@ extern void F885_5893(EIF_REFERENCE);
 extern EIF_REFERENCE F885_5900(EIF_REFERENCE);
 extern void F885_5901(EIF_REFERENCE, EIF_INTEGER_32);
 extern void EIF_Minit296(void);
+extern EIF_INTEGER_32 F143_1935(EIF_REFERENCE);
 extern EIF_REFERENCE F864_5720(EIF_REFERENCE);
 extern EIF_REFERENCE F886_5908(EIF_REFERENCE, EIF_REFERENCE);
-extern EIF_INTEGER_32 F144_1961(EIF_REFERENCE);
-extern EIF_INTEGER_32 F143_1946(EIF_REFERENCE, EIF_INTEGER_32, EIF_INTEGER_32);
+extern EIF_INTEGER_32 F142_1920(EIF_REFERENCE, EIF_INTEGER_32, EIF_INTEGER_32);
 extern void F864_5719(EIF_REFERENCE);
-extern char *(*R1902[])();
-extern char *(*R1903[])();
-extern char *(*R1904[])();
+extern char *(*R1876[])();
+extern char *(*R1877[])();
+extern char *(*R1878[])();
 extern long O4931[];
 
 #ifdef __cplusplus

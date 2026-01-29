@@ -1,5 +1,5 @@
 /*
- * Code for class reference NATURAL_32
+ * Code for class reference NATURAL_16
  */
 
 #include "eif_eiffel.h"
@@ -22,8 +22,8 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {NATURAL_32}.is_less */
-EIF_BOOLEAN F1017_7151 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.is_less */
+EIF_BOOLEAN F1017_7151 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
@@ -45,9 +45,9 @@ EIF_BOOLEAN F1017_7151 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	Result = (nstcall = 0, F1016_7092(Current, tr1));
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	Result = (nstcall = 0, F1016_7091(Current, tr1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -56,13 +56,13 @@ EIF_BOOLEAN F1017_7151 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.plus */
-EIF_NATURAL_32 F1017_7152 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.plus */
+EIF_NATURAL_16 F1017_7152 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -79,10 +79,10 @@ EIF_NATURAL_32 F1017_7152 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	tr1 = (nstcall = 0, F1016_7101(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	tr1 = (nstcall = 0, F1016_7100(Current, tr1));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -91,13 +91,13 @@ EIF_NATURAL_32 F1017_7152 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.minus */
-EIF_NATURAL_32 F1017_7153 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.minus */
+EIF_NATURAL_16 F1017_7153 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -114,10 +114,10 @@ EIF_NATURAL_32 F1017_7153 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	tr1 = (nstcall = 0, F1016_7102(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	tr1 = (nstcall = 0, F1016_7101(Current, tr1));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -126,13 +126,13 @@ EIF_NATURAL_32 F1017_7153 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.product */
-EIF_NATURAL_32 F1017_7154 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.product */
+EIF_NATURAL_16 F1017_7154 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -149,10 +149,10 @@ EIF_NATURAL_32 F1017_7154 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	tr1 = (nstcall = 0, F1016_7103(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	tr1 = (nstcall = 0, F1016_7102(Current, tr1));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -161,8 +161,8 @@ EIF_NATURAL_32 F1017_7154 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.quotient */
-EIF_REAL_64 F1017_7155 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.quotient */
+EIF_REAL_64 F1017_7155 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
@@ -184,9 +184,9 @@ EIF_REAL_64 F1017_7155 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	Result = (nstcall = 0, F1016_7104(Current, tr1));
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	Result = (nstcall = 0, F1016_7103(Current, tr1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -195,13 +195,13 @@ EIF_REAL_64 F1017_7155 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.identity */
-EIF_NATURAL_32 F1017_7156 (EIF_REFERENCE Current)
+/* {NATURAL_16}.identity */
+EIF_NATURAL_16 F1017_7156 (EIF_REFERENCE Current)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -218,8 +218,8 @@ EIF_NATURAL_32 F1017_7156 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = (nstcall = 0, F1016_7105(Current));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = (nstcall = 0, F1016_7104(Current));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -228,13 +228,13 @@ EIF_NATURAL_32 F1017_7156 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.integer_quotient */
-EIF_NATURAL_32 F1017_7157 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.integer_quotient */
+EIF_NATURAL_16 F1017_7157 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -251,10 +251,10 @@ EIF_NATURAL_32 F1017_7157 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	tr1 = (nstcall = 0, F1016_7107(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	tr1 = (nstcall = 0, F1016_7106(Current, tr1));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -263,13 +263,13 @@ EIF_NATURAL_32 F1017_7157 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.integer_remainder */
-EIF_NATURAL_32 F1017_7158 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.integer_remainder */
+EIF_NATURAL_16 F1017_7158 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -286,10 +286,10 @@ EIF_NATURAL_32 F1017_7158 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
-	tr1 = (nstcall = 0, F1016_7108(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
+	tr1 = (nstcall = 0, F1016_7107(Current, tr1));
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -298,7 +298,7 @@ EIF_NATURAL_32 F1017_7158 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.power */
+/* {NATURAL_16}.power */
 EIF_REAL_64 F1017_7159 (EIF_REFERENCE Current, EIF_REAL_64 arg1)
 {
 	GTCX
@@ -319,7 +319,7 @@ EIF_REAL_64 F1017_7159 (EIF_REFERENCE Current, EIF_REAL_64 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	Result = (nstcall = 0, F1016_7109(Current, arg1));
+	Result = (nstcall = 0, F1016_7108(Current, arg1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -328,7 +328,7 @@ EIF_REAL_64 F1017_7159 (EIF_REFERENCE Current, EIF_REAL_64 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.as_natural_8 */
+/* {NATURAL_16}.as_natural_8 */
 EIF_NATURAL_8 F1017_7160 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -358,7 +358,7 @@ EIF_NATURAL_8 F1017_7160 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_natural_16 */
+/* {NATURAL_16}.as_natural_16 */
 EIF_NATURAL_16 F1017_7161 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -388,7 +388,7 @@ EIF_NATURAL_16 F1017_7161 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_natural_32 */
+/* {NATURAL_16}.as_natural_32 */
 EIF_NATURAL_32 F1017_7162 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -418,7 +418,7 @@ EIF_NATURAL_32 F1017_7162 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_natural_64 */
+/* {NATURAL_16}.as_natural_64 */
 EIF_NATURAL_64 F1017_7163 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -448,7 +448,7 @@ EIF_NATURAL_64 F1017_7163 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_integer_8 */
+/* {NATURAL_16}.as_integer_8 */
 EIF_INTEGER_8 F1017_7164 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -478,7 +478,7 @@ EIF_INTEGER_8 F1017_7164 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_integer_16 */
+/* {NATURAL_16}.as_integer_16 */
 EIF_INTEGER_16 F1017_7165 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -508,7 +508,7 @@ EIF_INTEGER_16 F1017_7165 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_integer_32 */
+/* {NATURAL_16}.as_integer_32 */
 EIF_INTEGER_32 F1017_7166 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -538,7 +538,7 @@ EIF_INTEGER_32 F1017_7166 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.as_integer_64 */
+/* {NATURAL_16}.as_integer_64 */
 EIF_INTEGER_64 F1017_7167 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -568,7 +568,7 @@ EIF_INTEGER_64 F1017_7167 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.to_real_32 */
+/* {NATURAL_16}.to_real_32 */
 EIF_REAL_32 F1017_7168 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -598,7 +598,7 @@ EIF_REAL_32 F1017_7168 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.to_real_64 */
+/* {NATURAL_16}.to_real_64 */
 EIF_REAL_64 F1017_7169 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -628,7 +628,7 @@ EIF_REAL_64 F1017_7169 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.to_character_8 */
+/* {NATURAL_16}.to_character_8 */
 EIF_CHARACTER_8 F1017_7170 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -658,7 +658,7 @@ EIF_CHARACTER_8 F1017_7170 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.to_character_32 */
+/* {NATURAL_16}.to_character_32 */
 EIF_CHARACTER_32 F1017_7171 (EIF_REFERENCE Current)
 {
 	GTCX
@@ -688,13 +688,13 @@ EIF_CHARACTER_32 F1017_7171 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_and */
-EIF_NATURAL_32 F1017_7172 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.bit_and */
+EIF_NATURAL_16 F1017_7172 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -711,10 +711,10 @@ EIF_NATURAL_32 F1017_7172 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
 	tr1 = (nstcall = 0, F1016_7140(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -723,13 +723,13 @@ EIF_NATURAL_32 F1017_7172 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_or */
-EIF_NATURAL_32 F1017_7173 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.bit_or */
+EIF_NATURAL_16 F1017_7173 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -746,10 +746,10 @@ EIF_NATURAL_32 F1017_7173 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
 	tr1 = (nstcall = 0, F1016_7141(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -758,13 +758,13 @@ EIF_NATURAL_32 F1017_7173 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_xor */
-EIF_NATURAL_32 F1017_7174 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
+/* {NATURAL_16}.bit_xor */
+EIF_NATURAL_16 F1017_7174 (EIF_REFERENCE Current, EIF_NATURAL_16 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -781,10 +781,10 @@ EIF_NATURAL_32 F1017_7174 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-	*(EIF_NATURAL_32 *)tr1 = arg1;
+	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+	*(EIF_NATURAL_16 *)tr1 = arg1;
 	tr1 = (nstcall = 0, F1016_7142(Current, tr1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -793,13 +793,13 @@ EIF_NATURAL_32 F1017_7174 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_not */
-EIF_NATURAL_32 F1017_7175 (EIF_REFERENCE Current)
+/* {NATURAL_16}.bit_not */
+EIF_NATURAL_16 F1017_7175 (EIF_REFERENCE Current)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -817,7 +817,7 @@ EIF_NATURAL_32 F1017_7175 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = (nstcall = 0, F1016_7143(Current));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -826,13 +826,13 @@ EIF_NATURAL_32 F1017_7175 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_shift_left */
-EIF_NATURAL_32 F1017_7176 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+/* {NATURAL_16}.bit_shift_left */
+EIF_NATURAL_16 F1017_7176 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -850,7 +850,7 @@ EIF_NATURAL_32 F1017_7176 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = (nstcall = 0, F1016_7145(Current, arg1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -859,13 +859,13 @@ EIF_NATURAL_32 F1017_7176 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	return Result;
 }
 
-/* {NATURAL_32}.bit_shift_right */
-EIF_NATURAL_32 F1017_7177 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+/* {NATURAL_16}.bit_shift_right */
+EIF_NATURAL_16 F1017_7177 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE tr1 = NULL;
-	EIF_NATURAL_32 Result = ((EIF_NATURAL_32) 0);
+	EIF_NATURAL_16 Result = ((EIF_NATURAL_16) 0);
 	
 	RTSN;
 	RTDA;
@@ -883,7 +883,7 @@ EIF_NATURAL_32 F1017_7177 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = (nstcall = 0, F1016_7146(Current, arg1));
-	Result = *(EIF_NATURAL_32 *)(tr1);
+	Result = *(EIF_NATURAL_16 *)(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

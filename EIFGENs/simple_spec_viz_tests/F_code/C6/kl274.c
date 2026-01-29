@@ -952,12 +952,12 @@ body:;
 		RTCT("iso_c99", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN)(Result != ((EIF_INTEGER_32) 0L))) {
-			tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr1 = Result;
-			ti4_1 = (nstcall = 1, F1004_6695(RTCW(tr1)));
-			tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			ti4_1 = (nstcall = 1, F1001_6600(RTCW(tr1)));
+			tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr1 = arg1;
-			ti4_2 = (nstcall = 1, F1004_6695(RTCW(tr1)));
+			ti4_2 = (nstcall = 1, F1001_6600(RTCW(tr1)));
 			tb1 = (EIF_BOOLEAN)(ti4_1 == ti4_2);
 		}
 		if (tb1) {

@@ -60,8 +60,8 @@ OLDOBJECTS =  rt133.o rt133d.o ex152.o ex152d.o in150.o in150d.o it139.o it139d.
 	re163.o re163d.o co159.o co159d.o ex162.o ex162d.o op158.o op158d.o \
 	de153.o de153d.o ex151.o ex151d.o in149.o in149d.o in148.o in148d.o \
 	in147.o in147d.o st137.o st137d.o nu141.o nu141d.o st146.o st146d.o \
-	st143.o st143d.o it140.o it140d.o re138.o re138d.o he145.o he145d.o \
-	st135.o st135d.o st144.o st144d.o st136.o st136d.o rt134.o rt134d.o \
+	st143.o st143d.o it140.o it140d.o re138.o re138d.o st145.o st145d.o \
+	st135.o st135d.o he144.o he144d.o st136.o st136d.o rt134.o rt134d.o \
 	ha155.o ha155d.o op157.o op157d.o ob161.o ob161d.o in142.o in142d.o \
 	ma154.o ma154d.o 
 

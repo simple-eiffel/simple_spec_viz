@@ -293,14 +293,14 @@ EIF_TYPED_VALUE F2_47 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		ur1 = RTCCL(Result);
 		ur2 = RTCCL(arg1);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,497,0,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,477,0,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			tr1 = RTLN(typres0.id);
 		}
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6496, 497))(tr1, ur1x, ur2x)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6496, 477))(tr1, ur1x, ur2x)).it_b);
 		if (tb1) {
 			RTCK;
 		} else {

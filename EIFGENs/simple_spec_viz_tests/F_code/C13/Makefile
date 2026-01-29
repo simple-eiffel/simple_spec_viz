@@ -56,12 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C13_c.obj 
 
-OLDOBJECTS =  sp624.obj sp645.obj ar627.obj na643.obj sp625.obj sp646.obj re649.obj ar620.obj \
-	ar642.obj li604.obj ar628.obj re617.obj re640.obj to619.obj to623.obj to644.obj \
-	dy614.obj dy637.obj li616.obj li639.obj ge626.obj ge647.obj tr606.obj se630.obj \
-	ar629.obj dy609.obj dy632.obj bo618.obj bo641.obj ta613.obj ta636.obj fi602.obj \
-	ch611.obj ch634.obj ty648.obj co601.obj bi608.obj bi631.obj dy610.obj dy633.obj \
-	co607.obj kl621.obj kl622.obj 
+OLDOBJECTS =  sp622.obj sp641.obj ar625.obj ar648.obj na639.obj sp623.obj sp642.obj re645.obj \
+	ar618.obj ar638.obj ar626.obj ar649.obj re615.obj to617.obj to621.obj to640.obj \
+	dy612.obj dy635.obj li614.obj li637.obj ge624.obj ge643.obj in647.obj re646.obj \
+	tr605.obj se628.obj ar627.obj dy607.obj dy630.obj bo616.obj ta611.obj ta634.obj \
+	fi600.obj ch609.obj ch632.obj ty644.obj ac602.obj bi606.obj bi629.obj dy608.obj \
+	dy631.obj co604.obj kl619.obj kl620.obj 
 
 all::  Cobj13.lib
 

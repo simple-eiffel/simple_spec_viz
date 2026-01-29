@@ -62,7 +62,7 @@ static const struct desc_info desc_31[] = {
 	{EIF_GENERIC(NULL), 603, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 604, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 605, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 606, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 606, 0xFFFFFFFF},
 };
 void Init31(void)
 {

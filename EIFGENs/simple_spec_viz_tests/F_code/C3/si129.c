@@ -285,7 +285,7 @@ EIF_BOOLEAN F155_2095 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -349,7 +349,7 @@ EIF_REFERENCE F155_2096 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -416,7 +416,7 @@ EIF_REFERENCE F155_2097 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -482,7 +482,7 @@ EIF_INTEGER_64 F155_2098 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -548,7 +548,7 @@ EIF_REAL_64 F155_2099 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -614,7 +614,7 @@ EIF_REFERENCE F155_2100 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -679,7 +679,7 @@ EIF_BOOLEAN F155_2101 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -745,7 +745,7 @@ EIF_REFERENCE F155_2102 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -811,7 +811,7 @@ EIF_REFERENCE F155_2103 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -872,7 +872,7 @@ EIF_INTEGER_32 F155_2104 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -925,7 +925,7 @@ EIF_NATURAL_32 F155_2105 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -979,7 +979,7 @@ EIF_REFERENCE F155_2106 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1034,7 +1034,7 @@ EIF_INTEGER_64 F155_2107 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1091,7 +1091,7 @@ EIF_BOOLEAN F155_2108 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_BOOLEAN ar
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1451,7 +1451,7 @@ EIF_REFERENCE F155_2112 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1553,7 +1553,7 @@ EIF_REFERENCE F155_2113 (EIF_REFERENCE Current, EIF_INTEGER_64 arg1, EIF_REFEREN
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1639,7 +1639,7 @@ EIF_REFERENCE F155_2114 (EIF_REFERENCE Current, EIF_REAL_64 arg1, EIF_REFERENCE 
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1720,7 +1720,7 @@ EIF_REFERENCE F155_2115 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1802,7 +1802,7 @@ EIF_REFERENCE F155_2116 (EIF_REFERENCE Current, EIF_BOOLEAN arg1, EIF_REFERENCE 
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1893,7 +1893,7 @@ EIF_REFERENCE F155_2117 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -1997,7 +1997,7 @@ EIF_REFERENCE F155_2118 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -2114,7 +2114,7 @@ EIF_REFERENCE F155_2119 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -2225,7 +2225,7 @@ EIF_REFERENCE F155_2120 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -2304,7 +2304,7 @@ void F155_2121 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("key_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -2515,10 +2515,10 @@ EIF_REFERENCE F155_2123 (EIF_REFERENCE Current)
 		RTHOOK(8);
 		RTCT("copied_keys_valid", EX_LINV);
 		ti4_1 = *(EIF_INTEGER_32 *)(RTCW(loc1)+ _LNGOFF_1_1_0_1_);
-		tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)tr1 = ti4_1;
-		tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L))));
-		tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+		tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L))));
+		tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 		loc3 = (EIF_REFERENCE) tr1;
 		tb1 = EIF_TRUE;
 		for (;;) {
@@ -2595,10 +2595,10 @@ EIF_REFERENCE F155_2123 (EIF_REFERENCE Current)
 			RTHOOK(8);
 			RTCT("copied_keys_valid", EX_LINV);
 			ti4_1 = *(EIF_INTEGER_32 *)(RTCW(loc1)+ _LNGOFF_1_1_0_1_);
-			tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr1 = ti4_1;
-			tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L))));
-			tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+			tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L))));
+			tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 			loc3 = (EIF_REFERENCE) tr1;
 			tb1 = EIF_TRUE;
 			for (;;) {
@@ -2717,7 +2717,7 @@ void F155_1 (EIF_REFERENCE Current, int where)
 		tb2 = (nstcall = 1, F421_4812(loc3));
 		if (tb2) break;
 		tr1 = (nstcall = 1, F421_4803(loc3));
-		tb3 = (nstcall = 1, F667_4976(RTCW(tr1)));
+		tb3 = (nstcall = 1, F666_4976(RTCW(tr1)));
 		tb1 = (EIF_BOOLEAN) !tb3;
 		(nstcall = 1, F421_4818(loc3));
 	}

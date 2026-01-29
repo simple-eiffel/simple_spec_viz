@@ -65,9 +65,9 @@ EIF_TYPED_VALUE F126_2054 (EIF_REFERENCE Current)
 	RTDBGEAA(125, Current, 2067);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000430, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000432, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1072,0xFF05,0,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1074,0xFF05,0,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

@@ -22,10 +22,10 @@ static const EIF_TYPE_INDEX egt_9_78 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_78 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_78 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_78 [] = {0xFF01,77,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_78 [] = {0xFF01,1110,0xFF01,355,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_78 [] = {0xFF01,1110,0xFF01,355,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_78 [] = {0xFF01,1110,0xFF01,355,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_78 [] = {0xFF01,1110,0xFF01,355,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_78 [] = {0xFF01,833,0xFF01,355,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_78 [] = {0xFF01,833,0xFF01,355,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_78 [] = {0xFF01,833,0xFF01,355,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_78 [] = {0xFF01,833,0xFF01,355,0xFFFF};
 
 
 static const struct desc_info desc_78[] = {

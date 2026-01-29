@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C22_c.obj 
 
-OLDOBJECTS =  ar717.obj ar717d.obj ty697.obj ty697d.obj ty698.obj ty698d.obj ty705.obj ty705d.obj \
-	ty706.obj ty706d.obj ty699.obj ty699d.obj ty707.obj ty707d.obj re712.obj re712d.obj \
-	re722.obj re722d.obj it713.obj it713d.obj it723.obj it723d.obj it710.obj it710d.obj \
-	it724.obj it724d.obj ar718.obj ar718d.obj dy694.obj dy694d.obj ha700.obj ha700d.obj \
-	ha711.obj ha711d.obj ge720.obj ge720d.obj in716.obj in716d.obj re714.obj re714d.obj \
-	re725.obj re725d.obj ar719.obj ar719d.obj ta695.obj ta695d.obj ha701.obj ha701d.obj \
-	ha708.obj ha708d.obj ta703.obj ta703d.obj ty715.obj ty715d.obj ty721.obj ty721d.obj \
-	rt696.obj rt696d.obj rt704.obj rt704d.obj ta702.obj ta702d.obj ta709.obj ta709d.obj \
-	ki693.obj ki693d.obj 
+OLDOBJECTS =  sp719.obj sp719d.obj ar709.obj ar709d.obj na721.obj na721d.obj sp720.obj sp720d.obj \
+	re696.obj re696d.obj re714.obj re714d.obj it717.obj it717d.obj li702.obj li702d.obj \
+	li723.obj li723d.obj it716.obj it716d.obj ar710.obj ar710d.obj dy694.obj dy694d.obj \
+	ha693.obj ha693d.obj ge712.obj ge712d.obj in699.obj in699d.obj in718.obj in718d.obj \
+	re697.obj re697d.obj re715.obj re715d.obj cu703.obj cu703d.obj cu724.obj cu724d.obj \
+	tr707.obj tr707d.obj se722.obj se722d.obj ar711.obj ar711d.obj ta708.obj ta708d.obj \
+	fi700.obj fi700d.obj ty698.obj ty698d.obj ty713.obj ty713d.obj ac704.obj ac704d.obj \
+	co695.obj co695d.obj co725.obj co725d.obj ba705.obj ba705d.obj bo701.obj bo701d.obj \
+	co706.obj co706d.obj 
 
 all::  Cobj22.lib
 

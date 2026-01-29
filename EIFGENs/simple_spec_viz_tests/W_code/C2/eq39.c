@@ -120,7 +120,7 @@ void F39_786 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	char *l_feature_name = "copy_file";
 	RTEX;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
-	struct eif_ex_58 sloc2;
+	struct eif_ex_57 sloc2;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) sloc2.data;
 #define arg1 arg1x.it_r
 #define arg2 arg2x.it_r
@@ -142,7 +142,7 @@ void F39_786 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	
 	memset (&sloc2.overhead, 0, OVERHEAD + 0);
 	sloc2.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc2.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc2.overhead, eif_new_type(57, 0x00).id);
 	RTLI(8);
 	RTLR(0,arg1);
 	RTLR(1,arg2);
@@ -220,7 +220,7 @@ body:;
 			ur1 = RTCCL(tr1);
 			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1270, "substitute", arg2))(arg2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr1);
-			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1197, "string_32_to_utf_8_string_8", loc2))(loc2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1086, "string_32_to_utf_8_string_8", loc2))(loc2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			loc1 = (EIF_REFERENCE) RTCCL(tr1);
 		} else {
 			RTHOOK(12);

@@ -80,7 +80,7 @@ void F139_2217 (EIF_REFERENCE Current)
 	RTDBGEAA(138, Current, 2232);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 2157, 0xF80001C6, 0); /* storage */
+	RTDBGAA(Current, dtype, 2157, 0xF80001C5, 0); /* storage */
 	tr1 = RTLNSMART(RTWCT(2157, dtype, Dftype(Current)).id);
 	ur1 = NULL;
 	ui4_1 = ((EIF_INTEGER_32) 1L);
@@ -92,7 +92,7 @@ void F139_2217 (EIF_REFERENCE Current)
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(2157, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 2158, 0xF8000248, 0); /* storage_flag */
+	RTDBGAA(Current, dtype, 2158, 0xF8000246, 0); /* storage_flag */
 	tr1 = RTLNSMART(RTWCT(2158, dtype, Dftype(Current)).id);
 	ub1 = (EIF_BOOLEAN) 0;
 	ui4_1 = ((EIF_INTEGER_32) 1L);
@@ -745,7 +745,7 @@ EIF_TYPED_VALUE F139_2224 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(138, Current, 2239);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,454,0xFF01,139,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,453,0xFF01,139,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -768,9 +768,9 @@ body:;
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(4435, "count", arg1))(arg1)).it_i4);
 	loc2 = (EIF_INTEGER_32) ti4_1;
 	RTHOOK(3);
-	RTDBGAL(0, 0xF80001C6, 0,0); /* Result */
+	RTDBGAL(0, 0xF80001C5, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,454,0,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,453,0,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -804,7 +804,7 @@ body:;
 		}
 		if (tb1) {
 			RTHOOK(8);
-			RTDBGAL(0, 0xF80001C6, 0,0); /* Result */
+			RTDBGAL(0, 0xF80001C5, 0,0); /* Result */
 			Result = (EIF_REFERENCE) NULL;
 		} else {
 			RTHOOK(9);

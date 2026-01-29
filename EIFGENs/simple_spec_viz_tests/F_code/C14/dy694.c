@@ -1,5 +1,5 @@
 /*
- * Code for class DYNAMIC_TABLE [CHARACTER_32, INTEGER_32]
+ * Code for class DYNAMIC_TABLE [NATURAL_32, POINTER]
  */
 
 #include "eif_eiffel.h"

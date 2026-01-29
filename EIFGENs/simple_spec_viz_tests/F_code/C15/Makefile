@@ -56,11 +56,11 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C15_c.obj 
 
-OLDOBJECTS =  sp727.obj ar717.obj ty707.obj na729.obj sp728.obj re712.obj re722.obj li736.obj \
-	ar718.obj re749.obj dy746.obj ha700.obj ha711.obj li748.obj ge720.obj in716.obj \
-	in726.obj re714.obj re725.obj tr738.obj se730.obj ar719.obj dy741.obj ta745.obj \
-	fi734.obj ha701.obj ha708.obj ch743.obj ty715.obj ty721.obj ac731.obj co733.obj \
-	bi740.obj dy742.obj rt704.obj co739.obj 
+OLDOBJECTS =  sp719.obj sp748.obj ar709.obj na721.obj sp720.obj sp749.obj re714.obj ar744.obj \
+	li702.obj li723.obj ar710.obj ar745.obj re741.obj to743.obj dy738.obj li740.obj \
+	ge712.obj ge747.obj in718.obj re715.obj tr707.obj tr731.obj se722.obj ar711.obj \
+	ar746.obj dy733.obj bo742.obj ta708.obj ta737.obj fi700.obj fi726.obj ch735.obj \
+	ty713.obj ac704.obj ac728.obj co725.obj bi732.obj dy734.obj co706.obj co730.obj 
 
 all::  Cobj15.lib
 

@@ -99,7 +99,7 @@ void Init381(void)
 	IDSC(desc_381, 0, 380);
 	IDSC(desc_381 + 1, 4, 380);
 	IDSC(desc_381 + 32, 381, 380);
-	IDSC(desc_381 + 44, 295, 380);
+	IDSC(desc_381 + 44, 296, 380);
 }
 
 

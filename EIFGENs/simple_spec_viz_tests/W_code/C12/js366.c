@@ -1109,9 +1109,9 @@ void F366_8136 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 							tu4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6455, dtype))(Current, ur1x)).it_n4);
 							loc5 = (EIF_NATURAL_32) tu4_1;
 							RTHOOK(29);
-							tr1 = RTLN(eif_new_type(329, 0x00).id);
+							tr1 = RTLN(eif_new_type(326, 0x00).id);
 							*(EIF_NATURAL_32 *)tr1 = loc5;
-							tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5784, "is_valid_character_8_code", tr1))(tr1)).it_b);
+							tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5731, "is_valid_character_8_code", tr1))(tr1)).it_b);
 							if (tb1) {
 								RTHOOK(30);
 								uu4_1 = loc5;
@@ -2563,9 +2563,9 @@ body:;
 			RTHOOK(25);
 			RTDBGAL(6, 0xF8000165, 0, 0); /* loc6 */
 			ti4_1 = (EIF_INTEGER_32) (loc4);
-			tr1 = RTLN(eif_new_type(317, 0x00).id);
+			tr1 = RTLN(eif_new_type(314, 0x00).id);
 			*(EIF_INTEGER_32 *)tr1 = ti4_1;
-			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5597, "to_hex_string", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5544, "to_hex_string", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			loc6 = (EIF_REFERENCE) RTCCL(tr2);
 			RTHOOK(26);
 			RTDBGAL(2, 0x10000000, 1, 0); /* loc2 */
@@ -2629,7 +2629,7 @@ body:;
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6457, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		RTNHOOK(36,1);
 		ur1 = RTCCL(Result);
-		tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1199, "utf_32_string_to_utf_8_string_8", tr1))(tr1, ur1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+		tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1088, "utf_32_string_to_utf_8_string_8", tr1))(tr1, ur1x)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 		Result = (EIF_REFERENCE) RTCCL(tr2);
 		if (RTAL & CK_CHECK) {
 			RTHOOK(37);
@@ -2637,7 +2637,7 @@ body:;
 			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6457, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			RTNHOOK(37,1);
 			ur1 = RTCCL(Result);
-			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1189, "is_valid_utf_8_string_8", tr1))(tr1, ur1x)).it_b);
+			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1078, "is_valid_utf_8_string_8", tr1))(tr1, ur1x)).it_b);
 			if (tb2) {
 				RTCK;
 			} else {
@@ -2695,12 +2695,12 @@ EIF_TYPED_VALUE F366_8150 (EIF_REFERENCE Current)
 	RTDBGEAA(365, Current, 15063);
 	RTIV(Current, RTAL);
 	RTOTP;
-	Result= RTLN(eif_new_type(58, 0x00).id);
+	Result= RTLN(eif_new_type(57, 0x00).id);
 	wstdinit(Result,Result);
 	RTLXI(Result);
 	RTHOOK(1);
-	RTDBGAL(0, 0x8000003A, 1,0); /* Result */
-	tr1 = RTLN(eif_new_type(58, 0x00).id);
+	RTDBGAL(0, 0x80000039, 1,0); /* Result */
+	tr1 = RTLN(eif_new_type(57, 0x00).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(32, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	tr1 = (tr1);

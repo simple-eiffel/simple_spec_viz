@@ -103,7 +103,7 @@ body:;
 		RTHOOK(13);
 		RTCT("last_index_set", EX_POST);
 		ti4_1 = *(EIF_INTEGER_32 *)(RTCW(arg1) + O6344[Dtype(arg1)-1082]);
-		if ((EIF_BOOLEAN)((nstcall = 0, F435_4806(Current)) == ti4_1)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, F425_4806(Current)) == ti4_1)) {
 			RTCK;
 		} else {
 			RTCF;
@@ -192,7 +192,7 @@ EIF_BOOLEAN F452_4838 (EIF_REFERENCE Current)
 	tr1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
 	tr2 = *(EIF_REFERENCE *)(RTCW(tr1));
 	if ((EIF_BOOLEAN)(tr2 == *(EIF_REFERENCE *)(Current))) {
-		Result = (nstcall = 0, F435_4814(Current));
+		Result = (nstcall = 0, F425_4814(Current));
 	}
 	RTVI(Current, RTAL);
 	RTRS;

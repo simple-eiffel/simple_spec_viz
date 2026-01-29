@@ -23,27 +23,27 @@ static const EIF_TYPE_INDEX egt_10_375 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_375 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_375 [] = {0xFF01,374,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_375 [] = {0xFF01,273,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_18_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_19_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_20_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_21_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_22_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_23_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_24_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_25_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_26_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_27_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_28_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_29_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_30_375 [] = {0xFF01,456,0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_31_375 [] = {0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_32_375 [] = {0xFF01,456,0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_33_375 [] = {0xFF01,456,0xFF01,562,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_34_375 [] = {0xFF01,456,0xFF01,456,0xFF01,562,317,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_24_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_25_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_26_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_27_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_28_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_29_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_30_375 [] = {0xFF01,455,0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_31_375 [] = {0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_32_375 [] = {0xFF01,455,0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_33_375 [] = {0xFF01,455,0xFF01,521,314,0xFFFF};
+static const EIF_TYPE_INDEX egt_34_375 [] = {0xFF01,455,0xFF01,455,0xFF01,521,314,0xFFFF};
 
 
 static const struct desc_info desc_375[] = {
@@ -80,9 +80,9 @@ static const struct desc_info desc_375[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_375), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_375), 8577, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 15298, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 15299, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 15300, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 15298, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 15299, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 15300, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_375), 15301, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_15_375), 15302, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_16_375), 15303, 0xFFFFFFFF},

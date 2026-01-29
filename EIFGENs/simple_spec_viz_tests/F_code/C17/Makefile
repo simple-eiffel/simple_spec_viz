@@ -56,11 +56,11 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C17_c.obj 
 
-OLDOBJECTS =  sp803.obj sp843.obj ty835.obj ty839.obj na805.obj sp804.obj sp844.obj re847.obj \
-	ar828.obj li812.obj re825.obj to827.obj ce840.obj dy822.obj li824.obj ge845.obj \
-	in802.obj re801.obj tr814.obj se806.obj dy817.obj bo826.obj ta821.obj fi810.obj \
-	ch819.obj ty846.obj se842.obj ac807.obj co809.obj bi816.obj dy818.obj rt841.obj \
-	rt832.obj rt836.obj co815.obj kl829.obj kl830.obj kl831.obj 
+OLDOBJECTS =  sp836.obj ar845.obj ty821.obj ty825.obj eq817.obj sp837.obj re840.obj ar813.obj \
+	li849.obj ar846.obj re810.obj to812.obj ce826.obj dy831.obj dy807.obj ha828.obj \
+	st834.obj st827.obj li809.obj ge838.obj in844.obj re841.obj tr800.obj se848.obj \
+	ar847.obj dy802.obj bo811.obj ta832.obj ta806.obj ha829.obj ch804.obj ty839.obj \
+	se835.obj bi801.obj dy803.obj rt818.obj rt822.obj kl814.obj kl815.obj kl816.obj 
 
 all::  Cobj17.lib
 

@@ -58,7 +58,7 @@ static const struct desc_info desc_208[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_208), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 2747, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 2748, 0},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 2748, 0},
 };
 void Init208(void)
 {

@@ -55,13 +55,13 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C7_c.obj 
 
-OLDOBJECTS =  in212.o in212d.o eq204.o eq204d.o se203.o se203d.o c_210.o c_210d.o \
-	in200.o in200d.o er198.o er198d.o pa225.o pa225d.o co230.o co230d.o \
+OLDOBJECTS =  in212.o in212d.o eq204.o eq204d.o se203.o se203d.o in200.o in200d.o \
+	c_210.o c_210d.o er198.o er198d.o pa225.o pa225d.o co230.o co230d.o \
 	in202.o in202d.o in201.o in201d.o so211.o so211d.o da229.o da229d.o \
 	it199.o it199d.o st209.o st209d.o cu206.o cu206d.o ar208.o ar208d.o \
-	ha207.o ha207d.o si217.o si217d.o ne213.o ne213d.o da228.o da228d.o \
-	ti227.o ti227d.o du226.o du226d.o si216.o si216d.o si218.o si218d.o \
-	si224.o si224d.o si223.o si223d.o si222.o si222d.o si221.o si221d.o \
+	ha207.o ha207d.o si217.o si217d.o ne213.o ne213d.o ti228.o ti228d.o \
+	da227.o da227d.o du226.o du226d.o si216.o si216d.o si224.o si224d.o \
+	si223.o si223d.o si218.o si218d.o si222.o si222d.o si221.o si221d.o \
 	si220.o si220d.o si219.o si219d.o si214.o si214d.o me205.o me205d.o \
 	si215.o si215d.o 
 

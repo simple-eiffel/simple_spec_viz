@@ -70,12 +70,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C7_c.obj 
 
-OLDOBJECTS =  tu310.o re340.o re339.o re337.o re336.o na334.o na333.o na313.o \
-	na312.o na331.o na330.o na328.o na327.o in325.o in324.o in322.o \
-	in321.o in319.o in318.o in316.o in315.o ch346.o ch345.o ch343.o \
+OLDOBJECTS =  tu310.o re340.o re339.o re337.o re336.o na334.o na333.o na331.o \
+	na330.o na328.o na327.o na325.o na324.o in322.o in321.o in319.o \
+	in318.o in316.o in315.o in313.o in312.o ch346.o ch345.o ch343.o \
 	ch342.o bo349.o bo348.o pa309.o ab302.o ha306.o bo347.o ch344.o \
-	ch341.o re338.o re335.o na332.o na329.o na326.o in323.o in320.o \
-	in317.o in314.o na311.o it308.o rt301.o rt303.o da300.o uc307.o 
+	ch341.o re338.o re335.o na332.o na329.o na326.o na323.o in320.o \
+	in317.o in314.o in311.o it308.o rt301.o rt303.o da300.o uc307.o 
 
 all: Cobj7.o
 

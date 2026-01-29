@@ -92,7 +92,7 @@ void Init295(void)
 	IDSC(desc_295 + 1, 4, 294);
 	IDSC(desc_295 + 32, 63, 294);
 	IDSC(desc_295 + 34, 45, 294);
-	IDSC(desc_295 + 46, 171, 294);
+	IDSC(desc_295 + 46, 173, 294);
 }
 
 

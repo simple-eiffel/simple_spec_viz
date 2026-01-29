@@ -502,9 +502,9 @@ EIF_TYPED_VALUE F341_7414 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
 		tu8_2 = (EIF_NATURAL_64) arg1;
-		tr1 = RTLN(eif_new_type(326, 0x00).id);
+		tr1 = RTLN(eif_new_type(323, 0x00).id);
 		*(EIF_NATURAL_64 *)tr1 = (EIF_NATURAL_64) (tu8_1 + tu8_2);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5733, "is_valid_character_32_code", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5680, "is_valid_character_32_code", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -592,9 +592,9 @@ EIF_TYPED_VALUE F341_7415 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		ti8_1 = (EIF_INTEGER_64) tu4_1;
 		ti8_2 = (EIF_INTEGER_64) arg1;
-		tr1 = RTLN(eif_new_type(314, 0x00).id);
+		tr1 = RTLN(eif_new_type(311, 0x00).id);
 		*(EIF_INTEGER_64 *)tr1 = (EIF_INTEGER_64) (ti8_1 - ti8_2);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5510, "is_valid_character_32_code", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5457, "is_valid_character_32_code", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -771,9 +771,9 @@ EIF_TYPED_VALUE F341_7417 (EIF_REFERENCE Current)
 		tw1 = *(EIF_CHARACTER_32 *)(Current + RTWA(5950, dtype));
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
-		tr1 = RTLN(eif_new_type(326, 0x00).id);
+		tr1 = RTLN(eif_new_type(323, 0x00).id);
 		*(EIF_NATURAL_64 *)tr1 = ((EIF_NATURAL_64) (tu8_1 + (EIF_NATURAL_64) ((EIF_INTEGER_32) 1L)));
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5733, "is_valid_character_32_code", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5680, "is_valid_character_32_code", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -858,9 +858,9 @@ EIF_TYPED_VALUE F341_7418 (EIF_REFERENCE Current)
 		tw1 = *(EIF_CHARACTER_32 *)(Current + RTWA(5950, dtype));
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
-		tr1 = RTLN(eif_new_type(326, 0x00).id);
+		tr1 = RTLN(eif_new_type(323, 0x00).id);
 		*(EIF_NATURAL_64 *)tr1 = ((EIF_NATURAL_64) (tu8_1 - (EIF_NATURAL_64) ((EIF_INTEGER_32) 1L)));
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5733, "is_valid_character_32_code", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5680, "is_valid_character_32_code", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1000,9 +1000,9 @@ EIF_TYPED_VALUE F341_7420 (EIF_REFERENCE Current)
 	RTHOOK(4);
 	tu4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5952, dtype))(Current)).it_n4);
 	RTNHOOK(4,1);
-	tr1 = RTLN(eif_new_type(329, 0x00).id);
+	tr1 = RTLN(eif_new_type(326, 0x00).id);
 	*(EIF_NATURAL_32 *)tr1 = tu4_1;
-	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5814, "to_hex_string", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5761, "to_hex_string", tr1))(tr1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	ur1 = RTCCL(tr2);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6295, "append_string", Result))(Result, ur1x);
 	if (RTAL & CK_ENSURE) {

@@ -41,13 +41,13 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C7_c.obj 
 
-OLDOBJECTS =  in212.obj in212d.obj eq204.obj eq204d.obj se203.obj se203d.obj c_210.obj c_210d.obj \
-	in200.obj in200d.obj er198.obj er198d.obj pa225.obj pa225d.obj co230.obj co230d.obj \
+OLDOBJECTS =  in212.obj in212d.obj eq204.obj eq204d.obj se203.obj se203d.obj in200.obj in200d.obj \
+	c_210.obj c_210d.obj er198.obj er198d.obj pa225.obj pa225d.obj co230.obj co230d.obj \
 	in202.obj in202d.obj in201.obj in201d.obj so211.obj so211d.obj da229.obj da229d.obj \
 	it199.obj it199d.obj st209.obj st209d.obj cu206.obj cu206d.obj ar208.obj ar208d.obj \
-	ha207.obj ha207d.obj si217.obj si217d.obj ne213.obj ne213d.obj da228.obj da228d.obj \
-	ti227.obj ti227d.obj du226.obj du226d.obj si216.obj si216d.obj si218.obj si218d.obj \
-	si224.obj si224d.obj si223.obj si223d.obj si222.obj si222d.obj si221.obj si221d.obj \
+	ha207.obj ha207d.obj si217.obj si217d.obj ne213.obj ne213d.obj ti228.obj ti228d.obj \
+	da227.obj da227d.obj du226.obj du226d.obj si216.obj si216d.obj si224.obj si224d.obj \
+	si223.obj si223d.obj si218.obj si218d.obj si222.obj si222d.obj si221.obj si221d.obj \
 	si220.obj si220d.obj si219.obj si219d.obj si214.obj si214d.obj me205.obj me205d.obj \
 	si215.obj si215d.obj 
 

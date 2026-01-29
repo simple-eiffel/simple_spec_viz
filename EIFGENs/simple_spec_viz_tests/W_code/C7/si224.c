@@ -373,8 +373,8 @@ body:;
 	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(2776, "parse_path", loc1))(loc1, ur1x)).it_b);
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(7);
-		RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-		tr1 = RTLN(eif_new_type(17, 0x01).id);
+		RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+		tr1 = RTLN(eif_new_type(16, 0x01).id);
 		tr2 = RTMS_EX_H("Invalid JSON Pointer path: ",27,1108276768);
 		tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2878, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		RTNHOOK(7,1);
@@ -383,7 +383,7 @@ body:;
 		tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		ur1 = RTCCL(tr2);
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 		RTNHOOK(7,2);
 		Result = (EIF_REFERENCE) RTCCL(tr1);
 	} else {
@@ -404,8 +404,8 @@ body:;
 		RTHOOK(10);
 		if ((EIF_BOOLEAN)(loc2 == NULL)) {
 			RTHOOK(11);
-			RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-			tr1 = RTLN(eif_new_type(17, 0x01).id);
+			RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+			tr1 = RTLN(eif_new_type(16, 0x01).id);
 			tr2 = RTMS_EX_H("Parent not found for path: ",27,1296457760);
 			tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2878, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			RTNHOOK(11,1);
@@ -414,7 +414,7 @@ body:;
 			tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr2);
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 			RTNHOOK(11,2);
 			Result = (EIF_REFERENCE) RTCCL(tr1);
 		} else {
@@ -502,10 +502,10 @@ body:;
 						}
 					}
 					RTHOOK(23);
-					RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-					tr1 = RTLN(eif_new_type(17, 0x01).id);
+					RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+					tr1 = RTLN(eif_new_type(16, 0x01).id);
 					ur1 = RTCCL(loc5);
-					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(403, Dtype(tr1)))(tr1, ur1x);
+					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(391, Dtype(tr1)))(tr1, ur1x);
 					RTNHOOK(23,1);
 					Result = (EIF_REFERENCE) RTCCL(tr1);
 				} else {
@@ -522,8 +522,8 @@ body:;
 						}
 					}
 					RTHOOK(25);
-					RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-					tr1 = RTLN(eif_new_type(17, 0x01).id);
+					RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+					tr1 = RTLN(eif_new_type(16, 0x01).id);
 					tr2 = RTMS_EX_H("Property \'",10,1926064167);
 					tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6160, "to_string_8", loc3))(loc3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					ur1 = RTCCL(tr3);
@@ -538,7 +538,7 @@ body:;
 					tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					ur1 = RTCCL(tr2);
-					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 					RTNHOOK(25,2);
 					Result = (EIF_REFERENCE) RTCCL(tr1);
 				}
@@ -627,10 +627,10 @@ body:;
 								}
 							}
 							RTHOOK(37);
-							RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-							tr1 = RTLN(eif_new_type(17, 0x01).id);
+							RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+							tr1 = RTLN(eif_new_type(16, 0x01).id);
 							ur1 = RTCCL(loc5);
-							(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(403, Dtype(tr1)))(tr1, ur1x);
+							(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(391, Dtype(tr1)))(tr1, ur1x);
 							RTNHOOK(37,1);
 							Result = (EIF_REFERENCE) RTCCL(tr1);
 						} else {
@@ -650,8 +650,8 @@ body:;
 								}
 							}
 							RTHOOK(39);
-							RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-							tr1 = RTLN(eif_new_type(17, 0x01).id);
+							RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+							tr1 = RTLN(eif_new_type(16, 0x01).id);
 							tr2 = RTMS_EX_H("Array index ",12,1175449120);
 							tr3 = eif_out__i4_s1(loc4);
 							ur1 = RTCCL(tr3);
@@ -666,7 +666,7 @@ body:;
 							tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 							tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 							ur1 = RTCCL(tr2);
-							(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+							(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 							RTNHOOK(39,2);
 							Result = (EIF_REFERENCE) RTCCL(tr1);
 						}
@@ -682,8 +682,8 @@ body:;
 							}
 						}
 						RTHOOK(41);
-						RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-						tr1 = RTLN(eif_new_type(17, 0x01).id);
+						RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+						tr1 = RTLN(eif_new_type(16, 0x01).id);
 						tr2 = RTMS_EX_H("Invalid array index \'",21,558005287);
 						tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6160, "to_string_8", loc3))(loc3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 						ur1 = RTCCL(tr3);
@@ -698,7 +698,7 @@ body:;
 						tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 						tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 						ur1 = RTCCL(tr2);
-						(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+						(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 						RTNHOOK(41,2);
 						Result = (EIF_REFERENCE) RTCCL(tr1);
 					}
@@ -719,8 +719,8 @@ body:;
 						}
 					}
 					RTHOOK(43);
-					RTDBGAL(0, 0xF8000011, 0,0); /* Result */
-					tr1 = RTLN(eif_new_type(17, 0x01).id);
+					RTDBGAL(0, 0xF8000010, 0,0); /* Result */
+					tr1 = RTLN(eif_new_type(16, 0x01).id);
 					tr2 = RTMS_EX_H("Parent is neither object nor array at path: ",44,459621664);
 					tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2878, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					RTNHOOK(43,1);
@@ -729,7 +729,7 @@ body:;
 					tr3 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6259, "plus", tr2))(tr2, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6166, "as_string_32", tr3))(tr3)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 					ur1 = RTCCL(tr2);
-					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(404, Dtype(tr1)))(tr1, ur1x);
+					(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(392, Dtype(tr1)))(tr1, ur1x);
 					RTNHOOK(43,2);
 					Result = (EIF_REFERENCE) RTCCL(tr1);
 				}
@@ -740,9 +740,9 @@ body:;
 		RTHOOK(44);
 		RTCT("success_means_modified", EX_POST);
 		tb1 = '\01';
-		tb2 = *(EIF_BOOLEAN *)(Result + RTVA(405, "is_success", Result));
+		tb2 = *(EIF_BOOLEAN *)(Result + RTVA(393, "is_success", Result));
 		if (tb2) {
-			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(407, "modified_document", Result))(Result)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(395, "modified_document", Result))(Result)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			tb1 = (EIF_BOOLEAN)(tr1 != NULL);
 		}
 		if (tb1) {
@@ -753,9 +753,9 @@ body:;
 		RTHOOK(45);
 		RTCT("failure_means_error", EX_POST);
 		tb1 = '\01';
-		tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(406, "is_failure", Result))(Result)).it_b);
+		tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(394, "is_failure", Result))(Result)).it_b);
 		if (tb2) {
-			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(410, "has_error", Result))(Result)).it_b);
+			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(398, "has_error", Result))(Result)).it_b);
 			tb1 = tb2;
 		}
 		if (tb1) {

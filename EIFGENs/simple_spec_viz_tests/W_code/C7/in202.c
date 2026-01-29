@@ -107,7 +107,7 @@ void F202_2690 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	}
 	if (arg2) {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {653,332,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1024,332,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -977,9 +977,9 @@ EIF_TYPED_VALUE F202_2703 (EIF_REFERENCE Current)
 	RTDBGEAA(201, Current, 2689);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(0, 0xF800028D, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000400, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,653,332,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1024,332,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1167,7 +1167,7 @@ EIF_TYPED_VALUE F202_2706 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(201, Current, 2692);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,653,332,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1024,332,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

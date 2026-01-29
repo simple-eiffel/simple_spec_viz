@@ -110,7 +110,7 @@ body:;
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(3337, "field_count_of_type", tr1))(tr1, ui4_1x)).it_i4);
 	loc1 = (EIF_INTEGER_32) ti4_1;
 	RTHOOK(4);
-	RTDBGAA(Current, dtype, 455, 0xF80001F5, 0); /* mismatches_by_name */
+	RTDBGAA(Current, dtype, 455, 0xF80001EE, 0); /* mismatches_by_name */
 	tr1 = RTLNSMART(RTWCT(455, dtype, Dftype(Current)).id);
 	ui4_1 = loc1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4941, Dtype(tr1)))(tr1, ui4_1x);
@@ -119,7 +119,7 @@ body:;
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(455, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(5);
-	RTDBGAA(Current, dtype, 456, 0xF80002AB, 0); /* mismatches_by_stored_position */
+	RTDBGAA(Current, dtype, 456, 0xF8000206, 0); /* mismatches_by_stored_position */
 	tr1 = RTLNSMART(RTWCT(456, dtype, Dftype(Current)).id);
 	ui4_1 = loc1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4941, Dtype(tr1)))(tr1, ui4_1x);
@@ -479,7 +479,7 @@ body:;
 	RTHOOK(7);
 	RTDBGAL(1, 0xF8000135, 0, 0); /* loc1 */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,317,317,317,317,347,347,347,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,314,314,314,314,347,347,347,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -623,7 +623,7 @@ body:;
 	RTHOOK(7);
 	RTDBGAL(1, 0xF8000135, 0, 0); /* loc1 */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,317,317,317,317,347,347,347,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,314,314,314,314,347,347,347,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -753,7 +753,7 @@ body:;
 	RTHOOK(5);
 	RTDBGAL(1, 0xF8000135, 0, 0); /* loc1 */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,317,317,317,317,347,347,347,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,9,309,0xFF01,357,0xFF01,357,314,314,314,314,347,347,347,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

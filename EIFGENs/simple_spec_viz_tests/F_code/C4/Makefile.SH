@@ -72,8 +72,8 @@ OBJECTS = big_file_C4_c.obj
 
 OLDOBJECTS =  is192.o ex152.o ex196.o in150.o er198.o ad183.o ol167.o se175.o \
 	ex195.o vo180.o no171.o pr190.o po189.o fl156.o in188.o ch187.o \
-	ro179.o ba178.o va186.o lo185.o op160.o ei166.o re164.o re163.o \
-	cr182.o ex170.o co159.o vo177.o ex162.o io174.o op158.o mi173.o \
+	ro179.o ba178.o va186.o lo185.o op160.o ei166.o re164.o cr182.o \
+	re163.o ex170.o co159.o vo177.o ex162.o io174.o op158.o mi173.o \
 	de153.o ex191.o ex151.o se194.o se193.o it199.o kl197.o 
 
 all: Cobj4.o

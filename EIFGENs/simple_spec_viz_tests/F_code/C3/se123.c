@@ -78,13 +78,13 @@ body:;
 	tu4_1 = (EIF_NATURAL_32) ti4_1;
 	(nstcall = 1, F109_1544(RTCW(loc1), tu4_1));
 	RTHOOK(7);
-	(nstcall = 1, F889_5941(RTCW(arg2)));
+	(nstcall = 1, F890_5941(RTCW(arg2)));
 	for (;;) {
 		RTHOOK(8);
-		tb1 = (nstcall = 1, F889_5936(RTCW(arg2)));
+		tb1 = (nstcall = 1, F890_5936(RTCW(arg2)));
 		if (tb1) break;
 		RTHOOK(9);
-		ti4_1 = (nstcall = 1, F889_5914(RTCW(arg2)));
+		ti4_1 = (nstcall = 1, F890_5914(RTCW(arg2)));
 		loc3 = (EIF_INTEGER_32) ti4_1;
 		RTHOOK(10);
 		tu4_1 = (EIF_NATURAL_32) loc3;
@@ -93,7 +93,7 @@ body:;
 		tr1 = (nstcall = 1, F277_3639(RTCW(loc2), loc3));
 		(nstcall = 1, F109_1528(RTCW(loc1), tr1));
 		RTHOOK(12);
-		(nstcall = 1, F889_5942(RTCW(arg2)));
+		(nstcall = 1, F890_5942(RTCW(arg2)));
 	}
 	RTHOOK(13);
 	(nstcall = 0, F148_2001(Current, arg1));

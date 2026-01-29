@@ -98,7 +98,7 @@ void F1110_151 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		ur1 = RTCCL(tr2);
 		ur2 = RTCCL(arg1);
 		{
-			EIF_TYPE_INDEX typarr0[] = {0xFF01,497,0,0,0xFFFF};
+			EIF_TYPE_INDEX typarr0[] = {0xFF01,477,0,0,0xFFFF};
 			EIF_TYPE typres0;
 			{
 				EIF_TYPE l_type;
@@ -185,7 +185,7 @@ void F1110_152 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		ur1 = RTCCL(tr2);
 		ur2 = RTCCL(arg1);
 		{
-			EIF_TYPE_INDEX typarr0[] = {0xFF01,497,0,0,0xFFFF};
+			EIF_TYPE_INDEX typarr0[] = {0xFF01,477,0,0,0xFFFF};
 			EIF_TYPE typres0;
 			{
 				EIF_TYPE l_type;

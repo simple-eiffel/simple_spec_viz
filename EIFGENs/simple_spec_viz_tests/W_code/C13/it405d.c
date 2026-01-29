@@ -1,5 +1,5 @@
 /*
- * Class ITERABLE [CHARACTER_8]
+ * Class ITERATION_CURSOR [CHARACTER_8]
  */
 
 #include "eif_macros.h"
@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_405 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_405 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_405 [] = {404,344,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_405 [] = {0xFF01,404,344,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_405 [] = {0xFF01,405,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_405 [] = {0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_405 [] = {0xFFF8,1,0xFFFF};
 
 
@@ -61,6 +61,8 @@ static const struct desc_info desc_405[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_405), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_405), 0x00, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_15_405), 0x00, 0xFFFFFFFF},
 };
 void Init405(void)

@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C24_c.obj 
 
-OLDOBJECTS =  eq786.obj eq786d.obj na759.obj na759d.obj ar782.obj ar782d.obj li766.obj li766d.obj \
-	re779.obj re779d.obj in774.obj in774d.obj to781.obj to781d.obj dy776.obj dy776d.obj \
-	dy784.obj dy784d.obj li778.obj li778d.obj cu767.obj cu767d.obj tr768.obj tr768d.obj \
-	se760.obj se760d.obj dy771.obj dy771d.obj bo780.obj bo780d.obj ta775.obj ta775d.obj \
-	ta785.obj ta785d.obj li788.obj li788d.obj fi764.obj fi764d.obj un777.obj un777d.obj \
-	ta783.obj ta783d.obj ch773.obj ch773d.obj ac761.obj ac761d.obj co763.obj co763d.obj \
-	bi770.obj bi770d.obj dy772.obj dy772d.obj ba762.obj ba762d.obj li790.obj li790d.obj \
-	li787.obj li787d.obj li789.obj li789d.obj rt791.obj rt791d.obj bo765.obj bo765d.obj \
-	co769.obj co769d.obj 
+OLDOBJECTS =  sp788.obj sp788d.obj ar778.obj ar778d.obj ty774.obj ty774d.obj ty775.obj ty775d.obj \
+	ty776.obj ty776d.obj na790.obj na790d.obj sp789.obj sp789d.obj re783.obj re783d.obj \
+	it786.obj it786d.obj it785.obj it785d.obj ar779.obj ar779d.obj dy763.obj dy763d.obj \
+	li765.obj li765d.obj ge781.obj ge781d.obj in787.obj in787d.obj re784.obj re784d.obj \
+	se791.obj se791d.obj ar780.obj ar780d.obj dy760.obj dy760d.obj li768.obj li768d.obj \
+	un764.obj un764d.obj ta766.obj ta766d.obj ch762.obj ch762d.obj ty782.obj ty782d.obj \
+	bi759.obj bi759d.obj dy761.obj dy761d.obj li770.obj li770d.obj li767.obj li767d.obj \
+	li769.obj li769d.obj rt773.obj rt773d.obj mm771.obj mm771d.obj mm772.obj mm772d.obj \
+	kl777.obj kl777d.obj 
 
 all::  Cobj24.lib
 

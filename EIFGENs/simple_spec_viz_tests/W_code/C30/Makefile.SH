@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C30_c.obj 
 
-OLDOBJECTS =  ar963.o ar963d.o na989.o na989d.o re958.o re958d.o ar988.o ar988d.o \
-	it959.o it959d.o it960.o it960d.o li972.o li972d.o ar964.o ar964d.o \
-	re985.o re985d.o in980.o in980d.o to987.o to987d.o dy982.o dy982d.o \
-	li984.o li984d.o in962.o in962d.o re961.o re961d.o cu973.o cu973d.o \
-	tr974.o tr974d.o se966.o se966d.o ar965.o ar965d.o dy977.o dy977d.o \
-	bo986.o bo986d.o ta981.o ta981d.o fi970.o fi970d.o un983.o un983d.o \
-	ch979.o ch979d.o ty957.o ty957d.o ac967.o ac967d.o co969.o co969d.o \
-	bi976.o bi976d.o dy978.o dy978d.o ba968.o ba968d.o bo971.o bo971d.o \
-	co975.o co975d.o 
+OLDOBJECTS =  sp980.o sp980d.o ar989.o ar989d.o na979.o na979d.o sp981.o sp981d.o \
+	re984.o re984d.o ar978.o ar978d.o it987.o it987d.o li957.o li957d.o \
+	it986.o it986d.o re975.o re975d.o in970.o in970d.o to977.o to977d.o \
+	dy972.o dy972d.o li974.o li974d.o ge982.o ge982d.o in988.o in988d.o \
+	re985.o re985d.o cu958.o cu958d.o tr965.o tr965d.o dy967.o dy967d.o \
+	bo976.o bo976d.o ta971.o ta971d.o fi960.o fi960d.o un973.o un973d.o \
+	ch969.o ch969d.o ty983.o ty983d.o ac962.o ac962d.o co959.o co959d.o \
+	bi966.o bi966d.o dy968.o dy968d.o ba963.o ba963d.o bo961.o bo961d.o \
+	co964.o co964d.o 
 
 all: Cobj30.o
 

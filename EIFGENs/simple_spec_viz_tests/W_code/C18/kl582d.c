@@ -1,5 +1,5 @@
 /*
- * Class KL_TYPE [INTEGER_32]
+ * Class KL_ARRAY_ROUTINES [BOOLEAN]
  */
 
 #include "eif_macros.h"
@@ -10,21 +10,25 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_582 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_582 [] = {0xFF01,402,581,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_582 [] = {0xFF01,581,317,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_582 [] = {0xFF01,402,581,347,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_582 [] = {0xFF01,581,347,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_582 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_582 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_582 [] = {0xFF01,581,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_582 [] = {0xFF01,581,317,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_582 [] = {0xFF01,581,347,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_582 [] = {0xFF01,581,347,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_582 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_8_582 [] = {0xFF01,56,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_582 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_582 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_582 [] = {0xFF01,55,0xFFFF};
-static const EIF_TYPE_INDEX egt_12_582 [] = {581,317,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_582 [] = {0xFF01,581,317,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_582 [] = {581,347,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_582 [] = {0xFF01,581,347,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_582 [] = {0xFF01,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_582 [] = {0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_582 [] = {0xFF01,582,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_582 [] = {0xFF01,582,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_582 [] = {0xFF01,582,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_582 [] = {0xFF01,582,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_582 [] = {0xFFF8,1,0xFFFF};
 
 
 static const struct desc_info desc_582[] = {
@@ -61,16 +65,23 @@ static const struct desc_info desc_582[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_582), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_582), 4606, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 15126, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 15127, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_582), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_15_582), 4690, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_582), 4691, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 4692, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 4693, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_17_582), 4694, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_582), 4695, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 4696, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 4697, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 4689, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_19_582), 0x00, 0xFFFFFFFF},
 };
 void Init582(void)
 {
 	IDSC(desc_582, 0, 581);
 	IDSC(desc_582 + 1, 4, 581);
 	IDSC(desc_582 + 32, 432, 581);
-	IDSC(desc_582 + 33, 437, 581);
+	IDSC(desc_582 + 33, 434, 581);
 }
 
 

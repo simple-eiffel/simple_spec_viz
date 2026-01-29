@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_76 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_76 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_76 [] = {0xFF01,75,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_76 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_76 [] = {0xFF01,1025,341,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_76 [] = {0xFF01,621,341,0xFFFF};
 
 
 static const struct desc_info desc_76[] = {
@@ -70,7 +70,7 @@ void Init76(void)
 {
 	IDSC(desc_76, 0, 75);
 	IDSC(desc_76 + 1, 4, 75);
-	IDSC(desc_76 + 32, 388, 75);
+	IDSC(desc_76 + 32, 391, 75);
 }
 
 

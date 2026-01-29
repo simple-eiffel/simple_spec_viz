@@ -2150,9 +2150,9 @@ EIF_TYPED_VALUE F309_6296 (EIF_REFERENCE Current)
 	RTDBGEAA(308, Current, 12055);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(0, 0xF80001BE, 0,0); /* Result */
+	RTDBGAL(0, 0xF80001BD, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,446,0xFF01,308,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,445,0xFF01,308,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -2673,7 +2673,7 @@ EIF_TYPED_VALUE F309_6299 (EIF_REFERENCE Current)
 		RTNHOOK(3,1);
 		loc3 = (EIF_REFERENCE) RTCCL(tr1);
 		RTHOOK(4);
-		RTDBGAL(1, 0xF80001BE, 0, 0); /* loc1 */
+		RTDBGAL(1, 0xF80001BD, 0, 0); /* loc1 */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5263, "components", loc2))(loc2)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		loc1 = (EIF_REFERENCE) RTCCL(tr1);
 		if (RTAL & CK_CHECK) {
@@ -4425,7 +4425,7 @@ EIF_TYPED_VALUE F309_6316 (EIF_REFERENCE Current)
 	GTCX
 	char *l_feature_name = "utf_8_name";
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
 #define up1 up1x.it_p
@@ -4441,7 +4441,7 @@ EIF_TYPED_VALUE F309_6316 (EIF_REFERENCE Current)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + 0);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(57, 0x00).id);
 	RTLI(5);
 	RTLR(0,loc1);
 	RTLR(1,Current);
@@ -4466,7 +4466,7 @@ EIF_TYPED_VALUE F309_6316 (EIF_REFERENCE Current)
 	RTDBGAL(0, 0xF8000165, 0,0); /* Result */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5279, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	ur1 = tr1;
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1203, "escaped_utf_32_string_to_utf_8_string_8", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1092, "escaped_utf_32_string_to_utf_8_string_8", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -4487,7 +4487,7 @@ EIF_TYPED_VALUE F309_6317 (EIF_REFERENCE Current)
 	GTCX
 	char *l_feature_name = "name";
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
 	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
@@ -4506,7 +4506,7 @@ EIF_TYPED_VALUE F309_6317 (EIF_REFERENCE Current)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + 0);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(57, 0x00).id);
 	RTLI(7);
 	RTLR(0,loc2);
 	RTLR(1,Current);
@@ -4546,7 +4546,7 @@ EIF_TYPED_VALUE F309_6317 (EIF_REFERENCE Current)
 			tr1 = RTLN(eif_new_type(360, 0x01).id);
 			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5282, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr2);
-			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1242, "utf_16le_string_8_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1131, "utf_16le_string_8_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr2);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(6316, Dtype(tr1)))(tr1, ur1x);
 			RTNHOOK(4,1);
@@ -4557,7 +4557,7 @@ EIF_TYPED_VALUE F309_6317 (EIF_REFERENCE Current)
 			tr1 = RTLN(eif_new_type(360, 0x01).id);
 			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5282, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr2);
-			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1215, "utf_8_string_8_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+			tr2 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1104, "utf_8_string_8_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			ur1 = RTCCL(tr2);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(6316, Dtype(tr1)))(tr1, ur1x);
 			RTNHOOK(5,1);
@@ -5963,7 +5963,7 @@ void F309_6331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	GTCX
 	char *l_feature_name = "internal_append_into";
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 #define arg1 arg1x.it_r
 #define arg2 arg2x.it_r
@@ -5994,7 +5994,7 @@ void F309_6331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + 0);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(57, 0x00).id);
 	RTLI(6);
 	RTLR(0,arg1);
 	RTLR(1,arg2);
@@ -6092,12 +6092,12 @@ body:;
 			RTHOOK(11);
 			ur1 = RTCCL(arg2);
 			ur2 = RTCCL(arg1);
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1229, "escaped_utf_32_string_into_utf_16le_string_8", loc1))(loc1, ur1x, ur2x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1118, "escaped_utf_32_string_into_utf_16le_string_8", loc1))(loc1, ur1x, ur2x);
 		} else {
 			RTHOOK(12);
 			ur1 = RTCCL(arg2);
 			ur2 = RTCCL(arg1);
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1204, "escaped_utf_32_string_into_utf_8_string_8", loc1))(loc1, ur1x, ur2x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1093, "escaped_utf_32_string_into_utf_8_string_8", loc1))(loc1, ur1x, ur2x);
 		}
 	}
 	RTVI(Current, RTAL);

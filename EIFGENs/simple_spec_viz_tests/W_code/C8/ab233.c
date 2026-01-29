@@ -186,9 +186,9 @@ label_1:
 	}
 body:;
 	RTHOOK(3);
-	RTDBGAL(0, 0xF80001EF, 0,0); /* Result */
+	RTDBGAL(0, 0xF80001D7, 0,0); /* Result */
 	{
-		EIF_TYPE_INDEX typarr0[] = {0xFF01,495,0xFF01,0,0xFFFF};
+		EIF_TYPE_INDEX typarr0[] = {0xFF01,471,0xFF01,0,0xFFFF};
 		EIF_TYPE typres0;
 		typarr0[3] = Dftype(Current);
 		

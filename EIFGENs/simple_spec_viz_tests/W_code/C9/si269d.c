@@ -61,7 +61,7 @@ static const struct desc_info desc_269[] = {
 	{EIF_GENERIC(egt_12_269), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 4584, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_269), 4588, 0},
-	{EIF_NON_GENERIC(0x027B /*317*/), 4583, 8},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 4583, 8},
 	{EIF_NON_GENERIC(0x02AB /*341*/), 4585, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 4586, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 4587, 0xFFFFFFFF},
@@ -72,7 +72,7 @@ void Init269(void)
 	IDSC(desc_269, 0, 268);
 	IDSC(desc_269 + 1, 4, 268);
 	IDSC(desc_269 + 32, 389, 268);
-	IDSC(desc_269 + 35, 72, 268);
+	IDSC(desc_269 + 35, 71, 268);
 }
 
 

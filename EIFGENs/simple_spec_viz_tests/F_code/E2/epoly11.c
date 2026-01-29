@@ -9,8 +9,9 @@ extern "C" {
 long O4945[9];
 void O4945_init () {
 	{long i; for (i = 0; i < 2; i++) O4945[i] = 0;}
-	O4945[2] = + _LNGOFF_5_3_0_0_;
-	{long i; for (i = 3; i < 5; i++) O4945[i] = + _LNGOFF_4_3_0_0_;}
+	O4945[2] = + _LNGOFF_4_3_0_0_;
+	O4945[3] = + _LNGOFF_5_3_0_0_;
+	O4945[4] = + _LNGOFF_4_3_0_0_;
 	O4945[5] = + _LNGOFF_4_3_0_1_;
 	{long i; for (i = 6; i < 8; i++) O4945[i] = 0;}
 	O4945[8] = + _LNGOFF_5_4_0_0_;
@@ -20,9 +21,9 @@ long O4954[9];
 void O4954_init () {
 	O4954[0] = + _LNGOFF_7_3_0_0_;
 	O4954[1] = + _LNGOFF_6_3_0_0_;
-	O4954[2] = + _LNGOFF_5_3_0_1_;
-	O4954[3] = + _LNGOFF_4_3_0_1_;
-	O4954[4] = + _LNGOFF_4_3_0_2_;
+	O4954[2] = + _LNGOFF_4_3_0_2_;
+	O4954[3] = + _LNGOFF_5_3_0_1_;
+	O4954[4] = + _LNGOFF_4_3_0_1_;
 	O4954[5] = + _LNGOFF_4_3_0_3_;
 	O4954[6] = + _LNGOFF_9_3_0_0_;
 	O4954[7] = + _LNGOFF_7_4_0_0_;
@@ -33,8 +34,9 @@ long O4980[9];
 void O4980_init () {
 	O4980[0] = + _CHROFF_7_1_;
 	O4980[1] = + _CHROFF_6_1_;
-	O4980[2] = + _CHROFF_5_1_;
-	{long i; for (i = 3; i < 6; i++) O4980[i] = + _CHROFF_4_1_;}
+	O4980[2] = + _CHROFF_4_1_;
+	O4980[3] = + _CHROFF_5_1_;
+	{long i; for (i = 4; i < 6; i++) O4980[i] = + _CHROFF_4_1_;}
 	O4980[6] = + _CHROFF_9_1_;
 	O4980[7] = + _CHROFF_7_1_;
 	O4980[8] = + _CHROFF_5_1_;
@@ -50,13 +52,13 @@ void O4981_init () {
 
 static EIF_TYPE_INDEX Y4981_pgtype0[] = {0xFF01,898,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y4981_pgtype1[] = {0xFF01,898,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y4981_pgtype2[] = {0xFF01,900,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y4981_pgtype3[] = {0xFF01,900,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y4981_pgtype4[] = {0xFF01,905,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y4981_pgtype5[] = {0xFF01,905,1017,0xFFFF};
+static EIF_TYPE_INDEX Y4981_pgtype2[] = {0xFF01,905,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y4981_pgtype3[] = {0xFF01,899,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y4981_pgtype4[] = {0xFF01,899,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y4981_pgtype5[] = {0xFF01,905,1014,0xFFFF};
 static EIF_TYPE_INDEX Y4981_pgtype6[] = {0xFF01,898,0,0xFFFF};
 static EIF_TYPE_INDEX Y4981_pgtype7[] = {0xFF01,898,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y4981_pgtype8[] = {0xFF01,900,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y4981_pgtype8[] = {0xFF01,899,0xFFF8,1,0xFFFF};
 EIF_TYPE_INDEX *Y4981_gen_type [9];
 EIF_TYPE_INDEX Y4981 [9];
 void Y4981_init (void)
@@ -74,10 +76,11 @@ void Y4981_init (void)
 	Y4981_gen_type [7] = Y4981_pgtype7;
 	Y4981_gen_type [8] = Y4981_pgtype8;
 	{long i; for (i = 0; i < 2; i++) Y4981[i] = 898;};
-	{long i; for (i = 2; i < 4; i++) Y4981[i] = 900;};
-	{long i; for (i = 4; i < 6; i++) Y4981[i] = 905;};
+	Y4981[2] = 905;
+	{long i; for (i = 3; i < 5; i++) Y4981[i] = 899;};
+	Y4981[5] = 905;
 	{long i; for (i = 6; i < 8; i++) Y4981[i] = 898;};
-	Y4981[8] = 900;
+	Y4981[8] = 899;
 }
 
 long O4982[9];
@@ -89,10 +92,10 @@ void O4982_init () {
 }
 
 static EIF_TYPE_INDEX Y4982_pgtype0[] = {0xFF01,898,0xFFF8,2,0xFFFF};
-static EIF_TYPE_INDEX Y4982_pgtype1[] = {0xFF01,900,0xFFF8,2,0xFFFF};
-static EIF_TYPE_INDEX Y4982_pgtype2[] = {0xFF01,898,0xFFF8,2,0xFFFF};
-static EIF_TYPE_INDEX Y4982_pgtype3[] = {0xFF01,900,0xFFF8,2,0xFFFF};
-static EIF_TYPE_INDEX Y4982_pgtype4[] = {0xFF01,904,0xFFF8,2,0xFFFF};
+static EIF_TYPE_INDEX Y4982_pgtype1[] = {0xFF01,899,0xFFF8,2,0xFFFF};
+static EIF_TYPE_INDEX Y4982_pgtype2[] = {0xFF01,904,0xFFF8,2,0xFFFF};
+static EIF_TYPE_INDEX Y4982_pgtype3[] = {0xFF01,898,0xFFF8,2,0xFFFF};
+static EIF_TYPE_INDEX Y4982_pgtype4[] = {0xFF01,899,0xFFF8,2,0xFFFF};
 static EIF_TYPE_INDEX Y4982_pgtype5[] = {0xFF01,904,1068,0xFFFF};
 static EIF_TYPE_INDEX Y4982_pgtype6[] = {0xFF01,898,0xFF01,1080,0xFFFF};
 static EIF_TYPE_INDEX Y4982_pgtype7[] = {0xFF01,898,0xFF01,1075,0xFFFF};
@@ -114,10 +117,11 @@ void Y4982_init (void)
 	Y4982_gen_type [7] = Y4982_pgtype7;
 	Y4982_gen_type [8] = Y4982_pgtype8;
 	Y4982[0] = 898;
-	Y4982[1] = 900;
-	Y4982[2] = 898;
-	Y4982[3] = 900;
-	{long i; for (i = 4; i < 6; i++) Y4982[i] = 904;};
+	Y4982[1] = 899;
+	Y4982[2] = 904;
+	Y4982[3] = 898;
+	Y4982[4] = 899;
+	Y4982[5] = 904;
 	{long i; for (i = 6; i < 9; i++) Y4982[i] = 898;};
 }
 
@@ -141,9 +145,9 @@ long O4985[9];
 void O4985_init () {
 	O4985[0] = + _LNGOFF_7_3_0_1_;
 	O4985[1] = + _LNGOFF_6_3_0_1_;
-	O4985[2] = + _LNGOFF_5_3_0_2_;
-	O4985[3] = + _LNGOFF_4_3_0_2_;
-	O4985[4] = + _LNGOFF_4_3_0_3_;
+	O4985[2] = + _LNGOFF_4_3_0_3_;
+	O4985[3] = + _LNGOFF_5_3_0_2_;
+	O4985[4] = + _LNGOFF_4_3_0_2_;
 	O4985[5] = + _LNGOFF_4_3_0_4_;
 	O4985[6] = + _LNGOFF_9_3_0_1_;
 	O4985[7] = + _LNGOFF_7_4_0_1_;
@@ -154,8 +158,9 @@ long O4986[9];
 void O4986_init () {
 	O4986[0] = + _CHROFF_7_2_;
 	O4986[1] = + _CHROFF_6_2_;
-	O4986[2] = + _CHROFF_5_2_;
-	{long i; for (i = 3; i < 6; i++) O4986[i] = + _CHROFF_4_2_;}
+	O4986[2] = + _CHROFF_4_2_;
+	O4986[3] = + _CHROFF_5_2_;
+	{long i; for (i = 4; i < 6; i++) O4986[i] = + _CHROFF_4_2_;}
 	O4986[6] = + _CHROFF_9_2_;
 	O4986[7] = + _CHROFF_7_2_;
 	O4986[8] = + _CHROFF_5_2_;
@@ -165,9 +170,9 @@ long O4987[9];
 void O4987_init () {
 	O4987[0] = + _LNGOFF_7_3_0_2_;
 	O4987[1] = + _LNGOFF_6_3_0_2_;
-	O4987[2] = + _LNGOFF_5_3_0_3_;
-	O4987[3] = + _LNGOFF_4_3_0_3_;
-	O4987[4] = + _LNGOFF_4_3_0_4_;
+	O4987[2] = + _LNGOFF_4_3_0_4_;
+	O4987[3] = + _LNGOFF_5_3_0_3_;
+	O4987[4] = + _LNGOFF_4_3_0_3_;
 	O4987[5] = + _LNGOFF_4_3_0_5_;
 	O4987[6] = + _LNGOFF_9_3_0_2_;
 	O4987[7] = + _LNGOFF_7_4_0_2_;
@@ -178,9 +183,9 @@ long O4990[9];
 void O4990_init () {
 	O4990[0] = + _LNGOFF_7_3_0_3_;
 	O4990[1] = + _LNGOFF_6_3_0_3_;
-	O4990[2] = + _LNGOFF_5_3_0_4_;
-	O4990[3] = + _LNGOFF_4_3_0_4_;
-	O4990[4] = + _LNGOFF_4_3_0_5_;
+	O4990[2] = + _LNGOFF_4_3_0_5_;
+	O4990[3] = + _LNGOFF_5_3_0_4_;
+	O4990[4] = + _LNGOFF_4_3_0_4_;
 	O4990[5] = + _LNGOFF_4_3_0_6_;
 	O4990[6] = + _LNGOFF_9_3_0_3_;
 	O4990[7] = + _LNGOFF_7_4_0_3_;
@@ -191,9 +196,9 @@ long O4991[9];
 void O4991_init () {
 	O4991[0] = + _LNGOFF_7_3_0_4_;
 	O4991[1] = + _LNGOFF_6_3_0_4_;
-	O4991[2] = + _LNGOFF_5_3_0_5_;
-	O4991[3] = + _LNGOFF_4_3_0_5_;
-	O4991[4] = + _LNGOFF_4_3_0_6_;
+	O4991[2] = + _LNGOFF_4_3_0_6_;
+	O4991[3] = + _LNGOFF_5_3_0_5_;
+	O4991[4] = + _LNGOFF_4_3_0_5_;
 	O4991[5] = + _LNGOFF_4_3_0_7_;
 	O4991[6] = + _LNGOFF_9_3_0_4_;
 	O4991[7] = + _LNGOFF_7_4_0_4_;
@@ -204,9 +209,9 @@ long O4995[9];
 void O4995_init () {
 	O4995[0] = + _LNGOFF_7_3_0_5_;
 	O4995[1] = + _LNGOFF_6_3_0_5_;
-	O4995[2] = + _LNGOFF_5_3_0_6_;
-	O4995[3] = + _LNGOFF_4_3_0_6_;
-	O4995[4] = + _LNGOFF_4_3_0_7_;
+	O4995[2] = + _LNGOFF_4_3_0_7_;
+	O4995[3] = + _LNGOFF_5_3_0_6_;
+	O4995[4] = + _LNGOFF_4_3_0_6_;
 	O4995[5] = + _LNGOFF_4_3_0_8_;
 	O4995[6] = + _LNGOFF_9_3_0_5_;
 	O4995[7] = + _LNGOFF_7_4_0_5_;
@@ -216,9 +221,9 @@ void O4995_init () {
 long O4996[9];
 void O4996_init () {
 	{long i; for (i = 0; i < 2; i++) O4996[i] =  + _REFACS_5_;}
-	O4996[2] = + _LNGOFF_5_3_0_7_;
-	O4996[3] = + _LNGOFF_4_3_0_7_;
-	O4996[4] = + _LNGOFF_4_3_0_1_;
+	O4996[2] = + _LNGOFF_4_3_0_1_;
+	O4996[3] = + _LNGOFF_5_3_0_7_;
+	O4996[4] = + _LNGOFF_4_3_0_7_;
 	O4996[5] = + _LNGOFF_4_3_0_2_;
 	{long i; for (i = 6; i < 8; i++) O4996[i] =  + _REFACS_5_;}
 	O4996[8] = + _LNGOFF_5_4_0_7_;
@@ -228,9 +233,9 @@ long O4997[9];
 void O4997_init () {
 	O4997[0] =  + _REFACS_6_;
 	O4997[1] = + _LNGOFF_6_3_0_6_;
-	O4997[2] =  + _REFACS_4_;
-	O4997[3] = + _LNGOFF_4_3_0_8_;
-	O4997[4] = + _PTROFF_4_3_0_9_0_0_;
+	O4997[2] = + _PTROFF_4_3_0_9_0_0_;
+	O4997[3] =  + _REFACS_4_;
+	O4997[4] = + _LNGOFF_4_3_0_8_;
 	O4997[5] = + _PTROFF_4_3_0_10_0_0_;
 	{long i; for (i = 6; i < 8; i++) O4997[i] =  + _REFACS_6_;}
 	O4997[8] =  + _REFACS_4_;
@@ -240,10 +245,9 @@ long O5031[9];
 void O5031_init () {
 	O5031[0] = + _LNGOFF_7_3_0_6_;
 	O5031[1] = + _LNGOFF_6_3_0_7_;
-	O5031[2] = + _LNGOFF_5_3_0_8_;
-	O5031[3] = + _LNGOFF_4_3_0_9_;
-	O5031[4] = + _LNGOFF_4_3_0_8_;
-	O5031[5] = + _LNGOFF_4_3_0_9_;
+	O5031[2] = + _LNGOFF_4_3_0_8_;
+	O5031[3] = + _LNGOFF_5_3_0_8_;
+	{long i; for (i = 4; i < 6; i++) O5031[i] = + _LNGOFF_4_3_0_9_;}
 	O5031[6] = + _LNGOFF_9_3_0_6_;
 	O5031[7] = + _LNGOFF_7_4_0_6_;
 	O5031[8] = + _LNGOFF_5_4_0_8_;
@@ -258,192 +262,185 @@ void O5045_init () {
 long O5182[46];
 void O5182_init () {
 	O5182[0] = + _LNGOFF_1_0_0_0_;
-	O5182[1] = + _LNGOFF_2_0_0_1_;
-	O5182[2] = + _LNGOFF_1_1_0_1_;
-	O5182[3] = + _LNGOFF_1_0_0_1_;
-	O5182[4] = + _LNGOFF_1_0_0_2_;
-	O5182[5] = + _LNGOFF_1_1_0_1_;
-	O5182[6] = + _LNGOFF_1_0_0_2_;
-	O5182[7] = + _LNGOFF_1_0_0_1_;
-	O5182[8] = + _LNGOFF_1_1_0_1_;
-	O5182[9] = + _LNGOFF_1_0_1_1_;
-	O5182[10] = + _LNGOFF_1_0_0_1_;
-	O5182[11] = + _LNGOFF_1_1_0_1_;
-	O5182[12] = + _LNGOFF_1_0_1_1_;
-	{long i; for (i = 13; i < 16; i++) O5182[i] = + _LNGOFF_1_0_0_1_;}
-	O5182[16] = + _LNGOFF_3_0_0_1_;
-	{long i; for (i = 17; i < 19; i++) O5182[i] = + _LNGOFF_2_1_0_1_;}
-	O5182[19] = + _LNGOFF_2_0_0_1_;
-	O5182[20] = + _LNGOFF_2_1_0_1_;
-	{long i; for (i = 21; i < 23; i++) O5182[i] = + _LNGOFF_2_0_0_1_;}
-	O5182[23] = + _LNGOFF_2_0_0_2_;
-	O5182[24] = + _LNGOFF_2_0_0_1_;
-	O5182[25] = + _LNGOFF_2_0_0_2_;
-	O5182[26] = + _LNGOFF_2_0_1_1_;
-	O5182[27] = + _LNGOFF_2_1_0_1_;
-	{long i; for (i = 28; i < 30; i++) O5182[i] = + _LNGOFF_2_0_0_1_;}
-	O5182[30] = + _LNGOFF_2_0_1_1_;
-	O5182[31] = + _LNGOFF_3_0_0_0_;
-	O5182[32] = + _LNGOFF_2_0_0_0_;
-	O5182[33] = + _LNGOFF_2_1_0_0_;
-	{long i; for (i = 34; i < 36; i++) O5182[i] = + _LNGOFF_2_0_0_0_;}
-	O5182[36] = + _LNGOFF_2_1_0_0_;
-	O5182[37] = + _LNGOFF_2_0_0_1_;
-	O5182[38] = + _LNGOFF_2_0_0_0_;
-	O5182[39] = + _LNGOFF_2_0_1_0_;
-	{long i; for (i = 40; i < 42; i++) O5182[i] = + _LNGOFF_2_0_0_0_;}
-	O5182[42] = + _LNGOFF_2_1_0_0_;
-	O5182[43] = + _LNGOFF_2_0_1_0_;
+	O5182[1] = + _LNGOFF_3_0_0_0_;
+	O5182[2] = + _LNGOFF_2_1_0_0_;
+	{long i; for (i = 3; i < 5; i++) O5182[i] = + _LNGOFF_2_0_0_1_;}
+	O5182[5] = + _LNGOFF_2_0_0_0_;
+	O5182[6] = + _LNGOFF_2_1_0_0_;
+	O5182[7] = + _LNGOFF_2_0_0_0_;
+	O5182[8] = + _LNGOFF_2_1_0_0_;
+	O5182[9] = + _LNGOFF_2_0_1_0_;
+	O5182[10] = + _LNGOFF_2_0_0_0_;
+	O5182[11] = + _LNGOFF_2_1_0_0_;
+	O5182[12] = + _LNGOFF_2_0_1_0_;
+	{long i; for (i = 13; i < 16; i++) O5182[i] = + _LNGOFF_2_0_0_0_;}
+	O5182[16] = + _LNGOFF_2_0_0_1_;
+	{long i; for (i = 17; i < 19; i++) O5182[i] = + _LNGOFF_1_1_0_1_;}
+	O5182[19] = + _LNGOFF_1_0_0_1_;
+	O5182[20] = + _LNGOFF_1_1_0_1_;
+	{long i; for (i = 21; i < 23; i++) O5182[i] = + _LNGOFF_1_0_0_1_;}
+	O5182[23] = + _LNGOFF_1_0_0_2_;
+	O5182[24] = + _LNGOFF_1_0_0_1_;
+	O5182[25] = + _LNGOFF_1_0_0_2_;
+	O5182[26] = + _LNGOFF_1_0_1_1_;
+	O5182[27] = + _LNGOFF_1_1_0_1_;
+	{long i; for (i = 28; i < 30; i++) O5182[i] = + _LNGOFF_1_0_0_1_;}
+	O5182[30] = + _LNGOFF_1_0_1_1_;
+	O5182[31] = + _LNGOFF_3_0_0_1_;
+	O5182[32] = + _LNGOFF_2_1_0_1_;
+	{long i; for (i = 33; i < 35; i++) O5182[i] = + _LNGOFF_2_0_0_1_;}
+	O5182[35] = + _LNGOFF_2_1_0_1_;
+	{long i; for (i = 36; i < 38; i++) O5182[i] = + _LNGOFF_2_0_0_2_;}
+	O5182[38] = + _LNGOFF_2_0_0_1_;
+	O5182[39] = + _LNGOFF_2_0_1_1_;
+	{long i; for (i = 40; i < 42; i++) O5182[i] = + _LNGOFF_2_0_0_1_;}
+	O5182[42] = + _LNGOFF_2_1_0_1_;
+	O5182[43] = + _LNGOFF_2_0_1_1_;
 	O5182[44] = + _LNGOFF_2_0_0_1_;
-	O5182[45] = + _LNGOFF_2_1_0_0_;
+	O5182[45] = + _LNGOFF_2_1_0_1_;
 }
 
 long O5183[46];
 void O5183_init () {
 	O5183[0] = + _LNGOFF_1_0_0_1_;
-	O5183[1] = + _LNGOFF_2_0_0_2_;
-	O5183[2] = + _LNGOFF_1_1_0_2_;
-	O5183[3] = + _LNGOFF_1_0_0_2_;
-	O5183[4] = + _LNGOFF_1_0_0_3_;
-	O5183[5] = + _LNGOFF_1_1_0_2_;
-	O5183[6] = + _LNGOFF_1_0_0_3_;
-	O5183[7] = + _LNGOFF_1_0_0_2_;
-	O5183[8] = + _LNGOFF_1_1_0_2_;
-	O5183[9] = + _LNGOFF_1_0_1_2_;
-	O5183[10] = + _LNGOFF_1_0_0_2_;
-	O5183[11] = + _LNGOFF_1_1_0_2_;
-	O5183[12] = + _LNGOFF_1_0_1_2_;
-	{long i; for (i = 13; i < 16; i++) O5183[i] = + _LNGOFF_1_0_0_2_;}
-	O5183[16] = + _LNGOFF_3_0_0_2_;
-	{long i; for (i = 17; i < 19; i++) O5183[i] = + _LNGOFF_2_1_0_2_;}
-	O5183[19] = + _LNGOFF_2_0_0_2_;
-	O5183[20] = + _LNGOFF_2_1_0_2_;
-	{long i; for (i = 21; i < 23; i++) O5183[i] = + _LNGOFF_2_0_0_2_;}
-	O5183[23] = + _LNGOFF_2_0_0_3_;
-	O5183[24] = + _LNGOFF_2_0_0_2_;
-	O5183[25] = + _LNGOFF_2_0_0_3_;
-	O5183[26] = + _LNGOFF_2_0_1_2_;
-	O5183[27] = + _LNGOFF_2_1_0_2_;
-	{long i; for (i = 28; i < 30; i++) O5183[i] = + _LNGOFF_2_0_0_2_;}
-	O5183[30] = + _LNGOFF_2_0_1_2_;
-	O5183[31] = + _LNGOFF_3_0_0_1_;
-	O5183[32] = + _LNGOFF_2_0_0_1_;
-	O5183[33] = + _LNGOFF_2_1_0_1_;
-	{long i; for (i = 34; i < 36; i++) O5183[i] = + _LNGOFF_2_0_0_1_;}
-	O5183[36] = + _LNGOFF_2_1_0_1_;
-	O5183[37] = + _LNGOFF_2_0_0_2_;
-	O5183[38] = + _LNGOFF_2_0_0_1_;
-	O5183[39] = + _LNGOFF_2_0_1_1_;
-	{long i; for (i = 40; i < 42; i++) O5183[i] = + _LNGOFF_2_0_0_1_;}
-	O5183[42] = + _LNGOFF_2_1_0_1_;
-	O5183[43] = + _LNGOFF_2_0_1_1_;
+	O5183[1] = + _LNGOFF_3_0_0_1_;
+	O5183[2] = + _LNGOFF_2_1_0_1_;
+	{long i; for (i = 3; i < 5; i++) O5183[i] = + _LNGOFF_2_0_0_2_;}
+	O5183[5] = + _LNGOFF_2_0_0_1_;
+	O5183[6] = + _LNGOFF_2_1_0_1_;
+	O5183[7] = + _LNGOFF_2_0_0_1_;
+	O5183[8] = + _LNGOFF_2_1_0_1_;
+	O5183[9] = + _LNGOFF_2_0_1_1_;
+	O5183[10] = + _LNGOFF_2_0_0_1_;
+	O5183[11] = + _LNGOFF_2_1_0_1_;
+	O5183[12] = + _LNGOFF_2_0_1_1_;
+	{long i; for (i = 13; i < 16; i++) O5183[i] = + _LNGOFF_2_0_0_1_;}
+	O5183[16] = + _LNGOFF_2_0_0_2_;
+	{long i; for (i = 17; i < 19; i++) O5183[i] = + _LNGOFF_1_1_0_2_;}
+	O5183[19] = + _LNGOFF_1_0_0_2_;
+	O5183[20] = + _LNGOFF_1_1_0_2_;
+	{long i; for (i = 21; i < 23; i++) O5183[i] = + _LNGOFF_1_0_0_2_;}
+	O5183[23] = + _LNGOFF_1_0_0_3_;
+	O5183[24] = + _LNGOFF_1_0_0_2_;
+	O5183[25] = + _LNGOFF_1_0_0_3_;
+	O5183[26] = + _LNGOFF_1_0_1_2_;
+	O5183[27] = + _LNGOFF_1_1_0_2_;
+	{long i; for (i = 28; i < 30; i++) O5183[i] = + _LNGOFF_1_0_0_2_;}
+	O5183[30] = + _LNGOFF_1_0_1_2_;
+	O5183[31] = + _LNGOFF_3_0_0_2_;
+	O5183[32] = + _LNGOFF_2_1_0_2_;
+	{long i; for (i = 33; i < 35; i++) O5183[i] = + _LNGOFF_2_0_0_2_;}
+	O5183[35] = + _LNGOFF_2_1_0_2_;
+	{long i; for (i = 36; i < 38; i++) O5183[i] = + _LNGOFF_2_0_0_3_;}
+	O5183[38] = + _LNGOFF_2_0_0_2_;
+	O5183[39] = + _LNGOFF_2_0_1_2_;
+	{long i; for (i = 40; i < 42; i++) O5183[i] = + _LNGOFF_2_0_0_2_;}
+	O5183[42] = + _LNGOFF_2_1_0_2_;
+	O5183[43] = + _LNGOFF_2_0_1_2_;
 	O5183[44] = + _LNGOFF_2_0_0_2_;
-	O5183[45] = + _LNGOFF_2_1_0_1_;
+	O5183[45] = + _LNGOFF_2_1_0_2_;
 }
 
-long O5197[15];
-void O5197_init () {
-	O5197[0] =  + _REFACS_1_;
-	O5197[1] = + _CHROFF_1_0_;
-	O5197[2] = + _I64OFF_1_0_0_4_0_0_0_;
-	O5197[3] = + _LNGOFF_1_0_0_0_;
-	O5197[4] = + _CHROFF_1_0_;
-	O5197[5] = + _LNGOFF_1_0_0_0_;
-	O5197[6] = + _LNGOFF_1_0_0_3_;
-	O5197[7] = + _CHROFF_1_0_;
-	O5197[8] = + _I16OFF_1_0_0_;
-	O5197[9] = + _I64OFF_1_0_0_4_0_0_0_;
-	O5197[10] = + _CHROFF_1_0_;
-	O5197[11] = + _I16OFF_1_0_0_;
-	O5197[12] = + _R64OFF_1_0_0_4_0_0_0_0_;
-	O5197[13] = + _R32OFF_1_0_0_4_0_;
-	O5197[14] = + _PTROFF_1_0_0_4_0_0_;
+long O5196[15];
+void O5196_init () {
+	O5196[0] =  + _REFACS_2_;
+	O5196[1] = + _CHROFF_2_0_;
+	{long i; for (i = 2; i < 4; i++) O5196[i] = + _LNGOFF_2_0_0_0_;}
+	O5196[4] = + _I64OFF_2_0_0_2_0_0_0_;
+	O5196[5] = + _CHROFF_2_0_;
+	O5196[6] = + _LNGOFF_2_0_0_2_;
+	O5196[7] = + _CHROFF_2_0_;
+	O5196[8] = + _I16OFF_2_0_0_;
+	O5196[9] = + _I64OFF_2_0_0_2_0_0_0_;
+	O5196[10] = + _CHROFF_2_0_;
+	O5196[11] = + _I16OFF_2_0_0_;
+	O5196[12] = + _R64OFF_2_0_0_2_0_0_0_0_;
+	O5196[13] = + _R32OFF_2_0_0_2_0_;
+	O5196[14] = + _PTROFF_2_0_0_2_0_0_;
 }
 
-long O5198[15];
-void O5198_init () {
-	O5198[0] = + _LNGOFF_2_0_0_3_;
-	O5198[1] = + _LNGOFF_1_1_0_3_;
-	O5198[2] = + _LNGOFF_1_0_0_3_;
-	O5198[3] = + _LNGOFF_1_0_0_4_;
-	O5198[4] = + _LNGOFF_1_1_0_3_;
-	{long i; for (i = 5; i < 7; i++) O5198[i] = + _LNGOFF_1_0_0_4_;}
-	O5198[7] = + _LNGOFF_1_1_0_3_;
-	O5198[8] = + _LNGOFF_1_0_1_3_;
-	O5198[9] = + _LNGOFF_1_0_0_3_;
-	O5198[10] = + _LNGOFF_1_1_0_3_;
-	O5198[11] = + _LNGOFF_1_0_1_3_;
-	{long i; for (i = 12; i < 15; i++) O5198[i] = + _LNGOFF_1_0_0_3_;}
+long O5204[15];
+void O5204_init () {
+	O5204[0] =  + _REFACS_1_;
+	{long i; for (i = 1; i < 3; i++) O5204[i] = + _CHROFF_1_0_;}
+	O5204[3] = + _PTROFF_1_0_0_4_0_0_;
+	O5204[4] = + _CHROFF_1_0_;
+	O5204[5] = + _I64OFF_1_0_0_4_0_0_0_;
+	O5204[6] = + _LNGOFF_1_0_0_3_;
+	O5204[7] = + _LNGOFF_1_0_0_0_;
+	O5204[8] = + _I64OFF_1_0_0_4_0_0_0_;
+	O5204[9] = + _LNGOFF_1_0_0_0_;
+	O5204[10] = + _I16OFF_1_0_0_;
+	O5204[11] = + _CHROFF_1_0_;
+	O5204[12] = + _R32OFF_1_0_0_4_0_;
+	O5204[13] = + _R64OFF_1_0_0_4_0_0_0_0_;
+	O5204[14] = + _I16OFF_1_0_0_;
 }
 
-long O5199[15];
-void O5199_init () {
-	O5199[0] = + _LNGOFF_2_0_0_0_;
-	O5199[1] = + _LNGOFF_1_1_0_0_;
-	O5199[2] = + _LNGOFF_1_0_0_0_;
-	O5199[3] = + _LNGOFF_1_0_0_1_;
-	O5199[4] = + _LNGOFF_1_1_0_0_;
-	O5199[5] = + _LNGOFF_1_0_0_1_;
-	O5199[6] = + _LNGOFF_1_0_0_0_;
-	O5199[7] = + _LNGOFF_1_1_0_0_;
-	O5199[8] = + _LNGOFF_1_0_1_0_;
-	O5199[9] = + _LNGOFF_1_0_0_0_;
-	O5199[10] = + _LNGOFF_1_1_0_0_;
-	O5199[11] = + _LNGOFF_1_0_1_0_;
-	{long i; for (i = 12; i < 15; i++) O5199[i] = + _LNGOFF_1_0_0_0_;}
+long O5205[15];
+void O5205_init () {
+	O5205[0] = + _LNGOFF_2_0_0_3_;
+	{long i; for (i = 1; i < 3; i++) O5205[i] = + _LNGOFF_1_1_0_3_;}
+	O5205[3] = + _LNGOFF_1_0_0_3_;
+	O5205[4] = + _LNGOFF_1_1_0_3_;
+	O5205[5] = + _LNGOFF_1_0_0_3_;
+	{long i; for (i = 6; i < 8; i++) O5205[i] = + _LNGOFF_1_0_0_4_;}
+	O5205[8] = + _LNGOFF_1_0_0_3_;
+	O5205[9] = + _LNGOFF_1_0_0_4_;
+	O5205[10] = + _LNGOFF_1_0_1_3_;
+	O5205[11] = + _LNGOFF_1_1_0_3_;
+	{long i; for (i = 12; i < 14; i++) O5205[i] = + _LNGOFF_1_0_0_3_;}
+	O5205[14] = + _LNGOFF_1_0_1_3_;
 }
 
 long O5206[15];
 void O5206_init () {
-	O5206[0] =  + _REFACS_2_;
-	{long i; for (i = 1; i < 3; i++) O5206[i] = + _CHROFF_2_0_;}
-	O5206[3] = + _PTROFF_2_0_0_3_0_0_;
-	O5206[4] = + _CHROFF_2_0_;
-	O5206[5] = + _I64OFF_2_0_0_3_0_0_0_;
-	O5206[6] = + _LNGOFF_2_0_0_3_;
-	O5206[7] = + _LNGOFF_2_0_0_0_;
-	O5206[8] = + _I64OFF_2_0_0_3_0_0_0_;
-	O5206[9] = + _LNGOFF_2_0_0_0_;
-	O5206[10] = + _I16OFF_2_0_0_;
-	O5206[11] = + _CHROFF_2_0_;
-	O5206[12] = + _R32OFF_2_0_0_3_0_;
-	O5206[13] = + _R64OFF_2_0_0_3_0_0_0_0_;
-	O5206[14] = + _I16OFF_2_0_0_;
+	O5206[0] = + _LNGOFF_2_0_0_0_;
+	{long i; for (i = 1; i < 3; i++) O5206[i] = + _LNGOFF_1_1_0_0_;}
+	O5206[3] = + _LNGOFF_1_0_0_0_;
+	O5206[4] = + _LNGOFF_1_1_0_0_;
+	{long i; for (i = 5; i < 7; i++) O5206[i] = + _LNGOFF_1_0_0_0_;}
+	O5206[7] = + _LNGOFF_1_0_0_1_;
+	O5206[8] = + _LNGOFF_1_0_0_0_;
+	O5206[9] = + _LNGOFF_1_0_0_1_;
+	O5206[10] = + _LNGOFF_1_0_1_0_;
+	O5206[11] = + _LNGOFF_1_1_0_0_;
+	{long i; for (i = 12; i < 14; i++) O5206[i] = + _LNGOFF_1_0_0_0_;}
+	O5206[14] = + _LNGOFF_1_0_1_0_;
 }
 
-long O5207[15];
-void O5207_init () {
-	O5207[0] = + _LNGOFF_3_0_0_0_;
-	{long i; for (i = 1; i < 3; i++) O5207[i] = + _LNGOFF_2_1_0_0_;}
-	O5207[3] = + _LNGOFF_2_0_0_0_;
-	O5207[4] = + _LNGOFF_2_1_0_0_;
-	{long i; for (i = 5; i < 7; i++) O5207[i] = + _LNGOFF_2_0_0_0_;}
-	O5207[7] = + _LNGOFF_2_0_0_1_;
-	O5207[8] = + _LNGOFF_2_0_0_0_;
-	O5207[9] = + _LNGOFF_2_0_0_1_;
-	O5207[10] = + _LNGOFF_2_0_1_0_;
-	O5207[11] = + _LNGOFF_2_1_0_0_;
-	{long i; for (i = 12; i < 14; i++) O5207[i] = + _LNGOFF_2_0_0_0_;}
-	O5207[14] = + _LNGOFF_2_0_1_0_;
+long O5213[15];
+void O5213_init () {
+	O5213[0] =  + _REFACS_2_;
+	O5213[1] = + _CHROFF_2_0_;
+	O5213[2] = + _LNGOFF_2_0_0_3_;
+	O5213[3] = + _I64OFF_2_0_0_3_0_0_0_;
+	O5213[4] = + _CHROFF_2_0_;
+	{long i; for (i = 5; i < 7; i++) O5213[i] = + _LNGOFF_2_0_0_0_;}
+	O5213[7] = + _I64OFF_2_0_0_3_0_0_0_;
+	O5213[8] = + _I16OFF_2_0_0_;
+	O5213[9] = + _R64OFF_2_0_0_3_0_0_0_0_;
+	O5213[10] = + _R32OFF_2_0_0_3_0_;
+	O5213[11] = + _CHROFF_2_0_;
+	O5213[12] = + _I16OFF_2_0_0_;
+	O5213[13] = + _PTROFF_2_0_0_3_0_0_;
+	O5213[14] = + _CHROFF_2_0_;
 }
 
 long O5214[15];
 void O5214_init () {
-	O5214[0] =  + _REFACS_2_;
-	O5214[1] = + _PTROFF_2_0_0_2_0_0_;
-	O5214[2] = + _CHROFF_2_0_;
-	O5214[3] = + _LNGOFF_2_0_0_2_;
-	O5214[4] = + _I64OFF_2_0_0_2_0_0_0_;
-	O5214[5] = + _CHROFF_2_0_;
-	O5214[6] = + _LNGOFF_2_0_0_0_;
-	O5214[7] = + _I64OFF_2_0_0_2_0_0_0_;
-	O5214[8] = + _I16OFF_2_0_0_;
-	O5214[9] = + _R64OFF_2_0_0_2_0_0_0_0_;
-	O5214[10] = + _R32OFF_2_0_0_2_0_;
-	O5214[11] = + _CHROFF_2_0_;
-	O5214[12] = + _I16OFF_2_0_0_;
+	O5214[0] = + _LNGOFF_3_0_0_0_;
+	O5214[1] = + _LNGOFF_2_1_0_0_;
+	{long i; for (i = 2; i < 4; i++) O5214[i] = + _LNGOFF_2_0_0_0_;}
+	O5214[4] = + _LNGOFF_2_1_0_0_;
+	{long i; for (i = 5; i < 7; i++) O5214[i] = + _LNGOFF_2_0_0_1_;}
+	O5214[7] = + _LNGOFF_2_0_0_0_;
+	O5214[8] = + _LNGOFF_2_0_1_0_;
+	{long i; for (i = 9; i < 11; i++) O5214[i] = + _LNGOFF_2_0_0_0_;}
+	O5214[11] = + _LNGOFF_2_1_0_0_;
+	O5214[12] = + _LNGOFF_2_0_1_0_;
 	O5214[13] = + _LNGOFF_2_0_0_0_;
-	O5214[14] = + _CHROFF_2_0_;
+	O5214[14] = + _LNGOFF_2_1_0_0_;
 }
 
 long O6072[6];

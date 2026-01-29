@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C21_c.obj 
 
-OLDOBJECTS =  ty681.obj ty681d.obj ty682.obj ty682d.obj ty689.obj ty689d.obj ty690.obj ty690d.obj \
-	ty683.obj ty683d.obj ty691.obj ty691d.obj na679.obj na679d.obj ar678.obj ar678d.obj \
-	li663.obj li663d.obj re676.obj re676d.obj in671.obj in671d.obj dy673.obj dy673d.obj \
-	ha684.obj ha684d.obj li675.obj li675d.obj cu664.obj cu664d.obj tr665.obj tr665d.obj \
-	dy668.obj dy668d.obj bo677.obj bo677d.obj ta672.obj ta672d.obj fi661.obj fi661d.obj \
-	ha685.obj ha685d.obj un674.obj un674d.obj ta687.obj ta687d.obj ch670.obj ch670d.obj \
-	co660.obj co660d.obj bi667.obj bi667d.obj dy669.obj dy669d.obj rt688.obj rt688d.obj \
-	rt680.obj rt680d.obj bo662.obj bo662d.obj ta686.obj ta686d.obj co666.obj co666d.obj \
-	ki692.obj ki692d.obj 
+OLDOBJECTS =  ty678.obj ty678d.obj ty679.obj ty679d.obj ty684.obj ty684d.obj ty685.obj ty685d.obj \
+	ty688.obj ty688d.obj ty689.obj ty689d.obj ty680.obj ty680d.obj ty686.obj ty686d.obj \
+	ty690.obj ty690d.obj na673.obj na673d.obj ar672.obj ar672d.obj re670.obj re670d.obj \
+	in665.obj in665d.obj dy667.obj dy667d.obj li669.obj li669d.obj tr660.obj tr660d.obj \
+	dy662.obj dy662d.obj bo671.obj bo671d.obj ta666.obj ta666d.obj ha691.obj ha691d.obj \
+	un668.obj un668d.obj mm675.obj mm675d.obj ch664.obj ch664d.obj bi661.obj bi661d.obj \
+	dy663.obj dy663d.obj rt683.obj rt683d.obj rt687.obj rt687d.obj rt677.obj rt677d.obj \
+	ta692.obj ta692d.obj mm674.obj mm674d.obj mm676.obj mm676d.obj ki682.obj ki682d.obj \
+	ki681.obj ki681d.obj 
 
 all::  Cobj21.lib
 

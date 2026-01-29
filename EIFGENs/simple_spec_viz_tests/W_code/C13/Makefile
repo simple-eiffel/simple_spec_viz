@@ -41,13 +41,13 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C13_c.obj 
 
-OLDOBJECTS =  it400.obj it400d.obj ro424.obj ro424d.obj pr428.obj pr428d.obj fu423.obj fu423d.obj \
-	ty425.obj ty425d.obj ty426.obj ty426d.obj ty403.obj ty403d.obj ty404.obj ty404d.obj \
-	ty427.obj ty427d.obj re414.obj re414d.obj it405.obj it405d.obj it411.obj it411d.obj \
-	it406.obj it406d.obj it409.obj it409d.obj li420.obj li420d.obj eq396.obj eq396d.obj \
-	li407.obj li407d.obj in417.obj in417d.obj re415.obj re415d.obj cu421.obj cu421d.obj \
-	tr422.obj tr422d.obj se408.obj se408d.obj fi418.obj fi418d.obj ty416.obj ty416d.obj \
-	ac410.obj ac410d.obj co413.obj co413d.obj ba412.obj ba412d.obj bo419.obj bo419d.obj \
+OLDOBJECTS =  it400.obj it400d.obj ro425.obj ro425d.obj fu424.obj fu424d.obj ty426.obj ty426d.obj \
+	ty427.obj ty427d.obj ty403.obj ty403d.obj ty404.obj ty404d.obj ty428.obj ty428d.obj \
+	re413.obj re413d.obj it405.obj it405d.obj it406.obj it406d.obj li410.obj li410d.obj \
+	it417.obj it417d.obj eq396.obj eq396d.obj li407.obj li407d.obj in416.obj in416d.obj \
+	re414.obj re414d.obj cu411.obj cu411d.obj tr423.obj tr423d.obj se409.obj se409d.obj \
+	fi418.obj fi418d.obj ch408.obj ch408d.obj ty415.obj ty415d.obj ac420.obj ac420d.obj \
+	co412.obj co412d.obj ba421.obj ba421d.obj bo419.obj bo419d.obj co422.obj co422d.obj \
 	ma398.obj ma398d.obj ma399.obj ma399d.obj ma397.obj ma397d.obj uc401.obj uc401d.obj \
 	uc402.obj uc402d.obj 
 

@@ -59,8 +59,8 @@ static const struct desc_info desc_62[] = {
 	{EIF_GENERIC(egt_12_62), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 1387, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 1388, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1389, 0},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1390, 4},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1389, 0},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1390, 4},
 };
 void Init62(void)
 {

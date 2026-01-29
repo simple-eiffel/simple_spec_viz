@@ -56,11 +56,11 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C9_c.obj 
 
-OLDOBJECTS =  it400.obj ro424.obj pr428.obj fu423.obj ty403.obj ty404.obj ty427.obj ty434.obj \
-	ty435.obj ty436.obj ty437.obj ty438.obj ty439.obj ty440.obj ty441.obj ty442.obj \
-	ty443.obj ty444.obj ty445.obj ty446.obj re414.obj li420.obj ar447.obj li407.obj \
-	in417.obj re415.obj tr422.obj se408.obj ar448.obj dy449.obj ta433.obj fi418.obj \
-	ch431.obj ty416.obj ac410.obj co413.obj bi430.obj co429.obj uc401.obj 
+OLDOBJECTS =  it400.obj ro425.obj pr429.obj fu424.obj ty403.obj ty404.obj ty428.obj ty433.obj \
+	ty434.obj ty435.obj ty436.obj ty437.obj ty438.obj ty439.obj ty440.obj ty441.obj \
+	ty442.obj ty443.obj ty444.obj ty445.obj re413.obj li410.obj ar446.obj li407.obj \
+	in416.obj re414.obj tr423.obj se409.obj ar447.obj dy448.obj ta432.obj fi418.obj \
+	ch408.obj ty415.obj ac420.obj co412.obj bi430.obj dy449.obj co422.obj uc401.obj 
 
 all::  Cobj9.lib
 

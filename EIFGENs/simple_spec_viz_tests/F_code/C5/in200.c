@@ -69,7 +69,7 @@ EIF_BOOLEAN F226_2645 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		if ((EIF_BOOLEAN)(*(EIF_INTEGER_32 *)(Current + O2477[dtype-225]) == ti4_1)) {
 			tr1 = (nstcall = 0, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R2490[dtype-226])(Current));
 			tr2 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R2490[Dtype(RTCW(arg1))-226])(arg1));
-			tb3 = (nstcall = 1, F783_5445(RTCW(tr1), tr2));
+			tb3 = (nstcall = 1, F792_5445(RTCW(tr1), tr2));
 			tb2 = tb3;
 		}
 		if (!tb2) {

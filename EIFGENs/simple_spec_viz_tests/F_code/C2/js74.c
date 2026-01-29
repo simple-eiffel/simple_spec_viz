@@ -158,7 +158,7 @@ EIF_CHARACTER_8 F94_1373 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(2);
 		tr1 = *(EIF_REFERENCE *)(Current);

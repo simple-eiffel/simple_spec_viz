@@ -539,7 +539,7 @@ label_1:
 body:;
 	RTHOOK(2);
 	loc1 = RTCCL(arg1);
-	loc1 = RTRV(eif_new_type(1003, 0x01),loc1);
+	loc1 = RTRV(eif_new_type(1000, 0x01),loc1);
 	if (EIF_TEST(loc1)) {
 		RTHOOK(3);
 		Result = '\01';
@@ -578,7 +578,7 @@ body:;
 		tb1 = '\01';
 		tb2 = '\01';
 		tb3 = '\0';
-		tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)tr1 = ((EIF_INTEGER_32) 0L);
 		tb4 = (nstcall = 1, F1_6(arg1, tr1));
 		if (tb4) {
@@ -2096,14 +2096,14 @@ EIF_REFERENCE F1019_7226 (EIF_REFERENCE Current)
 		tb1 = EIF_TRUE;
 		for (;;) {
 			if (!tb1) break;
-			tb2 = (nstcall = 1, F425_4812(loc3));
+			tb2 = (nstcall = 1, F426_4812(loc3));
 			if (tb2) break;
 			RTHOOK(11);
 			tr1 = RTMS_EX_H("01",2,12337);
-			tc1 = (nstcall = 1, F425_4803(loc3));
+			tc1 = (nstcall = 1, F426_4803(loc3));
 			tb3 = (nstcall = 1, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[Dtype(tr1)-663])(tr1, (EIF_REFERENCE) &tc1));
 			tb1 = tb3;
-			(nstcall = 1, F425_4818(loc3));
+			(nstcall = 1, F426_4818(loc3));
 		}
 		if (tb1) {
 			RTCK;
@@ -2269,14 +2269,14 @@ EIF_REFERENCE F1019_7228 (EIF_REFERENCE Current)
 		tb1 = EIF_TRUE;
 		for (;;) {
 			if (!tb1) break;
-			tb2 = (nstcall = 1, F425_4812(loc3));
+			tb2 = (nstcall = 1, F426_4812(loc3));
 			if (tb2) break;
 			RTHOOK(11);
 			tr1 = RTMS_EX_H("01234567",8,2025887031);
-			tc1 = (nstcall = 1, F425_4803(loc3));
+			tc1 = (nstcall = 1, F426_4803(loc3));
 			tb3 = (nstcall = 1, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[Dtype(tr1)-663])(tr1, (EIF_REFERENCE) &tc1));
 			tb1 = tb3;
-			(nstcall = 1, F425_4818(loc3));
+			(nstcall = 1, F426_4818(loc3));
 		}
 		if (tb1) {
 			RTCK;
@@ -2436,14 +2436,14 @@ EIF_REFERENCE F1019_7230 (EIF_REFERENCE Current)
 		tb1 = EIF_TRUE;
 		for (;;) {
 			if (!tb1) break;
-			tb2 = (nstcall = 1, F425_4812(loc3));
+			tb2 = (nstcall = 1, F426_4812(loc3));
 			if (tb2) break;
 			RTHOOK(11);
 			tr1 = RTMS_EX_H("0123456789ABCDEF",16,1319696198);
-			tc1 = (nstcall = 1, F425_4803(loc3));
+			tc1 = (nstcall = 1, F426_4803(loc3));
 			tb3 = (nstcall = 1, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[Dtype(tr1)-663])(tr1, (EIF_REFERENCE) &tc1));
 			tb1 = tb3;
-			(nstcall = 1, F425_4818(loc3));
+			(nstcall = 1, F426_4818(loc3));
 		}
 		if (tb1) {
 			RTCK;

@@ -56,12 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C7_c.obj 
 
-OLDOBJECTS =  tu310.obj re340.obj re339.obj re337.obj re336.obj na334.obj na333.obj na313.obj \
-	na312.obj na331.obj na330.obj na328.obj na327.obj in325.obj in324.obj in322.obj \
-	in321.obj in319.obj in318.obj in316.obj in315.obj ch346.obj ch345.obj ch343.obj \
+OLDOBJECTS =  tu310.obj re340.obj re339.obj re337.obj re336.obj na334.obj na333.obj na331.obj \
+	na330.obj na328.obj na327.obj na325.obj na324.obj in322.obj in321.obj in319.obj \
+	in318.obj in316.obj in315.obj in313.obj in312.obj ch346.obj ch345.obj ch343.obj \
 	ch342.obj bo349.obj bo348.obj pa309.obj ab302.obj ha306.obj bo347.obj ch344.obj \
-	ch341.obj re338.obj re335.obj na332.obj na329.obj na326.obj in323.obj in320.obj \
-	in317.obj in314.obj na311.obj it308.obj rt301.obj rt303.obj da300.obj uc307.obj 
+	ch341.obj re338.obj re335.obj na332.obj na329.obj na326.obj na323.obj in320.obj \
+	in317.obj in314.obj in311.obj it308.obj rt301.obj rt303.obj da300.obj uc307.obj 
 
 all::  Cobj7.lib
 

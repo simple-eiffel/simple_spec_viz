@@ -107,11 +107,11 @@ void R4909_init () {
 }
 static void F868_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F868_5849(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	F868_5849(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static void F869_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F869_5849(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	F869_5849(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static void F870_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -119,11 +119,11 @@ static void F870_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F871_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F871_5849(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	F871_5849(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static void F872_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F872_5849(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	F872_5849(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static void F873_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -159,7 +159,7 @@ static void F880_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F881_5849_4909_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F881_5849(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	F881_5849(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R4910[16])();
@@ -200,9 +200,10 @@ void R4941_init () {
 	R4941[1] = (char *(*)()) F887_5902;
 	R4941[2] = (char *(*)()) F888_5902;
 	R4941[3] = (char *(*)()) F889_5902;
-	{long i; for (i = 4; i < 6; i++) R4941[i] = (char *(*)()) F890_5902;}
+	R4941[4] = (char *(*)()) F890_5902;
+	R4941[5] = (char *(*)()) F888_5902;
 	{long i; for (i = 6; i < 8; i++) R4941[i] = (char *(*)()) F886_5902;}
-	R4941[8] = (char *(*)()) F888_5902;
+	R4941[8] = (char *(*)()) F889_5902;
 }
 
 char *(*R4942[9])();
@@ -211,9 +212,10 @@ void R4942_init () {
 	R4942[1] = (char *(*)()) F887_5903;
 	R4942[2] = (char *(*)()) F888_5903;
 	R4942[3] = (char *(*)()) F889_5903;
-	{long i; for (i = 4; i < 6; i++) R4942[i] = (char *(*)()) F890_5903;}
+	R4942[4] = (char *(*)()) F890_5903;
+	R4942[5] = (char *(*)()) F888_5903;
 	{long i; for (i = 6; i < 8; i++) R4942[i] = (char *(*)()) F886_5903;}
-	R4942[8] = (char *(*)()) F888_5903;
+	R4942[8] = (char *(*)()) F889_5903;
 }
 
 char *(*R4944[9])();
@@ -222,9 +224,10 @@ void R4944_init () {
 	R4944[1] = (char *(*)()) F887_5905;
 	R4944[2] = (char *(*)()) F888_5905;
 	R4944[3] = (char *(*)()) F889_5905;
-	{long i; for (i = 4; i < 6; i++) R4944[i] = (char *(*)()) F890_5905;}
+	R4944[4] = (char *(*)()) F890_5905;
+	R4944[5] = (char *(*)()) F888_5905;
 	{long i; for (i = 6; i < 8; i++) R4944[i] = (char *(*)()) F886_5905;}
-	R4944[8] = (char *(*)()) F888_5905;
+	R4944[8] = (char *(*)()) F889_5905;
 }
 
 char *(*R4945[9])();
@@ -233,23 +236,24 @@ void R4945_init () {
 	R4945[1] = (char *(*)()) F887_5906;
 	R4945[2] = (char *(*)()) F888_5906_4945_1;
 	R4945[3] = (char *(*)()) F889_5906_4945_1;
-	{long i; for (i = 4; i < 6; i++) R4945[i] = (char *(*)()) F890_5906_4945_1;}
+	R4945[4] = (char *(*)()) F890_5906_4945_1;
+	R4945[5] = (char *(*)()) F888_5906_4945_1;
 	{long i; for (i = 6; i < 8; i++) R4945[i] = (char *(*)()) F886_5906;}
-	R4945[8] = (char *(*)()) F888_5906_4945_1;
+	R4945[8] = (char *(*)()) F889_5906_4945_1;
 }
 static EIF_REFERENCE F888_5906_4945_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F888_5906(Current);
+	EIF_NATURAL_32 r = F888_5906(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -264,7 +268,7 @@ static EIF_REFERENCE F889_5906_4945_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -274,14 +278,14 @@ static EIF_REFERENCE F890_5906_4945_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F890_5906(Current);
+	EIF_INTEGER_32 r = F890_5906(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -292,9 +296,10 @@ void R4946_init () {
 	R4946[1] = (char *(*)()) F887_5908_4946_5;
 	R4946[2] = (char *(*)()) F888_5908_4946_5;
 	R4946[3] = (char *(*)()) F889_5908_4946_5;
-	{long i; for (i = 4; i < 6; i++) R4946[i] = (char *(*)()) F890_5908_4946_5;}
+	R4946[4] = (char *(*)()) F890_5908_4946_5;
+	R4946[5] = (char *(*)()) F888_5908_4946_5;
 	{long i; for (i = 6; i < 8; i++) R4946[i] = (char *(*)()) F886_5908;}
-	R4946[8] = (char *(*)()) F888_5908_4946_5;
+	R4946[8] = (char *(*)()) F889_5908_4946_5;
 }
 static EIF_REFERENCE F887_5908_4946_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -305,14 +310,14 @@ static EIF_REFERENCE F888_5908_4946_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F888_5908(Current, arg1);
+	EIF_NATURAL_32 r = F888_5908(Current, *(EIF_POINTER *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -321,13 +326,13 @@ static EIF_REFERENCE F889_5908_4946_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F889_5908(Current, *(EIF_INTEGER_32 *)arg1);
+	EIF_INTEGER_32 r = F889_5908(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -337,14 +342,14 @@ static EIF_REFERENCE F890_5908_4946_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F890_5908(Current, *(EIF_POINTER *)arg1);
+	EIF_INTEGER_32 r = F890_5908(Current, *(EIF_INTEGER_32 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -355,23 +360,24 @@ void R4950_init () {
 	R4950[1] = (char *(*)()) F887_5914;
 	R4950[2] = (char *(*)()) F888_5914_4950_1;
 	R4950[3] = (char *(*)()) F889_5914_4950_1;
-	{long i; for (i = 4; i < 6; i++) R4950[i] = (char *(*)()) F890_5914_4950_1;}
+	R4950[4] = (char *(*)()) F890_5914_4950_1;
+	R4950[5] = (char *(*)()) F888_5914_4950_1;
 	{long i; for (i = 6; i < 8; i++) R4950[i] = (char *(*)()) F886_5914;}
-	R4950[8] = (char *(*)()) F888_5914_4950_1;
+	R4950[8] = (char *(*)()) F889_5914_4950_1;
 }
 static EIF_REFERENCE F888_5914_4950_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F888_5914(Current);
+	EIF_NATURAL_32 r = F888_5914(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -386,7 +392,7 @@ static EIF_REFERENCE F889_5914_4950_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -396,14 +402,14 @@ static EIF_REFERENCE F890_5914_4950_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F890_5914(Current);
+	EIF_INTEGER_32 r = F890_5914(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -412,11 +418,12 @@ char *(*R4951[9])();
 void R4951_init () {
 	R4951[0] = (char *(*)()) F886_5915;
 	R4951[1] = (char *(*)()) F887_5915_4951_1;
-	R4951[2] = (char *(*)()) F888_5915;
-	R4951[3] = (char *(*)()) F889_5915_4951_1;
-	{long i; for (i = 4; i < 6; i++) R4951[i] = (char *(*)()) F890_5915_4951_1;}
+	R4951[2] = (char *(*)()) F888_5915_4951_1;
+	R4951[3] = (char *(*)()) F889_5915;
+	R4951[4] = (char *(*)()) F890_5915_4951_1;
+	R4951[5] = (char *(*)()) F888_5915_4951_1;
 	{long i; for (i = 6; i < 8; i++) R4951[i] = (char *(*)()) F886_5915;}
-	R4951[8] = (char *(*)()) F888_5915;
+	R4951[8] = (char *(*)()) F889_5915;
 }
 static EIF_REFERENCE F887_5915_4951_1 (EIF_REFERENCE Current)
 {
@@ -429,33 +436,17 @@ static EIF_REFERENCE F887_5915_4951_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F889_5915_4951_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F888_5915_4951_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F889_5915(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
-	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F890_5915_4951_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F890_5915(Current);
+	EIF_POINTER r = F888_5915(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
@@ -466,13 +457,29 @@ static EIF_REFERENCE F890_5915_4951_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
+static EIF_REFERENCE F890_5915_4951_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F890_5915(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+	} else {
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
+}
 
 char *(*R4953[9])();
 void R4953_init () {
 	R4953[0] = (char *(*)()) F886_5919;
 	R4953[1] = (char *(*)()) F887_5919_4953_62;
-	R4953[2] = (char *(*)()) F888_5919;
-	R4953[3] = (char *(*)()) F889_5919_4953_62;
+	R4953[2] = (char *(*)()) F888_5919_4953_62;
+	R4953[3] = (char *(*)()) F889_5919;
 	R4953[4] = (char *(*)()) F890_5919_4953_62;
 	R4953[5] = (char *(*)()) F891_6017_4953_62;
 	R4953[6] = (char *(*)()) F886_5919;
@@ -483,13 +490,13 @@ static EIF_INTEGER_32 F887_5919_4953_62 (EIF_REFERENCE Current, EIF_REFERENCE ar
 {
 	return F887_5919(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static EIF_INTEGER_32 F889_5919_4953_62 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_INTEGER_32 F888_5919_4953_62 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F889_5919(Current, *(EIF_INTEGER_32 *)arg1);
+	return F888_5919(Current, *(EIF_POINTER *)arg1);
 }
 static EIF_INTEGER_32 F890_5919_4953_62 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F890_5919(Current, *(EIF_POINTER *)arg1);
+	return F890_5919(Current, *(EIF_INTEGER_32 *)arg1);
 }
 static EIF_INTEGER_32 F891_6017_4953_62 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -500,9 +507,10 @@ char *(*R4955[9])();
 void R4955_init () {
 	R4955[0] = (char *(*)()) F886_5926;
 	R4955[1] = (char *(*)()) F887_5926_4955_3;
-	R4955[2] = (char *(*)()) F888_5926;
-	R4955[3] = (char *(*)()) F889_5926_4955_3;
-	{long i; for (i = 4; i < 6; i++) R4955[i] = (char *(*)()) F890_5926_4955_3;}
+	R4955[2] = (char *(*)()) F888_5926_4955_3;
+	R4955[3] = (char *(*)()) F889_5926;
+	R4955[4] = (char *(*)()) F890_5926_4955_3;
+	R4955[5] = (char *(*)()) F888_5926_4955_3;
 	R4955[6] = (char *(*)()) F886_5926;
 	R4955[7] = (char *(*)()) F893_6035;
 	R4955[8] = (char *(*)()) F894_6035;
@@ -511,13 +519,13 @@ static EIF_BOOLEAN F887_5926_4955_3 (EIF_REFERENCE Current, EIF_REFERENCE arg1, 
 {
 	return F887_5926(Current, *(EIF_INTEGER_32 *)arg1, *(EIF_INTEGER_32 *)arg2);
 }
-static EIF_BOOLEAN F889_5926_4955_3 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
+static EIF_BOOLEAN F888_5926_4955_3 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
 {
-	return F889_5926(Current, *(EIF_INTEGER_32 *)arg1, *(EIF_INTEGER_32 *)arg2);
+	return F888_5926(Current, *(EIF_POINTER *)arg1, *(EIF_POINTER *)arg2);
 }
 static EIF_BOOLEAN F890_5926_4955_3 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
 {
-	return F890_5926(Current, *(EIF_POINTER *)arg1, *(EIF_POINTER *)arg2);
+	return F890_5926(Current, *(EIF_INTEGER_32 *)arg1, *(EIF_INTEGER_32 *)arg2);
 }
 
 char *(*R4957[9])();
@@ -526,9 +534,10 @@ void R4957_init () {
 	R4957[1] = (char *(*)()) F887_5930;
 	R4957[2] = (char *(*)()) F888_5930;
 	R4957[3] = (char *(*)()) F889_5930;
-	{long i; for (i = 4; i < 6; i++) R4957[i] = (char *(*)()) F890_5930;}
+	R4957[4] = (char *(*)()) F890_5930;
+	R4957[5] = (char *(*)()) F888_5930;
 	{long i; for (i = 6; i < 8; i++) R4957[i] = (char *(*)()) F886_5930;}
-	R4957[8] = (char *(*)()) F888_5930;
+	R4957[8] = (char *(*)()) F889_5930;
 }
 
 char *(*R4958[9])();
@@ -537,9 +546,10 @@ void R4958_init () {
 	R4958[1] = (char *(*)()) F887_5931;
 	R4958[2] = (char *(*)()) F888_5931;
 	R4958[3] = (char *(*)()) F889_5931;
-	{long i; for (i = 4; i < 6; i++) R4958[i] = (char *(*)()) F890_5931;}
+	R4958[4] = (char *(*)()) F890_5931;
+	R4958[5] = (char *(*)()) F888_5931;
 	{long i; for (i = 6; i < 8; i++) R4958[i] = (char *(*)()) F886_5931;}
-	R4958[8] = (char *(*)()) F888_5931;
+	R4958[8] = (char *(*)()) F889_5931;
 }
 
 char *(*R4959[9])();
@@ -548,9 +558,10 @@ void R4959_init () {
 	R4959[1] = (char *(*)()) F887_5932;
 	R4959[2] = (char *(*)()) F888_5932;
 	R4959[3] = (char *(*)()) F889_5932;
-	{long i; for (i = 4; i < 6; i++) R4959[i] = (char *(*)()) F890_5932;}
+	R4959[4] = (char *(*)()) F890_5932;
+	R4959[5] = (char *(*)()) F888_5932;
 	{long i; for (i = 6; i < 8; i++) R4959[i] = (char *(*)()) F886_5932;}
-	R4959[8] = (char *(*)()) F888_5932;
+	R4959[8] = (char *(*)()) F889_5932;
 }
 
 char *(*R4960[9])();
@@ -559,9 +570,10 @@ void R4960_init () {
 	R4960[1] = (char *(*)()) F887_5933;
 	R4960[2] = (char *(*)()) F888_5933;
 	R4960[3] = (char *(*)()) F889_5933;
-	{long i; for (i = 4; i < 6; i++) R4960[i] = (char *(*)()) F890_5933;}
+	R4960[4] = (char *(*)()) F890_5933;
+	R4960[5] = (char *(*)()) F888_5933;
 	{long i; for (i = 6; i < 8; i++) R4960[i] = (char *(*)()) F886_5933;}
-	R4960[8] = (char *(*)()) F888_5933;
+	R4960[8] = (char *(*)()) F889_5933;
 }
 
 char *(*R4961[9])();
@@ -570,9 +582,10 @@ void R4961_init () {
 	R4961[1] = (char *(*)()) F887_5934;
 	R4961[2] = (char *(*)()) F888_5934;
 	R4961[3] = (char *(*)()) F889_5934;
-	{long i; for (i = 4; i < 6; i++) R4961[i] = (char *(*)()) F890_5934;}
+	R4961[4] = (char *(*)()) F890_5934;
+	R4961[5] = (char *(*)()) F888_5934;
 	{long i; for (i = 6; i < 8; i++) R4961[i] = (char *(*)()) F886_5934;}
-	R4961[8] = (char *(*)()) F888_5934;
+	R4961[8] = (char *(*)()) F889_5934;
 }
 
 char *(*R4962[9])();
@@ -581,9 +594,10 @@ void R4962_init () {
 	R4962[1] = (char *(*)()) F887_5935;
 	R4962[2] = (char *(*)()) F888_5935;
 	R4962[3] = (char *(*)()) F889_5935;
-	{long i; for (i = 4; i < 6; i++) R4962[i] = (char *(*)()) F890_5935;}
+	R4962[4] = (char *(*)()) F890_5935;
+	R4962[5] = (char *(*)()) F888_5935;
 	{long i; for (i = 6; i < 8; i++) R4962[i] = (char *(*)()) F886_5935;}
-	R4962[8] = (char *(*)()) F888_5935;
+	R4962[8] = (char *(*)()) F889_5935;
 }
 
 char *(*R4963[9])();
@@ -592,9 +606,10 @@ void R4963_init () {
 	R4963[1] = (char *(*)()) F887_5936;
 	R4963[2] = (char *(*)()) F888_5936;
 	R4963[3] = (char *(*)()) F889_5936;
-	{long i; for (i = 4; i < 6; i++) R4963[i] = (char *(*)()) F890_5936;}
+	R4963[4] = (char *(*)()) F890_5936;
+	R4963[5] = (char *(*)()) F888_5936;
 	{long i; for (i = 6; i < 8; i++) R4963[i] = (char *(*)()) F886_5936;}
-	R4963[8] = (char *(*)()) F888_5936;
+	R4963[8] = (char *(*)()) F889_5936;
 }
 
 char *(*R4964[9])();
@@ -603,9 +618,10 @@ void R4964_init () {
 	R4964[1] = (char *(*)()) F887_5937;
 	R4964[2] = (char *(*)()) F888_5937;
 	R4964[3] = (char *(*)()) F889_5937;
-	{long i; for (i = 4; i < 6; i++) R4964[i] = (char *(*)()) F890_5937;}
+	R4964[4] = (char *(*)()) F890_5937;
+	R4964[5] = (char *(*)()) F888_5937;
 	{long i; for (i = 6; i < 8; i++) R4964[i] = (char *(*)()) F886_5937;}
-	R4964[8] = (char *(*)()) F888_5937;
+	R4964[8] = (char *(*)()) F889_5937;
 }
 
 char *(*R4965[9])();
@@ -614,9 +630,10 @@ void R4965_init () {
 	R4965[1] = (char *(*)()) F887_5938;
 	R4965[2] = (char *(*)()) F888_5938;
 	R4965[3] = (char *(*)()) F889_5938;
-	{long i; for (i = 4; i < 6; i++) R4965[i] = (char *(*)()) F890_5938;}
+	R4965[4] = (char *(*)()) F890_5938;
+	R4965[5] = (char *(*)()) F888_5938;
 	{long i; for (i = 6; i < 8; i++) R4965[i] = (char *(*)()) F886_5938;}
-	R4965[8] = (char *(*)()) F888_5938;
+	R4965[8] = (char *(*)()) F889_5938;
 }
 
 char *(*R4967[9])();
@@ -625,9 +642,10 @@ void R4967_init () {
 	R4967[1] = (char *(*)()) F887_5941;
 	R4967[2] = (char *(*)()) F888_5941;
 	R4967[3] = (char *(*)()) F889_5941;
-	{long i; for (i = 4; i < 6; i++) R4967[i] = (char *(*)()) F890_5941;}
+	R4967[4] = (char *(*)()) F890_5941;
+	R4967[5] = (char *(*)()) F888_5941;
 	{long i; for (i = 6; i < 8; i++) R4967[i] = (char *(*)()) F886_5941;}
-	R4967[8] = (char *(*)()) F888_5941;
+	R4967[8] = (char *(*)()) F889_5941;
 }
 
 char *(*R4968[9])();
@@ -636,32 +654,34 @@ void R4968_init () {
 	R4968[1] = (char *(*)()) F887_5942;
 	R4968[2] = (char *(*)()) F888_5942;
 	R4968[3] = (char *(*)()) F889_5942;
-	{long i; for (i = 4; i < 6; i++) R4968[i] = (char *(*)()) F890_5942;}
+	R4968[4] = (char *(*)()) F890_5942;
+	R4968[5] = (char *(*)()) F888_5942;
 	{long i; for (i = 6; i < 8; i++) R4968[i] = (char *(*)()) F886_5942;}
-	R4968[8] = (char *(*)()) F888_5942;
+	R4968[8] = (char *(*)()) F889_5942;
 }
 
 char *(*R4970[9])();
 void R4970_init () {
 	R4970[0] = (char *(*)()) F886_5944;
 	R4970[1] = (char *(*)()) F887_5944_4970_4;
-	R4970[2] = (char *(*)()) F888_5944;
-	R4970[3] = (char *(*)()) F889_5944_4970_4;
-	{long i; for (i = 4; i < 6; i++) R4970[i] = (char *(*)()) F890_5944_4970_4;}
+	R4970[2] = (char *(*)()) F888_5944_4970_4;
+	R4970[3] = (char *(*)()) F889_5944;
+	R4970[4] = (char *(*)()) F890_5944_4970_4;
+	R4970[5] = (char *(*)()) F888_5944_4970_4;
 	{long i; for (i = 6; i < 8; i++) R4970[i] = (char *(*)()) F886_5944;}
-	R4970[8] = (char *(*)()) F888_5944;
+	R4970[8] = (char *(*)()) F889_5944;
 }
 static void F887_5944_4970_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	F887_5944(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static void F889_5944_4970_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static void F888_5944_4970_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F889_5944(Current, *(EIF_INTEGER_32 *)arg1);
+	F888_5944(Current, *(EIF_POINTER *)arg1);
 }
 static void F890_5944_4970_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F890_5944(Current, *(EIF_POINTER *)arg1);
+	F890_5944(Current, *(EIF_INTEGER_32 *)arg1);
 }
 
 char *(*R4972[9])();
@@ -670,9 +690,10 @@ void R4972_init () {
 	R4972[1] = (char *(*)()) F887_5946;
 	R4972[2] = (char *(*)()) F888_5946;
 	R4972[3] = (char *(*)()) F889_5946;
-	{long i; for (i = 4; i < 6; i++) R4972[i] = (char *(*)()) F890_5946;}
+	R4972[4] = (char *(*)()) F890_5946;
+	R4972[5] = (char *(*)()) F888_5946;
 	{long i; for (i = 6; i < 8; i++) R4972[i] = (char *(*)()) F886_5946;}
-	R4972[8] = (char *(*)()) F888_5946;
+	R4972[8] = (char *(*)()) F889_5946;
 }
 
 char *(*R4973[9])();
@@ -681,9 +702,10 @@ void R4973_init () {
 	R4973[1] = (char *(*)()) F887_5947;
 	R4973[2] = (char *(*)()) F888_5947;
 	R4973[3] = (char *(*)()) F889_5947;
-	{long i; for (i = 4; i < 6; i++) R4973[i] = (char *(*)()) F890_5947;}
+	R4973[4] = (char *(*)()) F890_5947;
+	R4973[5] = (char *(*)()) F888_5947;
 	{long i; for (i = 6; i < 8; i++) R4973[i] = (char *(*)()) F886_5947;}
-	R4973[8] = (char *(*)()) F888_5947;
+	R4973[8] = (char *(*)()) F889_5947;
 }
 
 char *(*R4979[9])();
@@ -692,7 +714,8 @@ void R4979_init () {
 	R4979[1] = (char *(*)()) F887_5960;
 	R4979[2] = (char *(*)()) F888_5960;
 	R4979[3] = (char *(*)()) F889_5960;
-	{long i; for (i = 4; i < 6; i++) R4979[i] = (char *(*)()) F890_5960;}
+	R4979[4] = (char *(*)()) F890_5960;
+	R4979[5] = (char *(*)()) F888_5960;
 	R4979[6] = (char *(*)()) F886_5960;
 	R4979[7] = (char *(*)()) F893_6037;
 	R4979[8] = (char *(*)()) F894_6037;
@@ -704,9 +727,10 @@ void R4988_init () {
 	R4988[1] = (char *(*)()) F887_5970;
 	R4988[2] = (char *(*)()) F888_5970;
 	R4988[3] = (char *(*)()) F889_5970;
-	{long i; for (i = 4; i < 6; i++) R4988[i] = (char *(*)()) F890_5970;}
+	R4988[4] = (char *(*)()) F890_5970;
+	R4988[5] = (char *(*)()) F888_5970;
 	{long i; for (i = 6; i < 8; i++) R4988[i] = (char *(*)()) F886_5970;}
-	R4988[8] = (char *(*)()) F888_5970;
+	R4988[8] = (char *(*)()) F889_5970;
 }
 
 char *(*R4989[9])();
@@ -715,9 +739,10 @@ void R4989_init () {
 	R4989[1] = (char *(*)()) F887_5971;
 	R4989[2] = (char *(*)()) F888_5971;
 	R4989[3] = (char *(*)()) F889_5971;
-	{long i; for (i = 4; i < 6; i++) R4989[i] = (char *(*)()) F890_5971;}
+	R4989[4] = (char *(*)()) F890_5971;
+	R4989[5] = (char *(*)()) F888_5971;
 	{long i; for (i = 6; i < 8; i++) R4989[i] = (char *(*)()) F886_5971;}
-	R4989[8] = (char *(*)()) F888_5971;
+	R4989[8] = (char *(*)()) F889_5971;
 }
 
 char *(*R4996[9])();
@@ -726,23 +751,24 @@ void R4996_init () {
 	R4996[1] = (char *(*)()) F887_5978;
 	R4996[2] = (char *(*)()) F888_5978_4996_1;
 	R4996[3] = (char *(*)()) F889_5978_4996_1;
-	{long i; for (i = 4; i < 6; i++) R4996[i] = (char *(*)()) F890_5978_4996_1;}
+	R4996[4] = (char *(*)()) F890_5978_4996_1;
+	R4996[5] = (char *(*)()) F888_5978_4996_1;
 	{long i; for (i = 6; i < 8; i++) R4996[i] = (char *(*)()) F886_5978;}
-	R4996[8] = (char *(*)()) F888_5978_4996_1;
+	R4996[8] = (char *(*)()) F889_5978_4996_1;
 }
 static EIF_REFERENCE F888_5978_4996_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F888_5978(Current);
+	EIF_NATURAL_32 r = F888_5978(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -757,7 +783,7 @@ static EIF_REFERENCE F889_5978_4996_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -767,14 +793,14 @@ static EIF_REFERENCE F890_5978_4996_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F890_5978(Current);
+	EIF_INTEGER_32 r = F890_5978(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -783,11 +809,12 @@ char *(*R4997[9])();
 void R4997_init () {
 	R4997[0] = (char *(*)()) F886_5979;
 	R4997[1] = (char *(*)()) F887_5979_4997_1;
-	R4997[2] = (char *(*)()) F888_5979;
-	R4997[3] = (char *(*)()) F889_5979_4997_1;
-	{long i; for (i = 4; i < 6; i++) R4997[i] = (char *(*)()) F890_5979_4997_1;}
+	R4997[2] = (char *(*)()) F888_5979_4997_1;
+	R4997[3] = (char *(*)()) F889_5979;
+	R4997[4] = (char *(*)()) F890_5979_4997_1;
+	R4997[5] = (char *(*)()) F888_5979_4997_1;
 	{long i; for (i = 6; i < 8; i++) R4997[i] = (char *(*)()) F886_5979;}
-	R4997[8] = (char *(*)()) F888_5979;
+	R4997[8] = (char *(*)()) F889_5979;
 }
 static EIF_REFERENCE F887_5979_4997_1 (EIF_REFERENCE Current)
 {
@@ -800,33 +827,17 @@ static EIF_REFERENCE F887_5979_4997_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F889_5979_4997_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F888_5979_4997_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F889_5979(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
-	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F890_5979_4997_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F890_5979(Current);
+	EIF_POINTER r = F888_5979(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
@@ -837,6 +848,22 @@ static EIF_REFERENCE F890_5979_4997_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
+static EIF_REFERENCE F890_5979_4997_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F890_5979(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+	} else {
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
+}
 
 char *(*R4998[9])();
 void R4998_init () {
@@ -844,9 +871,10 @@ void R4998_init () {
 	R4998[1] = (char *(*)()) F887_5980;
 	R4998[2] = (char *(*)()) F888_5980;
 	R4998[3] = (char *(*)()) F889_5980;
-	{long i; for (i = 4; i < 6; i++) R4998[i] = (char *(*)()) F890_5980;}
+	R4998[4] = (char *(*)()) F890_5980;
+	R4998[5] = (char *(*)()) F888_5980;
 	{long i; for (i = 6; i < 8; i++) R4998[i] = (char *(*)()) F886_5980;}
-	R4998[8] = (char *(*)()) F888_5980;
+	R4998[8] = (char *(*)()) F889_5980;
 }
 
 char *(*R4999[9])();
@@ -855,9 +883,10 @@ void R4999_init () {
 	R4999[1] = (char *(*)()) F887_5981;
 	R4999[2] = (char *(*)()) F888_5981;
 	R4999[3] = (char *(*)()) F889_5981;
-	{long i; for (i = 4; i < 6; i++) R4999[i] = (char *(*)()) F890_5981;}
+	R4999[4] = (char *(*)()) F890_5981;
+	R4999[5] = (char *(*)()) F888_5981;
 	{long i; for (i = 6; i < 8; i++) R4999[i] = (char *(*)()) F886_5981;}
-	R4999[8] = (char *(*)()) F888_5981;
+	R4999[8] = (char *(*)()) F889_5981;
 }
 
 char *(*R5000[9])();
@@ -866,9 +895,10 @@ void R5000_init () {
 	R5000[1] = (char *(*)()) F887_5982;
 	R5000[2] = (char *(*)()) F888_5982;
 	R5000[3] = (char *(*)()) F889_5982;
-	{long i; for (i = 4; i < 6; i++) R5000[i] = (char *(*)()) F890_5982;}
+	R5000[4] = (char *(*)()) F890_5982;
+	R5000[5] = (char *(*)()) F888_5982;
 	{long i; for (i = 6; i < 8; i++) R5000[i] = (char *(*)()) F886_5982;}
-	R5000[8] = (char *(*)()) F888_5982;
+	R5000[8] = (char *(*)()) F889_5982;
 }
 
 char *(*R5001[9])();
@@ -877,9 +907,10 @@ void R5001_init () {
 	R5001[1] = (char *(*)()) F887_5983;
 	R5001[2] = (char *(*)()) F888_5983;
 	R5001[3] = (char *(*)()) F889_5983;
-	{long i; for (i = 4; i < 6; i++) R5001[i] = (char *(*)()) F890_5983;}
+	R5001[4] = (char *(*)()) F890_5983;
+	R5001[5] = (char *(*)()) F888_5983;
 	{long i; for (i = 6; i < 8; i++) R5001[i] = (char *(*)()) F886_5983;}
-	R5001[8] = (char *(*)()) F888_5983;
+	R5001[8] = (char *(*)()) F889_5983;
 }
 
 char *(*R5002[9])();
@@ -888,9 +919,10 @@ void R5002_init () {
 	R5002[1] = (char *(*)()) F887_5984;
 	R5002[2] = (char *(*)()) F888_5984;
 	R5002[3] = (char *(*)()) F889_5984;
-	{long i; for (i = 4; i < 6; i++) R5002[i] = (char *(*)()) F890_5984;}
+	R5002[4] = (char *(*)()) F890_5984;
+	R5002[5] = (char *(*)()) F888_5984;
 	{long i; for (i = 6; i < 8; i++) R5002[i] = (char *(*)()) F886_5984;}
-	R5002[8] = (char *(*)()) F888_5984;
+	R5002[8] = (char *(*)()) F889_5984;
 }
 
 char *(*R5003[9])();
@@ -899,9 +931,10 @@ void R5003_init () {
 	R5003[1] = (char *(*)()) F887_5985;
 	R5003[2] = (char *(*)()) F888_5985;
 	R5003[3] = (char *(*)()) F889_5985;
-	{long i; for (i = 4; i < 6; i++) R5003[i] = (char *(*)()) F890_5985;}
+	R5003[4] = (char *(*)()) F890_5985;
+	R5003[5] = (char *(*)()) F888_5985;
 	{long i; for (i = 6; i < 8; i++) R5003[i] = (char *(*)()) F886_5985;}
-	R5003[8] = (char *(*)()) F888_5985;
+	R5003[8] = (char *(*)()) F889_5985;
 }
 
 char *(*R5004[9])();
@@ -910,9 +943,10 @@ void R5004_init () {
 	R5004[1] = (char *(*)()) F887_5986;
 	R5004[2] = (char *(*)()) F888_5986;
 	R5004[3] = (char *(*)()) F889_5986;
-	{long i; for (i = 4; i < 6; i++) R5004[i] = (char *(*)()) F890_5986;}
+	R5004[4] = (char *(*)()) F890_5986;
+	R5004[5] = (char *(*)()) F888_5986;
 	{long i; for (i = 6; i < 8; i++) R5004[i] = (char *(*)()) F886_5986;}
-	R5004[8] = (char *(*)()) F888_5986;
+	R5004[8] = (char *(*)()) F889_5986;
 }
 
 char *(*R5005[9])();
@@ -921,9 +955,10 @@ void R5005_init () {
 	R5005[1] = (char *(*)()) F887_5987;
 	R5005[2] = (char *(*)()) F888_5987;
 	R5005[3] = (char *(*)()) F889_5987;
-	{long i; for (i = 4; i < 6; i++) R5005[i] = (char *(*)()) F890_5987;}
+	R5005[4] = (char *(*)()) F890_5987;
+	R5005[5] = (char *(*)()) F888_5987;
 	{long i; for (i = 6; i < 8; i++) R5005[i] = (char *(*)()) F886_5987;}
-	R5005[8] = (char *(*)()) F888_5987;
+	R5005[8] = (char *(*)()) F889_5987;
 }
 
 char *(*R5006[9])();
@@ -932,20 +967,22 @@ void R5006_init () {
 	R5006[1] = (char *(*)()) F887_5988;
 	R5006[2] = (char *(*)()) F888_5988;
 	R5006[3] = (char *(*)()) F889_5988;
-	{long i; for (i = 4; i < 6; i++) R5006[i] = (char *(*)()) F890_5988;}
+	R5006[4] = (char *(*)()) F890_5988;
+	R5006[5] = (char *(*)()) F888_5988;
 	{long i; for (i = 6; i < 8; i++) R5006[i] = (char *(*)()) F886_5988;}
-	R5006[8] = (char *(*)()) F888_5988;
+	R5006[8] = (char *(*)()) F889_5988;
 }
 
 char *(*R5008[9])();
 void R5008_init () {
 	R5008[0] = (char *(*)()) F886_5990;
 	R5008[1] = (char *(*)()) F887_5990_5008_1;
-	R5008[2] = (char *(*)()) F888_5990;
-	R5008[3] = (char *(*)()) F889_5990_5008_1;
-	{long i; for (i = 4; i < 6; i++) R5008[i] = (char *(*)()) F890_5990_5008_1;}
+	R5008[2] = (char *(*)()) F888_5990_5008_1;
+	R5008[3] = (char *(*)()) F889_5990;
+	R5008[4] = (char *(*)()) F890_5990_5008_1;
+	R5008[5] = (char *(*)()) F888_5990_5008_1;
 	{long i; for (i = 6; i < 8; i++) R5008[i] = (char *(*)()) F886_5990;}
-	R5008[8] = (char *(*)()) F888_5990;
+	R5008[8] = (char *(*)()) F889_5990;
 }
 static EIF_REFERENCE F887_5990_5008_1 (EIF_REFERENCE Current)
 {
@@ -958,33 +995,17 @@ static EIF_REFERENCE F887_5990_5008_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F889_5990_5008_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F888_5990_5008_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F889_5990(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
-	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F890_5990_5008_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F890_5990(Current);
+	EIF_POINTER r = F888_5990(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
@@ -995,6 +1016,22 @@ static EIF_REFERENCE F890_5990_5008_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
+static EIF_REFERENCE F890_5990_5008_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F890_5990(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+	} else {
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
+}
 
 char *(*R5009[9])();
 void R5009_init () {
@@ -1002,23 +1039,24 @@ void R5009_init () {
 	R5009[1] = (char *(*)()) F887_5991;
 	R5009[2] = (char *(*)()) F888_5991_5009_1;
 	R5009[3] = (char *(*)()) F889_5991_5009_1;
-	{long i; for (i = 4; i < 6; i++) R5009[i] = (char *(*)()) F890_5991_5009_1;}
+	R5009[4] = (char *(*)()) F890_5991_5009_1;
+	R5009[5] = (char *(*)()) F888_5991_5009_1;
 	{long i; for (i = 6; i < 8; i++) R5009[i] = (char *(*)()) F886_5991;}
-	R5009[8] = (char *(*)()) F888_5991_5009_1;
+	R5009[8] = (char *(*)()) F889_5991_5009_1;
 }
 static EIF_REFERENCE F888_5991_5009_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F888_5991(Current);
+	EIF_NATURAL_32 r = F888_5991(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -1033,7 +1071,7 @@ static EIF_REFERENCE F889_5991_5009_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -1043,14 +1081,14 @@ static EIF_REFERENCE F890_5991_5009_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F890_5991(Current);
+	EIF_INTEGER_32 r = F890_5991(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -1059,46 +1097,48 @@ char *(*R5010[9])();
 void R5010_init () {
 	R5010[0] = (char *(*)()) F886_5992;
 	R5010[1] = (char *(*)()) F887_5992_5010_4;
-	R5010[2] = (char *(*)()) F888_5992;
-	R5010[3] = (char *(*)()) F889_5992_5010_4;
-	{long i; for (i = 4; i < 6; i++) R5010[i] = (char *(*)()) F890_5992_5010_4;}
+	R5010[2] = (char *(*)()) F888_5992_5010_4;
+	R5010[3] = (char *(*)()) F889_5992;
+	R5010[4] = (char *(*)()) F890_5992_5010_4;
+	R5010[5] = (char *(*)()) F888_5992_5010_4;
 	{long i; for (i = 6; i < 8; i++) R5010[i] = (char *(*)()) F886_5992;}
-	R5010[8] = (char *(*)()) F888_5992;
+	R5010[8] = (char *(*)()) F889_5992;
 }
 static void F887_5992_5010_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	F887_5992(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static void F889_5992_5010_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static void F888_5992_5010_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F889_5992(Current, *(EIF_INTEGER_32 *)arg1);
+	F888_5992(Current, *(EIF_POINTER *)arg1);
 }
 static void F890_5992_5010_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F890_5992(Current, *(EIF_POINTER *)arg1);
+	F890_5992(Current, *(EIF_INTEGER_32 *)arg1);
 }
 
 char *(*R5011[9])();
 void R5011_init () {
 	R5011[0] = (char *(*)()) F886_5993;
 	R5011[1] = (char *(*)()) F887_5993_5011_4;
-	R5011[2] = (char *(*)()) F888_5993;
-	R5011[3] = (char *(*)()) F889_5993_5011_4;
-	{long i; for (i = 4; i < 6; i++) R5011[i] = (char *(*)()) F890_5993_5011_4;}
+	R5011[2] = (char *(*)()) F888_5993_5011_4;
+	R5011[3] = (char *(*)()) F889_5993;
+	R5011[4] = (char *(*)()) F890_5993_5011_4;
+	R5011[5] = (char *(*)()) F888_5993_5011_4;
 	{long i; for (i = 6; i < 8; i++) R5011[i] = (char *(*)()) F886_5993;}
-	R5011[8] = (char *(*)()) F888_5993;
+	R5011[8] = (char *(*)()) F889_5993;
 }
 static void F887_5993_5011_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	F887_5993(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static void F889_5993_5011_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static void F888_5993_5011_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F889_5993(Current, *(EIF_INTEGER_32 *)arg1);
+	F888_5993(Current, *(EIF_POINTER *)arg1);
 }
 static void F890_5993_5011_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F890_5993(Current, *(EIF_POINTER *)arg1);
+	F890_5993(Current, *(EIF_INTEGER_32 *)arg1);
 }
 
 char *(*R5016[9])();
@@ -1107,9 +1147,10 @@ void R5016_init () {
 	R5016[1] = (char *(*)()) F887_5998;
 	R5016[2] = (char *(*)()) F888_5998;
 	R5016[3] = (char *(*)()) F889_5998;
-	{long i; for (i = 4; i < 6; i++) R5016[i] = (char *(*)()) F890_5998;}
+	R5016[4] = (char *(*)()) F890_5998;
+	R5016[5] = (char *(*)()) F888_5998;
 	{long i; for (i = 6; i < 8; i++) R5016[i] = (char *(*)()) F886_5998;}
-	R5016[8] = (char *(*)()) F888_5998;
+	R5016[8] = (char *(*)()) F889_5998;
 }
 
 char *(*R5028[9])();
@@ -1118,9 +1159,10 @@ void R5028_init () {
 	R5028[1] = (char *(*)()) F887_6010;
 	R5028[2] = (char *(*)()) F888_6010;
 	R5028[3] = (char *(*)()) F889_6010;
-	{long i; for (i = 4; i < 6; i++) R5028[i] = (char *(*)()) F890_6010;}
+	R5028[4] = (char *(*)()) F890_6010;
+	R5028[5] = (char *(*)()) F888_6010;
 	{long i; for (i = 6; i < 8; i++) R5028[i] = (char *(*)()) F886_6010;}
-	R5028[8] = (char *(*)()) F888_6010;
+	R5028[8] = (char *(*)()) F889_6010;
 }
 
 char *(*R5029[9])();
@@ -1129,9 +1171,10 @@ void R5029_init () {
 	R5029[1] = (char *(*)()) F887_6011;
 	R5029[2] = (char *(*)()) F888_6011;
 	R5029[3] = (char *(*)()) F889_6011;
-	{long i; for (i = 4; i < 6; i++) R5029[i] = (char *(*)()) F890_6011;}
+	R5029[4] = (char *(*)()) F890_6011;
+	R5029[5] = (char *(*)()) F888_6011;
 	{long i; for (i = 6; i < 8; i++) R5029[i] = (char *(*)()) F886_6011;}
-	R5029[8] = (char *(*)()) F888_6011;
+	R5029[8] = (char *(*)()) F889_6011;
 }
 
 char *(*R5043[2])();
@@ -1236,11 +1279,11 @@ void R5142_init () {
 }
 static void F900_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F900_6137(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	F900_6137(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static void F901_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F901_6137(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	F901_6137(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static void F902_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1248,11 +1291,11 @@ static void F902_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F903_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F903_6137(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	F903_6137(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static void F904_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F904_6137(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	F904_6137(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static void F905_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1288,7 +1331,7 @@ static void F912_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F913_6137_5142_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F913_6137(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	F913_6137(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R5143[15])();
@@ -1349,11 +1392,11 @@ void R5150_init () {
 }
 static EIF_BOOLEAN F900_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	return F900_6151(Current, *(EIF_NATURAL_64 *)arg1, arg2, arg3);
+	return F900_6151(Current, *(EIF_INTEGER_32 *)arg1, arg2, arg3);
 }
 static EIF_BOOLEAN F901_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	return F901_6151(Current, *(EIF_INTEGER_32 *)arg1, arg2, arg3);
+	return F901_6151(Current, *(EIF_NATURAL_64 *)arg1, arg2, arg3);
 }
 static EIF_BOOLEAN F902_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
@@ -1361,11 +1404,11 @@ static EIF_BOOLEAN F902_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 }
 static EIF_BOOLEAN F903_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	return F903_6151(Current, *(EIF_CHARACTER_8 *)arg1, arg2, arg3);
+	return F903_6151(Current, *(EIF_CHARACTER_32 *)arg1, arg2, arg3);
 }
 static EIF_BOOLEAN F904_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	return F904_6151(Current, *(EIF_NATURAL_8 *)arg1, arg2, arg3);
+	return F904_6151(Current, *(EIF_CHARACTER_8 *)arg1, arg2, arg3);
 }
 static EIF_BOOLEAN F905_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
@@ -1401,7 +1444,7 @@ static EIF_BOOLEAN F912_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 }
 static EIF_BOOLEAN F913_6151_5150_147 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	return F913_6151(Current, *(EIF_CHARACTER_32 *)arg1, arg2, arg3);
+	return F913_6151(Current, *(EIF_NATURAL_8 *)arg1, arg2, arg3);
 }
 
 char *(*R5151[15])();
@@ -1443,11 +1486,11 @@ void R5152_init () {
 }
 static void F900_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F900_6154(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	F900_6154(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static void F901_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F901_6154(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	F901_6154(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static void F902_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1455,11 +1498,11 @@ static void F902_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F903_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F903_6154(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	F903_6154(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static void F904_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F904_6154(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	F904_6154(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static void F905_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1495,7 +1538,7 @@ static void F912_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F913_6154_5152_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F913_6154(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	F913_6154(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R5153[15])();
@@ -1518,11 +1561,11 @@ void R5153_init () {
 }
 static void F900_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F900_6155(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	F900_6155(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static void F901_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F901_6155(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	F901_6155(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static void F902_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1530,11 +1573,11 @@ static void F902_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F903_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F903_6155(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	F903_6155(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static void F904_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F904_6155(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	F904_6155(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static void F905_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1570,7 +1613,7 @@ static void F912_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F913_6155_5153_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F913_6155(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	F913_6155(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R5154[15])();
@@ -1593,11 +1636,11 @@ void R5154_init () {
 }
 static void F900_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F900_6156(Current, *(EIF_NATURAL_64 *)arg1);
+	F900_6156(Current, *(EIF_INTEGER_32 *)arg1);
 }
 static void F901_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F901_6156(Current, *(EIF_INTEGER_32 *)arg1);
+	F901_6156(Current, *(EIF_NATURAL_64 *)arg1);
 }
 static void F902_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -1605,11 +1648,11 @@ static void F902_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 }
 static void F903_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F903_6156(Current, *(EIF_CHARACTER_8 *)arg1);
+	F903_6156(Current, *(EIF_CHARACTER_32 *)arg1);
 }
 static void F904_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F904_6156(Current, *(EIF_NATURAL_8 *)arg1);
+	F904_6156(Current, *(EIF_CHARACTER_8 *)arg1);
 }
 static void F905_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -1645,7 +1688,7 @@ static void F912_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 }
 static void F913_6156_5154_4 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	F913_6156(Current, *(EIF_CHARACTER_32 *)arg1);
+	F913_6156(Current, *(EIF_NATURAL_8 *)arg1);
 }
 
 char *(*R5156[15])();
@@ -1668,11 +1711,11 @@ void R5156_init () {
 }
 static void F900_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	F900_6158(Current, *(EIF_NATURAL_64 *)arg1, arg2, arg3);
+	F900_6158(Current, *(EIF_INTEGER_32 *)arg1, arg2, arg3);
 }
 static void F901_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	F901_6158(Current, *(EIF_INTEGER_32 *)arg1, arg2, arg3);
+	F901_6158(Current, *(EIF_NATURAL_64 *)arg1, arg2, arg3);
 }
 static void F902_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
@@ -1680,11 +1723,11 @@ static void F902_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F903_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	F903_6158(Current, *(EIF_CHARACTER_8 *)arg1, arg2, arg3);
+	F903_6158(Current, *(EIF_CHARACTER_32 *)arg1, arg2, arg3);
 }
 static void F904_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	F904_6158(Current, *(EIF_NATURAL_8 *)arg1, arg2, arg3);
+	F904_6158(Current, *(EIF_CHARACTER_8 *)arg1, arg2, arg3);
 }
 static void F905_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
@@ -1720,7 +1763,7 @@ static void F912_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F913_6158_5156_20 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, EIF_INTEGER_32 arg3)
 {
-	F913_6158(Current, *(EIF_CHARACTER_32 *)arg1, arg2, arg3);
+	F913_6158(Current, *(EIF_NATURAL_8 *)arg1, arg2, arg3);
 }
 
 char *(*R5158[15])();
@@ -1914,11 +1957,11 @@ void R5170_init () {
 }
 static EIF_REFERENCE F900_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	return F900_6172(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	return F900_6172(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static EIF_REFERENCE F901_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	return F901_6172(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	return F901_6172(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static EIF_REFERENCE F902_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1926,11 +1969,11 @@ static EIF_REFERENCE F902_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg
 }
 static EIF_REFERENCE F903_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	return F903_6172(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	return F903_6172(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static EIF_REFERENCE F904_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	return F904_6172(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	return F904_6172(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static EIF_REFERENCE F905_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -1966,7 +2009,7 @@ static EIF_REFERENCE F912_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg
 }
 static EIF_REFERENCE F913_6172_5170_21 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	return F913_6172(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	return F913_6172(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R5172[15])();
@@ -2085,232 +2128,232 @@ void R5181_init () {
 
 char *(*R5185[45])();
 void R5185_init () {
-	R5185[0] = (char *(*)()) F915_6204;
-	R5185[1] = (char *(*)()) F916_6204;
-	R5185[2] = (char *(*)()) F917_6204;
-	R5185[3] = (char *(*)()) F918_6204;
-	R5185[4] = (char *(*)()) F919_6204;
-	R5185[5] = (char *(*)()) F920_6204;
-	R5185[6] = (char *(*)()) F921_6204;
-	R5185[7] = (char *(*)()) F922_6204;
-	R5185[8] = (char *(*)()) F923_6204;
-	R5185[9] = (char *(*)()) F924_6204;
-	R5185[10] = (char *(*)()) F925_6204;
-	R5185[11] = (char *(*)()) F926_6204;
-	R5185[12] = (char *(*)()) F927_6204;
-	R5185[13] = (char *(*)()) F928_6204;
-	R5185[14] = (char *(*)()) F929_6204;
-	R5185[15] = (char *(*)()) F930_6220;
-	R5185[16] = (char *(*)()) F931_6220;
-	R5185[17] = (char *(*)()) F932_6220;
-	R5185[18] = (char *(*)()) F933_6220;
-	R5185[19] = (char *(*)()) F934_6220;
-	R5185[20] = (char *(*)()) F935_6220;
-	R5185[21] = (char *(*)()) F936_6220;
-	R5185[22] = (char *(*)()) F937_6220;
-	R5185[23] = (char *(*)()) F938_6220;
-	R5185[24] = (char *(*)()) F939_6220;
-	R5185[25] = (char *(*)()) F940_6220;
-	R5185[26] = (char *(*)()) F941_6220;
-	R5185[27] = (char *(*)()) F942_6220;
-	R5185[28] = (char *(*)()) F943_6220;
-	R5185[29] = (char *(*)()) F944_6220;
-	R5185[30] = (char *(*)()) F945_6235;
-	R5185[31] = (char *(*)()) F946_6235;
-	R5185[32] = (char *(*)()) F947_6235;
-	R5185[33] = (char *(*)()) F948_6235;
-	R5185[34] = (char *(*)()) F949_6235;
-	R5185[35] = (char *(*)()) F950_6235;
-	R5185[36] = (char *(*)()) F951_6235;
-	R5185[37] = (char *(*)()) F952_6235;
-	R5185[38] = (char *(*)()) F953_6235;
-	R5185[39] = (char *(*)()) F954_6235;
-	R5185[40] = (char *(*)()) F955_6235;
-	R5185[41] = (char *(*)()) F956_6235;
-	R5185[42] = (char *(*)()) F957_6235;
-	R5185[43] = (char *(*)()) F958_6235;
-	R5185[44] = (char *(*)()) F959_6235;
+	R5185[0] = (char *(*)()) F915_6201;
+	R5185[1] = (char *(*)()) F916_6201;
+	R5185[2] = (char *(*)()) F917_6201;
+	R5185[3] = (char *(*)()) F918_6201;
+	R5185[4] = (char *(*)()) F919_6201;
+	R5185[5] = (char *(*)()) F920_6201;
+	R5185[6] = (char *(*)()) F921_6201;
+	R5185[7] = (char *(*)()) F922_6201;
+	R5185[8] = (char *(*)()) F923_6201;
+	R5185[9] = (char *(*)()) F924_6201;
+	R5185[10] = (char *(*)()) F925_6201;
+	R5185[11] = (char *(*)()) F926_6201;
+	R5185[12] = (char *(*)()) F927_6201;
+	R5185[13] = (char *(*)()) F928_6201;
+	R5185[14] = (char *(*)()) F929_6201;
+	R5185[15] = (char *(*)()) F930_6218;
+	R5185[16] = (char *(*)()) F931_6218;
+	R5185[17] = (char *(*)()) F932_6218;
+	R5185[18] = (char *(*)()) F933_6218;
+	R5185[19] = (char *(*)()) F934_6218;
+	R5185[20] = (char *(*)()) F935_6218;
+	R5185[21] = (char *(*)()) F936_6218;
+	R5185[22] = (char *(*)()) F937_6218;
+	R5185[23] = (char *(*)()) F938_6218;
+	R5185[24] = (char *(*)()) F939_6218;
+	R5185[25] = (char *(*)()) F940_6218;
+	R5185[26] = (char *(*)()) F941_6218;
+	R5185[27] = (char *(*)()) F942_6218;
+	R5185[28] = (char *(*)()) F943_6218;
+	R5185[29] = (char *(*)()) F944_6218;
+	R5185[30] = (char *(*)()) F945_6234;
+	R5185[31] = (char *(*)()) F946_6234;
+	R5185[32] = (char *(*)()) F947_6234;
+	R5185[33] = (char *(*)()) F948_6234;
+	R5185[34] = (char *(*)()) F949_6234;
+	R5185[35] = (char *(*)()) F950_6234;
+	R5185[36] = (char *(*)()) F951_6234;
+	R5185[37] = (char *(*)()) F952_6234;
+	R5185[38] = (char *(*)()) F953_6234;
+	R5185[39] = (char *(*)()) F954_6234;
+	R5185[40] = (char *(*)()) F955_6234;
+	R5185[41] = (char *(*)()) F956_6234;
+	R5185[42] = (char *(*)()) F957_6234;
+	R5185[43] = (char *(*)()) F958_6234;
+	R5185[44] = (char *(*)()) F959_6234;
 }
 
 char *(*R5186[45])();
 void R5186_init () {
-	R5186[0] = (char *(*)()) F915_6205;
-	R5186[1] = (char *(*)()) F916_6205;
-	R5186[2] = (char *(*)()) F917_6205;
-	R5186[3] = (char *(*)()) F918_6205;
-	R5186[4] = (char *(*)()) F919_6205;
-	R5186[5] = (char *(*)()) F920_6205;
-	R5186[6] = (char *(*)()) F921_6205;
-	R5186[7] = (char *(*)()) F922_6205;
-	R5186[8] = (char *(*)()) F923_6205;
-	R5186[9] = (char *(*)()) F924_6205;
-	R5186[10] = (char *(*)()) F925_6205;
-	R5186[11] = (char *(*)()) F926_6205;
-	R5186[12] = (char *(*)()) F927_6205;
-	R5186[13] = (char *(*)()) F928_6205;
-	R5186[14] = (char *(*)()) F929_6205;
-	R5186[15] = (char *(*)()) F930_6221;
-	R5186[16] = (char *(*)()) F931_6221;
-	R5186[17] = (char *(*)()) F932_6221;
-	R5186[18] = (char *(*)()) F933_6221;
-	R5186[19] = (char *(*)()) F934_6221;
-	R5186[20] = (char *(*)()) F935_6221;
-	R5186[21] = (char *(*)()) F936_6221;
-	R5186[22] = (char *(*)()) F937_6221;
-	R5186[23] = (char *(*)()) F938_6221;
-	R5186[24] = (char *(*)()) F939_6221;
-	R5186[25] = (char *(*)()) F940_6221;
-	R5186[26] = (char *(*)()) F941_6221;
-	R5186[27] = (char *(*)()) F942_6221;
-	R5186[28] = (char *(*)()) F943_6221;
-	R5186[29] = (char *(*)()) F944_6221;
-	R5186[30] = (char *(*)()) F945_6236;
-	R5186[31] = (char *(*)()) F946_6236;
-	R5186[32] = (char *(*)()) F947_6236;
-	R5186[33] = (char *(*)()) F948_6236;
-	R5186[34] = (char *(*)()) F949_6236;
-	R5186[35] = (char *(*)()) F950_6236;
-	R5186[36] = (char *(*)()) F951_6236;
-	R5186[37] = (char *(*)()) F952_6236;
-	R5186[38] = (char *(*)()) F953_6236;
-	R5186[39] = (char *(*)()) F954_6236;
-	R5186[40] = (char *(*)()) F955_6236;
-	R5186[41] = (char *(*)()) F956_6236;
-	R5186[42] = (char *(*)()) F957_6236;
-	R5186[43] = (char *(*)()) F958_6236;
-	R5186[44] = (char *(*)()) F959_6236;
+	R5186[0] = (char *(*)()) F915_6202;
+	R5186[1] = (char *(*)()) F916_6202;
+	R5186[2] = (char *(*)()) F917_6202;
+	R5186[3] = (char *(*)()) F918_6202;
+	R5186[4] = (char *(*)()) F919_6202;
+	R5186[5] = (char *(*)()) F920_6202;
+	R5186[6] = (char *(*)()) F921_6202;
+	R5186[7] = (char *(*)()) F922_6202;
+	R5186[8] = (char *(*)()) F923_6202;
+	R5186[9] = (char *(*)()) F924_6202;
+	R5186[10] = (char *(*)()) F925_6202;
+	R5186[11] = (char *(*)()) F926_6202;
+	R5186[12] = (char *(*)()) F927_6202;
+	R5186[13] = (char *(*)()) F928_6202;
+	R5186[14] = (char *(*)()) F929_6202;
+	R5186[15] = (char *(*)()) F930_6219;
+	R5186[16] = (char *(*)()) F931_6219;
+	R5186[17] = (char *(*)()) F932_6219;
+	R5186[18] = (char *(*)()) F933_6219;
+	R5186[19] = (char *(*)()) F934_6219;
+	R5186[20] = (char *(*)()) F935_6219;
+	R5186[21] = (char *(*)()) F936_6219;
+	R5186[22] = (char *(*)()) F937_6219;
+	R5186[23] = (char *(*)()) F938_6219;
+	R5186[24] = (char *(*)()) F939_6219;
+	R5186[25] = (char *(*)()) F940_6219;
+	R5186[26] = (char *(*)()) F941_6219;
+	R5186[27] = (char *(*)()) F942_6219;
+	R5186[28] = (char *(*)()) F943_6219;
+	R5186[29] = (char *(*)()) F944_6219;
+	R5186[30] = (char *(*)()) F945_6235;
+	R5186[31] = (char *(*)()) F946_6235;
+	R5186[32] = (char *(*)()) F947_6235;
+	R5186[33] = (char *(*)()) F948_6235;
+	R5186[34] = (char *(*)()) F949_6235;
+	R5186[35] = (char *(*)()) F950_6235;
+	R5186[36] = (char *(*)()) F951_6235;
+	R5186[37] = (char *(*)()) F952_6235;
+	R5186[38] = (char *(*)()) F953_6235;
+	R5186[39] = (char *(*)()) F954_6235;
+	R5186[40] = (char *(*)()) F955_6235;
+	R5186[41] = (char *(*)()) F956_6235;
+	R5186[42] = (char *(*)()) F957_6235;
+	R5186[43] = (char *(*)()) F958_6235;
+	R5186[44] = (char *(*)()) F959_6235;
 }
 
 char *(*R5187[45])();
 void R5187_init () {
-	R5187[0] = (char *(*)()) F915_6206;
-	R5187[1] = (char *(*)()) F916_6206;
-	R5187[2] = (char *(*)()) F917_6206;
-	R5187[3] = (char *(*)()) F918_6206;
-	R5187[4] = (char *(*)()) F919_6206;
-	R5187[5] = (char *(*)()) F920_6206;
-	R5187[6] = (char *(*)()) F921_6206;
-	R5187[7] = (char *(*)()) F922_6206;
-	R5187[8] = (char *(*)()) F923_6206;
-	R5187[9] = (char *(*)()) F924_6206;
-	R5187[10] = (char *(*)()) F925_6206;
-	R5187[11] = (char *(*)()) F926_6206;
-	R5187[12] = (char *(*)()) F927_6206;
-	R5187[13] = (char *(*)()) F928_6206;
-	R5187[14] = (char *(*)()) F929_6206;
-	R5187[15] = (char *(*)()) F930_6222;
-	R5187[16] = (char *(*)()) F931_6222;
-	R5187[17] = (char *(*)()) F932_6222;
-	R5187[18] = (char *(*)()) F933_6222;
-	R5187[19] = (char *(*)()) F934_6222;
-	R5187[20] = (char *(*)()) F935_6222;
-	R5187[21] = (char *(*)()) F936_6222;
-	R5187[22] = (char *(*)()) F937_6222;
-	R5187[23] = (char *(*)()) F938_6222;
-	R5187[24] = (char *(*)()) F939_6222;
-	R5187[25] = (char *(*)()) F940_6222;
-	R5187[26] = (char *(*)()) F941_6222;
-	R5187[27] = (char *(*)()) F942_6222;
-	R5187[28] = (char *(*)()) F943_6222;
-	R5187[29] = (char *(*)()) F944_6222;
-	R5187[30] = (char *(*)()) F945_6237;
-	R5187[31] = (char *(*)()) F946_6237;
-	R5187[32] = (char *(*)()) F947_6237;
-	R5187[33] = (char *(*)()) F948_6237;
-	R5187[34] = (char *(*)()) F949_6237;
-	R5187[35] = (char *(*)()) F950_6237;
-	R5187[36] = (char *(*)()) F951_6237;
-	R5187[37] = (char *(*)()) F952_6237;
-	R5187[38] = (char *(*)()) F953_6237;
-	R5187[39] = (char *(*)()) F954_6237;
-	R5187[40] = (char *(*)()) F955_6237;
-	R5187[41] = (char *(*)()) F956_6237;
-	R5187[42] = (char *(*)()) F957_6237;
-	R5187[43] = (char *(*)()) F958_6237;
-	R5187[44] = (char *(*)()) F959_6237;
+	R5187[0] = (char *(*)()) F915_6203;
+	R5187[1] = (char *(*)()) F916_6203;
+	R5187[2] = (char *(*)()) F917_6203;
+	R5187[3] = (char *(*)()) F918_6203;
+	R5187[4] = (char *(*)()) F919_6203;
+	R5187[5] = (char *(*)()) F920_6203;
+	R5187[6] = (char *(*)()) F921_6203;
+	R5187[7] = (char *(*)()) F922_6203;
+	R5187[8] = (char *(*)()) F923_6203;
+	R5187[9] = (char *(*)()) F924_6203;
+	R5187[10] = (char *(*)()) F925_6203;
+	R5187[11] = (char *(*)()) F926_6203;
+	R5187[12] = (char *(*)()) F927_6203;
+	R5187[13] = (char *(*)()) F928_6203;
+	R5187[14] = (char *(*)()) F929_6203;
+	R5187[15] = (char *(*)()) F930_6220;
+	R5187[16] = (char *(*)()) F931_6220;
+	R5187[17] = (char *(*)()) F932_6220;
+	R5187[18] = (char *(*)()) F933_6220;
+	R5187[19] = (char *(*)()) F934_6220;
+	R5187[20] = (char *(*)()) F935_6220;
+	R5187[21] = (char *(*)()) F936_6220;
+	R5187[22] = (char *(*)()) F937_6220;
+	R5187[23] = (char *(*)()) F938_6220;
+	R5187[24] = (char *(*)()) F939_6220;
+	R5187[25] = (char *(*)()) F940_6220;
+	R5187[26] = (char *(*)()) F941_6220;
+	R5187[27] = (char *(*)()) F942_6220;
+	R5187[28] = (char *(*)()) F943_6220;
+	R5187[29] = (char *(*)()) F944_6220;
+	R5187[30] = (char *(*)()) F945_6236;
+	R5187[31] = (char *(*)()) F946_6236;
+	R5187[32] = (char *(*)()) F947_6236;
+	R5187[33] = (char *(*)()) F948_6236;
+	R5187[34] = (char *(*)()) F949_6236;
+	R5187[35] = (char *(*)()) F950_6236;
+	R5187[36] = (char *(*)()) F951_6236;
+	R5187[37] = (char *(*)()) F952_6236;
+	R5187[38] = (char *(*)()) F953_6236;
+	R5187[39] = (char *(*)()) F954_6236;
+	R5187[40] = (char *(*)()) F955_6236;
+	R5187[41] = (char *(*)()) F956_6236;
+	R5187[42] = (char *(*)()) F957_6236;
+	R5187[43] = (char *(*)()) F958_6236;
+	R5187[44] = (char *(*)()) F959_6236;
 }
 
 char *(*R5188[45])();
 void R5188_init () {
-	R5188[0] = (char *(*)()) F915_6207;
-	R5188[1] = (char *(*)()) F916_6207;
-	R5188[2] = (char *(*)()) F917_6207;
-	R5188[3] = (char *(*)()) F918_6207;
-	R5188[4] = (char *(*)()) F919_6207;
-	R5188[5] = (char *(*)()) F920_6207;
-	R5188[6] = (char *(*)()) F921_6207;
-	R5188[7] = (char *(*)()) F922_6207;
-	R5188[8] = (char *(*)()) F923_6207;
-	R5188[9] = (char *(*)()) F924_6207;
-	R5188[10] = (char *(*)()) F925_6207;
-	R5188[11] = (char *(*)()) F926_6207;
-	R5188[12] = (char *(*)()) F927_6207;
-	R5188[13] = (char *(*)()) F928_6207;
-	R5188[14] = (char *(*)()) F929_6207;
-	R5188[15] = (char *(*)()) F930_6223;
-	R5188[16] = (char *(*)()) F931_6223;
-	R5188[17] = (char *(*)()) F932_6223;
-	R5188[18] = (char *(*)()) F933_6223;
-	R5188[19] = (char *(*)()) F934_6223;
-	R5188[20] = (char *(*)()) F935_6223;
-	R5188[21] = (char *(*)()) F936_6223;
-	R5188[22] = (char *(*)()) F937_6223;
-	R5188[23] = (char *(*)()) F938_6223;
-	R5188[24] = (char *(*)()) F939_6223;
-	R5188[25] = (char *(*)()) F940_6223;
-	R5188[26] = (char *(*)()) F941_6223;
-	R5188[27] = (char *(*)()) F942_6223;
-	R5188[28] = (char *(*)()) F943_6223;
-	R5188[29] = (char *(*)()) F944_6223;
-	R5188[30] = (char *(*)()) F945_6238;
-	R5188[31] = (char *(*)()) F946_6238;
-	R5188[32] = (char *(*)()) F947_6238;
-	R5188[33] = (char *(*)()) F948_6238;
-	R5188[34] = (char *(*)()) F949_6238;
-	R5188[35] = (char *(*)()) F950_6238;
-	R5188[36] = (char *(*)()) F951_6238;
-	R5188[37] = (char *(*)()) F952_6238;
-	R5188[38] = (char *(*)()) F953_6238;
-	R5188[39] = (char *(*)()) F954_6238;
-	R5188[40] = (char *(*)()) F955_6238;
-	R5188[41] = (char *(*)()) F956_6238;
-	R5188[42] = (char *(*)()) F957_6238;
-	R5188[43] = (char *(*)()) F958_6238;
-	R5188[44] = (char *(*)()) F959_6238;
+	R5188[0] = (char *(*)()) F915_6204;
+	R5188[1] = (char *(*)()) F916_6204;
+	R5188[2] = (char *(*)()) F917_6204;
+	R5188[3] = (char *(*)()) F918_6204;
+	R5188[4] = (char *(*)()) F919_6204;
+	R5188[5] = (char *(*)()) F920_6204;
+	R5188[6] = (char *(*)()) F921_6204;
+	R5188[7] = (char *(*)()) F922_6204;
+	R5188[8] = (char *(*)()) F923_6204;
+	R5188[9] = (char *(*)()) F924_6204;
+	R5188[10] = (char *(*)()) F925_6204;
+	R5188[11] = (char *(*)()) F926_6204;
+	R5188[12] = (char *(*)()) F927_6204;
+	R5188[13] = (char *(*)()) F928_6204;
+	R5188[14] = (char *(*)()) F929_6204;
+	R5188[15] = (char *(*)()) F930_6221;
+	R5188[16] = (char *(*)()) F931_6221;
+	R5188[17] = (char *(*)()) F932_6221;
+	R5188[18] = (char *(*)()) F933_6221;
+	R5188[19] = (char *(*)()) F934_6221;
+	R5188[20] = (char *(*)()) F935_6221;
+	R5188[21] = (char *(*)()) F936_6221;
+	R5188[22] = (char *(*)()) F937_6221;
+	R5188[23] = (char *(*)()) F938_6221;
+	R5188[24] = (char *(*)()) F939_6221;
+	R5188[25] = (char *(*)()) F940_6221;
+	R5188[26] = (char *(*)()) F941_6221;
+	R5188[27] = (char *(*)()) F942_6221;
+	R5188[28] = (char *(*)()) F943_6221;
+	R5188[29] = (char *(*)()) F944_6221;
+	R5188[30] = (char *(*)()) F945_6237;
+	R5188[31] = (char *(*)()) F946_6237;
+	R5188[32] = (char *(*)()) F947_6237;
+	R5188[33] = (char *(*)()) F948_6237;
+	R5188[34] = (char *(*)()) F949_6237;
+	R5188[35] = (char *(*)()) F950_6237;
+	R5188[36] = (char *(*)()) F951_6237;
+	R5188[37] = (char *(*)()) F952_6237;
+	R5188[38] = (char *(*)()) F953_6237;
+	R5188[39] = (char *(*)()) F954_6237;
+	R5188[40] = (char *(*)()) F955_6237;
+	R5188[41] = (char *(*)()) F956_6237;
+	R5188[42] = (char *(*)()) F957_6237;
+	R5188[43] = (char *(*)()) F958_6237;
+	R5188[44] = (char *(*)()) F959_6237;
 }
 
 char *(*R5189[45])();
 void R5189_init () {
-	R5189[0] = (char *(*)()) F915_6209;
-	R5189[1] = (char *(*)()) F916_6209;
-	R5189[2] = (char *(*)()) F917_6209;
-	R5189[3] = (char *(*)()) F918_6209;
-	R5189[4] = (char *(*)()) F919_6209;
-	R5189[5] = (char *(*)()) F920_6209;
-	R5189[6] = (char *(*)()) F921_6209;
-	R5189[7] = (char *(*)()) F922_6209;
-	R5189[8] = (char *(*)()) F923_6209;
-	R5189[9] = (char *(*)()) F924_6209;
-	R5189[10] = (char *(*)()) F925_6209;
-	R5189[11] = (char *(*)()) F926_6209;
-	R5189[12] = (char *(*)()) F927_6209;
-	R5189[13] = (char *(*)()) F928_6209;
-	R5189[14] = (char *(*)()) F929_6209;
-	R5189[15] = (char *(*)()) F930_6225;
-	R5189[16] = (char *(*)()) F931_6225;
-	R5189[17] = (char *(*)()) F932_6225;
-	R5189[18] = (char *(*)()) F933_6225;
-	R5189[19] = (char *(*)()) F934_6225;
-	R5189[20] = (char *(*)()) F935_6225;
-	R5189[21] = (char *(*)()) F936_6225;
-	R5189[22] = (char *(*)()) F937_6225;
-	R5189[23] = (char *(*)()) F938_6225;
-	R5189[24] = (char *(*)()) F939_6225;
-	R5189[25] = (char *(*)()) F940_6225;
-	R5189[26] = (char *(*)()) F941_6225;
-	R5189[27] = (char *(*)()) F942_6225;
-	R5189[28] = (char *(*)()) F943_6225;
-	R5189[29] = (char *(*)()) F944_6225;
+	R5189[0] = (char *(*)()) F915_6205;
+	R5189[1] = (char *(*)()) F916_6205;
+	R5189[2] = (char *(*)()) F917_6205;
+	R5189[3] = (char *(*)()) F918_6205;
+	R5189[4] = (char *(*)()) F919_6205;
+	R5189[5] = (char *(*)()) F920_6205;
+	R5189[6] = (char *(*)()) F921_6205;
+	R5189[7] = (char *(*)()) F922_6205;
+	R5189[8] = (char *(*)()) F923_6205;
+	R5189[9] = (char *(*)()) F924_6205;
+	R5189[10] = (char *(*)()) F925_6205;
+	R5189[11] = (char *(*)()) F926_6205;
+	R5189[12] = (char *(*)()) F927_6205;
+	R5189[13] = (char *(*)()) F928_6205;
+	R5189[14] = (char *(*)()) F929_6205;
+	R5189[15] = (char *(*)()) F930_6223;
+	R5189[16] = (char *(*)()) F931_6223;
+	R5189[17] = (char *(*)()) F932_6223;
+	R5189[18] = (char *(*)()) F933_6223;
+	R5189[19] = (char *(*)()) F934_6223;
+	R5189[20] = (char *(*)()) F935_6223;
+	R5189[21] = (char *(*)()) F936_6223;
+	R5189[22] = (char *(*)()) F937_6223;
+	R5189[23] = (char *(*)()) F938_6223;
+	R5189[24] = (char *(*)()) F939_6223;
+	R5189[25] = (char *(*)()) F940_6223;
+	R5189[26] = (char *(*)()) F941_6223;
+	R5189[27] = (char *(*)()) F942_6223;
+	R5189[28] = (char *(*)()) F943_6223;
+	R5189[29] = (char *(*)()) F944_6223;
 	R5189[30] = (char *(*)()) F945_6239;
 	R5189[31] = (char *(*)()) F946_6239;
 	R5189[32] = (char *(*)()) F947_6239;
@@ -2330,36 +2373,36 @@ void R5189_init () {
 
 char *(*R5191[45])();
 void R5191_init () {
-	R5191[0] = (char *(*)()) F915_6210;
-	R5191[1] = (char *(*)()) F916_6210;
-	R5191[2] = (char *(*)()) F917_6210;
-	R5191[3] = (char *(*)()) F918_6210;
-	R5191[4] = (char *(*)()) F919_6210;
-	R5191[5] = (char *(*)()) F920_6210;
-	R5191[6] = (char *(*)()) F921_6210;
-	R5191[7] = (char *(*)()) F922_6210;
-	R5191[8] = (char *(*)()) F923_6210;
-	R5191[9] = (char *(*)()) F924_6210;
-	R5191[10] = (char *(*)()) F925_6210;
-	R5191[11] = (char *(*)()) F926_6210;
-	R5191[12] = (char *(*)()) F927_6210;
-	R5191[13] = (char *(*)()) F928_6210;
-	R5191[14] = (char *(*)()) F929_6210;
-	R5191[15] = (char *(*)()) F930_6226;
-	R5191[16] = (char *(*)()) F931_6226;
-	R5191[17] = (char *(*)()) F932_6226;
-	R5191[18] = (char *(*)()) F933_6226;
-	R5191[19] = (char *(*)()) F934_6226;
-	R5191[20] = (char *(*)()) F935_6226;
-	R5191[21] = (char *(*)()) F936_6226;
-	R5191[22] = (char *(*)()) F937_6226;
-	R5191[23] = (char *(*)()) F938_6226;
-	R5191[24] = (char *(*)()) F939_6226;
-	R5191[25] = (char *(*)()) F940_6226;
-	R5191[26] = (char *(*)()) F941_6226;
-	R5191[27] = (char *(*)()) F942_6226;
-	R5191[28] = (char *(*)()) F943_6226;
-	R5191[29] = (char *(*)()) F944_6226;
+	R5191[0] = (char *(*)()) F915_6206;
+	R5191[1] = (char *(*)()) F916_6206;
+	R5191[2] = (char *(*)()) F917_6206;
+	R5191[3] = (char *(*)()) F918_6206;
+	R5191[4] = (char *(*)()) F919_6206;
+	R5191[5] = (char *(*)()) F920_6206;
+	R5191[6] = (char *(*)()) F921_6206;
+	R5191[7] = (char *(*)()) F922_6206;
+	R5191[8] = (char *(*)()) F923_6206;
+	R5191[9] = (char *(*)()) F924_6206;
+	R5191[10] = (char *(*)()) F925_6206;
+	R5191[11] = (char *(*)()) F926_6206;
+	R5191[12] = (char *(*)()) F927_6206;
+	R5191[13] = (char *(*)()) F928_6206;
+	R5191[14] = (char *(*)()) F929_6206;
+	R5191[15] = (char *(*)()) F930_6224;
+	R5191[16] = (char *(*)()) F931_6224;
+	R5191[17] = (char *(*)()) F932_6224;
+	R5191[18] = (char *(*)()) F933_6224;
+	R5191[19] = (char *(*)()) F934_6224;
+	R5191[20] = (char *(*)()) F935_6224;
+	R5191[21] = (char *(*)()) F936_6224;
+	R5191[22] = (char *(*)()) F937_6224;
+	R5191[23] = (char *(*)()) F938_6224;
+	R5191[24] = (char *(*)()) F939_6224;
+	R5191[25] = (char *(*)()) F940_6224;
+	R5191[26] = (char *(*)()) F941_6224;
+	R5191[27] = (char *(*)()) F942_6224;
+	R5191[28] = (char *(*)()) F943_6224;
+	R5191[29] = (char *(*)()) F944_6224;
 	R5191[30] = (char *(*)()) F945_6240;
 	R5191[31] = (char *(*)()) F946_6240;
 	R5191[32] = (char *(*)()) F947_6240;
@@ -2379,36 +2422,36 @@ void R5191_init () {
 
 char *(*R5192[45])();
 void R5192_init () {
-	R5192[0] = (char *(*)()) F915_6211;
-	R5192[1] = (char *(*)()) F916_6211;
-	R5192[2] = (char *(*)()) F917_6211;
-	R5192[3] = (char *(*)()) F918_6211;
-	R5192[4] = (char *(*)()) F919_6211;
-	R5192[5] = (char *(*)()) F920_6211;
-	R5192[6] = (char *(*)()) F921_6211;
-	R5192[7] = (char *(*)()) F922_6211;
-	R5192[8] = (char *(*)()) F923_6211;
-	R5192[9] = (char *(*)()) F924_6211;
-	R5192[10] = (char *(*)()) F925_6211;
-	R5192[11] = (char *(*)()) F926_6211;
-	R5192[12] = (char *(*)()) F927_6211;
-	R5192[13] = (char *(*)()) F928_6211;
-	R5192[14] = (char *(*)()) F929_6211;
-	R5192[15] = (char *(*)()) F930_6227;
-	R5192[16] = (char *(*)()) F931_6227;
-	R5192[17] = (char *(*)()) F932_6227;
-	R5192[18] = (char *(*)()) F933_6227;
-	R5192[19] = (char *(*)()) F934_6227;
-	R5192[20] = (char *(*)()) F935_6227;
-	R5192[21] = (char *(*)()) F936_6227;
-	R5192[22] = (char *(*)()) F937_6227;
-	R5192[23] = (char *(*)()) F938_6227;
-	R5192[24] = (char *(*)()) F939_6227;
-	R5192[25] = (char *(*)()) F940_6227;
-	R5192[26] = (char *(*)()) F941_6227;
-	R5192[27] = (char *(*)()) F942_6227;
-	R5192[28] = (char *(*)()) F943_6227;
-	R5192[29] = (char *(*)()) F944_6227;
+	R5192[0] = (char *(*)()) F915_6207;
+	R5192[1] = (char *(*)()) F916_6207;
+	R5192[2] = (char *(*)()) F917_6207;
+	R5192[3] = (char *(*)()) F918_6207;
+	R5192[4] = (char *(*)()) F919_6207;
+	R5192[5] = (char *(*)()) F920_6207;
+	R5192[6] = (char *(*)()) F921_6207;
+	R5192[7] = (char *(*)()) F922_6207;
+	R5192[8] = (char *(*)()) F923_6207;
+	R5192[9] = (char *(*)()) F924_6207;
+	R5192[10] = (char *(*)()) F925_6207;
+	R5192[11] = (char *(*)()) F926_6207;
+	R5192[12] = (char *(*)()) F927_6207;
+	R5192[13] = (char *(*)()) F928_6207;
+	R5192[14] = (char *(*)()) F929_6207;
+	R5192[15] = (char *(*)()) F930_6225;
+	R5192[16] = (char *(*)()) F931_6225;
+	R5192[17] = (char *(*)()) F932_6225;
+	R5192[18] = (char *(*)()) F933_6225;
+	R5192[19] = (char *(*)()) F934_6225;
+	R5192[20] = (char *(*)()) F935_6225;
+	R5192[21] = (char *(*)()) F936_6225;
+	R5192[22] = (char *(*)()) F937_6225;
+	R5192[23] = (char *(*)()) F938_6225;
+	R5192[24] = (char *(*)()) F939_6225;
+	R5192[25] = (char *(*)()) F940_6225;
+	R5192[26] = (char *(*)()) F941_6225;
+	R5192[27] = (char *(*)()) F942_6225;
+	R5192[28] = (char *(*)()) F943_6225;
+	R5192[29] = (char *(*)()) F944_6225;
 	R5192[30] = (char *(*)()) F945_6241;
 	R5192[31] = (char *(*)()) F946_6241;
 	R5192[32] = (char *(*)()) F947_6241;
@@ -2428,36 +2471,36 @@ void R5192_init () {
 
 char *(*R5193[45])();
 void R5193_init () {
-	R5193[0] = (char *(*)()) F915_6212;
-	R5193[1] = (char *(*)()) F916_6212;
-	R5193[2] = (char *(*)()) F917_6212;
-	R5193[3] = (char *(*)()) F918_6212;
-	R5193[4] = (char *(*)()) F919_6212;
-	R5193[5] = (char *(*)()) F920_6212;
-	R5193[6] = (char *(*)()) F921_6212;
-	R5193[7] = (char *(*)()) F922_6212;
-	R5193[8] = (char *(*)()) F923_6212;
-	R5193[9] = (char *(*)()) F924_6212;
-	R5193[10] = (char *(*)()) F925_6212;
-	R5193[11] = (char *(*)()) F926_6212;
-	R5193[12] = (char *(*)()) F927_6212;
-	R5193[13] = (char *(*)()) F928_6212;
-	R5193[14] = (char *(*)()) F929_6212;
-	R5193[15] = (char *(*)()) F930_6228;
-	R5193[16] = (char *(*)()) F931_6228;
-	R5193[17] = (char *(*)()) F932_6228;
-	R5193[18] = (char *(*)()) F933_6228;
-	R5193[19] = (char *(*)()) F934_6228;
-	R5193[20] = (char *(*)()) F935_6228;
-	R5193[21] = (char *(*)()) F936_6228;
-	R5193[22] = (char *(*)()) F937_6228;
-	R5193[23] = (char *(*)()) F938_6228;
-	R5193[24] = (char *(*)()) F939_6228;
-	R5193[25] = (char *(*)()) F940_6228;
-	R5193[26] = (char *(*)()) F941_6228;
-	R5193[27] = (char *(*)()) F942_6228;
-	R5193[28] = (char *(*)()) F943_6228;
-	R5193[29] = (char *(*)()) F944_6228;
+	R5193[0] = (char *(*)()) F915_6208;
+	R5193[1] = (char *(*)()) F916_6208;
+	R5193[2] = (char *(*)()) F917_6208;
+	R5193[3] = (char *(*)()) F918_6208;
+	R5193[4] = (char *(*)()) F919_6208;
+	R5193[5] = (char *(*)()) F920_6208;
+	R5193[6] = (char *(*)()) F921_6208;
+	R5193[7] = (char *(*)()) F922_6208;
+	R5193[8] = (char *(*)()) F923_6208;
+	R5193[9] = (char *(*)()) F924_6208;
+	R5193[10] = (char *(*)()) F925_6208;
+	R5193[11] = (char *(*)()) F926_6208;
+	R5193[12] = (char *(*)()) F927_6208;
+	R5193[13] = (char *(*)()) F928_6208;
+	R5193[14] = (char *(*)()) F929_6208;
+	R5193[15] = (char *(*)()) F930_6226;
+	R5193[16] = (char *(*)()) F931_6226;
+	R5193[17] = (char *(*)()) F932_6226;
+	R5193[18] = (char *(*)()) F933_6226;
+	R5193[19] = (char *(*)()) F934_6226;
+	R5193[20] = (char *(*)()) F935_6226;
+	R5193[21] = (char *(*)()) F936_6226;
+	R5193[22] = (char *(*)()) F937_6226;
+	R5193[23] = (char *(*)()) F938_6226;
+	R5193[24] = (char *(*)()) F939_6226;
+	R5193[25] = (char *(*)()) F940_6226;
+	R5193[26] = (char *(*)()) F941_6226;
+	R5193[27] = (char *(*)()) F942_6226;
+	R5193[28] = (char *(*)()) F943_6226;
+	R5193[29] = (char *(*)()) F944_6226;
 	R5193[30] = (char *(*)()) F945_6242;
 	R5193[31] = (char *(*)()) F946_6242;
 	R5193[32] = (char *(*)()) F947_6242;
@@ -2475,124 +2518,367 @@ void R5193_init () {
 	R5193[44] = (char *(*)()) F959_6242;
 }
 
-char *(*R5195[15])();
-void R5195_init () {
-	R5195[0] = (char *(*)()) F915_6199;
-	R5195[1] = (char *(*)()) F916_6199;
-	R5195[2] = (char *(*)()) F917_6199;
-	R5195[3] = (char *(*)()) F918_6199;
-	R5195[4] = (char *(*)()) F919_6199;
-	R5195[5] = (char *(*)()) F920_6199;
-	R5195[6] = (char *(*)()) F921_6199;
-	R5195[7] = (char *(*)()) F922_6199;
-	R5195[8] = (char *(*)()) F923_6199;
-	R5195[9] = (char *(*)()) F924_6199;
-	R5195[10] = (char *(*)()) F925_6199;
-	R5195[11] = (char *(*)()) F926_6199;
-	R5195[12] = (char *(*)()) F927_6199;
-	R5195[13] = (char *(*)()) F928_6199;
-	R5195[14] = (char *(*)()) F929_6199;
-}
-
 char *(*R5196[15])();
 void R5196_init () {
 	R5196[0] = (char *(*)()) F915_6200;
-	R5196[1] = (char *(*)()) F916_6200_5196_413;
-	R5196[2] = (char *(*)()) F917_6200_5196_413;
-	R5196[3] = (char *(*)()) F918_6200_5196_413;
-	R5196[4] = (char *(*)()) F919_6200_5196_413;
-	R5196[5] = (char *(*)()) F920_6200_5196_413;
-	R5196[6] = (char *(*)()) F921_6200_5196_413;
-	R5196[7] = (char *(*)()) F922_6200_5196_413;
-	R5196[8] = (char *(*)()) F923_6200_5196_413;
-	R5196[9] = (char *(*)()) F924_6200_5196_413;
-	R5196[10] = (char *(*)()) F925_6200_5196_413;
-	R5196[11] = (char *(*)()) F926_6200_5196_413;
-	R5196[12] = (char *(*)()) F927_6200_5196_413;
-	R5196[13] = (char *(*)()) F928_6200_5196_413;
-	R5196[14] = (char *(*)()) F929_6200_5196_413;
+	R5196[1] = (char *(*)()) F916_6200_5196_1;
+	R5196[2] = (char *(*)()) F917_6200_5196_1;
+	R5196[3] = (char *(*)()) F918_6200_5196_1;
+	R5196[4] = (char *(*)()) F919_6200_5196_1;
+	R5196[5] = (char *(*)()) F920_6200_5196_1;
+	R5196[6] = (char *(*)()) F921_6200_5196_1;
+	R5196[7] = (char *(*)()) F922_6200_5196_1;
+	R5196[8] = (char *(*)()) F923_6200_5196_1;
+	R5196[9] = (char *(*)()) F924_6200_5196_1;
+	R5196[10] = (char *(*)()) F925_6200_5196_1;
+	R5196[11] = (char *(*)()) F926_6200_5196_1;
+	R5196[12] = (char *(*)()) F927_6200_5196_1;
+	R5196[13] = (char *(*)()) F928_6200_5196_1;
+	R5196[14] = (char *(*)()) F929_6200_5196_1;
 }
-static void F916_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F916_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F916_6200(Current, arg1, arg2, arg3, *(EIF_BOOLEAN *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_BOOLEAN r = F916_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_b = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_b;
+	} else {
+		Result = RTLNS(eif_new_type(1035, 0x00).id, 1035, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_BOOLEAN *)Result = r;
+		return Result;
+	}
 }
-static void F917_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F917_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F917_6200(Current, arg1, arg2, arg3, *(EIF_INTEGER_64 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_32 r = F917_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
 }
-static void F918_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F918_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F918_6200(Current, arg1, arg2, arg3, *(EIF_NATURAL_32 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_CHARACTER_32 r = F918_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_c4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
+	} else {
+		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_CHARACTER_32 *)Result = r;
+		return Result;
+	}
 }
-static void F919_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F919_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F919_6200(Current, arg1, arg2, arg3, *(EIF_CHARACTER_8 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_64 r = F919_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
+		return Result;
+	}
 }
-static void F920_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F920_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F920_6200(Current, arg1, arg2, arg3, *(EIF_CHARACTER_32 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_CHARACTER_8 r = F920_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_c1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
+	} else {
+		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_CHARACTER_8 *)Result = r;
+		return Result;
+	}
 }
-static void F921_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F921_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F921_6200(Current, arg1, arg2, arg3, *(EIF_INTEGER_32 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F921_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+	} else {
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
 }
-static void F922_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F922_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F922_6200(Current, arg1, arg2, arg3, *(EIF_INTEGER_8 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_8 r = F922_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+	} else {
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
+		return Result;
+	}
 }
-static void F923_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F923_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F923_6200(Current, arg1, arg2, arg3, *(EIF_INTEGER_16 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_16 r = F923_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+	} else {
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
+		return Result;
+	}
 }
-static void F924_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F924_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F924_6200(Current, arg1, arg2, arg3, *(EIF_NATURAL_64 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_64 r = F924_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+	} else {
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
+		return Result;
+	}
 }
-static void F925_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F925_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F925_6200(Current, arg1, arg2, arg3, *(EIF_NATURAL_8 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_8 r = F925_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
+	} else {
+		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_NATURAL_8 *)Result = r;
+		return Result;
+	}
 }
-static void F926_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F926_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F926_6200(Current, arg1, arg2, arg3, *(EIF_NATURAL_16 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_16 r = F926_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+	} else {
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
+		return Result;
+	}
 }
-static void F927_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F927_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F927_6200(Current, arg1, arg2, arg3, *(EIF_REAL_64 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_REAL_64 r = F927_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_r8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
+	} else {
+		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
+		*(EIF_REAL_64 *)Result = r;
+		return Result;
+	}
 }
-static void F928_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F928_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F928_6200(Current, arg1, arg2, arg3, *(EIF_REAL_32 *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_REAL_32 r = F928_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_r4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_r4;
+	} else {
+		Result = RTLNS(eif_new_type(1023, 0x00).id, 1023, _OBJSIZ_0_0_0_0_1_0_0_0_);
+		*(EIF_REAL_32 *)Result = r;
+		return Result;
+	}
 }
-static void F929_6200_5196_413 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+static EIF_REFERENCE F929_6200_5196_1 (EIF_REFERENCE Current)
 {
-	F929_6200(Current, arg1, arg2, arg3, *(EIF_POINTER *)arg4);
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_POINTER r = F929_6200(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_p = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
+	} else {
+		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
+		*(EIF_POINTER *)Result = r;
+		return Result;
+	}
 }
 
 char *(*R5197[15])();
 void R5197_init () {
-	R5197[0] = (char *(*)()) F915_6201;
-	R5197[1] = (char *(*)()) F916_6201_5197_1;
-	R5197[2] = (char *(*)()) F917_6201_5197_1;
-	R5197[3] = (char *(*)()) F918_6201_5197_1;
-	R5197[4] = (char *(*)()) F919_6201_5197_1;
-	R5197[5] = (char *(*)()) F920_6201_5197_1;
-	R5197[6] = (char *(*)()) F921_6201_5197_1;
-	R5197[7] = (char *(*)()) F922_6201_5197_1;
-	R5197[8] = (char *(*)()) F923_6201_5197_1;
-	R5197[9] = (char *(*)()) F924_6201_5197_1;
-	R5197[10] = (char *(*)()) F925_6201_5197_1;
-	R5197[11] = (char *(*)()) F926_6201_5197_1;
-	R5197[12] = (char *(*)()) F927_6201_5197_1;
-	R5197[13] = (char *(*)()) F928_6201_5197_1;
-	R5197[14] = (char *(*)()) F929_6201_5197_1;
+	R5197[0] = (char *(*)()) F915_6209;
+	R5197[1] = (char *(*)()) F916_6209;
+	R5197[2] = (char *(*)()) F917_6209;
+	R5197[3] = (char *(*)()) F918_6209;
+	R5197[4] = (char *(*)()) F919_6209;
+	R5197[5] = (char *(*)()) F920_6209;
+	R5197[6] = (char *(*)()) F921_6209;
+	R5197[7] = (char *(*)()) F922_6209;
+	R5197[8] = (char *(*)()) F923_6209;
+	R5197[9] = (char *(*)()) F924_6209;
+	R5197[10] = (char *(*)()) F925_6209;
+	R5197[11] = (char *(*)()) F926_6209;
+	R5197[12] = (char *(*)()) F927_6209;
+	R5197[13] = (char *(*)()) F928_6209;
+	R5197[14] = (char *(*)()) F929_6209;
 }
-static EIF_REFERENCE F916_6201_5197_1 (EIF_REFERENCE Current)
+
+char *(*R5198[15])();
+void R5198_init () {
+	R5198[0] = (char *(*)()) F915_6210;
+	R5198[1] = (char *(*)()) F916_6210_5198_5;
+	R5198[2] = (char *(*)()) F917_6210_5198_5;
+	R5198[3] = (char *(*)()) F918_6210_5198_5;
+	R5198[4] = (char *(*)()) F919_6210_5198_5;
+	R5198[5] = (char *(*)()) F920_6210_5198_5;
+	R5198[6] = (char *(*)()) F921_6210_5198_5;
+	R5198[7] = (char *(*)()) F922_6210_5198_5;
+	R5198[8] = (char *(*)()) F923_6210_5198_5;
+	R5198[9] = (char *(*)()) F924_6210_5198_5;
+	R5198[10] = (char *(*)()) F925_6210_5198_5;
+	R5198[11] = (char *(*)()) F926_6210_5198_5;
+	R5198[12] = (char *(*)()) F927_6210_5198_5;
+	R5198[13] = (char *(*)()) F928_6210_5198_5;
+	R5198[14] = (char *(*)()) F929_6210_5198_5;
+}
+static EIF_REFERENCE F916_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F916_6210(Current, *(EIF_BOOLEAN *)arg1);
+}
+static EIF_REFERENCE F917_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F917_6210(Current, *(EIF_NATURAL_32 *)arg1);
+}
+static EIF_REFERENCE F918_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F918_6210(Current, *(EIF_CHARACTER_32 *)arg1);
+}
+static EIF_REFERENCE F919_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F919_6210(Current, *(EIF_INTEGER_64 *)arg1);
+}
+static EIF_REFERENCE F920_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F920_6210(Current, *(EIF_CHARACTER_8 *)arg1);
+}
+static EIF_REFERENCE F921_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F921_6210(Current, *(EIF_INTEGER_32 *)arg1);
+}
+static EIF_REFERENCE F922_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F922_6210(Current, *(EIF_INTEGER_8 *)arg1);
+}
+static EIF_REFERENCE F923_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F923_6210(Current, *(EIF_INTEGER_16 *)arg1);
+}
+static EIF_REFERENCE F924_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F924_6210(Current, *(EIF_NATURAL_64 *)arg1);
+}
+static EIF_REFERENCE F925_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F925_6210(Current, *(EIF_NATURAL_8 *)arg1);
+}
+static EIF_REFERENCE F926_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F926_6210(Current, *(EIF_NATURAL_16 *)arg1);
+}
+static EIF_REFERENCE F927_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F927_6210(Current, *(EIF_REAL_64 *)arg1);
+}
+static EIF_REFERENCE F928_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F928_6210(Current, *(EIF_REAL_32 *)arg1);
+}
+static EIF_REFERENCE F929_6210_5198_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F929_6210(Current, *(EIF_POINTER *)arg1);
+}
+
+char *(*R5199[15])();
+void R5199_init () {
+	R5199[0] = (char *(*)()) F915_6211;
+	R5199[1] = (char *(*)()) F916_6211_5199_1;
+	R5199[2] = (char *(*)()) F917_6211_5199_1;
+	R5199[3] = (char *(*)()) F918_6211_5199_1;
+	R5199[4] = (char *(*)()) F919_6211_5199_1;
+	R5199[5] = (char *(*)()) F920_6211_5199_1;
+	R5199[6] = (char *(*)()) F921_6211_5199_1;
+	R5199[7] = (char *(*)()) F922_6211_5199_1;
+	R5199[8] = (char *(*)()) F923_6211_5199_1;
+	R5199[9] = (char *(*)()) F924_6211_5199_1;
+	R5199[10] = (char *(*)()) F925_6211_5199_1;
+	R5199[11] = (char *(*)()) F926_6211_5199_1;
+	R5199[12] = (char *(*)()) F927_6211_5199_1;
+	R5199[13] = (char *(*)()) F928_6211_5199_1;
+	R5199[14] = (char *(*)()) F929_6211_5199_1;
+}
+static EIF_REFERENCE F916_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F916_6201(Current);
+	EIF_BOOLEAN r = F916_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_b = r;
@@ -2603,60 +2889,28 @@ static EIF_REFERENCE F916_6201_5197_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F917_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F917_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F917_6201(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
-	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F918_6201_5197_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F918_6201(Current);
+	EIF_NATURAL_32 r = F917_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F919_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F918_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F919_6201(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
-	} else {
-		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_CHARACTER_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F920_6201_5197_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F920_6201(Current);
+	EIF_CHARACTER_32 r = F918_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c4 = r;
@@ -2667,76 +2921,108 @@ static EIF_REFERENCE F920_6201_5197_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F921_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F919_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F921_6201(Current);
+	EIF_INTEGER_64 r = F919_6211(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F920_6211_5199_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_CHARACTER_8 r = F920_6211(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_c1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
+	} else {
+		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_CHARACTER_8 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F921_6211_5199_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F921_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F922_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F922_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F922_6201(Current);
+	EIF_INTEGER_8 r = F922_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F923_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F923_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F923_6201(Current);
+	EIF_INTEGER_16 r = F923_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F924_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F924_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F924_6201(Current);
+	EIF_NATURAL_64 r = F924_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F925_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F925_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F925_6201(Current);
+	EIF_NATURAL_8 r = F925_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n1 = r;
@@ -2747,28 +3033,28 @@ static EIF_REFERENCE F925_6201_5197_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F926_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F926_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F926_6201(Current);
+	EIF_NATURAL_16 r = F926_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F927_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F927_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64 r = F927_6201(Current);
+	EIF_REAL_64 r = F927_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_r8 = r;
@@ -2779,12 +3065,12 @@ static EIF_REFERENCE F927_6201_5197_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F928_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F928_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32 r = F928_6201(Current);
+	EIF_REAL_32 r = F928_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_r4 = r;
@@ -2795,12 +3081,12 @@ static EIF_REFERENCE F928_6201_5197_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F929_6201_5197_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F929_6211_5199_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F929_6201(Current);
+	EIF_POINTER r = F929_6211(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
@@ -2810,174 +3096,126 @@ static EIF_REFERENCE F929_6201_5197_1 (EIF_REFERENCE Current)
 		*(EIF_POINTER *)Result = r;
 		return Result;
 	}
-}
-
-char *(*R5200[15])();
-void R5200_init () {
-	R5200[0] = (char *(*)()) F915_6213;
-	R5200[1] = (char *(*)()) F916_6213;
-	R5200[2] = (char *(*)()) F917_6213;
-	R5200[3] = (char *(*)()) F918_6213;
-	R5200[4] = (char *(*)()) F919_6213;
-	R5200[5] = (char *(*)()) F920_6213;
-	R5200[6] = (char *(*)()) F921_6213;
-	R5200[7] = (char *(*)()) F922_6213;
-	R5200[8] = (char *(*)()) F923_6213;
-	R5200[9] = (char *(*)()) F924_6213;
-	R5200[10] = (char *(*)()) F925_6213;
-	R5200[11] = (char *(*)()) F926_6213;
-	R5200[12] = (char *(*)()) F927_6213;
-	R5200[13] = (char *(*)()) F928_6213;
-	R5200[14] = (char *(*)()) F929_6213;
-}
-
-char *(*R5201[15])();
-void R5201_init () {
-	R5201[0] = (char *(*)()) F915_6214;
-	R5201[1] = (char *(*)()) F916_6214_5201_5;
-	R5201[2] = (char *(*)()) F917_6214_5201_5;
-	R5201[3] = (char *(*)()) F918_6214_5201_5;
-	R5201[4] = (char *(*)()) F919_6214_5201_5;
-	R5201[5] = (char *(*)()) F920_6214_5201_5;
-	R5201[6] = (char *(*)()) F921_6214_5201_5;
-	R5201[7] = (char *(*)()) F922_6214_5201_5;
-	R5201[8] = (char *(*)()) F923_6214_5201_5;
-	R5201[9] = (char *(*)()) F924_6214_5201_5;
-	R5201[10] = (char *(*)()) F925_6214_5201_5;
-	R5201[11] = (char *(*)()) F926_6214_5201_5;
-	R5201[12] = (char *(*)()) F927_6214_5201_5;
-	R5201[13] = (char *(*)()) F928_6214_5201_5;
-	R5201[14] = (char *(*)()) F929_6214_5201_5;
-}
-static EIF_REFERENCE F916_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F916_6214(Current, *(EIF_BOOLEAN *)arg1);
-}
-static EIF_REFERENCE F917_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F917_6214(Current, *(EIF_INTEGER_64 *)arg1);
-}
-static EIF_REFERENCE F918_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F918_6214(Current, *(EIF_NATURAL_32 *)arg1);
-}
-static EIF_REFERENCE F919_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F919_6214(Current, *(EIF_CHARACTER_8 *)arg1);
-}
-static EIF_REFERENCE F920_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F920_6214(Current, *(EIF_CHARACTER_32 *)arg1);
-}
-static EIF_REFERENCE F921_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F921_6214(Current, *(EIF_INTEGER_32 *)arg1);
-}
-static EIF_REFERENCE F922_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F922_6214(Current, *(EIF_INTEGER_8 *)arg1);
-}
-static EIF_REFERENCE F923_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F923_6214(Current, *(EIF_INTEGER_16 *)arg1);
-}
-static EIF_REFERENCE F924_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F924_6214(Current, *(EIF_NATURAL_64 *)arg1);
-}
-static EIF_REFERENCE F925_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F925_6214(Current, *(EIF_NATURAL_8 *)arg1);
-}
-static EIF_REFERENCE F926_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F926_6214(Current, *(EIF_NATURAL_16 *)arg1);
-}
-static EIF_REFERENCE F927_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F927_6214(Current, *(EIF_REAL_64 *)arg1);
-}
-static EIF_REFERENCE F928_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F928_6214(Current, *(EIF_REAL_32 *)arg1);
-}
-static EIF_REFERENCE F929_6214_5201_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F929_6214(Current, *(EIF_POINTER *)arg1);
 }
 
 char *(*R5202[15])();
 void R5202_init () {
-	R5202[0] = (char *(*)()) F915_6215;
-	R5202[1] = (char *(*)()) F916_6215_5202_1;
-	R5202[2] = (char *(*)()) F917_6215_5202_1;
-	R5202[3] = (char *(*)()) F918_6215_5202_1;
-	R5202[4] = (char *(*)()) F919_6215_5202_1;
-	R5202[5] = (char *(*)()) F920_6215_5202_1;
-	R5202[6] = (char *(*)()) F921_6215_5202_1;
-	R5202[7] = (char *(*)()) F922_6215_5202_1;
-	R5202[8] = (char *(*)()) F923_6215_5202_1;
-	R5202[9] = (char *(*)()) F924_6215_5202_1;
-	R5202[10] = (char *(*)()) F925_6215_5202_1;
-	R5202[11] = (char *(*)()) F926_6215_5202_1;
-	R5202[12] = (char *(*)()) F927_6215_5202_1;
-	R5202[13] = (char *(*)()) F928_6215_5202_1;
-	R5202[14] = (char *(*)()) F929_6215_5202_1;
+	R5202[0] = (char *(*)()) F930_6213;
+	R5202[1] = (char *(*)()) F931_6213;
+	R5202[2] = (char *(*)()) F932_6213;
+	R5202[3] = (char *(*)()) F933_6213;
+	R5202[4] = (char *(*)()) F934_6213;
+	R5202[5] = (char *(*)()) F935_6213;
+	R5202[6] = (char *(*)()) F936_6213;
+	R5202[7] = (char *(*)()) F937_6213;
+	R5202[8] = (char *(*)()) F938_6213;
+	R5202[9] = (char *(*)()) F939_6213;
+	R5202[10] = (char *(*)()) F940_6213;
+	R5202[11] = (char *(*)()) F941_6213;
+	R5202[12] = (char *(*)()) F942_6213;
+	R5202[13] = (char *(*)()) F943_6213;
+	R5202[14] = (char *(*)()) F944_6213;
 }
-static EIF_REFERENCE F916_6215_5202_1 (EIF_REFERENCE Current)
+
+char *(*R5203[15])();
+void R5203_init () {
+	R5203[0] = (char *(*)()) F930_6214;
+	R5203[1] = (char *(*)()) F931_6214_5203_444;
+	R5203[2] = (char *(*)()) F932_6214_5203_444;
+	R5203[3] = (char *(*)()) F933_6214_5203_444;
+	R5203[4] = (char *(*)()) F934_6214_5203_444;
+	R5203[5] = (char *(*)()) F935_6214_5203_444;
+	R5203[6] = (char *(*)()) F936_6214_5203_444;
+	R5203[7] = (char *(*)()) F937_6214_5203_444;
+	R5203[8] = (char *(*)()) F938_6214_5203_444;
+	R5203[9] = (char *(*)()) F939_6214_5203_444;
+	R5203[10] = (char *(*)()) F940_6214_5203_444;
+	R5203[11] = (char *(*)()) F941_6214_5203_444;
+	R5203[12] = (char *(*)()) F942_6214_5203_444;
+	R5203[13] = (char *(*)()) F943_6214_5203_444;
+	R5203[14] = (char *(*)()) F944_6214_5203_444;
+}
+static void F931_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F931_6214(Current, arg1, arg2, arg3, *(EIF_CHARACTER_8 *)arg4);
+}
+static void F932_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F932_6214(Current, arg1, arg2, arg3, *(EIF_NATURAL_8 *)arg4);
+}
+static void F933_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F933_6214(Current, arg1, arg2, arg3, *(EIF_POINTER *)arg4);
+}
+static void F934_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F934_6214(Current, arg1, arg2, arg3, *(EIF_BOOLEAN *)arg4);
+}
+static void F935_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F935_6214(Current, arg1, arg2, arg3, *(EIF_INTEGER_64 *)arg4);
+}
+static void F936_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F936_6214(Current, arg1, arg2, arg3, *(EIF_INTEGER_32 *)arg4);
+}
+static void F937_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F937_6214(Current, arg1, arg2, arg3, *(EIF_CHARACTER_32 *)arg4);
+}
+static void F938_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F938_6214(Current, arg1, arg2, arg3, *(EIF_NATURAL_64 *)arg4);
+}
+static void F939_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F939_6214(Current, arg1, arg2, arg3, *(EIF_NATURAL_32 *)arg4);
+}
+static void F940_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F940_6214(Current, arg1, arg2, arg3, *(EIF_INTEGER_16 *)arg4);
+}
+static void F941_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F941_6214(Current, arg1, arg2, arg3, *(EIF_INTEGER_8 *)arg4);
+}
+static void F942_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F942_6214(Current, arg1, arg2, arg3, *(EIF_REAL_32 *)arg4);
+}
+static void F943_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F943_6214(Current, arg1, arg2, arg3, *(EIF_REAL_64 *)arg4);
+}
+static void F944_6214_5203_444 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2, EIF_NATURAL_32 arg3, EIF_REFERENCE arg4)
+{
+	F944_6214(Current, arg1, arg2, arg3, *(EIF_NATURAL_16 *)arg4);
+}
+
+char *(*R5204[15])();
+void R5204_init () {
+	R5204[0] = (char *(*)()) F930_6215;
+	R5204[1] = (char *(*)()) F931_6215_5204_1;
+	R5204[2] = (char *(*)()) F932_6215_5204_1;
+	R5204[3] = (char *(*)()) F933_6215_5204_1;
+	R5204[4] = (char *(*)()) F934_6215_5204_1;
+	R5204[5] = (char *(*)()) F935_6215_5204_1;
+	R5204[6] = (char *(*)()) F936_6215_5204_1;
+	R5204[7] = (char *(*)()) F937_6215_5204_1;
+	R5204[8] = (char *(*)()) F938_6215_5204_1;
+	R5204[9] = (char *(*)()) F939_6215_5204_1;
+	R5204[10] = (char *(*)()) F940_6215_5204_1;
+	R5204[11] = (char *(*)()) F941_6215_5204_1;
+	R5204[12] = (char *(*)()) F942_6215_5204_1;
+	R5204[13] = (char *(*)()) F943_6215_5204_1;
+	R5204[14] = (char *(*)()) F944_6215_5204_1;
+}
+static EIF_REFERENCE F931_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F916_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_b = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_b;
-	} else {
-		Result = RTLNS(eif_new_type(1035, 0x00).id, 1035, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_BOOLEAN *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F917_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F917_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
-	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F918_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F918_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
-	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F919_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F919_6215(Current);
+	EIF_CHARACTER_8 r = F931_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c1 = r;
@@ -2988,92 +3226,12 @@ static EIF_REFERENCE F919_6215_5202_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F920_6215_5202_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F932_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F920_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
-	} else {
-		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_CHARACTER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F921_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F921_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
-	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F922_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F922_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
-	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F923_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F923_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
-	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F924_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F924_6215(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
-	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F925_6215_5202_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F925_6215(Current);
+	EIF_NATURAL_8 r = F932_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n1 = r;
@@ -3084,44 +3242,156 @@ static EIF_REFERENCE F925_6215_5202_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F926_6215_5202_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F933_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F926_6215(Current);
+	EIF_POINTER r = F933_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+		eif_optimized_return_value.it_p = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
+		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
+		*(EIF_POINTER *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F927_6215_5202_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F934_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64 r = F927_6215(Current);
+	EIF_BOOLEAN r = F934_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_r8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
+		eif_optimized_return_value.it_b = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_b;
 	} else {
-		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
-		*(EIF_REAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1035, 0x00).id, 1035, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_BOOLEAN *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F928_6215_5202_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F935_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32 r = F928_6215(Current);
+	EIF_INTEGER_64 r = F935_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F936_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_32 r = F936_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+	} else {
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F937_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_CHARACTER_32 r = F937_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_c4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
+	} else {
+		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_CHARACTER_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F938_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_64 r = F938_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+	} else {
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F939_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_32 r = F939_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F940_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_16 r = F940_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+	} else {
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F941_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_8 r = F941_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+	} else {
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F942_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_REAL_32 r = F942_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_r4 = r;
@@ -3132,384 +3402,157 @@ static EIF_REFERENCE F928_6215_5202_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F929_6215_5202_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F943_6215_5204_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F929_6215(Current);
+	EIF_REAL_64 r = F943_6215(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_p = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
+		eif_optimized_return_value.it_r8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
 	} else {
-		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
-		*(EIF_POINTER *)Result = r;
+		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
+		*(EIF_REAL_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F944_6215_5204_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_16 r = F944_6215(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+	} else {
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5206[15])();
-void R5206_init () {
-	R5206[0] = (char *(*)()) F930_6218;
-	R5206[1] = (char *(*)()) F931_6218_5206_1;
-	R5206[2] = (char *(*)()) F932_6218_5206_1;
-	R5206[3] = (char *(*)()) F933_6218_5206_1;
-	R5206[4] = (char *(*)()) F934_6218_5206_1;
-	R5206[5] = (char *(*)()) F935_6218_5206_1;
-	R5206[6] = (char *(*)()) F936_6218_5206_1;
-	R5206[7] = (char *(*)()) F937_6218_5206_1;
-	R5206[8] = (char *(*)()) F938_6218_5206_1;
-	R5206[9] = (char *(*)()) F939_6218_5206_1;
-	R5206[10] = (char *(*)()) F940_6218_5206_1;
-	R5206[11] = (char *(*)()) F941_6218_5206_1;
-	R5206[12] = (char *(*)()) F942_6218_5206_1;
-	R5206[13] = (char *(*)()) F943_6218_5206_1;
-	R5206[14] = (char *(*)()) F944_6218_5206_1;
-}
-static EIF_REFERENCE F931_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F931_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
-	} else {
-		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_CHARACTER_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F932_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F932_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
-	} else {
-		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_NATURAL_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F933_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F933_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_p = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
-	} else {
-		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
-		*(EIF_POINTER *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F934_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F934_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_b = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_b;
-	} else {
-		Result = RTLNS(eif_new_type(1035, 0x00).id, 1035, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_BOOLEAN *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F935_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F935_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
-	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F936_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F936_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
-	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F937_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F937_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
-	} else {
-		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_CHARACTER_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F938_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F938_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
-	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F939_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F939_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
-	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F940_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F940_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
-	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F941_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F941_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
-	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F942_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32 r = F942_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_r4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_r4;
-	} else {
-		Result = RTLNS(eif_new_type(1023, 0x00).id, 1023, _OBJSIZ_0_0_0_0_1_0_0_0_);
-		*(EIF_REAL_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F943_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64 r = F943_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_r8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
-	} else {
-		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
-		*(EIF_REAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F944_6218_5206_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F944_6218(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
+char *(*R5207[15])();
+void R5207_init () {
+	R5207[0] = (char *(*)()) F930_6227;
+	R5207[1] = (char *(*)()) F931_6227;
+	R5207[2] = (char *(*)()) F932_6227;
+	R5207[3] = (char *(*)()) F933_6227;
+	R5207[4] = (char *(*)()) F934_6227;
+	R5207[5] = (char *(*)()) F935_6227;
+	R5207[6] = (char *(*)()) F936_6227;
+	R5207[7] = (char *(*)()) F937_6227;
+	R5207[8] = (char *(*)()) F938_6227;
+	R5207[9] = (char *(*)()) F939_6227;
+	R5207[10] = (char *(*)()) F940_6227;
+	R5207[11] = (char *(*)()) F941_6227;
+	R5207[12] = (char *(*)()) F942_6227;
+	R5207[13] = (char *(*)()) F943_6227;
+	R5207[14] = (char *(*)()) F944_6227;
 }
 
 char *(*R5208[15])();
 void R5208_init () {
-	R5208[0] = (char *(*)()) F930_6229;
-	R5208[1] = (char *(*)()) F931_6229;
-	R5208[2] = (char *(*)()) F932_6229;
-	R5208[3] = (char *(*)()) F933_6229;
-	R5208[4] = (char *(*)()) F934_6229;
-	R5208[5] = (char *(*)()) F935_6229;
-	R5208[6] = (char *(*)()) F936_6229;
-	R5208[7] = (char *(*)()) F937_6229;
-	R5208[8] = (char *(*)()) F938_6229;
-	R5208[9] = (char *(*)()) F939_6229;
-	R5208[10] = (char *(*)()) F940_6229;
-	R5208[11] = (char *(*)()) F941_6229;
-	R5208[12] = (char *(*)()) F942_6229;
-	R5208[13] = (char *(*)()) F943_6229;
-	R5208[14] = (char *(*)()) F944_6229;
+	R5208[0] = (char *(*)()) F930_6228;
+	R5208[1] = (char *(*)()) F931_6228_5208_5;
+	R5208[2] = (char *(*)()) F932_6228_5208_5;
+	R5208[3] = (char *(*)()) F933_6228_5208_5;
+	R5208[4] = (char *(*)()) F934_6228_5208_5;
+	R5208[5] = (char *(*)()) F935_6228_5208_5;
+	R5208[6] = (char *(*)()) F936_6228_5208_5;
+	R5208[7] = (char *(*)()) F937_6228_5208_5;
+	R5208[8] = (char *(*)()) F938_6228_5208_5;
+	R5208[9] = (char *(*)()) F939_6228_5208_5;
+	R5208[10] = (char *(*)()) F940_6228_5208_5;
+	R5208[11] = (char *(*)()) F941_6228_5208_5;
+	R5208[12] = (char *(*)()) F942_6228_5208_5;
+	R5208[13] = (char *(*)()) F943_6228_5208_5;
+	R5208[14] = (char *(*)()) F944_6228_5208_5;
+}
+static EIF_REFERENCE F931_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F931_6228(Current, *(EIF_CHARACTER_8 *)arg1);
+}
+static EIF_REFERENCE F932_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F932_6228(Current, *(EIF_NATURAL_8 *)arg1);
+}
+static EIF_REFERENCE F933_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F933_6228(Current, *(EIF_POINTER *)arg1);
+}
+static EIF_REFERENCE F934_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F934_6228(Current, *(EIF_BOOLEAN *)arg1);
+}
+static EIF_REFERENCE F935_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F935_6228(Current, *(EIF_INTEGER_64 *)arg1);
+}
+static EIF_REFERENCE F936_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F936_6228(Current, *(EIF_INTEGER_32 *)arg1);
+}
+static EIF_REFERENCE F937_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F937_6228(Current, *(EIF_CHARACTER_32 *)arg1);
+}
+static EIF_REFERENCE F938_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F938_6228(Current, *(EIF_NATURAL_64 *)arg1);
+}
+static EIF_REFERENCE F939_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F939_6228(Current, *(EIF_NATURAL_32 *)arg1);
+}
+static EIF_REFERENCE F940_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F940_6228(Current, *(EIF_INTEGER_16 *)arg1);
+}
+static EIF_REFERENCE F941_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F941_6228(Current, *(EIF_INTEGER_8 *)arg1);
+}
+static EIF_REFERENCE F942_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F942_6228(Current, *(EIF_REAL_32 *)arg1);
+}
+static EIF_REFERENCE F943_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F943_6228(Current, *(EIF_REAL_64 *)arg1);
+}
+static EIF_REFERENCE F944_6228_5208_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	return F944_6228(Current, *(EIF_NATURAL_16 *)arg1);
 }
 
 char *(*R5209[15])();
 void R5209_init () {
-	R5209[0] = (char *(*)()) F930_6230;
-	R5209[1] = (char *(*)()) F931_6230_5209_5;
-	R5209[2] = (char *(*)()) F932_6230_5209_5;
-	R5209[3] = (char *(*)()) F933_6230_5209_5;
-	R5209[4] = (char *(*)()) F934_6230_5209_5;
-	R5209[5] = (char *(*)()) F935_6230_5209_5;
-	R5209[6] = (char *(*)()) F936_6230_5209_5;
-	R5209[7] = (char *(*)()) F937_6230_5209_5;
-	R5209[8] = (char *(*)()) F938_6230_5209_5;
-	R5209[9] = (char *(*)()) F939_6230_5209_5;
-	R5209[10] = (char *(*)()) F940_6230_5209_5;
-	R5209[11] = (char *(*)()) F941_6230_5209_5;
-	R5209[12] = (char *(*)()) F942_6230_5209_5;
-	R5209[13] = (char *(*)()) F943_6230_5209_5;
-	R5209[14] = (char *(*)()) F944_6230_5209_5;
+	R5209[0] = (char *(*)()) F930_6229;
+	R5209[1] = (char *(*)()) F931_6229_5209_1;
+	R5209[2] = (char *(*)()) F932_6229_5209_1;
+	R5209[3] = (char *(*)()) F933_6229_5209_1;
+	R5209[4] = (char *(*)()) F934_6229_5209_1;
+	R5209[5] = (char *(*)()) F935_6229_5209_1;
+	R5209[6] = (char *(*)()) F936_6229_5209_1;
+	R5209[7] = (char *(*)()) F937_6229_5209_1;
+	R5209[8] = (char *(*)()) F938_6229_5209_1;
+	R5209[9] = (char *(*)()) F939_6229_5209_1;
+	R5209[10] = (char *(*)()) F940_6229_5209_1;
+	R5209[11] = (char *(*)()) F941_6229_5209_1;
+	R5209[12] = (char *(*)()) F942_6229_5209_1;
+	R5209[13] = (char *(*)()) F943_6229_5209_1;
+	R5209[14] = (char *(*)()) F944_6229_5209_1;
 }
-static EIF_REFERENCE F931_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F931_6230(Current, *(EIF_CHARACTER_8 *)arg1);
-}
-static EIF_REFERENCE F932_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F932_6230(Current, *(EIF_NATURAL_8 *)arg1);
-}
-static EIF_REFERENCE F933_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F933_6230(Current, *(EIF_POINTER *)arg1);
-}
-static EIF_REFERENCE F934_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F934_6230(Current, *(EIF_BOOLEAN *)arg1);
-}
-static EIF_REFERENCE F935_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F935_6230(Current, *(EIF_INTEGER_64 *)arg1);
-}
-static EIF_REFERENCE F936_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F936_6230(Current, *(EIF_INTEGER_32 *)arg1);
-}
-static EIF_REFERENCE F937_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F937_6230(Current, *(EIF_CHARACTER_32 *)arg1);
-}
-static EIF_REFERENCE F938_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F938_6230(Current, *(EIF_NATURAL_64 *)arg1);
-}
-static EIF_REFERENCE F939_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F939_6230(Current, *(EIF_NATURAL_32 *)arg1);
-}
-static EIF_REFERENCE F940_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F940_6230(Current, *(EIF_INTEGER_16 *)arg1);
-}
-static EIF_REFERENCE F941_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F941_6230(Current, *(EIF_INTEGER_8 *)arg1);
-}
-static EIF_REFERENCE F942_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F942_6230(Current, *(EIF_REAL_32 *)arg1);
-}
-static EIF_REFERENCE F943_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F943_6230(Current, *(EIF_REAL_64 *)arg1);
-}
-static EIF_REFERENCE F944_6230_5209_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	return F944_6230(Current, *(EIF_NATURAL_16 *)arg1);
-}
-
-char *(*R5210[15])();
-void R5210_init () {
-	R5210[0] = (char *(*)()) F930_6231;
-	R5210[1] = (char *(*)()) F931_6231_5210_1;
-	R5210[2] = (char *(*)()) F932_6231_5210_1;
-	R5210[3] = (char *(*)()) F933_6231_5210_1;
-	R5210[4] = (char *(*)()) F934_6231_5210_1;
-	R5210[5] = (char *(*)()) F935_6231_5210_1;
-	R5210[6] = (char *(*)()) F936_6231_5210_1;
-	R5210[7] = (char *(*)()) F937_6231_5210_1;
-	R5210[8] = (char *(*)()) F938_6231_5210_1;
-	R5210[9] = (char *(*)()) F939_6231_5210_1;
-	R5210[10] = (char *(*)()) F940_6231_5210_1;
-	R5210[11] = (char *(*)()) F941_6231_5210_1;
-	R5210[12] = (char *(*)()) F942_6231_5210_1;
-	R5210[13] = (char *(*)()) F943_6231_5210_1;
-	R5210[14] = (char *(*)()) F944_6231_5210_1;
-}
-static EIF_REFERENCE F931_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F931_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F931_6231(Current);
+	EIF_CHARACTER_8 r = F931_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c1 = r;
@@ -3520,12 +3563,12 @@ static EIF_REFERENCE F931_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F932_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F932_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F932_6231(Current);
+	EIF_NATURAL_8 r = F932_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n1 = r;
@@ -3536,12 +3579,12 @@ static EIF_REFERENCE F932_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F933_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F933_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F933_6231(Current);
+	EIF_POINTER r = F933_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
@@ -3552,12 +3595,12 @@ static EIF_REFERENCE F933_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F934_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F934_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F934_6231(Current);
+	EIF_BOOLEAN r = F934_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_b = r;
@@ -3568,44 +3611,44 @@ static EIF_REFERENCE F934_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F935_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F935_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F935_6231(Current);
+	EIF_INTEGER_64 r = F935_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F936_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F936_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F936_6231(Current);
+	EIF_INTEGER_32 r = F936_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F937_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F937_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F937_6231(Current);
+	EIF_CHARACTER_32 r = F937_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c4 = r;
@@ -3616,76 +3659,76 @@ static EIF_REFERENCE F937_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F938_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F938_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F938_6231(Current);
+	EIF_NATURAL_64 r = F938_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F939_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F939_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F939_6231(Current);
+	EIF_NATURAL_32 r = F939_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F940_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F940_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F940_6231(Current);
+	EIF_INTEGER_16 r = F940_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F941_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F941_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F941_6231(Current);
+	EIF_INTEGER_8 r = F941_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F942_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F942_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32 r = F942_6231(Current);
+	EIF_REAL_32 r = F942_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_r4 = r;
@@ -3696,12 +3739,12 @@ static EIF_REFERENCE F942_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F943_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F943_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64 r = F943_6231(Current);
+	EIF_REAL_64 r = F943_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_r8 = r;
@@ -3712,63 +3755,47 @@ static EIF_REFERENCE F943_6231_5210_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F944_6231_5210_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F944_6229_5209_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F944_6231(Current);
+	EIF_NATURAL_16 r = F944_6229(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5214[15])();
-void R5214_init () {
-	R5214[0] = (char *(*)()) F945_6234;
-	R5214[1] = (char *(*)()) F946_6234_5214_1;
-	R5214[2] = (char *(*)()) F947_6234_5214_1;
-	R5214[3] = (char *(*)()) F948_6234_5214_1;
-	R5214[4] = (char *(*)()) F949_6234_5214_1;
-	R5214[5] = (char *(*)()) F950_6234_5214_1;
-	R5214[6] = (char *(*)()) F951_6234_5214_1;
-	R5214[7] = (char *(*)()) F952_6234_5214_1;
-	R5214[8] = (char *(*)()) F953_6234_5214_1;
-	R5214[9] = (char *(*)()) F954_6234_5214_1;
-	R5214[10] = (char *(*)()) F955_6234_5214_1;
-	R5214[11] = (char *(*)()) F956_6234_5214_1;
-	R5214[12] = (char *(*)()) F957_6234_5214_1;
-	R5214[13] = (char *(*)()) F958_6234_5214_1;
-	R5214[14] = (char *(*)()) F959_6234_5214_1;
+char *(*R5213[15])();
+void R5213_init () {
+	R5213[0] = (char *(*)()) F945_6232;
+	R5213[1] = (char *(*)()) F946_6232_5213_1;
+	R5213[2] = (char *(*)()) F947_6232_5213_1;
+	R5213[3] = (char *(*)()) F948_6232_5213_1;
+	R5213[4] = (char *(*)()) F949_6232_5213_1;
+	R5213[5] = (char *(*)()) F950_6232_5213_1;
+	R5213[6] = (char *(*)()) F951_6232_5213_1;
+	R5213[7] = (char *(*)()) F952_6232_5213_1;
+	R5213[8] = (char *(*)()) F953_6232_5213_1;
+	R5213[9] = (char *(*)()) F954_6232_5213_1;
+	R5213[10] = (char *(*)()) F955_6232_5213_1;
+	R5213[11] = (char *(*)()) F956_6232_5213_1;
+	R5213[12] = (char *(*)()) F957_6232_5213_1;
+	R5213[13] = (char *(*)()) F958_6232_5213_1;
+	R5213[14] = (char *(*)()) F959_6232_5213_1;
 }
-static EIF_REFERENCE F946_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F946_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F946_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_p = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
-	} else {
-		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
-		*(EIF_POINTER *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F947_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F947_6234(Current);
+	EIF_BOOLEAN r = F946_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_b = r;
@@ -3779,44 +3806,44 @@ static EIF_REFERENCE F947_6234_5214_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F948_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F947_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F948_6234(Current);
+	EIF_INTEGER_32 r = F947_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F949_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F948_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F949_6234(Current);
+	EIF_INTEGER_64 r = F948_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F950_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F949_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F950_6234(Current);
+	EIF_CHARACTER_8 r = F949_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c1 = r;
@@ -3827,124 +3854,12 @@ static EIF_REFERENCE F950_6234_5214_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F951_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F950_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F951_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
-	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F952_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F952_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
-	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F953_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F953_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
-	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F954_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64 r = F954_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_r8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
-	} else {
-		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
-		*(EIF_REAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F955_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32 r = F955_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_r4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_r4;
-	} else {
-		Result = RTLNS(eif_new_type(1023, 0x00).id, 1023, _OBJSIZ_0_0_0_0_1_0_0_0_);
-		*(EIF_REAL_32 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F956_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F956_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
-	} else {
-		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_NATURAL_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F957_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F957_6234(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F958_6234_5214_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F958_6234(Current);
+	EIF_CHARACTER_32 r = F950_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_c4 = r;
@@ -3955,18 +3870,146 @@ static EIF_REFERENCE F958_6234_5214_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F959_6234_5214_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F951_6232_5213_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F959_6234(Current);
+	EIF_NATURAL_32 r = F951_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F952_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_64 r = F952_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+	} else {
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F953_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_16 r = F953_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+	} else {
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F954_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_REAL_64 r = F954_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_r8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_r8;
+	} else {
+		Result = RTLNS(eif_new_type(1026, 0x00).id, 1026, _OBJSIZ_0_0_0_0_0_0_0_1_);
+		*(EIF_REAL_64 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F955_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_REAL_32 r = F955_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_r4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_r4;
+	} else {
+		Result = RTLNS(eif_new_type(1023, 0x00).id, 1023, _OBJSIZ_0_0_0_0_1_0_0_0_);
+		*(EIF_REAL_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F956_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_8 r = F956_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
+	} else {
+		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_NATURAL_8 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F957_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_16 r = F957_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+	} else {
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F958_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_POINTER r = F958_6232(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_p = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
+	} else {
+		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
+		*(EIF_POINTER *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F959_6232_5213_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_8 r = F959_6232(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -4011,23 +4054,23 @@ void R5216_init () {
 }
 static EIF_REFERENCE F946_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F946_6244(Current, *(EIF_POINTER *)arg1);
+	return F946_6244(Current, *(EIF_BOOLEAN *)arg1);
 }
 static EIF_REFERENCE F947_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F947_6244(Current, *(EIF_BOOLEAN *)arg1);
+	return F947_6244(Current, *(EIF_INTEGER_32 *)arg1);
 }
 static EIF_REFERENCE F948_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F948_6244(Current, *(EIF_INTEGER_32 *)arg1);
+	return F948_6244(Current, *(EIF_INTEGER_64 *)arg1);
 }
 static EIF_REFERENCE F949_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F949_6244(Current, *(EIF_INTEGER_64 *)arg1);
+	return F949_6244(Current, *(EIF_CHARACTER_8 *)arg1);
 }
 static EIF_REFERENCE F950_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F950_6244(Current, *(EIF_CHARACTER_8 *)arg1);
+	return F950_6244(Current, *(EIF_CHARACTER_32 *)arg1);
 }
 static EIF_REFERENCE F951_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -4059,7 +4102,7 @@ static EIF_REFERENCE F957_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 }
 static EIF_REFERENCE F958_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F958_6244(Current, *(EIF_CHARACTER_32 *)arg1);
+	return F958_6244(Current, *(EIF_POINTER *)arg1);
 }
 static EIF_REFERENCE F959_6244_5216_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -4089,23 +4132,7 @@ static EIF_REFERENCE F946_6245_5217_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER r = F946_6245(Current);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_p = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
-	} else {
-		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
-		*(EIF_POINTER *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F947_6245_5217_1 (EIF_REFERENCE Current)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_BOOLEAN r = F947_6245(Current);
+	EIF_BOOLEAN r = F946_6245(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_b = r;
@@ -4116,19 +4143,35 @@ static EIF_REFERENCE F947_6245_5217_1 (EIF_REFERENCE Current)
 		return Result;
 	}
 }
-static EIF_REFERENCE F948_6245_5217_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F947_6245_5217_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F948_6245(Current);
+	EIF_INTEGER_32 r = F947_6245(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F948_6245_5217_1 (EIF_REFERENCE Current)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_64 r = F948_6245(Current);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
@@ -4137,14 +4180,14 @@ static EIF_REFERENCE F949_6245_5217_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F949_6245(Current);
+	EIF_CHARACTER_8 r = F949_6245(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+		eif_optimized_return_value.it_c1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_CHARACTER_8 *)Result = r;
 		return Result;
 	}
 }
@@ -4153,14 +4196,14 @@ static EIF_REFERENCE F950_6245_5217_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F950_6245(Current);
+	EIF_CHARACTER_32 r = F950_6245(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
+		eif_optimized_return_value.it_c4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
 	} else {
-		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_CHARACTER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_CHARACTER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -4175,7 +4218,7 @@ static EIF_REFERENCE F951_6245_5217_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -4191,7 +4234,7 @@ static EIF_REFERENCE F952_6245_5217_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
@@ -4207,7 +4250,7 @@ static EIF_REFERENCE F953_6245_5217_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -4271,7 +4314,7 @@ static EIF_REFERENCE F957_6245_5217_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -4281,14 +4324,14 @@ static EIF_REFERENCE F958_6245_5217_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F958_6245(Current);
+	EIF_POINTER r = F958_6245(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
+		eif_optimized_return_value.it_p = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
-		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_CHARACTER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1068, 0x00).id, 1068, _OBJSIZ_0_0_0_0_0_1_0_0_);
+		*(EIF_POINTER *)Result = r;
 		return Result;
 	}
 }
@@ -4303,7 +4346,7 @@ static EIF_REFERENCE F959_6245_5217_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -4311,25 +4354,25 @@ static EIF_REFERENCE F959_6245_5217_1 (EIF_REFERENCE Current)
 
 char *(*R5223[128])();
 void R5223_init () {
-	R5223[0] = (char *(*)()) F998_6517;
-	R5223[1] = (char *(*)()) F999_6569_5223_5;
-	R5223[2] = (char *(*)()) F1000_6569_5223_5;
-	R5223[3] = (char *(*)()) F1001_6613;
-	R5223[4] = (char *(*)()) F1002_6666_5223_5;
-	R5223[5] = (char *(*)()) F1003_6666_5223_5;
-	R5223[6] = (char *(*)()) F1004_6711;
-	R5223[7] = (char *(*)()) F1005_6765_5223_5;
-	R5223[8] = (char *(*)()) F1006_6765_5223_5;
-	R5223[9] = (char *(*)()) F1007_6810;
-	R5223[10] = (char *(*)()) F1008_6864_5223_5;
-	R5223[11] = (char *(*)()) F1009_6864_5223_5;
-	R5223[12] = (char *(*)()) F1010_6909;
+	R5223[0] = (char *(*)()) F998_6518;
+	R5223[1] = (char *(*)()) F999_6571_5223_5;
+	R5223[2] = (char *(*)()) F1000_6571_5223_5;
+	R5223[3] = (char *(*)()) F1001_6616;
+	R5223[4] = (char *(*)()) F1002_6670_5223_5;
+	R5223[5] = (char *(*)()) F1003_6670_5223_5;
+	R5223[6] = (char *(*)()) F1004_6715;
+	R5223[7] = (char *(*)()) F1005_6769_5223_5;
+	R5223[8] = (char *(*)()) F1006_6769_5223_5;
+	R5223[9] = (char *(*)()) F1007_6814;
+	R5223[10] = (char *(*)()) F1008_6868_5223_5;
+	R5223[11] = (char *(*)()) F1009_6868_5223_5;
+	R5223[12] = (char *(*)()) F1010_6912;
 	R5223[13] = (char *(*)()) F1011_6963_5223_5;
 	R5223[14] = (char *(*)()) F1012_6963_5223_5;
-	R5223[15] = (char *(*)()) F1013_7007;
-	R5223[16] = (char *(*)()) F1014_7058_5223_5;
-	R5223[17] = (char *(*)()) F1015_7058_5223_5;
-	R5223[18] = (char *(*)()) F1016_7101;
+	R5223[15] = (char *(*)()) F1013_7006;
+	R5223[16] = (char *(*)()) F1014_7057_5223_5;
+	R5223[17] = (char *(*)()) F1015_7057_5223_5;
+	R5223[18] = (char *(*)()) F1016_7100;
 	R5223[19] = (char *(*)()) F1017_7152_5223_5;
 	R5223[20] = (char *(*)()) F1018_7152_5223_5;
 	R5223[21] = (char *(*)()) F1019_7195;
@@ -4343,131 +4386,131 @@ void R5223_init () {
 	R5223[29] = (char *(*)()) F1027_7390_5223_5;
 	R5223[127] = (char *(*)()) F1125_8886;
 }
-static EIF_REFERENCE F999_6569_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F999_6571_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F999_6569(Current, *(EIF_NATURAL_16 *)arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F1000_6569_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F1000_6569(Current, *(EIF_NATURAL_16 *)arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F1002_6666_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1002_6666(Current, *(EIF_INTEGER_64 *)arg1);
+	EIF_INTEGER_64 r = F999_6571(Current, *(EIF_INTEGER_64 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1003_6666_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1000_6571_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1003_6666(Current, *(EIF_INTEGER_64 *)arg1);
+	EIF_INTEGER_64 r = F1000_6571(Current, *(EIF_INTEGER_64 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1005_6765_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1002_6670_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1005_6765(Current, *(EIF_INTEGER_32 *)arg1);
+	EIF_INTEGER_32 r = F1002_6670(Current, *(EIF_INTEGER_32 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1006_6765_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1003_6670_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1006_6765(Current, *(EIF_INTEGER_32 *)arg1);
+	EIF_INTEGER_32 r = F1003_6670(Current, *(EIF_INTEGER_32 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1008_6864_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1005_6769_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1008_6864(Current, *(EIF_INTEGER_16 *)arg1);
+	EIF_INTEGER_16 r = F1005_6769(Current, *(EIF_INTEGER_16 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1009_6864_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1006_6769_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1009_6864(Current, *(EIF_INTEGER_16 *)arg1);
+	EIF_INTEGER_16 r = F1006_6769(Current, *(EIF_INTEGER_16 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F1008_6868_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_8 r = F1008_6868(Current, *(EIF_INTEGER_8 *)arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+	} else {
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F1009_6868_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_8 r = F1009_6868(Current, *(EIF_INTEGER_8 *)arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+	} else {
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
@@ -4476,14 +4519,14 @@ static EIF_REFERENCE F1011_6963_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1011_6963(Current, *(EIF_INTEGER_8 *)arg1);
+	EIF_NATURAL_64 r = F1011_6963(Current, *(EIF_NATURAL_64 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
@@ -4492,46 +4535,46 @@ static EIF_REFERENCE F1012_6963_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1012_6963(Current, *(EIF_INTEGER_8 *)arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
-	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F1014_7058_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1014_7058(Current, *(EIF_NATURAL_64 *)arg1);
+	EIF_NATURAL_64 r = F1012_6963(Current, *(EIF_NATURAL_64 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1015_7058_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_REFERENCE F1014_7057_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1015_7058(Current, *(EIF_NATURAL_64 *)arg1);
+	EIF_NATURAL_32 r = F1014_7057(Current, *(EIF_NATURAL_32 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F1015_7057_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_32 r = F1015_7057(Current, *(EIF_NATURAL_32 *)arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -4540,14 +4583,14 @@ static EIF_REFERENCE F1017_7152_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1017_7152(Current, *(EIF_NATURAL_32 *)arg1);
+	EIF_NATURAL_16 r = F1017_7152(Current, *(EIF_NATURAL_16 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -4556,14 +4599,14 @@ static EIF_REFERENCE F1018_7152_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1018_7152(Current, *(EIF_NATURAL_32 *)arg1);
+	EIF_NATURAL_16 r = F1018_7152(Current, *(EIF_NATURAL_16 *)arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -4666,21 +4709,21 @@ static EIF_REFERENCE F1027_7390_5223_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 
 char *(*R5228[128])();
 void R5228_init () {
-	{long i; for (i = 0; i < 3; i++) R5228[i] = (char *(*)()) F998_6522;}
-	R5228[3] = (char *(*)()) F1001_6618;
-	R5228[4] = (char *(*)()) F1002_6671_5228_1;
-	R5228[5] = (char *(*)()) F1003_6671_5228_1;
-	R5228[6] = (char *(*)()) F1004_6716;
-	R5228[7] = (char *(*)()) F1005_6770_5228_1;
-	R5228[8] = (char *(*)()) F1006_6770_5228_1;
-	R5228[9] = (char *(*)()) F1007_6815;
-	R5228[10] = (char *(*)()) F1008_6869_5228_1;
-	R5228[11] = (char *(*)()) F1009_6869_5228_1;
-	R5228[12] = (char *(*)()) F1010_6914;
-	R5228[13] = (char *(*)()) F1011_6968_5228_1;
-	R5228[14] = (char *(*)()) F1012_6968_5228_1;
-	{long i; for (i = 15; i < 18; i++) R5228[i] = (char *(*)()) F1013_7012;}
-	{long i; for (i = 18; i < 21; i++) R5228[i] = (char *(*)()) F1016_7106;}
+	R5228[0] = (char *(*)()) F998_6523;
+	R5228[1] = (char *(*)()) F999_6576_5228_1;
+	R5228[2] = (char *(*)()) F1000_6576_5228_1;
+	R5228[3] = (char *(*)()) F1001_6621;
+	R5228[4] = (char *(*)()) F1002_6675_5228_1;
+	R5228[5] = (char *(*)()) F1003_6675_5228_1;
+	R5228[6] = (char *(*)()) F1004_6720;
+	R5228[7] = (char *(*)()) F1005_6774_5228_1;
+	R5228[8] = (char *(*)()) F1006_6774_5228_1;
+	R5228[9] = (char *(*)()) F1007_6819;
+	R5228[10] = (char *(*)()) F1008_6873_5228_1;
+	R5228[11] = (char *(*)()) F1009_6873_5228_1;
+	{long i; for (i = 12; i < 15; i++) R5228[i] = (char *(*)()) F1010_6917;}
+	{long i; for (i = 15; i < 18; i++) R5228[i] = (char *(*)()) F1013_7011;}
+	{long i; for (i = 18; i < 21; i++) R5228[i] = (char *(*)()) F1016_7105;}
 	{long i; for (i = 21; i < 24; i++) R5228[i] = (char *(*)()) F1019_7200;}
 	R5228[24] = (char *(*)()) F1022_7312;
 	R5228[25] = (char *(*)()) F1023_7330_5228_1;
@@ -4690,130 +4733,130 @@ void R5228_init () {
 	R5228[29] = (char *(*)()) F1027_7396_5228_1;
 	R5228[127] = (char *(*)()) F1125_8887;
 }
-static EIF_REFERENCE F1002_6671_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F999_6576_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1002_6671(Current);
+	EIF_INTEGER_64 r = F999_6576(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1003_6671_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1000_6576_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1003_6671(Current);
+	EIF_INTEGER_64 r = F1000_6576(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1005_6770_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1002_6675_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1005_6770(Current);
+	EIF_INTEGER_32 r = F1002_6675(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1006_6770_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1003_6675_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1006_6770(Current);
+	EIF_INTEGER_32 r = F1003_6675(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1008_6869_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1005_6774_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1008_6869(Current);
+	EIF_INTEGER_16 r = F1005_6774(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1009_6869_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1006_6774_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1009_6869(Current);
+	EIF_INTEGER_16 r = F1006_6774(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1011_6968_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1008_6873_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1011_6968(Current);
+	EIF_INTEGER_8 r = F1008_6873(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1012_6968_5228_1 (EIF_REFERENCE Current)
+static EIF_REFERENCE F1009_6873_5228_1 (EIF_REFERENCE Current)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1012_6968(Current);
+	EIF_INTEGER_8 r = F1009_6873(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -4921,12 +4964,12 @@ void R5229_init () {
 	R5229[33] = (char *(*)()) F996_6342;
 	R5229[34] = (char *(*)()) F997_6394;
 	{long i; for (i = 35; i < 38; i++) R5229[i] = (char *(*)()) F998_6501;}
-	{long i; for (i = 38; i < 41; i++) R5229[i] = (char *(*)()) F1001_6596;}
-	{long i; for (i = 41; i < 44; i++) R5229[i] = (char *(*)()) F1004_6694;}
-	{long i; for (i = 44; i < 47; i++) R5229[i] = (char *(*)()) F1007_6793;}
-	{long i; for (i = 47; i < 50; i++) R5229[i] = (char *(*)()) F1010_6892;}
-	{long i; for (i = 50; i < 53; i++) R5229[i] = (char *(*)()) F1013_6991;}
-	{long i; for (i = 53; i < 56; i++) R5229[i] = (char *(*)()) F1016_7085;}
+	{long i; for (i = 38; i < 41; i++) R5229[i] = (char *(*)()) F1001_6599;}
+	{long i; for (i = 41; i < 44; i++) R5229[i] = (char *(*)()) F1004_6698;}
+	{long i; for (i = 44; i < 47; i++) R5229[i] = (char *(*)()) F1007_6797;}
+	{long i; for (i = 47; i < 50; i++) R5229[i] = (char *(*)()) F1010_6896;}
+	{long i; for (i = 50; i < 53; i++) R5229[i] = (char *(*)()) F1013_6990;}
+	{long i; for (i = 53; i < 56; i++) R5229[i] = (char *(*)()) F1016_7084;}
 	{long i; for (i = 56; i < 59; i++) R5229[i] = (char *(*)()) F1019_7179;}
 	{long i; for (i = 59; i < 62; i++) R5229[i] = (char *(*)()) F1022_7274;}
 	{long i; for (i = 62; i < 65; i++) R5229[i] = (char *(*)()) F1025_7340;}
@@ -5361,7 +5404,7 @@ static EIF_REFERENCE F972_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -5377,7 +5420,7 @@ static EIF_REFERENCE F973_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -5393,7 +5436,7 @@ static EIF_REFERENCE F974_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
@@ -5409,7 +5452,7 @@ static EIF_REFERENCE F975_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -5425,7 +5468,7 @@ static EIF_REFERENCE F976_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -5441,7 +5484,7 @@ static EIF_REFERENCE F977_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -5457,7 +5500,7 @@ static EIF_REFERENCE F978_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
@@ -5522,7 +5565,7 @@ static EIF_REFERENCE F983_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1040,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1040,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -5561,21 +5604,21 @@ static EIF_REFERENCE F985_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER* r = F985_6352(Current, arg1);
+	EIF_NATURAL_32* r = F985_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1044,1068,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1044,1014,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1044, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_POINTER* *)Result = r;
+		*(EIF_NATURAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -5630,21 +5673,21 @@ static EIF_REFERENCE F988_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64* r = F988_6352(Current, arg1);
+	EIF_POINTER* r = F988_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1050,1002,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1050,1068,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1050, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_64* *)Result = r;
+		*(EIF_POINTER* *)Result = r;
 		return Result;
 	}
 }
@@ -5653,21 +5696,21 @@ static EIF_REFERENCE F989_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32* r = F989_6352(Current, arg1);
+	EIF_CHARACTER_32* r = F989_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1052,1017,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1052,1029,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1052, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_32* *)Result = r;
+		*(EIF_CHARACTER_32* *)Result = r;
 		return Result;
 	}
 }
@@ -5676,21 +5719,21 @@ static EIF_REFERENCE F990_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64* r = F990_6352(Current, arg1);
+	EIF_INTEGER_64* r = F990_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1054,1014,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1054,999,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1054, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_64* *)Result = r;
+		*(EIF_INTEGER_64* *)Result = r;
 		return Result;
 	}
 }
@@ -5699,21 +5742,21 @@ static EIF_REFERENCE F991_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16* r = F991_6352(Current, arg1);
+	EIF_NATURAL_64* r = F991_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1056,1008,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1056,1011,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1056, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_16* *)Result = r;
+		*(EIF_NATURAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -5722,21 +5765,21 @@ static EIF_REFERENCE F992_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64* r = F992_6352(Current, arg1);
+	EIF_INTEGER_16* r = F992_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1058,1026,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1058,1005,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1058, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_64* *)Result = r;
+		*(EIF_INTEGER_16* *)Result = r;
 		return Result;
 	}
 }
@@ -5745,21 +5788,21 @@ static EIF_REFERENCE F993_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32* r = F993_6352(Current, arg1);
+	EIF_REAL_64* r = F993_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1060,1023,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1060,1026,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1060, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_32* *)Result = r;
+		*(EIF_REAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -5768,21 +5811,21 @@ static EIF_REFERENCE F994_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16* r = F994_6352(Current, arg1);
+	EIF_REAL_32* r = F994_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1062,999,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1062,1023,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1062, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_16* *)Result = r;
+		*(EIF_REAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -5791,21 +5834,21 @@ static EIF_REFERENCE F995_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32* r = F995_6352(Current, arg1);
+	EIF_NATURAL_16* r = F995_6352(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1064,1029,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1064,1017,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1064, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_CHARACTER_32* *)Result = r;
+		*(EIF_NATURAL_16* *)Result = r;
 		return Result;
 	}
 }
@@ -5821,7 +5864,7 @@ static EIF_REFERENCE F996_6352_5309_5 (EIF_REFERENCE Current, EIF_REFERENCE arg1
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1066,1011,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1066,1008,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -5965,7 +6008,7 @@ static EIF_REFERENCE F972_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -5981,7 +6024,7 @@ static EIF_REFERENCE F973_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -5997,7 +6040,7 @@ static EIF_REFERENCE F974_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
@@ -6013,7 +6056,7 @@ static EIF_REFERENCE F975_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -6029,7 +6072,7 @@ static EIF_REFERENCE F976_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -6045,7 +6088,7 @@ static EIF_REFERENCE F977_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -6061,7 +6104,7 @@ static EIF_REFERENCE F978_6354_5311_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
@@ -6126,7 +6169,7 @@ static EIF_REFERENCE F983_6354_5311_1 (EIF_REFERENCE Current)
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1040,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1040,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -6165,21 +6208,21 @@ static EIF_REFERENCE F985_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER* r = F985_6354(Current);
+	EIF_NATURAL_32* r = F985_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1044,1068,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1044,1014,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1044, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_POINTER* *)Result = r;
+		*(EIF_NATURAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6234,21 +6277,21 @@ static EIF_REFERENCE F988_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64* r = F988_6354(Current);
+	EIF_POINTER* r = F988_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1050,1002,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1050,1068,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1050, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_64* *)Result = r;
+		*(EIF_POINTER* *)Result = r;
 		return Result;
 	}
 }
@@ -6257,21 +6300,21 @@ static EIF_REFERENCE F989_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32* r = F989_6354(Current);
+	EIF_CHARACTER_32* r = F989_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1052,1017,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1052,1029,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1052, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_32* *)Result = r;
+		*(EIF_CHARACTER_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6280,21 +6323,21 @@ static EIF_REFERENCE F990_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64* r = F990_6354(Current);
+	EIF_INTEGER_64* r = F990_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1054,1014,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1054,999,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1054, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_64* *)Result = r;
+		*(EIF_INTEGER_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6303,21 +6346,21 @@ static EIF_REFERENCE F991_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16* r = F991_6354(Current);
+	EIF_NATURAL_64* r = F991_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1056,1008,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1056,1011,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1056, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_16* *)Result = r;
+		*(EIF_NATURAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6326,21 +6369,21 @@ static EIF_REFERENCE F992_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64* r = F992_6354(Current);
+	EIF_INTEGER_16* r = F992_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1058,1026,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1058,1005,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1058, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_64* *)Result = r;
+		*(EIF_INTEGER_16* *)Result = r;
 		return Result;
 	}
 }
@@ -6349,21 +6392,21 @@ static EIF_REFERENCE F993_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32* r = F993_6354(Current);
+	EIF_REAL_64* r = F993_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1060,1023,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1060,1026,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1060, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_32* *)Result = r;
+		*(EIF_REAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6372,21 +6415,21 @@ static EIF_REFERENCE F994_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16* r = F994_6354(Current);
+	EIF_REAL_32* r = F994_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1062,999,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1062,1023,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1062, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_16* *)Result = r;
+		*(EIF_REAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6395,21 +6438,21 @@ static EIF_REFERENCE F995_6354_5311_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32* r = F995_6354(Current);
+	EIF_NATURAL_16* r = F995_6354(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1064,1029,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1064,1017,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1064, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_CHARACTER_32* *)Result = r;
+		*(EIF_NATURAL_16* *)Result = r;
 		return Result;
 	}
 }
@@ -6425,7 +6468,7 @@ static EIF_REFERENCE F996_6354_5311_1 (EIF_REFERENCE Current)
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1066,1011,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1066,1008,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -6569,7 +6612,7 @@ static EIF_REFERENCE F972_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -6585,7 +6628,7 @@ static EIF_REFERENCE F973_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -6601,7 +6644,7 @@ static EIF_REFERENCE F974_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_n8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
@@ -6617,7 +6660,7 @@ static EIF_REFERENCE F975_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -6633,7 +6676,7 @@ static EIF_REFERENCE F976_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -6649,7 +6692,7 @@ static EIF_REFERENCE F977_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -6665,7 +6708,7 @@ static EIF_REFERENCE F978_6355_5312_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
@@ -6730,7 +6773,7 @@ static EIF_REFERENCE F983_6355_5312_1 (EIF_REFERENCE Current)
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1040,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1040,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -6769,21 +6812,21 @@ static EIF_REFERENCE F985_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_POINTER* r = F985_6355(Current);
+	EIF_NATURAL_32* r = F985_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1044,1068,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1044,1014,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1044, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_POINTER* *)Result = r;
+		*(EIF_NATURAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6838,21 +6881,21 @@ static EIF_REFERENCE F988_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64* r = F988_6355(Current);
+	EIF_POINTER* r = F988_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1050,1002,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1050,1068,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1050, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_64* *)Result = r;
+		*(EIF_POINTER* *)Result = r;
 		return Result;
 	}
 }
@@ -6861,21 +6904,21 @@ static EIF_REFERENCE F989_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32* r = F989_6355(Current);
+	EIF_CHARACTER_32* r = F989_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1052,1017,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1052,1029,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1052, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_32* *)Result = r;
+		*(EIF_CHARACTER_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6884,21 +6927,21 @@ static EIF_REFERENCE F990_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64* r = F990_6355(Current);
+	EIF_INTEGER_64* r = F990_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1054,1014,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1054,999,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1054, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_64* *)Result = r;
+		*(EIF_INTEGER_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6907,21 +6950,21 @@ static EIF_REFERENCE F991_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16* r = F991_6355(Current);
+	EIF_NATURAL_64* r = F991_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1056,1008,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1056,1011,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1056, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_INTEGER_16* *)Result = r;
+		*(EIF_NATURAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6930,21 +6973,21 @@ static EIF_REFERENCE F992_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_64* r = F992_6355(Current);
+	EIF_INTEGER_16* r = F992_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1058,1026,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1058,1005,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1058, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_64* *)Result = r;
+		*(EIF_INTEGER_16* *)Result = r;
 		return Result;
 	}
 }
@@ -6953,21 +6996,21 @@ static EIF_REFERENCE F993_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_REAL_32* r = F993_6355(Current);
+	EIF_REAL_64* r = F993_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1060,1023,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1060,1026,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1060, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_REAL_32* *)Result = r;
+		*(EIF_REAL_64* *)Result = r;
 		return Result;
 	}
 }
@@ -6976,21 +7019,21 @@ static EIF_REFERENCE F994_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16* r = F994_6355(Current);
+	EIF_REAL_32* r = F994_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1062,999,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1062,1023,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1062, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_NATURAL_16* *)Result = r;
+		*(EIF_REAL_32* *)Result = r;
 		return Result;
 	}
 }
@@ -6999,21 +7042,21 @@ static EIF_REFERENCE F995_6355_5312_1 (EIF_REFERENCE Current)
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32* r = F995_6355(Current);
+	EIF_NATURAL_16* r = F995_6355(Current);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
 		eif_optimized_return_value.it_p = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1064,1029,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1064,1017,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 			Result = RTLNS(typres0.id, 1064, _OBJSIZ_0_0_0_0_0_1_0_0_);
 		}
-		*(EIF_CHARACTER_32* *)Result = r;
+		*(EIF_NATURAL_16* *)Result = r;
 		return Result;
 	}
 }
@@ -7029,7 +7072,7 @@ static EIF_REFERENCE F996_6355_5312_1 (EIF_REFERENCE Current)
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_p;
 	} else {
 		{
-			static EIF_TYPE_INDEX typarr0[] = {1066,1011,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {1066,1008,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -7079,636 +7122,643 @@ void R5322_init () {
 char *(*R5465[3])();
 void R5465_init () {
 	R5465[0] = (char *(*)()) F998_6530;
-	R5465[1] = (char *(*)()) F999_6577;
-	R5465[2] = (char *(*)()) F1000_6577;
+	R5465[1] = (char *(*)()) F999_6580;
+	R5465[2] = (char *(*)()) F1000_6580;
+}
+
+char *(*R5466[3])();
+void R5466_init () {
+	R5466[0] = (char *(*)()) F998_6531;
+	R5466[1] = (char *(*)()) F999_6581;
+	R5466[2] = (char *(*)()) F1000_6581;
 }
 
 char *(*R5467[3])();
 void R5467_init () {
 	R5467[0] = (char *(*)()) F998_6532;
-	R5467[1] = (char *(*)()) F999_6579;
-	R5467[2] = (char *(*)()) F1000_6579;
+	R5467[1] = (char *(*)()) F999_6582;
+	R5467[2] = (char *(*)()) F1000_6582;
 }
 
 char *(*R5468[3])();
 void R5468_init () {
 	R5468[0] = (char *(*)()) F998_6533;
-	R5468[1] = (char *(*)()) F999_6580;
-	R5468[2] = (char *(*)()) F1000_6580;
+	R5468[1] = (char *(*)()) F999_6583;
+	R5468[2] = (char *(*)()) F1000_6583;
 }
 
 char *(*R5469[3])();
 void R5469_init () {
 	R5469[0] = (char *(*)()) F998_6534;
-	R5469[1] = (char *(*)()) F999_6581;
-	R5469[2] = (char *(*)()) F1000_6581;
+	R5469[1] = (char *(*)()) F999_6584;
+	R5469[2] = (char *(*)()) F1000_6584;
 }
 
 char *(*R5470[3])();
 void R5470_init () {
 	R5470[0] = (char *(*)()) F998_6535;
-	R5470[1] = (char *(*)()) F999_6582;
-	R5470[2] = (char *(*)()) F1000_6582;
+	R5470[1] = (char *(*)()) F999_6585;
+	R5470[2] = (char *(*)()) F1000_6585;
 }
 
 char *(*R5471[3])();
 void R5471_init () {
 	R5471[0] = (char *(*)()) F998_6536;
-	R5471[1] = (char *(*)()) F999_6583;
-	R5471[2] = (char *(*)()) F1000_6583;
-}
-
-char *(*R5472[3])();
-void R5472_init () {
-	R5472[0] = (char *(*)()) F998_6537;
-	R5472[1] = (char *(*)()) F999_6584;
-	R5472[2] = (char *(*)()) F1000_6584;
-}
-
-char *(*R5497[3])();
-void R5497_init () {
-	R5497[0] = (char *(*)()) F998_6562;
-	R5497[1] = (char *(*)()) F999_6593_5497_16;
-	R5497[2] = (char *(*)()) F1000_6593_5497_16;
-}
-static EIF_REFERENCE F999_6593_5497_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F999_6593(Current, arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F1000_6593_5497_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F1000_6593(Current, arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
-	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
-		return Result;
-	}
+	R5471[1] = (char *(*)()) F999_6586;
+	R5471[2] = (char *(*)()) F1000_6586;
 }
 
 char *(*R5498[3])();
 void R5498_init () {
 	R5498[0] = (char *(*)()) F998_6563;
-	R5498[1] = (char *(*)()) F999_6594_5498_16;
-	R5498[2] = (char *(*)()) F1000_6594_5498_16;
+	R5498[1] = (char *(*)()) F999_6596_5498_16;
+	R5498[2] = (char *(*)()) F1000_6596_5498_16;
 }
-static EIF_REFERENCE F999_6594_5498_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F999_6596_5498_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F999_6594(Current, arg1);
+	EIF_INTEGER_64 r = F999_6596(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1000_6594_5498_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1000_6596_5498_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_16 r = F1000_6594(Current, arg1);
+	EIF_INTEGER_64 r = F1000_6596(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_NATURAL_16 *)Result = r;
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5518[3])();
-void R5518_init () {
-	R5518[0] = (char *(*)()) F1001_6625;
-	R5518[1] = (char *(*)()) F1002_6675;
-	R5518[2] = (char *(*)()) F1003_6675;
+char *(*R5499[3])();
+void R5499_init () {
+	R5499[0] = (char *(*)()) F998_6564;
+	R5499[1] = (char *(*)()) F999_6597_5499_16;
+	R5499[2] = (char *(*)()) F1000_6597_5499_16;
 }
-
-char *(*R5519[3])();
-void R5519_init () {
-	R5519[0] = (char *(*)()) F1001_6626;
-	R5519[1] = (char *(*)()) F1002_6676;
-	R5519[2] = (char *(*)()) F1003_6676;
+static EIF_REFERENCE F999_6597_5499_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_64 r = F999_6597(Current, arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
+		return Result;
+	}
 }
-
-char *(*R5520[3])();
-void R5520_init () {
-	R5520[0] = (char *(*)()) F1001_6627;
-	R5520[1] = (char *(*)()) F1002_6677;
-	R5520[2] = (char *(*)()) F1003_6677;
+static EIF_REFERENCE F1000_6597_5499_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_INTEGER_64 r = F1000_6597(Current, arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_i8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+	} else {
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_INTEGER_64 *)Result = r;
+		return Result;
+	}
 }
 
 char *(*R5521[3])();
 void R5521_init () {
-	R5521[0] = (char *(*)()) F1001_6628;
-	R5521[1] = (char *(*)()) F1002_6678;
-	R5521[2] = (char *(*)()) F1003_6678;
+	R5521[0] = (char *(*)()) F1001_6629;
+	R5521[1] = (char *(*)()) F1002_6679;
+	R5521[2] = (char *(*)()) F1003_6679;
 }
 
 char *(*R5522[3])();
 void R5522_init () {
-	R5522[0] = (char *(*)()) F1001_6629;
-	R5522[1] = (char *(*)()) F1002_6679;
-	R5522[2] = (char *(*)()) F1003_6679;
+	R5522[0] = (char *(*)()) F1001_6630;
+	R5522[1] = (char *(*)()) F1002_6680;
+	R5522[2] = (char *(*)()) F1003_6680;
 }
 
 char *(*R5523[3])();
 void R5523_init () {
-	R5523[0] = (char *(*)()) F1001_6630;
-	R5523[1] = (char *(*)()) F1002_6680;
-	R5523[2] = (char *(*)()) F1003_6680;
+	R5523[0] = (char *(*)()) F1001_6631;
+	R5523[1] = (char *(*)()) F1002_6681;
+	R5523[2] = (char *(*)()) F1003_6681;
 }
 
 char *(*R5524[3])();
 void R5524_init () {
-	R5524[0] = (char *(*)()) F1001_6631;
-	R5524[1] = (char *(*)()) F1002_6681;
-	R5524[2] = (char *(*)()) F1003_6681;
+	R5524[0] = (char *(*)()) F1001_6632;
+	R5524[1] = (char *(*)()) F1002_6682;
+	R5524[2] = (char *(*)()) F1003_6682;
 }
 
-char *(*R5551[3])();
-void R5551_init () {
-	R5551[0] = (char *(*)()) F1001_6658;
-	R5551[1] = (char *(*)()) F1002_6691_5551_16;
-	R5551[2] = (char *(*)()) F1003_6691_5551_16;
+char *(*R5525[3])();
+void R5525_init () {
+	R5525[0] = (char *(*)()) F1001_6633;
+	R5525[1] = (char *(*)()) F1002_6683;
+	R5525[2] = (char *(*)()) F1003_6683;
 }
-static EIF_REFERENCE F1002_6691_5551_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+
+char *(*R5526[3])();
+void R5526_init () {
+	R5526[0] = (char *(*)()) F1001_6634;
+	R5526[1] = (char *(*)()) F1002_6684;
+	R5526[2] = (char *(*)()) F1003_6684;
+}
+
+char *(*R5528[3])();
+void R5528_init () {
+	R5528[0] = (char *(*)()) F1001_6636;
+	R5528[1] = (char *(*)()) F1002_6686;
+	R5528[2] = (char *(*)()) F1003_6686;
+}
+
+char *(*R5554[3])();
+void R5554_init () {
+	R5554[0] = (char *(*)()) F1001_6662;
+	R5554[1] = (char *(*)()) F1002_6695_5554_16;
+	R5554[2] = (char *(*)()) F1003_6695_5554_16;
+}
+static EIF_REFERENCE F1002_6695_5554_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1002_6691(Current, arg1);
+	EIF_INTEGER_32 r = F1002_6695(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1003_6691_5551_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1003_6695_5554_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1003_6691(Current, arg1);
+	EIF_INTEGER_32 r = F1003_6695(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5552[3])();
-void R5552_init () {
-	R5552[0] = (char *(*)()) F1001_6659;
-	R5552[1] = (char *(*)()) F1002_6692_5552_16;
-	R5552[2] = (char *(*)()) F1003_6692_5552_16;
+char *(*R5555[3])();
+void R5555_init () {
+	R5555[0] = (char *(*)()) F1001_6663;
+	R5555[1] = (char *(*)()) F1002_6696_5555_16;
+	R5555[2] = (char *(*)()) F1003_6696_5555_16;
 }
-static EIF_REFERENCE F1002_6692_5552_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1002_6696_5555_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1002_6692(Current, arg1);
+	EIF_INTEGER_32 r = F1002_6696(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1003_6692_5552_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1003_6696_5555_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_64 r = F1003_6692(Current, arg1);
+	EIF_INTEGER_32 r = F1003_6696(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_INTEGER_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
-}
-
-char *(*R5574[3])();
-void R5574_init () {
-	R5574[0] = (char *(*)()) F1004_6724;
-	R5574[1] = (char *(*)()) F1005_6774;
-	R5574[2] = (char *(*)()) F1006_6774;
-}
-
-char *(*R5575[3])();
-void R5575_init () {
-	R5575[0] = (char *(*)()) F1004_6725;
-	R5575[1] = (char *(*)()) F1005_6775;
-	R5575[2] = (char *(*)()) F1006_6775;
-}
-
-char *(*R5576[3])();
-void R5576_init () {
-	R5576[0] = (char *(*)()) F1004_6726;
-	R5576[1] = (char *(*)()) F1005_6776;
-	R5576[2] = (char *(*)()) F1006_6776;
 }
 
 char *(*R5577[3])();
 void R5577_init () {
-	R5577[0] = (char *(*)()) F1004_6727;
-	R5577[1] = (char *(*)()) F1005_6777;
-	R5577[2] = (char *(*)()) F1006_6777;
+	R5577[0] = (char *(*)()) F1004_6728;
+	R5577[1] = (char *(*)()) F1005_6778;
+	R5577[2] = (char *(*)()) F1006_6778;
 }
 
 char *(*R5578[3])();
 void R5578_init () {
-	R5578[0] = (char *(*)()) F1004_6728;
-	R5578[1] = (char *(*)()) F1005_6778;
-	R5578[2] = (char *(*)()) F1006_6778;
+	R5578[0] = (char *(*)()) F1004_6729;
+	R5578[1] = (char *(*)()) F1005_6779;
+	R5578[2] = (char *(*)()) F1006_6779;
 }
 
 char *(*R5579[3])();
 void R5579_init () {
-	R5579[0] = (char *(*)()) F1004_6729;
-	R5579[1] = (char *(*)()) F1005_6779;
-	R5579[2] = (char *(*)()) F1006_6779;
+	R5579[0] = (char *(*)()) F1004_6730;
+	R5579[1] = (char *(*)()) F1005_6780;
+	R5579[2] = (char *(*)()) F1006_6780;
+}
+
+char *(*R5580[3])();
+void R5580_init () {
+	R5580[0] = (char *(*)()) F1004_6731;
+	R5580[1] = (char *(*)()) F1005_6781;
+	R5580[2] = (char *(*)()) F1006_6781;
 }
 
 char *(*R5581[3])();
 void R5581_init () {
-	R5581[0] = (char *(*)()) F1004_6731;
-	R5581[1] = (char *(*)()) F1005_6781;
-	R5581[2] = (char *(*)()) F1006_6781;
+	R5581[0] = (char *(*)()) F1004_6732;
+	R5581[1] = (char *(*)()) F1005_6782;
+	R5581[2] = (char *(*)()) F1006_6782;
 }
 
-char *(*R5607[3])();
-void R5607_init () {
-	R5607[0] = (char *(*)()) F1004_6757;
-	R5607[1] = (char *(*)()) F1005_6790_5607_16;
-	R5607[2] = (char *(*)()) F1006_6790_5607_16;
+char *(*R5583[3])();
+void R5583_init () {
+	R5583[0] = (char *(*)()) F1004_6734;
+	R5583[1] = (char *(*)()) F1005_6784;
+	R5583[2] = (char *(*)()) F1006_6784;
 }
-static EIF_REFERENCE F1005_6790_5607_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+
+char *(*R5584[3])();
+void R5584_init () {
+	R5584[0] = (char *(*)()) F1004_6735;
+	R5584[1] = (char *(*)()) F1005_6785;
+	R5584[2] = (char *(*)()) F1006_6785;
+}
+
+char *(*R5610[3])();
+void R5610_init () {
+	R5610[0] = (char *(*)()) F1004_6761;
+	R5610[1] = (char *(*)()) F1005_6794_5610_16;
+	R5610[2] = (char *(*)()) F1006_6794_5610_16;
+}
+static EIF_REFERENCE F1005_6794_5610_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1005_6790(Current, arg1);
+	EIF_INTEGER_16 r = F1005_6794(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1006_6790_5607_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1006_6794_5610_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1006_6790(Current, arg1);
+	EIF_INTEGER_16 r = F1006_6794(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5608[3])();
-void R5608_init () {
-	R5608[0] = (char *(*)()) F1004_6758;
-	R5608[1] = (char *(*)()) F1005_6791_5608_16;
-	R5608[2] = (char *(*)()) F1006_6791_5608_16;
+char *(*R5611[3])();
+void R5611_init () {
+	R5611[0] = (char *(*)()) F1004_6762;
+	R5611[1] = (char *(*)()) F1005_6795_5611_16;
+	R5611[2] = (char *(*)()) F1006_6795_5611_16;
 }
-static EIF_REFERENCE F1005_6791_5608_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1005_6795_5611_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1005_6791(Current, arg1);
+	EIF_INTEGER_16 r = F1005_6795(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1006_6791_5608_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1006_6795_5611_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F1006_6791(Current, arg1);
+	EIF_INTEGER_16 r = F1006_6795(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_i2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
-}
-
-char *(*R5630[3])();
-void R5630_init () {
-	R5630[0] = (char *(*)()) F1007_6823;
-	R5630[1] = (char *(*)()) F1008_6873;
-	R5630[2] = (char *(*)()) F1009_6873;
-}
-
-char *(*R5631[3])();
-void R5631_init () {
-	R5631[0] = (char *(*)()) F1007_6824;
-	R5631[1] = (char *(*)()) F1008_6874;
-	R5631[2] = (char *(*)()) F1009_6874;
-}
-
-char *(*R5632[3])();
-void R5632_init () {
-	R5632[0] = (char *(*)()) F1007_6825;
-	R5632[1] = (char *(*)()) F1008_6875;
-	R5632[2] = (char *(*)()) F1009_6875;
 }
 
 char *(*R5633[3])();
 void R5633_init () {
-	R5633[0] = (char *(*)()) F1007_6826;
-	R5633[1] = (char *(*)()) F1008_6876;
-	R5633[2] = (char *(*)()) F1009_6876;
+	R5633[0] = (char *(*)()) F1007_6827;
+	R5633[1] = (char *(*)()) F1008_6877;
+	R5633[2] = (char *(*)()) F1009_6877;
 }
 
 char *(*R5634[3])();
 void R5634_init () {
-	R5634[0] = (char *(*)()) F1007_6827;
-	R5634[1] = (char *(*)()) F1008_6877;
-	R5634[2] = (char *(*)()) F1009_6877;
+	R5634[0] = (char *(*)()) F1007_6828;
+	R5634[1] = (char *(*)()) F1008_6878;
+	R5634[2] = (char *(*)()) F1009_6878;
+}
+
+char *(*R5635[3])();
+void R5635_init () {
+	R5635[0] = (char *(*)()) F1007_6829;
+	R5635[1] = (char *(*)()) F1008_6879;
+	R5635[2] = (char *(*)()) F1009_6879;
 }
 
 char *(*R5636[3])();
 void R5636_init () {
-	R5636[0] = (char *(*)()) F1007_6829;
-	R5636[1] = (char *(*)()) F1008_6879;
-	R5636[2] = (char *(*)()) F1009_6879;
+	R5636[0] = (char *(*)()) F1007_6830;
+	R5636[1] = (char *(*)()) F1008_6880;
+	R5636[2] = (char *(*)()) F1009_6880;
 }
 
-char *(*R5637[3])();
-void R5637_init () {
-	R5637[0] = (char *(*)()) F1007_6830;
-	R5637[1] = (char *(*)()) F1008_6880;
-	R5637[2] = (char *(*)()) F1009_6880;
+char *(*R5638[3])();
+void R5638_init () {
+	R5638[0] = (char *(*)()) F1007_6832;
+	R5638[1] = (char *(*)()) F1008_6882;
+	R5638[2] = (char *(*)()) F1009_6882;
 }
 
-char *(*R5663[3])();
-void R5663_init () {
-	R5663[0] = (char *(*)()) F1007_6856;
-	R5663[1] = (char *(*)()) F1008_6889_5663_16;
-	R5663[2] = (char *(*)()) F1009_6889_5663_16;
+char *(*R5639[3])();
+void R5639_init () {
+	R5639[0] = (char *(*)()) F1007_6833;
+	R5639[1] = (char *(*)()) F1008_6883;
+	R5639[2] = (char *(*)()) F1009_6883;
 }
-static EIF_REFERENCE F1008_6889_5663_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+
+char *(*R5640[3])();
+void R5640_init () {
+	R5640[0] = (char *(*)()) F1007_6834;
+	R5640[1] = (char *(*)()) F1008_6884;
+	R5640[2] = (char *(*)()) F1009_6884;
+}
+
+char *(*R5666[3])();
+void R5666_init () {
+	R5666[0] = (char *(*)()) F1007_6860;
+	R5666[1] = (char *(*)()) F1008_6893_5666_16;
+	R5666[2] = (char *(*)()) F1009_6893_5666_16;
+}
+static EIF_REFERENCE F1008_6893_5666_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1008_6889(Current, arg1);
+	EIF_INTEGER_8 r = F1008_6893(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1009_6889_5663_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1009_6893_5666_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1009_6889(Current, arg1);
+	EIF_INTEGER_8 r = F1009_6893(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
 
-char *(*R5664[3])();
-void R5664_init () {
-	R5664[0] = (char *(*)()) F1007_6857;
-	R5664[1] = (char *(*)()) F1008_6890_5664_16;
-	R5664[2] = (char *(*)()) F1009_6890_5664_16;
+char *(*R5667[3])();
+void R5667_init () {
+	R5667[0] = (char *(*)()) F1007_6861;
+	R5667[1] = (char *(*)()) F1008_6894_5667_16;
+	R5667[2] = (char *(*)()) F1009_6894_5667_16;
 }
-static EIF_REFERENCE F1008_6890_5664_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1008_6894_5667_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1008_6890(Current, arg1);
+	EIF_INTEGER_8 r = F1008_6894(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1009_6890_5664_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1009_6894_5667_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_16 r = F1009_6890(Current, arg1);
+	EIF_INTEGER_8 r = F1009_6894(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i2 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
+		eif_optimized_return_value.it_i1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
-		*(EIF_INTEGER_16 *)Result = r;
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
-}
-
-char *(*R5686[3])();
-void R5686_init () {
-	R5686[0] = (char *(*)()) F1010_6922;
-	R5686[1] = (char *(*)()) F1011_6972;
-	R5686[2] = (char *(*)()) F1012_6972;
 }
 
 char *(*R5687[3])();
 void R5687_init () {
-	R5687[0] = (char *(*)()) F1010_6923;
-	R5687[1] = (char *(*)()) F1011_6973;
-	R5687[2] = (char *(*)()) F1012_6973;
+	R5687[0] = (char *(*)()) F1010_6924;
+	R5687[1] = (char *(*)()) F1011_6971;
+	R5687[2] = (char *(*)()) F1012_6971;
 }
 
 char *(*R5688[3])();
 void R5688_init () {
-	R5688[0] = (char *(*)()) F1010_6924;
-	R5688[1] = (char *(*)()) F1011_6974;
-	R5688[2] = (char *(*)()) F1012_6974;
+	R5688[0] = (char *(*)()) F1010_6925;
+	R5688[1] = (char *(*)()) F1011_6972;
+	R5688[2] = (char *(*)()) F1012_6972;
 }
 
 char *(*R5689[3])();
 void R5689_init () {
-	R5689[0] = (char *(*)()) F1010_6925;
-	R5689[1] = (char *(*)()) F1011_6975;
-	R5689[2] = (char *(*)()) F1012_6975;
+	R5689[0] = (char *(*)()) F1010_6926;
+	R5689[1] = (char *(*)()) F1011_6973;
+	R5689[2] = (char *(*)()) F1012_6973;
 }
 
 char *(*R5691[3])();
 void R5691_init () {
-	R5691[0] = (char *(*)()) F1010_6927;
-	R5691[1] = (char *(*)()) F1011_6977;
-	R5691[2] = (char *(*)()) F1012_6977;
+	R5691[0] = (char *(*)()) F1010_6928;
+	R5691[1] = (char *(*)()) F1011_6975;
+	R5691[2] = (char *(*)()) F1012_6975;
 }
 
 char *(*R5692[3])();
 void R5692_init () {
-	R5692[0] = (char *(*)()) F1010_6928;
-	R5692[1] = (char *(*)()) F1011_6978;
-	R5692[2] = (char *(*)()) F1012_6978;
+	R5692[0] = (char *(*)()) F1010_6929;
+	R5692[1] = (char *(*)()) F1011_6976;
+	R5692[2] = (char *(*)()) F1012_6976;
 }
 
 char *(*R5693[3])();
 void R5693_init () {
-	R5693[0] = (char *(*)()) F1010_6929;
-	R5693[1] = (char *(*)()) F1011_6979;
-	R5693[2] = (char *(*)()) F1012_6979;
+	R5693[0] = (char *(*)()) F1010_6930;
+	R5693[1] = (char *(*)()) F1011_6977;
+	R5693[2] = (char *(*)()) F1012_6977;
+}
+
+char *(*R5694[3])();
+void R5694_init () {
+	R5694[0] = (char *(*)()) F1010_6931;
+	R5694[1] = (char *(*)()) F1011_6978;
+	R5694[2] = (char *(*)()) F1012_6978;
 }
 
 char *(*R5719[3])();
 void R5719_init () {
-	R5719[0] = (char *(*)()) F1010_6955;
-	R5719[1] = (char *(*)()) F1011_6988_5719_16;
-	R5719[2] = (char *(*)()) F1012_6988_5719_16;
+	R5719[0] = (char *(*)()) F1010_6956;
+	R5719[1] = (char *(*)()) F1011_6987_5719_16;
+	R5719[2] = (char *(*)()) F1012_6987_5719_16;
 }
-static EIF_REFERENCE F1011_6988_5719_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1011_6987_5719_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1011_6988(Current, arg1);
+	EIF_NATURAL_64 r = F1011_6987(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1012_6988_5719_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1012_6987_5719_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1012_6988(Current, arg1);
+	EIF_NATURAL_64 r = F1012_6987(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
 
 char *(*R5720[3])();
 void R5720_init () {
-	R5720[0] = (char *(*)()) F1010_6956;
-	R5720[1] = (char *(*)()) F1011_6989_5720_16;
-	R5720[2] = (char *(*)()) F1012_6989_5720_16;
+	R5720[0] = (char *(*)()) F1010_6957;
+	R5720[1] = (char *(*)()) F1011_6988_5720_16;
+	R5720[2] = (char *(*)()) F1012_6988_5720_16;
 }
-static EIF_REFERENCE F1011_6989_5720_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1011_6988_5720_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1011_6989(Current, arg1);
+	EIF_NATURAL_64 r = F1011_6988(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
-static EIF_REFERENCE F1012_6989_5720_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+static EIF_REFERENCE F1012_6988_5720_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_8 r = F1012_6989(Current, arg1);
+	EIF_NATURAL_64 r = F1012_6988(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_INTEGER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
+}
+
+char *(*R5739[3])();
+void R5739_init () {
+	R5739[0] = (char *(*)()) F1013_7018;
+	R5739[1] = (char *(*)()) F1014_7065;
+	R5739[2] = (char *(*)()) F1015_7065;
 }
 
 char *(*R5740[3])();
@@ -7718,18 +7768,18 @@ void R5740_init () {
 	R5740[2] = (char *(*)()) F1015_7066;
 }
 
-char *(*R5741[3])();
-void R5741_init () {
-	R5741[0] = (char *(*)()) F1013_7020;
-	R5741[1] = (char *(*)()) F1014_7067;
-	R5741[2] = (char *(*)()) F1015_7067;
-}
-
 char *(*R5742[3])();
 void R5742_init () {
 	R5742[0] = (char *(*)()) F1013_7021;
 	R5742[1] = (char *(*)()) F1014_7068;
 	R5742[2] = (char *(*)()) F1015_7068;
+}
+
+char *(*R5743[3])();
+void R5743_init () {
+	R5743[0] = (char *(*)()) F1013_7022;
+	R5743[1] = (char *(*)()) F1014_7069;
+	R5743[2] = (char *(*)()) F1015_7069;
 }
 
 char *(*R5744[3])();
@@ -7753,11 +7803,43 @@ void R5746_init () {
 	R5746[2] = (char *(*)()) F1015_7072;
 }
 
-char *(*R5747[3])();
-void R5747_init () {
-	R5747[0] = (char *(*)()) F1013_7026;
-	R5747[1] = (char *(*)()) F1014_7073;
-	R5747[2] = (char *(*)()) F1015_7073;
+char *(*R5771[3])();
+void R5771_init () {
+	R5771[0] = (char *(*)()) F1013_7050;
+	R5771[1] = (char *(*)()) F1014_7081_5771_16;
+	R5771[2] = (char *(*)()) F1015_7081_5771_16;
+}
+static EIF_REFERENCE F1014_7081_5771_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_32 r = F1014_7081(Current, arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
+}
+static EIF_REFERENCE F1015_7081_5771_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	EIF_REFERENCE Result;
+	int l_eif_optimize_return = eif_optimize_return;
+	EIF_NATURAL_32 r = F1015_7081(Current, arg1);
+	if (l_eif_optimize_return) {
+		eif_optimize_return = 0;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+	} else {
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
+		return Result;
+	}
 }
 
 char *(*R5772[3])();
@@ -7771,14 +7853,14 @@ static EIF_REFERENCE F1014_7082_5772_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1014_7082(Current, arg1);
+	EIF_NATURAL_32 r = F1014_7082(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -7787,53 +7869,14 @@ static EIF_REFERENCE F1015_7082_5772_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1015_7082(Current, arg1);
+	EIF_NATURAL_32 r = F1015_7082(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+		eif_optimized_return_value.it_n4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
-		return Result;
-	}
-}
-
-char *(*R5773[3])();
-void R5773_init () {
-	R5773[0] = (char *(*)()) F1013_7052;
-	R5773[1] = (char *(*)()) F1014_7083_5773_16;
-	R5773[2] = (char *(*)()) F1015_7083_5773_16;
-}
-static EIF_REFERENCE F1014_7083_5773_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1014_7083(Current, arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
-	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
-		return Result;
-	}
-}
-static EIF_REFERENCE F1015_7083_5773_16 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
-{
-	GTCX
-	EIF_REFERENCE Result;
-	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F1015_7083(Current, arg1);
-	if (l_eif_optimize_return) {
-		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
-	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
 }
@@ -7845,11 +7888,11 @@ void R5792_init () {
 	R5792[2] = (char *(*)()) F1018_7160;
 }
 
-char *(*R5793[3])();
-void R5793_init () {
-	R5793[0] = (char *(*)()) F1016_7114;
-	R5793[1] = (char *(*)()) F1017_7161;
-	R5793[2] = (char *(*)()) F1018_7161;
+char *(*R5794[3])();
+void R5794_init () {
+	R5794[0] = (char *(*)()) F1016_7115;
+	R5794[1] = (char *(*)()) F1017_7162;
+	R5794[2] = (char *(*)()) F1018_7162;
 }
 
 char *(*R5795[3])();
@@ -7898,14 +7941,14 @@ static EIF_REFERENCE F1017_7176_5824_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1017_7176(Current, arg1);
+	EIF_NATURAL_16 r = F1017_7176(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -7914,14 +7957,14 @@ static EIF_REFERENCE F1018_7176_5824_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1018_7176(Current, arg1);
+	EIF_NATURAL_16 r = F1018_7176(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -7937,14 +7980,14 @@ static EIF_REFERENCE F1017_7177_5825_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1017_7177(Current, arg1);
+	EIF_NATURAL_16 r = F1017_7177(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -7953,14 +7996,14 @@ static EIF_REFERENCE F1018_7177_5825_16 (EIF_REFERENCE Current, EIF_INTEGER_32 a
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_32 r = F1018_7177(Current, arg1);
+	EIF_NATURAL_16 r = F1018_7177(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
+		eif_optimized_return_value.it_n2 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_NATURAL_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
 }
@@ -8265,7 +8308,7 @@ static EIF_REFERENCE F1074_7590_6100_1 (EIF_REFERENCE Current)
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -8305,7 +8348,7 @@ static EIF_REFERENCE F1074_7592_6101_5 (EIF_REFERENCE Current, EIF_REFERENCE arg
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -8345,7 +8388,7 @@ static EIF_REFERENCE F1074_7599_6105_550 (EIF_REFERENCE Current, EIF_POINTER arg
 		eif_optimized_return_value.it_i4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
@@ -8432,10 +8475,10 @@ void R6123_init () {
 char *(*R6124[50])();
 void R6124_init () {
 	R6124[0] = (char *(*)()) F1080_7800;
-	{long i; for (i = 1; i < 3; i++) R6124[i] = (char *(*)()) F666_4976;}
+	{long i; for (i = 1; i < 3; i++) R6124[i] = (char *(*)()) F670_4976;}
 	R6124[4] = (char *(*)()) F1084_7968;
-	R6124[5] = (char *(*)()) F667_4976;
-	{long i; for (i = 48; i < 50; i++) R6124[i] = (char *(*)()) F666_4976;}
+	R6124[5] = (char *(*)()) F666_4976;
+	{long i; for (i = 48; i < 50; i++) R6124[i] = (char *(*)()) F670_4976;}
 }
 
 char *(*R6126[50])();
@@ -8898,9 +8941,9 @@ void R4_init () {
 	{long i; for (i = 110; i < 113; i++) R4[i] = (char *(*)()) F1_15;}
 	{long i; for (i = 114; i < 121; i++) R4[i] = (char *(*)()) F1_15;}
 	{long i; for (i = 123; i < 136; i++) R4[i] = (char *(*)()) F1_15;}
-	{long i; for (i = 137; i < 140; i++) R4[i] = (char *(*)()) F1_15;}
-	{long i; for (i = 141; i < 143; i++) R4[i] = (char *(*)()) F1_15;}
-	{long i; for (i = 146; i < 150; i++) R4[i] = (char *(*)()) F1_15;}
+	{long i; for (i = 137; i < 139; i++) R4[i] = (char *(*)()) F1_15;}
+	{long i; for (i = 140; i < 142; i++) R4[i] = (char *(*)()) F1_15;}
+	{long i; for (i = 145; i < 150; i++) R4[i] = (char *(*)()) F1_15;}
 	{long i; for (i = 151; i < 156; i++) R4[i] = (char *(*)()) F1_15;}
 	R4[158] = (char *(*)()) F1_15;
 	{long i; for (i = 161; i < 165; i++) R4[i] = (char *(*)()) F1_15;}
@@ -8957,7 +9000,7 @@ void R4_init () {
 	R4[790] = (char *(*)()) F791_5483;
 	R4[791] = (char *(*)()) F792_5483;
 	R4[792] = (char *(*)()) F778_5483;
-	R4[793] = (char *(*)()) F780_5483;
+	R4[793] = (char *(*)()) F779_5483;
 	R4[794] = (char *(*)()) F781_5483;
 	R4[795] = (char *(*)()) F786_5483;
 	R4[856] = (char *(*)()) F857_5576;
@@ -8988,9 +9031,10 @@ void R4_init () {
 	R4[886] = (char *(*)()) F887_5959;
 	R4[887] = (char *(*)()) F888_5959;
 	R4[888] = (char *(*)()) F889_5959;
-	{long i; for (i = 889; i < 891; i++) R4[i] = (char *(*)()) F890_5959;}
+	R4[889] = (char *(*)()) F890_5959;
+	R4[890] = (char *(*)()) F888_5959;
 	{long i; for (i = 891; i < 893; i++) R4[i] = (char *(*)()) F886_5959;}
-	R4[893] = (char *(*)()) F888_5959;
+	R4[893] = (char *(*)()) F889_5959;
 	{long i; for (i = 895; i < 897; i++) R4[i] = (char *(*)()) F1_15;}
 	{long i; for (i = 898; i < 913; i++) R4[i] = (char *(*)()) F1_15;}
 	{long i; for (i = 914; i < 959; i++) R4[i] = (char *(*)()) F1_15;}
@@ -9037,9 +9081,9 @@ void R5_init () {
 	{long i; for (i = 110; i < 113; i++) R5[i] = (char *(*)()) F1_8;}
 	{long i; for (i = 114; i < 121; i++) R5[i] = (char *(*)()) F1_8;}
 	{long i; for (i = 123; i < 136; i++) R5[i] = (char *(*)()) F1_8;}
-	{long i; for (i = 137; i < 140; i++) R5[i] = (char *(*)()) F1_8;}
-	{long i; for (i = 141; i < 143; i++) R5[i] = (char *(*)()) F1_8;}
-	{long i; for (i = 146; i < 150; i++) R5[i] = (char *(*)()) F1_8;}
+	{long i; for (i = 137; i < 139; i++) R5[i] = (char *(*)()) F1_8;}
+	{long i; for (i = 140; i < 142; i++) R5[i] = (char *(*)()) F1_8;}
+	{long i; for (i = 145; i < 150; i++) R5[i] = (char *(*)()) F1_8;}
 	{long i; for (i = 151; i < 156; i++) R5[i] = (char *(*)()) F1_8;}
 	R5[158] = (char *(*)()) F1_8;
 	{long i; for (i = 161; i < 165; i++) R5[i] = (char *(*)()) F1_8;}
@@ -9060,7 +9104,7 @@ void R5_init () {
 	{long i; for (i = 241; i < 245; i++) R5[i] = (char *(*)()) F1_8;}
 	{long i; for (i = 246; i < 252; i++) R5[i] = (char *(*)()) F1_8;}
 	R5[253] = (char *(*)()) F254_3140;
-	R5[255] = (char *(*)()) F256_3192;
+	R5[255] = (char *(*)()) F256_3188;
 	R5[256] = (char *(*)()) F257_3219;
 	R5[257] = (char *(*)()) F258_3249;
 	{long i; for (i = 262; i < 266; i++) R5[i] = (char *(*)()) F1_8;}
@@ -9100,11 +9144,11 @@ void R5_init () {
 	R5[790] = (char *(*)()) F791_5445;
 	R5[791] = (char *(*)()) F792_5445;
 	R5[792] = (char *(*)()) F778_5445;
-	R5[793] = (char *(*)()) F780_5445;
+	R5[793] = (char *(*)()) F779_5445;
 	R5[794] = (char *(*)()) F781_5445;
 	R5[795] = (char *(*)()) F786_5445;
 	R5[856] = (char *(*)()) F827_5527;
-	R5[857] = (char *(*)()) F829_5527;
+	R5[857] = (char *(*)()) F828_5527;
 	{long i; for (i = 858; i < 862; i++) R5[i] = (char *(*)()) F1_8;}
 	R5[862] = (char *(*)()) F863_5708;
 	R5[863] = (char *(*)()) F1_8;
@@ -9131,7 +9175,8 @@ void R5_init () {
 	R5[886] = (char *(*)()) F887_5925;
 	R5[887] = (char *(*)()) F888_5925;
 	R5[888] = (char *(*)()) F889_5925;
-	{long i; for (i = 889; i < 891; i++) R5[i] = (char *(*)()) F890_5925;}
+	R5[889] = (char *(*)()) F890_5925;
+	R5[890] = (char *(*)()) F888_5925;
 	R5[891] = (char *(*)()) F886_5925;
 	R5[892] = (char *(*)()) F893_6036;
 	R5[893] = (char *(*)()) F894_6036;
@@ -9174,12 +9219,12 @@ void R5_init () {
 	R5[995] = (char *(*)()) F996_6348;
 	R5[996] = (char *(*)()) F997_6391;
 	{long i; for (i = 997; i < 1000; i++) R5[i] = (char *(*)()) F998_6509;}
-	{long i; for (i = 1000; i < 1003; i++) R5[i] = (char *(*)()) F1001_6604;}
-	{long i; for (i = 1003; i < 1006; i++) R5[i] = (char *(*)()) F1004_6702;}
-	{long i; for (i = 1006; i < 1009; i++) R5[i] = (char *(*)()) F1007_6801;}
-	{long i; for (i = 1009; i < 1012; i++) R5[i] = (char *(*)()) F1010_6900;}
-	{long i; for (i = 1012; i < 1015; i++) R5[i] = (char *(*)()) F1013_6999;}
-	{long i; for (i = 1015; i < 1018; i++) R5[i] = (char *(*)()) F1016_7093;}
+	{long i; for (i = 1000; i < 1003; i++) R5[i] = (char *(*)()) F1001_6607;}
+	{long i; for (i = 1003; i < 1006; i++) R5[i] = (char *(*)()) F1004_6706;}
+	{long i; for (i = 1006; i < 1009; i++) R5[i] = (char *(*)()) F1007_6805;}
+	{long i; for (i = 1009; i < 1012; i++) R5[i] = (char *(*)()) F1010_6904;}
+	{long i; for (i = 1012; i < 1015; i++) R5[i] = (char *(*)()) F1013_6998;}
+	{long i; for (i = 1015; i < 1018; i++) R5[i] = (char *(*)()) F1016_7092;}
 	{long i; for (i = 1018; i < 1021; i++) R5[i] = (char *(*)()) F1019_7187;}
 	{long i; for (i = 1021; i < 1024; i++) R5[i] = (char *(*)()) F1022_7286;}
 	{long i; for (i = 1024; i < 1027; i++) R5[i] = (char *(*)()) F1025_7352;}

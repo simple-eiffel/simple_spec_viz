@@ -56,12 +56,11 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C20_c.obj 
 
-OLDOBJECTS =  sp954.obj sp990.obj ar963.obj ar999.obj na953.obj na989.obj sp955.obj sp991.obj \
-	re958.obj re994.obj ar952.obj ar988.obj li972.obj ar964.obj re985.obj to951.obj \
-	to987.obj dy982.obj li984.obj ge956.obj ge992.obj in962.obj in998.obj re961.obj \
-	re997.obj tr974.obj se966.obj ar965.obj dy977.obj bo950.obj bo986.obj ta981.obj \
-	fi970.obj ch979.obj ty957.obj ty993.obj ac967.obj co969.obj bi976.obj dy978.obj \
-	co975.obj 
+OLDOBJECTS =  sp980.obj ar953.obj ar989.obj na979.obj sp981.obj re984.obj ar978.obj li957.obj \
+	li993.obj ar954.obj ar990.obj re975.obj to977.obj dy972.obj li974.obj ge982.obj \
+	in952.obj in988.obj re985.obj tr965.obj se956.obj se992.obj ar955.obj ar991.obj \
+	dy967.obj bo976.obj ta971.obj fi960.obj fi996.obj ch969.obj ty983.obj ac962.obj \
+	ac998.obj co959.obj co995.obj bi966.obj dy968.obj co964.obj 
 
 all::  Cobj20.lib
 

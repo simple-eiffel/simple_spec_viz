@@ -70,12 +70,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C19_c.obj 
 
-OLDOBJECTS =  sp918.o ar927.o na914.o sp919.o re922.o ar913.o li936.o ar928.o \
-	re910.o re949.o to912.o dy907.o dy946.o li909.o li948.o ge920.o \
-	in926.o re925.o tr938.o se930.o ar929.o dy902.o dy941.o bo911.o \
-	ta906.o ta945.o fi934.o mm916.o ch904.o ch943.o ty921.o ac931.o \
-	co933.o bi901.o bi940.o dy903.o dy942.o mm915.o co900.o co939.o \
-	mm917.o 
+OLDOBJECTS =  sp908.o sp944.o ar917.o na907.o na943.o sp909.o sp945.o re912.o \
+	re948.o ar906.o ar942.o li921.o ar918.o re903.o re939.o to905.o \
+	to941.o dy900.o dy936.o li902.o li938.o ge910.o ge946.o in916.o \
+	re913.o re949.o tr929.o se920.o ar919.o dy931.o bo904.o bo940.o \
+	ta935.o fi924.o ch933.o ty911.o ty947.o ac926.o co923.o bi930.o \
+	dy932.o co928.o 
 
 all: Cobj19.o
 

@@ -167,7 +167,7 @@ void F34_593 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
 		RTCK;
 		RTHOOK(4);
 		RTCT("a_area_valid", EX_PRE);
-		ti4_1 = (nstcall = 1, F903_6149(arg2));
+		ti4_1 = (nstcall = 1, F904_6149(arg2));
 		ti4_2 = (nstcall = 1, F57_981(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) (ti4_1 >= ti4_2), label_1);
 		RTCK;
@@ -220,7 +220,7 @@ void F34_594 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
 		RTCK;
 		RTHOOK(4);
 		RTCT("a_area_valid", EX_PRE);
-		ti4_1 = (nstcall = 1, F913_6149(arg2));
+		ti4_1 = (nstcall = 1, F903_6149(arg2));
 		ti4_2 = (nstcall = 1, F57_981(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) (ti4_1 >= ti4_2), label_1);
 		RTCK;

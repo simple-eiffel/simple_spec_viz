@@ -56,12 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C12_c.obj 
 
-OLDOBJECTS =  sp567.obj sp595.obj ar563.obj ar585.obj fu561.obj na560.obj na569.obj na597.obj \
-	sp568.obj sp596.obj re590.obj ar559.obj ar581.obj ar564.obj ar586.obj re556.obj \
-	to558.obj to580.obj dy553.obj dy577.obj li555.obj li579.obj ge566.obj ge588.obj \
-	in594.obj re593.obj se570.obj se598.obj ar565.obj ar587.obj dy572.obj bo557.obj \
-	ta552.obj ta576.obj ch550.obj ch574.obj ty589.obj ac599.obj bi571.obj dy573.obj \
-	kl562.obj kl584.obj kl582.obj kl583.obj 
+OLDOBJECTS =  sp593.obj ar551.obj ar583.obj fu578.obj na577.obj na595.obj sp594.obj re588.obj \
+	ar576.obj li555.obj li597.obj ar552.obj ar584.obj re573.obj to575.obj dy570.obj \
+	li572.obj ge586.obj in550.obj in592.obj re589.obj tr563.obj se554.obj se596.obj \
+	ar553.obj ar585.obj dy565.obj bo574.obj ta569.obj fi558.obj ch567.obj ty587.obj \
+	ac560.obj co557.obj co599.obj bi564.obj dy566.obj co562.obj kl579.obj kl582.obj \
+	kl580.obj kl581.obj 
 
 all::  Cobj12.lib
 

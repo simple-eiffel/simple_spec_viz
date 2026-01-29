@@ -48,7 +48,7 @@ void F161_2194 (EIF_REFERENCE Current)
 	RTHOOK(1);
 	ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[dtype-161])(Current));
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -266,21 +266,21 @@ body:;
 		loc1 = (EIF_INTEGER_32) ti4_1;
 		RTHOOK(10);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,868,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,867,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-			Result = RTLNS(typres0.id, 868, _OBJSIZ_1_1_0_1_0_0_0_0_);
+			Result = RTLNS(typres0.id, 867, _OBJSIZ_1_1_0_1_0_0_0_0_);
 		}
 		ti4_1 = eif_max_int32 ((EIF_INTEGER_32) (arg4 - arg3),((EIF_INTEGER_32) 3L));
 		ti4_2 = eif_max_int32 ((EIF_INTEGER_32) ((EIF_INTEGER_32) (ti4_1 / (EIF_INTEGER_32) (loc2 + loc1)) / ((EIF_INTEGER_32) 4L)),((EIF_INTEGER_32) 2L));
-		(nstcall = -1, F869_5785(RTCW(Result), ti4_2));
+		(nstcall = -1, F868_5785(RTCW(Result), ti4_2));
 		for (;;) {
 			RTHOOK(11);
 			if ((EIF_BOOLEAN)(loc2 == ((EIF_INTEGER_32) 0L))) break;
 			RTHOOK(12);
-			(nstcall = 1, F869_5826(RTCW(Result), loc2));
+			(nstcall = 1, F868_5826(RTCW(Result), loc2));
 			RTHOOK(13);
 			ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE, EIF_REFERENCE, EIF_REFERENCE, EIF_INTEGER_32, EIF_INTEGER_32)) R2139[dtype-161])(Current, arg1, arg2, (EIF_INTEGER_32) (loc2 + loc1), arg4));
 			loc2 = (EIF_INTEGER_32) ti4_1;
@@ -291,7 +291,7 @@ body:;
 		RTCT("matches", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN)(Result != NULL)) {
-			tb2 = (nstcall = 1, F668_4976(RTCW(Result)));
+			tb2 = (nstcall = 1, F667_4976(RTCW(Result)));
 			tb1 = (EIF_BOOLEAN) !tb2;
 		}
 		if (tb1) {
@@ -367,7 +367,7 @@ void F161_2204 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2, 
 		RTCK;
 		RTHOOK(5);
 		RTCT("a_deltas_valid", EX_PRE);
-		ti4_1 = (nstcall = 1, F901_6150(arg3));
+		ti4_1 = (nstcall = 1, F900_6150(arg3));
 		RTTE((EIF_BOOLEAN)(ti4_1 == (EIF_INTEGER_32) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[dtype-161])(Current)) + ((EIF_INTEGER_32) 1L))), label_1);
 		RTCK;
 		RTJB;
@@ -377,7 +377,7 @@ label_1:
 body:;
 	RTHOOK(6);
 	ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[dtype-161])(Current));
-	(nstcall = 1, F901_6158(RTCW(arg3), (EIF_INTEGER_32) (arg2 + ((EIF_INTEGER_32) 1L)), ((EIF_INTEGER_32) 0L), ti4_1));
+	(nstcall = 1, F900_6158(RTCW(arg3), (EIF_INTEGER_32) (arg2 + ((EIF_INTEGER_32) 1L)), ((EIF_INTEGER_32) 0L), ti4_1));
 	RTHOOK(7);
 	loc1 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
 	for (;;) {
@@ -390,7 +390,7 @@ body:;
 		RTHOOK(10);
 		if ((EIF_BOOLEAN) (loc2 <= (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[dtype-161])(Current)))) {
 			RTHOOK(11);
-			(nstcall = 1, F901_6154(RTCW(arg3), (EIF_INTEGER_32) (arg2 - loc1), loc2));
+			(nstcall = 1, F900_6154(RTCW(arg3), (EIF_INTEGER_32) (arg2 - loc1), loc2));
 		}
 		RTHOOK(12);
 		loc1++;
@@ -458,7 +458,7 @@ body:;
 	loc4 = (EIF_INTEGER_32) (EIF_INTEGER_32) (arg2 + ((EIF_INTEGER_32) 1L));
 	RTHOOK(5);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,898,0xFF01,900,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,898,0xFF01,899,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -472,7 +472,7 @@ body:;
 		RTHOOK(7);
 		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[dtype-161])(Current));
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -504,7 +504,7 @@ body:;
 		tr1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
 		loc6 = tr1;
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,898,0xFF01,900,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,898,0xFF01,899,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -551,7 +551,7 @@ void F161_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("deltas_valid", Current);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	ti4_1 = (nstcall = 1, F901_6150(tr1));
+	ti4_1 = (nstcall = 1, F900_6150(tr1));
 	if ((EIF_BOOLEAN)(ti4_1 == (EIF_INTEGER_32) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R2137[Dtype(Current)-161])(Current)) + ((EIF_INTEGER_32) 1L)))) {
 		RTCK;
 	} else {

@@ -4013,9 +4013,9 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	RTDBGAL(0, 0xF80001BE, 0,0); /* Result */
+	RTDBGAL(0, 0xF80001BD, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,446,0xFF01,370,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,445,0xFF01,370,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -4516,7 +4516,7 @@ EIF_TYPED_VALUE F371_8261 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTGC;
 	RTDBGEAA(370, Current, 15157);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,446,0xFF01,370,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,445,0xFF01,370,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

@@ -74,7 +74,7 @@ void F42_786 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, EIF
 	GTCX
 	RTEX;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
-	struct eif_ex_58 sloc2;
+	struct eif_ex_57 sloc2;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) sloc2.data;
 	EIF_REFERENCE tr1 = NULL;
 	EIF_BOOLEAN tb1;
@@ -85,7 +85,7 @@ void F42_786 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, EIF
 	
 	memset (&sloc2.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc2.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc2.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc2.overhead, eif_new_type(76, 0x00).id);
 	RTLI(7);
 	RTLR(0,arg1);
 	RTLR(1,arg3);
@@ -144,7 +144,7 @@ body:;
 			RTHOOK(11);
 			tr1 = *(EIF_REFERENCE *)(RTCW(arg1));
 			tr1 = (nstcall = 1, F79_1271(RTCW(arg2), tr1));
-			tr1 = (nstcall = 1, F78_1198(RTCW(loc2), tr1));
+			tr1 = (nstcall = 1, F77_1087(RTCW(loc2), tr1));
 			loc1 = (EIF_REFERENCE) tr1;
 		} else {
 			RTHOOK(12);
@@ -160,7 +160,7 @@ body:;
 			(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE)) R3724[Dtype(RTCW(arg3))-310])(arg3));
 		} else {
 			RTHOOK(16);
-			tb2 = (nstcall = 1, F666_4976(RTCW(loc1)));
+			tb2 = (nstcall = 1, F670_4976(RTCW(loc1)));
 			if ((EIF_BOOLEAN) !tb2) {
 				RTHOOK(17);
 				(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R3725[Dtype(RTCW(arg3))-310])(arg3, loc1));

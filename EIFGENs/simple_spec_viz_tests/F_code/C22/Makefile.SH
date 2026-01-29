@@ -70,11 +70,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C22_c.obj 
 
-OLDOBJECTS =  fu1055.o ty1072.o ty1078.o ty1082.o ty1086.o ty1091.o ty1098.o \
-	dy1052.o ta1053.o co1056.o li1057.o mm1054.o li1060.o li1058.o \
-	li1059.o rt1063.o rt1064.o rt1065.o rt1066.o rt1067.o rt1068.o \
-	rt1069.o rt1075.o rt1079.o rt1083.o rt1087.o rt1088.o rt1092.o \
-	rt1093.o rt1094.o rt1095.o rt1099.o ar1073.o in1062.o st1074.o 
+OLDOBJECTS =  fu1057.o ty1074.o ty1080.o ty1084.o ty1088.o ty1093.o na1051.o \
+	ar1050.o co1058.o li1059.o mm1056.o ar1052.o li1062.o li1060.o \
+	li1061.o rt1094.o rt1065.o rt1066.o rt1067.o rt1068.o rt1069.o \
+	rt1070.o rt1071.o rt1077.o rt1081.o rt1085.o rt1089.o rt1090.o \
+	rt1095.o rt1096.o rt1097.o rt1098.o rt1099.o ar1055.o di1054.o \
+	ar1075.o in1064.o st1076.o 
 
 all: Cobj22.o
 

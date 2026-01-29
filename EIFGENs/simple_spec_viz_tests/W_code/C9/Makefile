@@ -43,8 +43,8 @@ OBJECTS = big_file_C9_c.obj
 
 OLDOBJECTS =  eq268.obj eq268d.obj eq294.obj eq294d.obj ex267.obj ex267d.obj pl284.obj pl284d.obj \
 	ar280.obj ar280d.obj mi292.obj mi292d.obj pr281.obj pr281d.obj na264.obj na264d.obj \
-	eq285.obj eq285d.obj eq295.obj eq295d.obj st279.obj st279d.obj ar277.obj ar277d.obj \
-	fi265.obj fi265d.obj se293.obj se293d.obj fi282.obj fi282d.obj st276.obj st276d.obj \
+	eq285.obj eq285d.obj eq295.obj eq295d.obj st279.obj st279d.obj fi265.obj fi265d.obj \
+	ar277.obj ar277d.obj se293.obj se293d.obj fi282.obj fi282d.obj st276.obj st276d.obj \
 	st278.obj st278d.obj in286.obj in286d.obj ra283.obj ra283d.obj un266.obj un266d.obj \
 	fi270.obj fi270d.obj si275.obj si275d.obj da296.obj da296d.obj si269.obj si269d.obj \
 	ma291.obj ma291d.obj kl287.obj kl287d.obj kl274.obj kl274d.obj kl290.obj kl290d.obj \

@@ -56,11 +56,11 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C18_c.obj 
 
-OLDOBJECTS =  sp879.obj ar852.obj ar888.obj na878.obj sp880.obj re883.obj ar877.obj li861.obj \
-	li897.obj ar853.obj ar889.obj re874.obj to876.obj dy871.obj li873.obj ge881.obj \
-	in851.obj in887.obj re850.obj re886.obj tr863.obj tr899.obj se855.obj se891.obj \
-	ar854.obj ar890.obj dy866.obj bo875.obj ta870.obj fi859.obj fi895.obj ch868.obj \
-	ty882.obj ac856.obj ac892.obj co858.obj co894.obj bi865.obj dy867.obj co864.obj 
+OLDOBJECTS =  sp872.obj ar881.obj na871.obj sp873.obj re876.obj ar870.obj li885.obj ar882.obj \
+	re867.obj to869.obj dy864.obj li866.obj ge874.obj in880.obj re877.obj tr857.obj \
+	tr893.obj se884.obj ar883.obj dy859.obj dy895.obj bo868.obj ta863.obj ta899.obj \
+	fi852.obj fi888.obj ch861.obj ch897.obj ty875.obj ac854.obj ac890.obj co851.obj \
+	co887.obj bi858.obj bi894.obj dy860.obj dy896.obj co856.obj co892.obj 
 
 all::  Cobj18.lib
 

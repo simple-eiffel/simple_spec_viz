@@ -188,7 +188,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = (nstcall = 0, F143_1947(Current));
+	tr1 = (nstcall = 0, F142_1921(Current));
 	Result = (nstcall = 0, F1117_8667(Current, arg1, tr1));
 	RTVI(Current, RTAL);
 	RTRS;
@@ -236,7 +236,7 @@ label_1:
 	}
 body:;
 	RTHOOK(3);
-	tr1 = (nstcall = 0, F143_1947(Current));
+	tr1 = (nstcall = 0, F142_1921(Current));
 	Result = (nstcall = 0, F1117_8668(Current, arg1, tr1, arg2));
 	RTVI(Current, RTAL);
 	RTRS;
@@ -276,11 +276,11 @@ EIF_BOOLEAN F1117_8671 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTHOOK(2);
 	(nstcall = 0, F885_5901(Current, arg1));
 	RTHOOK(3);
-	loc4 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current));
+	loc4 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current));
 	RTHOOK(4);
-	loc3 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current));
+	loc3 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current));
 	RTHOOK(5);
-	loc2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current));
+	loc2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current));
 	RTHOOK(6);
 	*(EIF_INTEGER_32 *)(Current + O4931[dtype-884]) = (EIF_INTEGER_32) loc1;
 	RTHOOK(7);
@@ -323,11 +323,11 @@ EIF_BOOLEAN F1117_8672 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTHOOK(2);
 	*(EIF_INTEGER_32 *)(Current + O4931[dtype-884]) = (EIF_INTEGER_32) arg1;
 	RTHOOK(3);
-	loc4 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current));
+	loc4 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current));
 	RTHOOK(4);
-	loc3 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current));
+	loc3 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current));
 	RTHOOK(5);
-	loc2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current));
+	loc2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current));
 	RTHOOK(6);
 	*(EIF_INTEGER_32 *)(Current + O4931[dtype-884]) = (EIF_INTEGER_32) loc1;
 	RTHOOK(7);
@@ -367,7 +367,7 @@ EIF_BOOLEAN F1117_8673 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_
 	tb1 = '\0';
 	tb2 = '\0';
 	if ((EIF_BOOLEAN) ((EIF_BOOLEAN) ((EIF_BOOLEAN) (arg2 >= ((EIF_INTEGER_32) 1L)) && (EIF_BOOLEAN) (arg2 <= ((EIF_INTEGER_32) 12L))) && (EIF_BOOLEAN) (arg3 >= ((EIF_INTEGER_32) 1L)))) {
-		tb2 = (EIF_BOOLEAN) (arg3 <= (nstcall = 0, F143_1946(Current, arg2, arg1)));
+		tb2 = (EIF_BOOLEAN) (arg3 <= (nstcall = 0, F142_1920(Current, arg2, arg1)));
 	}
 	if (tb2) {
 		tb1 = (EIF_BOOLEAN) (arg1 >= ((EIF_INTEGER_32) 0L));

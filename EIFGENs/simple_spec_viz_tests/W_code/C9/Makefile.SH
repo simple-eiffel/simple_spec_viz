@@ -57,8 +57,8 @@ OBJECTS = big_file_C9_c.obj
 
 OLDOBJECTS =  eq268.o eq268d.o eq294.o eq294d.o ex267.o ex267d.o pl284.o pl284d.o \
 	ar280.o ar280d.o mi292.o mi292d.o pr281.o pr281d.o na264.o na264d.o \
-	eq285.o eq285d.o eq295.o eq295d.o st279.o st279d.o ar277.o ar277d.o \
-	fi265.o fi265d.o se293.o se293d.o fi282.o fi282d.o st276.o st276d.o \
+	eq285.o eq285d.o eq295.o eq295d.o st279.o st279d.o fi265.o fi265d.o \
+	ar277.o ar277d.o se293.o se293d.o fi282.o fi282d.o st276.o st276d.o \
 	st278.o st278d.o in286.o in286d.o ra283.o ra283d.o un266.o un266d.o \
 	fi270.o fi270d.o si275.o si275d.o da296.o da296d.o si269.o si269d.o \
 	ma291.o ma291d.o kl287.o kl287d.o kl274.o kl274d.o kl290.o kl290d.o \

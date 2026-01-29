@@ -55,7 +55,7 @@ EIF_REFERENCE F1_4 (EIF_REFERENCE Current)
 		}
 		RTHOOK(2);
 		RTCT("generator_not_empty", EX_POST);
-		tb1 = (nstcall = 1, F666_4976(RTCW(Result)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb1) {
 			RTCK;
 		} else {

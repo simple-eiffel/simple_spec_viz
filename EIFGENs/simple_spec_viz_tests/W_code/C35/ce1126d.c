@@ -10,19 +10,19 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_1126 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_1126 [] = {0xFF01,402,1125,326,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_1126 [] = {0xFF01,1125,326,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_1126 [] = {0xFF01,402,1125,323,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_1126 [] = {0xFF01,1125,323,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_1126 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_1126 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_1126 [] = {0xFF01,1125,326,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_1126 [] = {0xFF01,1125,326,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_1126 [] = {0xFF01,1125,323,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_1126 [] = {0xFF01,1125,323,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_1126 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_8_1126 [] = {0xFF01,56,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_1126 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_1126 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_1126 [] = {0xFF01,55,0xFFFF};
-static const EIF_TYPE_INDEX egt_12_1126 [] = {1125,326,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_1126 [] = {0xFF01,1125,326,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_1126 [] = {1125,323,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_1126 [] = {0xFF01,1125,323,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_1126 [] = {0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_1126 [] = {0xFFF8,1,0xFFFF};
 

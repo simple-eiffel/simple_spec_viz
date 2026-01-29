@@ -54,7 +54,7 @@ void F743_5006 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("string_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -883,7 +883,7 @@ EIF_REFERENCE F743_5018 (EIF_REFERENCE Current)
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("name_not_empty", EX_POST);
-		tb1 = (nstcall = 1, F666_4976(RTCW(Result)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb1) {
 			RTCK;
 		} else {
@@ -4818,7 +4818,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("item_inserted", EX_POST);
-		if ((nstcall = 0, F550_4911(Current, arg1))) {
+		if ((nstcall = 0, F554_4911(Current, arg1))) {
 			RTCK;
 		} else {
 			RTCF;
@@ -5600,7 +5600,7 @@ void F743_5126 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("new_name_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(3);
@@ -9387,7 +9387,7 @@ void F743_5223 (EIF_REFERENCE Current, EIF_CHARACTER_8 arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("writable", EX_PRE);
-		RTTE((nstcall = 0, F717_5000(Current)), label_1);
+		RTTE((nstcall = 0, F718_5000(Current)), label_1);
 		RTCK;
 		RTHOOK(2);
 		RTCT("replaceable", EX_PRE);
@@ -9439,7 +9439,7 @@ void F743_5224 (EIF_REFERENCE Current)
 		RTCK;
 		RTHOOK(2);
 		RTCT("writable", EX_PRE);
-		RTTE((nstcall = 0, F717_5000(Current)), label_1);
+		RTTE((nstcall = 0, F718_5000(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:

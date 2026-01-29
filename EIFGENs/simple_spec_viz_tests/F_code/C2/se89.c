@@ -426,7 +426,7 @@ EIF_REFERENCE F109_1509 (EIF_REFERENCE Current)
 {
 	GTCX
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE tr1 = NULL;
 	EIF_REFERENCE Result = ((EIF_REFERENCE) 0);
@@ -437,7 +437,7 @@ EIF_REFERENCE F109_1509 (EIF_REFERENCE Current)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(76, 0x00).id);
 	RTLI(4);
 	RTLR(0,Current);
 	RTLR(1,loc1);
@@ -462,7 +462,7 @@ label_1:
 body:;
 	RTHOOK(2);
 	tr1 = (nstcall = 0, F109_1507(Current));
-	tr1 = (nstcall = 1, F78_1214(RTCW(loc1), tr1));
+	tr1 = (nstcall = 1, F77_1103(RTCW(loc1), tr1));
 	Result = (EIF_REFERENCE) tr1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
@@ -910,7 +910,7 @@ void F109_1529 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE tr1 = NULL;
 	RTSN;
@@ -919,7 +919,7 @@ void F109_1529 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(76, 0x00).id);
 	RTLI(4);
 	RTLR(0,Current);
 	RTLR(1,arg1);
@@ -947,7 +947,7 @@ label_1:
 	}
 body:;
 	RTHOOK(3);
-	tr1 = (nstcall = 1, F78_1200(RTCW(loc1), arg1));
+	tr1 = (nstcall = 1, F77_1089(RTCW(loc1), arg1));
 	(nstcall = 0, F109_1528(Current, tr1));
 	RTVI(Current, RTAL);
 	RTRS;

@@ -786,7 +786,7 @@ body:;
 	loc7 = RTRV(eif_new_type(355, 0x01),loc7);
 	if (EIF_TEST(loc7)) {
 		RTHOOK(5);
-		RTDBGAL(3, 0xF800026F, 0, 0); /* loc3 */
+		RTDBGAL(3, 0xF8000280, 0, 0); /* loc3 */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6266, "area", loc7))(loc7)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		loc3 = (EIF_REFERENCE) tr1;
 		RTHOOK(6);
@@ -816,7 +816,7 @@ body:;
 		loc8 = RTRV(eif_new_type(359, 0x01),loc8);
 		if (EIF_TEST(loc8)) {
 			RTHOOK(12);
-			RTDBGAL(4, 0xF8000401, 0, 0); /* loc4 */
+			RTDBGAL(4, 0xF800026D, 0, 0); /* loc4 */
 			tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6341, "area", loc8))(loc8)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 			loc4 = (EIF_REFERENCE) tr1;
 			RTHOOK(13);
@@ -870,9 +870,9 @@ body:;
 				tu4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6109, "code", arg1))(arg1, ui4_1x)).it_n4);
 				loc6 = (EIF_NATURAL_32) tu4_1;
 				RTHOOK(25);
-				tr1 = RTLN(eif_new_type(329, 0x00).id);
+				tr1 = RTLN(eif_new_type(326, 0x00).id);
 				*(EIF_NATURAL_32 *)tr1 = loc6;
-				tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5784, "is_valid_character_8_code", tr1))(tr1)).it_b);
+				tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5731, "is_valid_character_8_code", tr1))(tr1)).it_b);
 				if (tb1) {
 					RTHOOK(26);
 					tc1 = (EIF_CHARACTER_8) loc6;

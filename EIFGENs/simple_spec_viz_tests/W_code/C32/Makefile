@@ -41,16 +41,16 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C32_c.obj 
 
-OLDOBJECTS =  sp1026.obj sp1026d.obj ar1029.obj ar1029d.obj fu1055.obj fu1055d.obj na1025.obj \
-	na1025d.obj na1042.obj na1042d.obj sp1027.obj sp1027d.obj ar1024.obj ar1024d.obj \
-	ar1041.obj ar1041d.obj ar1030.obj ar1030d.obj in1037.obj in1037d.obj to1023.obj \
-	to1023d.obj to1040.obj to1040d.obj dy1052.obj dy1052d.obj ha1048.obj ha1048d.obj \
-	st1047.obj st1047d.obj li1039.obj li1039d.obj ge1028.obj ge1028d.obj se1032.obj \
-	se1032d.obj ar1031.obj ar1031d.obj dy1034.obj dy1034d.obj ta1053.obj ta1053d.obj \
-	ha1049.obj ha1049d.obj un1038.obj un1038d.obj ta1051.obj ta1051d.obj mm1054.obj \
-	mm1054d.obj ar1043.obj ar1043d.obj ch1036.obj ch1036d.obj bi1033.obj bi1033d.obj \
-	dy1035.obj dy1035d.obj ta1050.obj ta1050d.obj ar1046.obj ar1046d.obj qu1044.obj \
-	qu1044d.obj di1045.obj di1045d.obj 
+OLDOBJECTS =  ar1025.obj ar1025d.obj na1051.obj na1051d.obj ar1050.obj ar1050d.obj it1023.obj \
+	it1023d.obj li1029.obj li1029d.obj ar1026.obj ar1026d.obj re1047.obj re1047d.obj \
+	in1042.obj in1042d.obj to1049.obj to1049d.obj dy1044.obj dy1044d.obj li1046.obj \
+	li1046d.obj in1024.obj in1024d.obj cu1030.obj cu1030d.obj tr1037.obj tr1037d.obj \
+	se1028.obj se1028d.obj ar1027.obj ar1027d.obj dy1039.obj dy1039d.obj bo1048.obj \
+	bo1048d.obj ta1043.obj ta1043d.obj fi1032.obj fi1032d.obj un1045.obj un1045d.obj \
+	ar1052.obj ar1052d.obj ch1041.obj ch1041d.obj ac1034.obj ac1034d.obj co1031.obj \
+	co1031d.obj bi1038.obj bi1038d.obj dy1040.obj dy1040d.obj ba1035.obj ba1035d.obj \
+	bo1033.obj bo1033d.obj ar1055.obj ar1055d.obj qu1053.obj qu1053d.obj di1054.obj \
+	di1054d.obj co1036.obj co1036d.obj 
 
 all::  Cobj32.lib
 

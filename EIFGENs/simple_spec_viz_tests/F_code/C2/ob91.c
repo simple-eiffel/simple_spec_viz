@@ -64,7 +64,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	Result = (nstcall = 0, F76_1186(Current, arg1));
+	Result = (nstcall = 0, F78_1257(Current, arg1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -118,7 +118,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(nstcall = 0, F76_1188(Current, arg1));
+	(nstcall = 0, F78_1259(Current, arg1));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("is_marked", EX_POST);
@@ -181,7 +181,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(nstcall = 0, F76_1187(Current, arg1));
+	(nstcall = 0, F78_1258(Current, arg1));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("is_not_marked", EX_POST);
@@ -221,7 +221,7 @@ void F111_1583 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	(nstcall = 0, F76_1184(Current));
+	(nstcall = 0, F78_1255(Current));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -248,7 +248,7 @@ void F111_1584 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	(nstcall = 0, F76_1185(Current));
+	(nstcall = 0, F78_1256(Current));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

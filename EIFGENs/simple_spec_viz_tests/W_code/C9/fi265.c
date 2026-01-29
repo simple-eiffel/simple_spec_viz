@@ -1254,7 +1254,7 @@ EIF_TYPED_VALUE F265_4459 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYP
 	GTCX
 	char *l_feature_name = "file_name_to_pointer";
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
 	EIF_REFERENCE loc3 = (EIF_REFERENCE) 0;
@@ -1292,7 +1292,7 @@ EIF_TYPED_VALUE F265_4459 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYP
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + 0);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(57, 0x00).id);
 	RTLI(12);
 	RTLR(0,arg1);
 	RTLR(1,arg2);
@@ -1374,7 +1374,7 @@ body:;
 			ur2 = RTCCL(Result);
 			ui4_3 = ((EIF_INTEGER_32) 0L);
 			ur3 = NULL;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1227, "escaped_utf_32_substring_into_utf_16_0_pointer", loc1))(loc1, ur1x, ui4_1x, ui4_2x, ur2x, ui4_3x, ur3x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1116, "escaped_utf_32_substring_into_utf_16_0_pointer", loc1))(loc1, ur1x, ui4_1x, ui4_2x, ur2x, ui4_3x, ur3x);
 		} else {
 			RTHOOK(9);
 			RTDBGAL(2, 0xF80000D1, 0, 0); /* loc2 */
@@ -1449,7 +1449,7 @@ body:;
 			ur2 = RTCCL(Result);
 			ui4_3 = ((EIF_INTEGER_32) 0L);
 			ur3 = NULL;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1202, "escaped_utf_32_substring_into_utf_8_0_pointer", loc1))(loc1, ur1x, ui4_1x, ui4_2x, ur2x, ui4_3x, ur3x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(1091, "escaped_utf_32_substring_into_utf_8_0_pointer", loc1))(loc1, ur1x, ui4_1x, ui4_2x, ur2x, ui4_3x, ur3x);
 		} else {
 			RTHOOK(19);
 			tr1 = RTLN(eif_new_type(209, 0x01).id);
@@ -1490,7 +1490,7 @@ EIF_TYPED_VALUE F265_4460 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	GTCX
 	char *l_feature_name = "pointer_to_file_name_32";
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
 #define arg1 arg1x.it_p
@@ -1516,7 +1516,7 @@ EIF_TYPED_VALUE F265_4460 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + 0);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(58, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(57, 0x00).id);
 	RTLI(6);
 	RTLR(0,loc2);
 	RTLR(1,tr1);
@@ -1556,13 +1556,13 @@ EIF_TYPED_VALUE F265_4460 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 		RTHOOK(3);
 		RTDBGAL(0, 0xF8000169, 0,0); /* Result */
 		ur1 = RTCCL(loc2);
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1234, "utf_16_0_pointer_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1123, "utf_16_0_pointer_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		Result = (EIF_REFERENCE) RTCCL(tr1);
 	} else {
 		RTHOOK(4);
 		RTDBGAL(0, 0xF8000169, 0,0); /* Result */
 		ur1 = RTCCL(loc2);
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1209, "utf_8_0_pointer_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1098, "utf_8_0_pointer_to_escaped_string_32", loc1))(loc1, ur1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		Result = (EIF_REFERENCE) RTCCL(tr1);
 	}
 	RTVI(Current, RTAL);

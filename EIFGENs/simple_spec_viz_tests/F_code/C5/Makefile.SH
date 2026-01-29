@@ -70,10 +70,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C5_c.obj 
 
-OLDOBJECTS =  in212.o in243.o eq204.o se203.o c_210.o in200.o pl234.o re242.o \
+OLDOBJECTS =  in212.o in243.o eq204.o se203.o in200.o c_210.o pl234.o re242.o \
 	pa225.o re246.o co230.o in202.o in201.o so211.o da229.o se236.o \
-	ar208.o rt244.o re245.o re241.o ha207.o si217.o ne213.o da228.o \
-	ti227.o ab233.o du226.o si216.o si218.o si224.o si223.o si222.o \
+	ar208.o rt244.o re245.o re241.o ha207.o si217.o ne213.o ti228.o \
+	da227.o ab233.o du226.o si216.o si224.o si223.o si218.o si222.o \
 	si221.o si220.o si219.o si214.o mm238.o si215.o mm239.o ma232.o \
 	ma248.o kl247.o kl235.o uc237.o ki249.o 
 

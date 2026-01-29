@@ -56,10 +56,10 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C5_c.obj 
 
-OLDOBJECTS =  in212.obj in243.obj eq204.obj se203.obj c_210.obj in200.obj pl234.obj re242.obj \
+OLDOBJECTS =  in212.obj in243.obj eq204.obj se203.obj in200.obj c_210.obj pl234.obj re242.obj \
 	pa225.obj re246.obj co230.obj in202.obj in201.obj so211.obj da229.obj se236.obj \
-	ar208.obj rt244.obj re245.obj re241.obj ha207.obj si217.obj ne213.obj da228.obj \
-	ti227.obj ab233.obj du226.obj si216.obj si218.obj si224.obj si223.obj si222.obj \
+	ar208.obj rt244.obj re245.obj re241.obj ha207.obj si217.obj ne213.obj ti228.obj \
+	da227.obj ab233.obj du226.obj si216.obj si224.obj si223.obj si218.obj si222.obj \
 	si221.obj si220.obj si219.obj si214.obj mm238.obj si215.obj mm239.obj ma232.obj \
 	ma248.obj kl247.obj kl235.obj uc237.obj ki249.obj 
 

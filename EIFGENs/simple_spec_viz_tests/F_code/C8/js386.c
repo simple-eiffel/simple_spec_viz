@@ -1771,7 +1771,7 @@ EIF_BOOLEAN F1113_8568 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTOUCR(325,(nstcall = 0, F1113_8578), (Current));
+	tr1 = RTOUCR(321,(nstcall = 0, F1113_8578), (Current));
 	Result = (nstcall = 0, F94_1378(Current, tr1, ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
 	RTVI(Current, RTAL);
 	RTRS;
@@ -1804,7 +1804,7 @@ EIF_BOOLEAN F1113_8569 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTOUCR(326,(nstcall = 0, F1113_8576), (Current));
+	tr1 = RTOUCR(322,(nstcall = 0, F1113_8576), (Current));
 	Result = (nstcall = 0, F94_1378(Current, tr1, ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 5L)));
 	RTVI(Current, RTAL);
 	RTRS;
@@ -1837,7 +1837,7 @@ EIF_BOOLEAN F1113_8570 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTOUCR(327,(nstcall = 0, F1113_8577), (Current));
+	tr1 = RTOUCR(323,(nstcall = 0, F1113_8577), (Current));
 	Result = (nstcall = 0, F94_1378(Current, tr1, ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2339,7 +2339,7 @@ EIF_BOOLEAN F1113_8575 (EIF_REFERENCE Current)
 EIF_REFERENCE F1113_8576 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOUC (326,RTMS_EX_H("false",5,1635280741));
+	RTOUC (322,RTMS_EX_H("false",5,1635280741));
 }
 
 /* {JSON_PARSER}.true_id */
@@ -2347,7 +2347,7 @@ EIF_REFERENCE F1113_8576 (EIF_REFERENCE Current)
 EIF_REFERENCE F1113_8577 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOUC (327,RTMS_EX_H("true",4,1953658213));
+	RTOUC (323,RTMS_EX_H("true",4,1953658213));
 }
 
 /* {JSON_PARSER}.null_id */
@@ -2355,7 +2355,7 @@ EIF_REFERENCE F1113_8577 (EIF_REFERENCE Current)
 EIF_REFERENCE F1113_8578 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOUC (325,RTMS_EX_H("null",4,1853189228));
+	RTOUC (321,RTMS_EX_H("null",4,1853189228));
 }
 
 /* {JSON_PARSER}.false_value */

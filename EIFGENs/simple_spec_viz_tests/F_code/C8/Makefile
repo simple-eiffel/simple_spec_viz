@@ -57,10 +57,10 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 OBJECTS = big_file_C8_c.obj 
 
 OLDOBJECTS =  po352.obj po351.obj st358.obj st362.obj im357.obj im361.obj re360.obj re353.obj \
-	re356.obj po350.obj st355.obj rt387.obj im354.obj da394.obj eq396.obj co372.obj \
-	da391.obj ti389.obj da380.obj da392.obj en381.obj un383.obj en382.obj js368.obj \
-	js363.obj js367.obj si371.obj js366.obj js369.obj js370.obj js365.obj js364.obj \
-	js386.obj da390.obj ti388.obj da393.obj fi379.obj me385.obj gc384.obj ma398.obj \
+	re356.obj po350.obj st355.obj rt387.obj im354.obj eq396.obj da394.obj co372.obj \
+	da380.obj da391.obj ti389.obj da392.obj un383.obj en381.obj en382.obj js368.obj \
+	js363.obj si371.obj js367.obj js366.obj js369.obj js370.obj js365.obj js364.obj \
+	js386.obj da393.obj fi379.obj da390.obj ti388.obj me385.obj gc384.obj ma398.obj \
 	ma399.obj ma397.obj kl378.obj uc395.obj uc376.obj uc375.obj uc374.obj uc373.obj 
 
 all::  Cobj8.lib

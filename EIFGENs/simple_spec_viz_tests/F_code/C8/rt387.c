@@ -221,7 +221,7 @@ body:;
 	(nstcall = -1, F897_6076(RTCW(loc1), Current, tr1, arg2, arg3, arg4));
 	RTHOOK(8);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1094,9 +1094,9 @@ EIF_BOOLEAN F1114_8612 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	ti4_1 = eif_bit_and(arg1,((EIF_INTEGER_32) 1L));
-	tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 	*(EIF_INTEGER_32 *)tr1 = ti4_1;
-	tb1 = (nstcall = 1, F1004_6723(RTCW(tr1)));
+	tb1 = (nstcall = 1, F1001_6628(RTCW(tr1)));
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -1134,9 +1134,9 @@ EIF_BOOLEAN F1114_8613 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTHOOK(1);
 	ti4_1 = eif_bit_and(arg1,((EIF_INTEGER_32) 2L));
 	ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 1L));
-	tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 	*(EIF_INTEGER_32 *)tr1 = ti4_2;
-	tb1 = (nstcall = 1, F1004_6723(RTCW(tr1)));
+	tb1 = (nstcall = 1, F1001_6628(RTCW(tr1)));
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -1174,9 +1174,9 @@ EIF_BOOLEAN F1114_8614 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTHOOK(1);
 	ti4_1 = eif_bit_and(arg1,((EIF_INTEGER_32) 4L));
 	ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 2L));
-	tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 	*(EIF_INTEGER_32 *)tr1 = ti4_2;
-	tb1 = (nstcall = 1, F1004_6723(RTCW(tr1)));
+	tb1 = (nstcall = 1, F1001_6628(RTCW(tr1)));
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;

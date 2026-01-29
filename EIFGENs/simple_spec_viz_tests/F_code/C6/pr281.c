@@ -326,7 +326,7 @@ body:;
 	}
 	if (tb1) {
 		RTHOOK(4);
-		ti4_1 = (nstcall = 1, F780_5435(RTCW(loc3), arg1));
+		ti4_1 = (nstcall = 1, F779_5435(RTCW(loc3), arg1));
 		Result = (EIF_INTEGER_32) ti4_1;
 	} else {
 		RTHOOK(5);
@@ -434,14 +434,14 @@ static EIF_REFERENCE F664_4973_body (EIF_REFERENCE Current)
 	loc1 = (nstcall = 0, F664_4968(Current, ti4_1));
 	RTHOOK(2);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,779,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,778,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-		tr1 = RTLNS(typres0.id, 779, _OBJSIZ_1_1_0_2_0_0_0_0_);
+		tr1 = RTLNS(typres0.id, 778, _OBJSIZ_1_1_0_2_0_0_0_0_);
 	}
-	(nstcall = -1, F780_5430(RTCW(tr1), ((EIF_INTEGER_32) 0L), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 200L)));
+	(nstcall = -1, F779_5430(RTCW(tr1), ((EIF_INTEGER_32) 0L), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 200L)));
 	Result = (EIF_REFERENCE) tr1;
 	RTHOOK(3);
 	loc3 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
@@ -454,7 +454,7 @@ static EIF_REFERENCE F664_4973_body (EIF_REFERENCE Current)
 		tb1 = (nstcall = 1, F781_5435(RTCW(loc1), loc2));
 		if (tb1) {
 			RTHOOK(7);
-			(nstcall = 1, F780_5454(RTCW(Result), loc2, loc3));
+			(nstcall = 1, F779_5454(RTCW(Result), loc2, loc3));
 			RTHOOK(8);
 			loc3++;
 		}

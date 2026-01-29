@@ -53,7 +53,7 @@ void F228_2690 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2)
 		RTCT("an_address_count_valid", EX_PRE);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN)(arg2 != NULL)) {
-			ti4_1 = (nstcall = 1, F783_5442(RTCW(arg2)));
+			ti4_1 = (nstcall = 1, F792_5442(RTCW(arg2)));
 			tb1 = (EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L));
 		}
 		RTTE(tb1, label_1);
@@ -71,18 +71,18 @@ body:;
 	RTHOOK(4);
 	tb1 = '\0';
 	if ((EIF_BOOLEAN)(arg2 != NULL)) {
-		ti4_1 = (nstcall = 1, F783_5442(RTCW(arg2)));
+		ti4_1 = (nstcall = 1, F792_5442(RTCW(arg2)));
 		tb1 = (EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L));
 	}
 	if (tb1) {
 		RTHOOK(5);
-		tu1_1 = (nstcall = 1, F783_5435(RTCW(arg2), ((EIF_INTEGER_32) 4L)));
+		tu1_1 = (nstcall = 1, F792_5435(RTCW(arg2), ((EIF_INTEGER_32) 4L)));
 		ti4_1 = (EIF_INTEGER_32) tu1_1;
 		ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ti4_2;
 		RTHOOK(6);
 		ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-		tu1_1 = (nstcall = 1, F783_5435(RTCW(arg2), ((EIF_INTEGER_32) 3L)));
+		tu1_1 = (nstcall = 1, F792_5435(RTCW(arg2), ((EIF_INTEGER_32) 3L)));
 		ti4_2 = (EIF_INTEGER_32) tu1_1;
 		ti4_3 = eif_bit_shift_left(ti4_2,((EIF_INTEGER_32) 8L));
 		ti4_2 = eif_bit_and(ti4_3,((EIF_INTEGER_32) 65280L));
@@ -90,7 +90,7 @@ body:;
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ti4_3;
 		RTHOOK(7);
 		ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-		tu1_1 = (nstcall = 1, F783_5435(RTCW(arg2), ((EIF_INTEGER_32) 2L)));
+		tu1_1 = (nstcall = 1, F792_5435(RTCW(arg2), ((EIF_INTEGER_32) 2L)));
 		ti4_2 = (EIF_INTEGER_32) tu1_1;
 		ti4_3 = eif_bit_shift_left(ti4_2,((EIF_INTEGER_32) 16L));
 		ti4_2 = eif_bit_and(ti4_3,((EIF_INTEGER_32) 16711680L));
@@ -98,7 +98,7 @@ body:;
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ti4_3;
 		RTHOOK(8);
 		ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-		tu1_1 = (nstcall = 1, F783_5435(RTCW(arg2), ((EIF_INTEGER_32) 1L)));
+		tu1_1 = (nstcall = 1, F792_5435(RTCW(arg2), ((EIF_INTEGER_32) 1L)));
 		ti4_2 = (EIF_INTEGER_32) tu1_1;
 		ti4_3 = eif_bit_shift_left(ti4_2,((EIF_INTEGER_32) 24L));
 		ti4_2 = eif_bit_and(ti4_3,(EIF_INTEGER_32) ((EIF_INTEGER_64) RTI64C(4278190080)));
@@ -635,37 +635,37 @@ EIF_REFERENCE F228_2703 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,782,1020,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,791,1020,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-		Result = RTLNS(typres0.id, 782, _OBJSIZ_1_1_0_2_0_0_0_0_);
+		Result = RTLNS(typres0.id, 791, _OBJSIZ_1_1_0_2_0_0_0_0_);
 	}
-	(nstcall = -1, F783_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
+	(nstcall = -1, F792_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
 	RTHOOK(2);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
 	ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 24L));
 	ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 	tu1_1 = (EIF_NATURAL_8) ti4_1;
-	(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
+	(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
 	RTHOOK(3);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
 	ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 16L));
 	ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 	tu1_1 = (EIF_NATURAL_8) ti4_1;
-	(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
+	(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
 	RTHOOK(4);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
 	ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 8L));
 	ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 	tu1_1 = (EIF_NATURAL_8) ti4_1;
-	(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
+	(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
 	RTHOOK(5);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
 	ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 	tu1_1 = (EIF_NATURAL_8) ti4_2;
-	(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
+	(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(6);
@@ -750,7 +750,7 @@ EIF_REFERENCE F228_2706 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCT("addr /= Void and then addr.count = inaddrsz", EX_PRE);
 		tb1 = '\0';
 		if ((EIF_BOOLEAN)(arg1 != NULL)) {
-			ti4_1 = (nstcall = 1, F783_5442(RTCW(arg1)));
+			ti4_1 = (nstcall = 1, F792_5442(RTCW(arg1)));
 			tb1 = (EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L));
 		}
 		RTTE(tb1, label_1);
@@ -764,25 +764,25 @@ body:;
 	Result = RTLNS(eif_new_type(1080, 0x01).id, 1080, _OBJSIZ_1_1_0_3_0_0_0_0_);
 	(nstcall = -1, F1076_7601(RTCW(Result)));
 	RTHOOK(3);
-	tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 1L)));
+	tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 1L)));
 	ti4_1 = (EIF_INTEGER_32) tu1_1;
 	(nstcall = 1, F1081_7847(RTCW(Result), ti4_1));
 	RTHOOK(4);
 	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_CHARACTER_8)) R6297[Dtype(RTCW(Result))-1080])(Result, (EIF_CHARACTER_8) '.'));
 	RTHOOK(5);
-	tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 2L)));
+	tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 2L)));
 	ti4_1 = (EIF_INTEGER_32) tu1_1;
 	(nstcall = 1, F1081_7847(RTCW(Result), ti4_1));
 	RTHOOK(6);
 	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_CHARACTER_8)) R6297[Dtype(RTCW(Result))-1080])(Result, (EIF_CHARACTER_8) '.'));
 	RTHOOK(7);
-	tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 3L)));
+	tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 3L)));
 	ti4_1 = (EIF_INTEGER_32) tu1_1;
 	(nstcall = 1, F1081_7847(RTCW(Result), ti4_1));
 	RTHOOK(8);
 	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_CHARACTER_8)) R6297[Dtype(RTCW(Result))-1080])(Result, (EIF_CHARACTER_8) '.'));
 	RTHOOK(9);
-	tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 4L)));
+	tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 4L)));
 	ti4_1 = (EIF_INTEGER_32) tu1_1;
 	(nstcall = 1, F1081_7847(RTCW(Result), ti4_1));
 	RTVI(Current, RTAL);

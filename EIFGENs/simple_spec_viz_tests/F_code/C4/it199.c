@@ -110,8 +110,8 @@ EIF_REFERENCE F225_2640 (EIF_REFERENCE Current)
 		RTHOOK(4);
 		tr2 = (nstcall = 1, F1_5(loc1));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R5299[Dtype(RTCW(tr2))-965])(tr2));
-		tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-		Result = (nstcall = 0, F78_1198(RTCW(tr1), tr3));
+		tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+		Result = (nstcall = 0, F77_1087(RTCW(tr1), tr3));
 	}
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(5);
@@ -123,7 +123,7 @@ EIF_REFERENCE F225_2640 (EIF_REFERENCE Current)
 		}
 		RTHOOK(6);
 		RTCT("result_not_empty", EX_POST);
-		tb1 = (nstcall = 1, F666_4976(RTCW(Result)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb1) {
 			RTCK;
 		} else {

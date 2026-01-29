@@ -56,12 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C21_c.obj 
 
-OLDOBJECTS =  sp1026.obj ar1029.obj na1025.obj na1042.obj sp1027.obj ar1024.obj ar1041.obj \
-	li1008.obj ar1000.obj ar1030.obj re1021.obj to1023.obj to1040.obj dy1018.obj \
-	ha1048.obj st1047.obj li1020.obj li1039.obj ge1028.obj tr1010.obj se1002.obj \
-	se1032.obj ar1001.obj ar1031.obj dy1013.obj dy1034.obj bo1022.obj ta1017.obj \
-	fi1006.obj ha1049.obj ar1043.obj ch1015.obj ch1036.obj ac1003.obj co1005.obj \
-	bi1012.obj bi1033.obj dy1014.obj dy1035.obj ar1046.obj di1045.obj co1011.obj 
+OLDOBJECTS =  sp1016.obj ar1025.obj na1015.obj sp1017.obj re1020.obj ar1014.obj li1029.obj \
+	ar1026.obj re1011.obj re1047.obj to1013.obj to1049.obj dy1008.obj dy1044.obj \
+	li1010.obj li1046.obj ge1018.obj in1024.obj re1021.obj tr1001.obj tr1037.obj \
+	se1028.obj ar1027.obj dy1003.obj dy1039.obj bo1012.obj bo1048.obj ta1007.obj \
+	ta1043.obj fi1032.obj ch1005.obj ch1041.obj ty1019.obj ac1034.obj co1031.obj \
+	bi1002.obj bi1038.obj dy1004.obj dy1040.obj co1000.obj co1036.obj 
 
 all::  Cobj21.lib
 

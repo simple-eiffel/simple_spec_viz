@@ -67,7 +67,7 @@ EIF_CHARACTER_8 F95_1386 (EIF_REFERENCE Current, EIF_CHARACTER_32 arg1)
 			if ((EIF_BOOLEAN) ((EIF_BOOLEAN) (loc2 >= ((EIF_INTEGER_32) 128L)) || (EIF_BOOLEAN)(Result != (EIF_CHARACTER_8) '\032'))) break;
 			RTHOOK(7);
 			tr1 = (nstcall = 0, F96_1391(Current));
-			tw1 = (nstcall = 1, F913_6139(RTCW(tr1), loc2));
+			tw1 = (nstcall = 1, F903_6139(RTCW(tr1), loc2));
 			if ((EIF_BOOLEAN)(tw1 == arg1)) {
 				RTHOOK(8);
 				tc1 = (EIF_CHARACTER_8) (EIF_INTEGER_32) (loc2 + ((EIF_INTEGER_32) 128L));
@@ -160,7 +160,7 @@ EIF_CHARACTER_32 F95_1388 (EIF_REFERENCE Current, EIF_CHARACTER_8 arg1)
 	} else {
 		RTHOOK(4);
 		tr1 = (nstcall = 0, F96_1391(Current));
-		tw1 = (nstcall = 1, F913_6139(RTCW(tr1), (EIF_INTEGER_32) (loc1 - ((EIF_INTEGER_32) 128L))));
+		tw1 = (nstcall = 1, F903_6139(RTCW(tr1), (EIF_INTEGER_32) (loc1 - ((EIF_INTEGER_32) 128L))));
 		Result = (EIF_CHARACTER_32) tw1;
 	}
 	RTVI(Current, RTAL);
@@ -195,7 +195,7 @@ void F95_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("unicode_table_correct_size", Current);
 	tr1 = (nstcall = 0, F96_1391(Current));
-	ti4_1 = (nstcall = 1, F913_6149(tr1));
+	ti4_1 = (nstcall = 1, F903_6149(tr1));
 	if ((EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 128L))) {
 		RTCK;
 	} else {

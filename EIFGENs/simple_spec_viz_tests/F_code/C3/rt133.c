@@ -126,7 +126,7 @@ body:;
 				RTHOOK(4);
 				loc2 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -146,7 +146,7 @@ body:;
 				RTHOOK(7);
 				loc3 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -166,7 +166,7 @@ body:;
 				RTHOOK(10);
 				loc4 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -186,7 +186,7 @@ body:;
 				RTHOOK(13);
 				loc5 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -206,7 +206,7 @@ body:;
 				RTHOOK(16);
 				loc6 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1005,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1002,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -226,7 +226,7 @@ body:;
 				RTHOOK(19);
 				loc7 = arg2;
 				{
-					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1005,1005,1005,1005,0xFFFF};
+					static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1002,1002,1002,1002,0xFFFF};
 					EIF_TYPE typres0;
 					static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 					
@@ -326,7 +326,7 @@ EIF_REFERENCE F159_2170 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 				case 13L:
 					RTHOOK(5);
 					{
-						static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+						static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 						EIF_TYPE typres0;
 						static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 						
@@ -338,7 +338,7 @@ EIF_REFERENCE F159_2170 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 				case 15L:
 					RTHOOK(6);
 					{
-						static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1005,1005,1005,1005,0xFFFF};
+						static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1002,1002,1002,1002,0xFFFF};
 						EIF_TYPE typres0;
 						static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 						
@@ -546,7 +546,7 @@ body:;
 	RTHOOK(2);
 	loc1 = arg1;
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1005,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,4,996,0,1002,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -609,7 +609,7 @@ body:;
 	RTHOOK(2);
 	loc1 = arg1;
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1005,1005,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,5,996,0,1002,1002,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

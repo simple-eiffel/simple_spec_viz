@@ -57,7 +57,7 @@ static const struct desc_info desc_54[] = {
 	{EIF_NON_GENERIC(0x6B /*53*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_54), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1006, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1006, 0xFFFFFFFF},
 };
 void Init54(void)
 {

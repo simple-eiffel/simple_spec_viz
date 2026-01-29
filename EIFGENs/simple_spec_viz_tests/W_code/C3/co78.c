@@ -84,9 +84,9 @@ EIF_TYPED_VALUE F78_1398 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000456, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000341, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1110,0xFF01,355,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,833,0xFF01,355,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1170,9 +1170,9 @@ EIF_TYPED_VALUE F78_1399 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000456, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000341, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1110,0xFF01,355,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,833,0xFF01,355,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1304,9 +1304,9 @@ EIF_TYPED_VALUE F78_1400 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000456, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000341, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1110,0xFF01,355,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,833,0xFF01,355,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1438,9 +1438,9 @@ EIF_TYPED_VALUE F78_1401 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000456, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000341, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1110,0xFF01,355,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,833,0xFF01,355,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

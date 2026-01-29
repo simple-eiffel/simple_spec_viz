@@ -945,7 +945,7 @@ static EIF_REFERENCE F317_4512_body (EIF_REFERENCE Current)
 	RTHOOK(10);
 	tb1 = '\0';
 	if ((EIF_BOOLEAN)(Result != NULL)) {
-		tb2 = (nstcall = 1, F666_4976(RTCW(Result)));
+		tb2 = (nstcall = 1, F670_4976(RTCW(Result)));
 		tb1 = (EIF_BOOLEAN) !tb2;
 	}
 	if (tb1) {

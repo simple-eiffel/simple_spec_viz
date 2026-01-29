@@ -54,7 +54,7 @@ void F52_920 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, EIF
 		RTCK;
 		RTHOOK(2);
 		RTCT("id_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(3);
@@ -63,7 +63,7 @@ void F52_920 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, EIF
 		RTCK;
 		RTHOOK(4);
 		RTCT("name_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(5);
@@ -552,7 +552,7 @@ void F52_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("id_not_empty", Current);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTCK;
 	} else {
@@ -567,7 +567,7 @@ void F52_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("name_not_empty", Current);
 	tr1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTCK;
 	} else {

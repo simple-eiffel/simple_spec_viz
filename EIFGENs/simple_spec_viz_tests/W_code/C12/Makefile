@@ -41,12 +41,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C12_c.obj 
 
-OLDOBJECTS =  rt387.obj rt387d.obj da394.obj da394d.obj co372.obj co372d.obj da391.obj da391d.obj \
-	ti389.obj ti389d.obj da380.obj da380d.obj da392.obj da392d.obj en381.obj en381d.obj \
-	un383.obj un383d.obj en382.obj en382d.obj js368.obj js368d.obj js363.obj js363d.obj \
-	js367.obj js367d.obj si371.obj si371d.obj js366.obj js366d.obj js369.obj js369d.obj \
+OLDOBJECTS =  rt387.obj rt387d.obj da394.obj da394d.obj co372.obj co372d.obj da380.obj da380d.obj \
+	da391.obj da391d.obj ti389.obj ti389d.obj da392.obj da392d.obj un383.obj un383d.obj \
+	en381.obj en381d.obj en382.obj en382d.obj js368.obj js368d.obj js363.obj js363d.obj \
+	si371.obj si371d.obj js367.obj js367d.obj js366.obj js366d.obj js369.obj js369d.obj \
 	js370.obj js370d.obj js365.obj js365d.obj js364.obj js364d.obj js386.obj js386d.obj \
-	da390.obj da390d.obj ti388.obj ti388d.obj da393.obj da393d.obj fi379.obj fi379d.obj \
+	da393.obj da393d.obj fi379.obj fi379d.obj da390.obj da390d.obj ti388.obj ti388d.obj \
 	me385.obj me385d.obj gc384.obj gc384d.obj kl378.obj kl378d.obj uc395.obj uc395d.obj \
 	uc377.obj uc377d.obj uc376.obj uc376d.obj uc375.obj uc375d.obj uc374.obj uc374d.obj \
 	uc373.obj uc373d.obj 

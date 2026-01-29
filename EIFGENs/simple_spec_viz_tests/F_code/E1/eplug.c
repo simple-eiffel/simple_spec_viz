@@ -77,16 +77,16 @@ void egc_init_plug (void)
 	egc_copy_rout_id = 18;
 	egc_is_equal_rout_id = 11;
 
-	egc_sp_char = 0x0386;
-	egc_sp_wchar = 0x0390;
+	egc_sp_char = 0x0387;
+	egc_sp_wchar = 0x0386;
 	egc_sp_bool = 0x0385;
-	egc_sp_uint8 = 0x0387;
+	egc_sp_uint8 = 0x0390;
 	egc_sp_uint16 = 0x038F;
 	egc_sp_uint32 = 0x0389;
-	egc_sp_uint64 = 0x0383;
+	egc_sp_uint64 = 0x0384;
 	egc_sp_int8 = 0x038A;
 	egc_sp_int16 = 0x038D;
-	egc_sp_int32 = 0x0384;
+	egc_sp_int32 = 0x0383;
 	egc_sp_int64 = 0x038E;
 	egc_sp_real32 = 0x038B;
 	egc_sp_real64 = 0x038C;
@@ -94,13 +94,13 @@ void egc_init_plug (void)
 	egc_sp_ref = 0x0382;
 
 	egc_uint8_dtype = 1020;
-	egc_uint16_dtype = 999;
-	egc_uint32_dtype = 1017;
-	egc_uint64_dtype = 1014;
-	egc_int8_dtype = 1011;
-	egc_int16_dtype = 1008;
-	egc_int32_dtype = 1005;
-	egc_int64_dtype = 1002;
+	egc_uint16_dtype = 1017;
+	egc_uint32_dtype = 1014;
+	egc_uint64_dtype = 1011;
+	egc_int8_dtype = 1008;
+	egc_int16_dtype = 1005;
+	egc_int32_dtype = 1002;
+	egc_int64_dtype = 999;
 	egc_bool_dtype = 1035;
 	egc_real32_dtype = 1023;
 	egc_char_dtype = 1032;
@@ -132,7 +132,7 @@ void egc_init_plug (void)
 	egc_system_name = "test_runner";
 	egc_system_location = "D:\\prod\\simple_spec_viz\\EIFGENs\\simple_spec_viz_tests\\F_code";
 	egc_compiler_tag = 39;
-	egc_project_version = 1769436138;
+	egc_project_version = 1769438076;
 	egc_has_old_special_semantic = 0;
 	scount = 1129;
 

@@ -172,7 +172,7 @@ body:;
 				RTHOOK(19);
 				if ((EIF_BOOLEAN)(loc2 == loc4)) break;
 				RTHOOK(20);
-				tc1 = (nstcall = 1, F903_6139(RTCW(loc7), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc2) - ((EIF_INTEGER_32) 1L))));
+				tc1 = (nstcall = 1, F904_6139(RTCW(loc7), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc2) - ((EIF_INTEGER_32) 1L))));
 				tu4_1 = (EIF_NATURAL_32) tc1;
 				tu4_2 = (nstcall = 1, (FUNCTION_CAST(EIF_NATURAL_32, (EIF_REFERENCE, EIF_INTEGER_32)) R6109[Dtype(RTCW(arg2))-1079])(arg2, (EIF_INTEGER_32) (loc2 + ((EIF_INTEGER_32) 1L))));
 				if ((EIF_BOOLEAN)(tu4_1 != tu4_2)) {
@@ -194,9 +194,9 @@ body:;
 				RTHOOK(27);
 				if ((EIF_BOOLEAN) ((EIF_INTEGER_32) (loc1 + loc4) <= arg4)) {
 					RTHOOK(28);
-					tc1 = (nstcall = 1, F903_6139(RTCW(loc7), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc4) - ((EIF_INTEGER_32) 1L))));
+					tc1 = (nstcall = 1, F904_6139(RTCW(loc7), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc4) - ((EIF_INTEGER_32) 1L))));
 					ti4_1 = (EIF_INTEGER_32) (tc1);
-					ti4_1 = (nstcall = 1, F901_6139(RTCW(loc6), ti4_1));
+					ti4_1 = (nstcall = 1, F900_6139(RTCW(loc6), ti4_1));
 					loc1 += ti4_1;
 				} else {
 					RTHOOK(29);
@@ -340,7 +340,7 @@ body:;
 						RTHOOK(25);
 						if ((EIF_BOOLEAN)(loc2 == loc5)) break;
 						RTHOOK(26);
-						tc1 = (nstcall = 1, F903_6139(RTCW(loc10), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc2) - ((EIF_INTEGER_32) 1L))));
+						tc1 = (nstcall = 1, F904_6139(RTCW(loc10), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc2) - ((EIF_INTEGER_32) 1L))));
 						tu4_1 = (EIF_NATURAL_32) tc1;
 						tu4_2 = (nstcall = 1, (FUNCTION_CAST(EIF_NATURAL_32, (EIF_REFERENCE, EIF_INTEGER_32)) R6109[Dtype(RTCW(arg2))-1079])(arg2, (EIF_INTEGER_32) (loc2 + ((EIF_INTEGER_32) 1L))));
 						if ((EIF_BOOLEAN)(tu4_1 != tu4_2)) {
@@ -374,12 +374,12 @@ body:;
 								RTHOOK(38);
 								if ((EIF_BOOLEAN) (loc2 > arg5)) break;
 								RTHOOK(39);
-								tc1 = (nstcall = 1, F903_6139(RTCW(loc10), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc5) - loc2) - ((EIF_INTEGER_32) 1L))));
+								tc1 = (nstcall = 1, F904_6139(RTCW(loc10), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 + loc5) - loc2) - ((EIF_INTEGER_32) 1L))));
 								ti4_1 = (EIF_INTEGER_32) (tc1);
 								loc8 = (EIF_INTEGER_32) ti4_1;
 								RTHOOK(40);
 								tr1 = (nstcall = 1, F899_6139(RTCW(loc9), loc2));
-								ti4_1 = (nstcall = 1, F901_6139(RTCW(tr1), loc8));
+								ti4_1 = (nstcall = 1, F900_6139(RTCW(tr1), loc8));
 								ti4_2 = eif_min_int32 (loc3,ti4_1);
 								loc3 = (EIF_INTEGER_32) ti4_2;
 								RTHOOK(41);

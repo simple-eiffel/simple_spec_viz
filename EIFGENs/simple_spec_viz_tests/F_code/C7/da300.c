@@ -51,7 +51,7 @@ void F896_6039 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("v_is_code", EX_PRE);
-		RTTE((nstcall = 0, F138_1877(Current, arg1)), label_1);
+		RTTE((nstcall = 0, F146_1948(Current, arg1)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -166,7 +166,7 @@ void F896_6043 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("v_is_code", EX_PRE);
-		RTTE((nstcall = 0, F138_1877(Current, arg1)), label_1);
+		RTTE((nstcall = 0, F146_1948(Current, arg1)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -178,7 +178,7 @@ body:;
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current) = (EIF_REFERENCE) tr1;
 	RTHOOK(4);
-	if ((nstcall = 0, F138_1878(Current, *(EIF_REFERENCE *)(Current)))) {
+	if ((nstcall = 0, F146_1949(Current, *(EIF_REFERENCE *)(Current)))) {
 		RTHOOK(5);
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 		RTHOOK(6);
@@ -198,7 +198,7 @@ body:;
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 	} else {
 		RTHOOK(13);
-		if ((nstcall = 0, F138_1879(Current, *(EIF_REFERENCE *)(Current)))) {
+		if ((nstcall = 0, F146_1950(Current, *(EIF_REFERENCE *)(Current)))) {
 			RTHOOK(14);
 			*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 			RTHOOK(15);
@@ -218,7 +218,7 @@ body:;
 			*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 		} else {
 			RTHOOK(22);
-			if ((nstcall = 0, F138_1880(Current, *(EIF_REFERENCE *)(Current)))) {
+			if ((nstcall = 0, F146_1951(Current, *(EIF_REFERENCE *)(Current)))) {
 				RTHOOK(23);
 				*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 3L);
 				RTHOOK(24);
@@ -238,7 +238,7 @@ body:;
 				*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 			} else {
 				RTHOOK(31);
-				if ((nstcall = 0, F138_1881(Current, *(EIF_REFERENCE *)(Current)))) {
+				if ((nstcall = 0, F146_1952(Current, *(EIF_REFERENCE *)(Current)))) {
 					RTHOOK(32);
 					*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 4L);
 					RTHOOK(33);
@@ -258,7 +258,7 @@ body:;
 					*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_3_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) -1L);
 				} else {
 					RTHOOK(40);
-					if ((nstcall = 0, F138_1882(Current, *(EIF_REFERENCE *)(Current)))) {
+					if ((nstcall = 0, F146_1953(Current, *(EIF_REFERENCE *)(Current)))) {
 						RTHOOK(41);
 						*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 						RTHOOK(42);
@@ -278,7 +278,7 @@ body:;
 						*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_3_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) -1L);
 					} else {
 						RTHOOK(49);
-						if ((nstcall = 0, F138_1883(Current, *(EIF_REFERENCE *)(Current)))) {
+						if ((nstcall = 0, F146_1954(Current, *(EIF_REFERENCE *)(Current)))) {
 							RTHOOK(50);
 							*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 							RTHOOK(51);
@@ -298,7 +298,7 @@ body:;
 							*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 						} else {
 							RTHOOK(58);
-							if ((nstcall = 0, F138_1884(Current, *(EIF_REFERENCE *)(Current)))) {
+							if ((nstcall = 0, F146_1955(Current, *(EIF_REFERENCE *)(Current)))) {
 								RTHOOK(59);
 								*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 								RTHOOK(60);
@@ -318,7 +318,7 @@ body:;
 								*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 							} else {
 								RTHOOK(67);
-								if ((nstcall = 0, F138_1885(Current, *(EIF_REFERENCE *)(Current)))) {
+								if ((nstcall = 0, F146_1956(Current, *(EIF_REFERENCE *)(Current)))) {
 									RTHOOK(68);
 									*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 3L);
 									RTHOOK(69);
@@ -338,7 +338,7 @@ body:;
 									*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 								} else {
 									RTHOOK(76);
-									if ((nstcall = 0, F138_1886(Current, *(EIF_REFERENCE *)(Current)))) {
+									if ((nstcall = 0, F146_1957(Current, *(EIF_REFERENCE *)(Current)))) {
 										RTHOOK(77);
 										*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 										RTHOOK(78);
@@ -358,7 +358,7 @@ body:;
 										*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 									} else {
 										RTHOOK(85);
-										if ((nstcall = 0, F138_1887(Current, *(EIF_REFERENCE *)(Current)))) {
+										if ((nstcall = 0, F146_1958(Current, *(EIF_REFERENCE *)(Current)))) {
 											RTHOOK(86);
 											*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 											RTHOOK(87);
@@ -378,7 +378,7 @@ body:;
 											*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 										} else {
 											RTHOOK(94);
-											if ((nstcall = 0, F138_1888(Current, *(EIF_REFERENCE *)(Current)))) {
+											if ((nstcall = 0, F146_1959(Current, *(EIF_REFERENCE *)(Current)))) {
 												RTHOOK(95);
 												*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 												RTHOOK(96);
@@ -398,7 +398,7 @@ body:;
 												*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 											} else {
 												RTHOOK(103);
-												if ((nstcall = 0, F138_1890(Current, *(EIF_REFERENCE *)(Current)))) {
+												if ((nstcall = 0, F146_1961(Current, *(EIF_REFERENCE *)(Current)))) {
 													RTHOOK(104);
 													*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 													RTHOOK(105);
@@ -418,7 +418,7 @@ body:;
 													*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 												} else {
 													RTHOOK(112);
-													if ((nstcall = 0, F138_1891(Current, *(EIF_REFERENCE *)(Current)))) {
+													if ((nstcall = 0, F146_1962(Current, *(EIF_REFERENCE *)(Current)))) {
 														RTHOOK(113);
 														*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 														RTHOOK(114);
@@ -438,7 +438,7 @@ body:;
 														*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 													} else {
 														RTHOOK(121);
-														if ((nstcall = 0, F138_1892(Current, *(EIF_REFERENCE *)(Current)))) {
+														if ((nstcall = 0, F146_1963(Current, *(EIF_REFERENCE *)(Current)))) {
 															RTHOOK(122);
 															*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 															RTHOOK(123);
@@ -458,7 +458,7 @@ body:;
 															*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 														} else {
 															RTHOOK(130);
-															if ((nstcall = 0, F138_1893(Current, *(EIF_REFERENCE *)(Current)))) {
+															if ((nstcall = 0, F146_1964(Current, *(EIF_REFERENCE *)(Current)))) {
 																RTHOOK(131);
 																*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 																RTHOOK(132);
@@ -478,7 +478,7 @@ body:;
 																*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 															} else {
 																RTHOOK(139);
-																if ((nstcall = 0, F138_1894(Current, *(EIF_REFERENCE *)(Current)))) {
+																if ((nstcall = 0, F146_1965(Current, *(EIF_REFERENCE *)(Current)))) {
 																	RTHOOK(140);
 																	tr1 = *(EIF_REFERENCE *)(Current);
 																	tr2 = *(EIF_REFERENCE *)(Current);
@@ -503,7 +503,7 @@ body:;
 																	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_3_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) -1L);
 																} else {
 																	RTHOOK(148);
-																	if ((nstcall = 0, F138_1895(Current, *(EIF_REFERENCE *)(Current)))) {
+																	if ((nstcall = 0, F146_1966(Current, *(EIF_REFERENCE *)(Current)))) {
 																		RTHOOK(149);
 																		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																		RTHOOK(150);
@@ -519,7 +519,7 @@ body:;
 																		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																	} else {
 																		RTHOOK(155);
-																		if ((nstcall = 0, F138_1896(Current, *(EIF_REFERENCE *)(Current)))) {
+																		if ((nstcall = 0, F146_1967(Current, *(EIF_REFERENCE *)(Current)))) {
 																			RTHOOK(156);
 																			*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																			RTHOOK(157);
@@ -535,7 +535,7 @@ body:;
 																			*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																		} else {
 																			RTHOOK(162);
-																			if ((nstcall = 0, F138_1897(Current, *(EIF_REFERENCE *)(Current)))) {
+																			if ((nstcall = 0, F146_1968(Current, *(EIF_REFERENCE *)(Current)))) {
 																				RTHOOK(163);
 																				*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																				RTHOOK(164);
@@ -551,7 +551,7 @@ body:;
 																				*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																			} else {
 																				RTHOOK(169);
-																				if ((nstcall = 0, F138_1898(Current, *(EIF_REFERENCE *)(Current)))) {
+																				if ((nstcall = 0, F146_1969(Current, *(EIF_REFERENCE *)(Current)))) {
 																					RTHOOK(170);
 																					*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																					RTHOOK(171);
@@ -567,7 +567,7 @@ body:;
 																					*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																				} else {
 																					RTHOOK(176);
-																					if ((nstcall = 0, F138_1899(Current, *(EIF_REFERENCE *)(Current)))) {
+																					if ((nstcall = 0, F146_1970(Current, *(EIF_REFERENCE *)(Current)))) {
 																						RTHOOK(177);
 																						*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																						RTHOOK(178);
@@ -583,7 +583,7 @@ body:;
 																						*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																					} else {
 																						RTHOOK(183);
-																						if ((nstcall = 0, F138_1900(Current, *(EIF_REFERENCE *)(Current)))) {
+																						if ((nstcall = 0, F146_1971(Current, *(EIF_REFERENCE *)(Current)))) {
 																							RTHOOK(184);
 																							*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 																							RTHOOK(185);
@@ -599,7 +599,7 @@ body:;
 																							*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_4_) = (EIF_INTEGER_32) ti4_1;
 																						} else {
 																							RTHOOK(190);
-																							if ((nstcall = 0, F138_1902(Current, *(EIF_REFERENCE *)(Current)))) {
+																							if ((nstcall = 0, F146_1973(Current, *(EIF_REFERENCE *)(Current)))) {
 																								RTHOOK(191);
 																								*(EIF_INTEGER_32 *)(Current+ _LNGOFF_2_2_0_0_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 2L);
 																								RTHOOK(192);

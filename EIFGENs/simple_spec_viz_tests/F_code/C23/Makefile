@@ -56,10 +56,10 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C23_c.obj 
 
-OLDOBJECTS =  ty1105.obj ce1126.obj ce1127.obj st1111.obj rt1128.obj rt1129.obj rt1109.obj \
-	rt1100.obj rt1101.obj rt1102.obj rt1106.obj rt1107.obj rt1108.obj rt1112.obj \
-	rt1113.obj rt1114.obj rt1115.obj rt1116.obj rt1117.obj rt1118.obj rt1119.obj \
-	rt1120.obj rt1121.obj rt1122.obj mm1124.obj mm1125.obj kl1110.obj ki1123.obj 
+OLDOBJECTS =  ty1105.obj ce1126.obj ce1127.obj ha1122.obj ha1123.obj rt1128.obj rt1129.obj \
+	rt1109.obj rt1100.obj rt1101.obj rt1102.obj rt1106.obj rt1107.obj rt1108.obj \
+	rt1111.obj rt1112.obj rt1113.obj rt1114.obj rt1115.obj rt1116.obj rt1117.obj \
+	rt1118.obj rt1119.obj rt1120.obj kl1110.obj ki1121.obj 
 
 all::  Cobj23.lib
 

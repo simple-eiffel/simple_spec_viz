@@ -1,5 +1,5 @@
 /*
- * Code for class CONTAINER [INTEGER_32]
+ * Code for class COLLECTION [INTEGER_32]
  */
 
 #include "eif_eiffel.h"
@@ -22,8 +22,8 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {CONTAINER}.empty */
-EIF_BOOLEAN F492_4875 (EIF_REFERENCE Current)
+/* {COLLECTION}.is_inserted */
+EIF_BOOLEAN F551_4911 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	GTCX
 	RTEX;
@@ -38,13 +38,13 @@ EIF_BOOLEAN F492_4875 (EIF_REFERENCE Current)
 	RTLR(0,Current);
 	RTLIU(1);
 	
-	RTEAA("empty", 491, Current, 0, 0, 5769);
+	RTEAA("is_inserted", 550, Current, 0, 1, 6162);
 	RTSA(dtype);
 	RTSC;
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	Result = (nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4371[dtype-663])(Current));
+	Result = (nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[dtype-663])(Current, (EIF_REFERENCE) &arg1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -53,211 +53,112 @@ EIF_BOOLEAN F492_4875 (EIF_REFERENCE Current)
 	return Result;
 }
 
-/* {CONTAINER}.object_comparison */
-EIF_BOOLEAN F492_4876 (EIF_REFERENCE Current)
-{
-	return *(EIF_BOOLEAN *)(Current + O4373[Dtype(Current)-488]);
-}
-
-
-/* {CONTAINER}.changeable_comparison_criterion */
-EIF_BOOLEAN F492_4877 (EIF_REFERENCE Current)
-{
-	GTCX
-	RTEX;
-	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
-	
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	RTLI(1);
-	RTLR(0,Current);
-	RTLIU(1);
-	
-	RTEAA("changeable_comparison_criterion", 491, Current, 0, 0, 5771);
-	RTSA(Dtype(Current));
-	RTSC;
-	RTGC;
-	RTIV(Current, RTAL);
-	RTHOOK(1);
-	Result = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(2);
-	RTLE;
-	RTEE;
-	return Result;
-}
-
-/* {CONTAINER}.compare_objects */
-void F492_4878 (EIF_REFERENCE Current)
-{
-	GTCX
-	RTEX;
-	RTCDT;
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	RTLI(1);
-	RTLR(0,Current);
-	RTLIU(1);
-	
-	RTEAA("compare_objects", 491, Current, 0, 0, 5772);
-	RTSA(dtype);
-	RTSC;
-	RTGC;
-	RTIV(Current, RTAL);
-	if ((RTAL & CK_REQUIRE) || RTAC) {
-		RTHOOK(1);
-		RTCT("changeable_comparison_criterion", EX_PRE);
-		RTTE((nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4374[dtype-663])(Current)), label_1);
-		RTCK;
-		RTJB;
-label_1:
-		RTCF;
-	}
-body:;
-	RTHOOK(2);
-	*(EIF_BOOLEAN *)(Current + O4373[dtype-488]) = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
-	if (RTAL & CK_ENSURE) {
-		RTHOOK(3);
-		RTCT("object_comparison", EX_POST);
-		if (*(EIF_BOOLEAN *)(Current + O4373[dtype-488])) {
-			RTCK;
-		} else {
-			RTCF;
-		}
-	}
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(4);
-	RTLE;
-	RTEE;
-}
-
-/* {CONTAINER}.compare_references */
-void F492_4879 (EIF_REFERENCE Current)
-{
-	GTCX
-	RTEX;
-	RTCDT;
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	RTLI(1);
-	RTLR(0,Current);
-	RTLIU(1);
-	
-	RTEAA("compare_references", 491, Current, 0, 0, 5773);
-	RTSA(dtype);
-	RTSC;
-	RTGC;
-	RTIV(Current, RTAL);
-	if ((RTAL & CK_REQUIRE) || RTAC) {
-		RTHOOK(1);
-		RTCT("changeable_comparison_criterion", EX_PRE);
-		RTTE((nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4374[dtype-663])(Current)), label_1);
-		RTCK;
-		RTJB;
-label_1:
-		RTCF;
-	}
-body:;
-	RTHOOK(2);
-	*(EIF_BOOLEAN *)(Current + O4373[dtype-488]) = (EIF_BOOLEAN) (EIF_BOOLEAN) 0;
-	if (RTAL & CK_ENSURE) {
-		RTHOOK(3);
-		RTCT("reference_comparison", EX_POST);
-		if ((EIF_BOOLEAN) !*(EIF_BOOLEAN *)(Current + O4373[dtype-488])) {
-			RTCK;
-		} else {
-			RTCF;
-		}
-	}
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(4);
-	RTLE;
-	RTEE;
-}
-
-/* {CONTAINER}.estimated_count_of */
-EIF_INTEGER_32 F492_4881 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+/* {COLLECTION}.fill */
+void F551_4914 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
 	GTCX
 	RTEX;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) 0;
-	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
+	EIF_REFERENCE tr1 = NULL;
 	EIF_INTEGER_32 ti4_1;
-	EIF_INTEGER_32 ti4_2;
-	EIF_INTEGER_32 Result = ((EIF_INTEGER_32) 0);
-	
-	RTCFDT;
+	EIF_BOOLEAN tb1;
+	EIF_BOOLEAN tb2;
+	RTCDT;
 	RTSN;
 	RTDA;
 	RTLD;
 	
 	RTLI(4);
-	RTLR(0,loc1);
+	RTLR(0,arg1);
 	RTLR(1,Current);
-	RTLR(2,arg1);
-	RTLR(3,loc2);
+	RTLR(2,loc1);
+	RTLR(3,tr1);
 	RTLIU(4);
 	
-	RTEAA("estimated_count_of", 491, Current, 2, 1, 5774);
-	RTSA(Dtype(Current));
+	RTEAA("fill", 550, Current, 1, 1, 6163);
+	RTSA(dtype);
 	RTSC;
 	RTGC;
 	RTIV(Current, RTAL);
-	RTHOOK(1);
-	loc1 = arg1;
-	{
-		EIF_TYPE_INDEX typarr0[] = {0xFF01,667,0,0,0xFFFF};
-		EIF_TYPE typres0;
-		{
-			EIF_TYPE l_type;
-			l_type = eif_final_id(Y4237,Y4237_gen_type,dftype,350);
-			typarr0[2] = l_type.annotations | 0xFF00;
-			typarr0[3] = l_type.id;
-		}
-		
-		typres0 = eif_compound_id(dftype, typarr0);
-		loc1 = RTRV(typres0,loc1);
-	}
-	if (EIF_TEST(loc1)) {
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("other_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
+		RTCK;
 		RTHOOK(2);
-		ti4_1 = (nstcall = 1, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R4435[Dtype(loc1)-743])(loc1));
-		Result = (EIF_INTEGER_32) ti4_1;
-	} else {
+		RTCT("extendible", EX_PRE);
+		RTTE((nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4397[dtype-663])(Current)), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTHOOK(3);
+	tr1 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R4377[Dtype(RTCW(arg1))-663])(arg1));
+	loc1 = (EIF_REFERENCE) tr1;
+	RTHOOK(4);
+	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE)) R4381[Dtype(RTCW(loc1))-663])(loc1));
+	for (;;) {
+		RTHOOK(5);
+		tb1 = '\01';
+		if (!(EIF_BOOLEAN) !(nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4397[dtype-663])(Current))) {
+			tb2 = (nstcall = 1, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4380[Dtype(RTCW(loc1))-663])(loc1));
+			tb1 = tb2;
+		}
+		if (tb1) break;
+		RTHOOK(6);
+		ti4_1 = (nstcall = 1, eif_optimize_return = 1, *(EIF_INTEGER_32 *)(FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R4379[Dtype(RTCW(loc1))-663])(loc1));
+		(nstcall = 0, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R4401[dtype-663])(Current, (EIF_REFERENCE) &ti4_1));
+		RTHOOK(7);
+		(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE)) R4394[Dtype(RTCW(loc1))-663])(loc1));
+	}
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(8);
+	RTLE;
+	RTEE;
+}
+
+/* {COLLECTION}.prune_all */
+void F551_4916 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	GTCX
+	RTEX;
+	RTCDT;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(1);
+	RTLR(0,Current);
+	RTLIU(1);
+	
+	RTEAA("prune_all", 550, Current, 0, 1, 6164);
+	RTSA(dtype);
+	RTSC;
+	RTGC;
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("prunable", EX_PRE);
+		RTTE((nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE)) R4398[dtype-663])(Current)), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	for (;;) {
+		RTHOOK(2);
+		if ((EIF_BOOLEAN) !(nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[dtype-663])(Current, (EIF_REFERENCE) &arg1))) break;
 		RTHOOK(3);
-		loc2 = arg1;
-		{
-			EIF_TYPE_INDEX typarr0[] = {0xFF01,749,0,0,0xFFFF};
-			EIF_TYPE typres0;
-			{
-				EIF_TYPE l_type;
-				l_type = eif_final_id(Y4237,Y4237_gen_type,dftype,350);
-				typarr0[2] = l_type.annotations | 0xFF00;
-				typarr0[3] = l_type.id;
-			}
-			
-			typres0 = eif_compound_id(dftype, typarr0);
-			loc2 = RTRV(typres0,loc2);
-		}
-		if (EIF_TEST(loc2)) {
-			RTHOOK(4);
-			ti4_1 = (nstcall = 1, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R4659[Dtype(loc2)-776])(loc2));
-			ti4_2 = (nstcall = 1, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R4658[Dtype(loc2)-776])(loc2));
-			Result = (EIF_INTEGER_32) (EIF_INTEGER_32) ((EIF_INTEGER_32) (ti4_1 - ti4_2) + ((EIF_INTEGER_32) 1L));
-		}
+		(nstcall = 0, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R4403[dtype-663])(Current, (EIF_REFERENCE) &arg1));
 	}
 	if (RTAL & CK_ENSURE) {
-		RTHOOK(5);
-		RTCT("non_negative_result", EX_POST);
-		if ((EIF_BOOLEAN) (Result >= ((EIF_INTEGER_32) 0L))) {
+		RTHOOK(4);
+		RTCT("no_more_occurrences", EX_POST);
+		if ((EIF_BOOLEAN) !(nstcall = 0, (FUNCTION_CAST(EIF_BOOLEAN, (EIF_REFERENCE, EIF_REFERENCE)) R4370[dtype-663])(Current, (EIF_REFERENCE) &arg1))) {
 			RTCK;
 		} else {
 			RTCF;
@@ -265,10 +166,9 @@ EIF_INTEGER_32 F492_4881 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	}
 	RTVI(Current, RTAL);
 	RTRS;
-	RTHOOK(6);
+	RTHOOK(5);
 	RTLE;
 	RTEE;
-	return Result;
 }
 
 void EIF_Minit516 (void)

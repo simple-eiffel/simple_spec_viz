@@ -57,7 +57,7 @@ body:;
 	*(EIF_REFERENCE *)(Current) = (EIF_REFERENCE) tr1;
 	RTHOOK(3);
 	tr1 = RTCCL(arg1);
-	ti4_1 = (nstcall = 0, F76_1087(Current, tr1));
+	ti4_1 = (nstcall = 0, F78_1158(Current, tr1));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	RTHOOK(4);
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
@@ -132,7 +132,7 @@ body:;
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) (EIF_INTEGER_32) (ti4_1 + ti4_2);
 	RTHOOK(4);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-	ti4_1 = (nstcall = 0, F76_1104(Current, *(EIF_REFERENCE *)(Current), ti4_1));
+	ti4_1 = (nstcall = 0, F78_1175(Current, *(EIF_REFERENCE *)(Current), ti4_1));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(5);
@@ -191,7 +191,7 @@ body:;
 	RTHOOK(3);
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) arg2;
 	RTHOOK(4);
-	ti4_1 = (nstcall = 0, F76_1104(Current, arg1, arg2));
+	ti4_1 = (nstcall = 0, F78_1175(Current, arg1, arg2));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(5);
@@ -233,7 +233,7 @@ EIF_REFERENCE F281_3772 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-	Result = (nstcall = 0, F76_1102(Current, *(EIF_REFERENCE *)(Current), ti4_1));
+	Result = (nstcall = 0, F78_1173(Current, *(EIF_REFERENCE *)(Current), ti4_1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -265,7 +265,7 @@ EIF_POINTER F281_3773 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	ti4_1 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_);
-	Result = (nstcall = 0, F76_1103(Current, *(EIF_REFERENCE *)(Current), ti4_1));
+	Result = (nstcall = 0, F78_1174(Current, *(EIF_REFERENCE *)(Current), ti4_1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -454,7 +454,7 @@ body:;
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
 	RTHOOK(4);
 	tr1 = RTCCL(arg1);
-	ti4_1 = (nstcall = 0, F76_1087(Current, tr1));
+	ti4_1 = (nstcall = 0, F78_1158(Current, tr1));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(5);

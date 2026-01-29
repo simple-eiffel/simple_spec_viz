@@ -107,7 +107,7 @@ static EIF_REFERENCE F135_1862_body (EIF_REFERENCE Current)
 	RTOTP;
 	RTHOOK(1);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,346,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,346,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -402,7 +402,7 @@ static EIF_REFERENCE F135_1867_body (EIF_REFERENCE Current)
 	RTOTP;
 	RTHOOK(1);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,345,900,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,345,899,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

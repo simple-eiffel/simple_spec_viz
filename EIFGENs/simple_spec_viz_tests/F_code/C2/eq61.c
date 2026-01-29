@@ -58,14 +58,14 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = RTOUCR(40,(nstcall = 0, F79_1266), (Current));
+	tr1 = RTOUCR(39,(nstcall = 0, F79_1266), (Current));
 	(nstcall = 1, F886_5944(RTCW(tr1), arg1));
 	RTHOOK(3);
-	tr1 = RTOUCR(40,(nstcall = 0, F79_1266), (Current));
+	tr1 = RTOUCR(39,(nstcall = 0, F79_1266), (Current));
 	tb1 = (nstcall = 1, F886_5934(RTCW(tr1)));
 	if (tb1) {
 		RTHOOK(4);
-		tr1 = *(EIF_REFERENCE *)(RTCV(RTOUCR(40,(nstcall = 0, F79_1266), (Current))));
+		tr1 = *(EIF_REFERENCE *)(RTCV(RTOUCR(39,(nstcall = 0, F79_1266), (Current))));
 		Result = (EIF_REFERENCE) tr1;
 	}
 	RTVI(Current, RTAL);
@@ -391,7 +391,7 @@ static EIF_REFERENCE F79_1266_body (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOUDR(40)
+	RTOUDR(39)
 
 	RTLI(2);
 	RTLR(0,Current);
@@ -428,7 +428,7 @@ static EIF_REFERENCE F79_1266_body (EIF_REFERENCE Current)
 EIF_REFERENCE F79_1266 (EIF_REFERENCE Current)
 {
 	GTCX
-	return RTOUCR(40,F79_1266_body,(Current));
+	return RTOUCR(39,F79_1266_body,(Current));
 }
 
 /* {EQA_ENVIRONMENT}.put */
@@ -487,7 +487,7 @@ body:;
 		(nstcall = -1, F1084_7950(RTCW(loc1), arg1));
 	}
 	RTHOOK(6);
-	tr1 = RTOUCR(40,(nstcall = 0, F79_1266), (Current));
+	tr1 = RTOUCR(39,(nstcall = 0, F79_1266), (Current));
 	(nstcall = 1, F886_5949(RTCW(tr1), loc1, arg2));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(7);
@@ -533,7 +533,7 @@ void F79_1268 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTOUCR(40,(nstcall = 0, F79_1266), (Current));
+	tr1 = RTOUCR(39,(nstcall = 0, F79_1266), (Current));
 	(nstcall = 1, F886_5956(RTCW(tr1)));
 	RTVI(Current, RTAL);
 	RTRS;

@@ -46,8 +46,8 @@ OLDOBJECTS =  rt133.obj rt133d.obj ex152.obj ex152d.obj in150.obj in150d.obj it1
 	re163.obj re163d.obj co159.obj co159d.obj ex162.obj ex162d.obj op158.obj op158d.obj \
 	de153.obj de153d.obj ex151.obj ex151d.obj in149.obj in149d.obj in148.obj in148d.obj \
 	in147.obj in147d.obj st137.obj st137d.obj nu141.obj nu141d.obj st146.obj st146d.obj \
-	st143.obj st143d.obj it140.obj it140d.obj re138.obj re138d.obj he145.obj he145d.obj \
-	st135.obj st135d.obj st144.obj st144d.obj st136.obj st136d.obj rt134.obj rt134d.obj \
+	st143.obj st143d.obj it140.obj it140d.obj re138.obj re138d.obj st145.obj st145d.obj \
+	st135.obj st135d.obj he144.obj he144d.obj st136.obj st136d.obj rt134.obj rt134d.obj \
 	ha155.obj ha155d.obj op157.obj op157d.obj ob161.obj ob161d.obj in142.obj in142d.obj \
 	ma154.obj ma154d.obj 
 

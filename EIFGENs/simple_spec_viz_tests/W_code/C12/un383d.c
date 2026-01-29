@@ -39,7 +39,7 @@ static const EIF_TYPE_INDEX egt_26_383 [] = {0xFF01,361,0xFFFF};
 static const EIF_TYPE_INDEX egt_27_383 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_28_383 [] = {0xFF01,361,0xFFFF};
 static const EIF_TYPE_INDEX egt_29_383 [] = {0xFF01,361,0xFFFF};
-static const EIF_TYPE_INDEX egt_30_383 [] = {0xFF01,1110,0xFF01,355,0xFFFF};
+static const EIF_TYPE_INDEX egt_30_383 [] = {0xFF01,833,0xFF01,355,0xFFFF};
 
 
 static const struct desc_info desc_383[] = {
@@ -113,8 +113,8 @@ void Init383(void)
 	IDSC(desc_383, 0, 382);
 	IDSC(desc_383 + 1, 4, 382);
 	IDSC(desc_383 + 32, 381, 382);
-	IDSC(desc_383 + 44, 295, 382);
-	IDSC(desc_383 + 55, 296, 382);
+	IDSC(desc_383 + 44, 296, 382);
+	IDSC(desc_383 + 55, 295, 382);
 }
 
 

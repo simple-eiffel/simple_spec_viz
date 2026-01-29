@@ -58,7 +58,7 @@ void F1126_8969 (EIF_REFERENCE Current)
 		if ((EIF_BOOLEAN) (loc1 > ti4_1)) break;
 		RTHOOK(4);
 		tr1 = RTOUCR(395,(nstcall = 0, F1124_8836), (Current));
-		ti4_2 = (nstcall = 1, F780_5435(RTCW(tr1), loc1));
+		ti4_2 = (nstcall = 1, F779_5435(RTCW(tr1), loc1));
 		(nstcall = 0, F1126_8990(Current, ti4_2));
 		RTHOOK(5);
 		loc1++;

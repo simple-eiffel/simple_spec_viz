@@ -1,5 +1,5 @@
 /*
- * Class SIMPLE_JSON_PATCH_RESULT
+ * Class SIMPLE_JSON_PATCH
  */
 
 #include "eif_macros.h"
@@ -22,11 +22,20 @@ static const EIF_TYPE_INDEX egt_9_18 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_18 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_18 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_18 [] = {0xFF01,17,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_18 [] = {0xFF01,361,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_18 [] = {0xFF01,445,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_19_18 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_20_18 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_21_18 [] = {0xFF01,129,0xFFFF};
+static const EIF_TYPE_INDEX egt_22_18 [] = {0xFF01,361,0xFFFF};
 
 
 static const struct desc_info desc_18[] = {
-	{EIF_GENERIC(NULL), 412, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 410, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_18), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_18), 1, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 2, 0xFFFFFFFF},
@@ -58,20 +67,26 @@ static const struct desc_info desc_18[] = {
 	{EIF_NON_GENERIC(0x23 /*17*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_18), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 413, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 414, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 406, 16},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 407, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0xFF /*127*/), 408, 0},
-	{EIF_GENERIC(egt_13_18), 409, 8},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 410, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x02B7 /*347*/), 411, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 411, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 412, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_18), 413, 0},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 414, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 415, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_14_18), 416, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_15_18), 402, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_16_18), 403, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_17_18), 404, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_18), 405, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_19_18), 406, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_20_18), 407, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_21_18), 408, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_22_18), 409, 0xFFFFFFFF},
 };
 void Init18(void)
 {
 	IDSC(desc_18, 0, 17);
 	IDSC(desc_18 + 1, 4, 17);
-	IDSC(desc_18 + 32, 344, 17);
+	IDSC(desc_18 + 32, 338, 17);
 }
 
 

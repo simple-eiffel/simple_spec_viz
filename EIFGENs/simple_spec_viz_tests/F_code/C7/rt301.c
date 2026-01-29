@@ -80,7 +80,7 @@ body:;
 	*(EIF_BOOLEAN *)(Current+ _CHROFF_8_1_) = (EIF_BOOLEAN) tb1;
 	RTHOOK(9);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -2803,7 +2803,7 @@ body:;
 		if (tb1) {
 			RTHOOK(6);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1005,1005,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1002,1002,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2844,7 +2844,7 @@ body:;
 	RTHOOK(12);
 	loc5 = loc2;
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -2857,7 +2857,7 @@ body:;
 	} else {
 		RTHOOK(14);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1005,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,2,996,1002,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			

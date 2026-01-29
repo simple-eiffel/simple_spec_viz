@@ -70,11 +70,11 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C18_c.obj 
 
-OLDOBJECTS =  sp879.o ar852.o ar888.o na878.o sp880.o re883.o ar877.o li861.o \
-	li897.o ar853.o ar889.o re874.o to876.o dy871.o li873.o ge881.o \
-	in851.o in887.o re850.o re886.o tr863.o tr899.o se855.o se891.o \
-	ar854.o ar890.o dy866.o bo875.o ta870.o fi859.o fi895.o ch868.o \
-	ty882.o ac856.o ac892.o co858.o co894.o bi865.o dy867.o co864.o 
+OLDOBJECTS =  sp872.o ar881.o na871.o sp873.o re876.o ar870.o li885.o ar882.o \
+	re867.o to869.o dy864.o li866.o ge874.o in880.o re877.o tr857.o \
+	tr893.o se884.o ar883.o dy859.o dy895.o bo868.o ta863.o ta899.o \
+	fi852.o fi888.o ch861.o ch897.o ty875.o ac854.o ac890.o co851.o \
+	co887.o bi858.o bi894.o dy860.o dy896.o co856.o co892.o 
 
 all: Cobj18.o
 

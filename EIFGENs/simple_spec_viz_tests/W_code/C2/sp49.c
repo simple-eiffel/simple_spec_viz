@@ -141,7 +141,7 @@ body:;
 	RTDBGAA(Current, dtype, 926, 0x04000000, 1); /* is_final */
 	*(EIF_BOOLEAN *)(Current + RTWA(926, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 0;
 	RTHOOK(11);
-	RTDBGAA(Current, dtype, 923, 0xF80001BE, 0); /* entry_actions */
+	RTDBGAA(Current, dtype, 923, 0xF80001BD, 0); /* entry_actions */
 	tr1 = RTLNSMART(RTWCT(923, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 5L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);
@@ -150,7 +150,7 @@ body:;
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(923, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(12);
-	RTDBGAA(Current, dtype, 924, 0xF80001BE, 0); /* exit_actions */
+	RTDBGAA(Current, dtype, 924, 0xF80001BD, 0); /* exit_actions */
 	tr1 = RTLNSMART(RTWCT(924, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 5L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);

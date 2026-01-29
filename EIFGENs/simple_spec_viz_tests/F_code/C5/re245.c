@@ -65,7 +65,7 @@ body:;
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
 	RTHOOK(5);
 	tp1 = (nstcall = 0, F280_3766(Current));
-	ti4_1 = (nstcall = 0, F76_1104(Current, tp1, ((EIF_INTEGER_32) 0L)));
+	ti4_1 = (nstcall = 0, F78_1175(Current, tp1, ((EIF_INTEGER_32) 0L)));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(6);
@@ -153,7 +153,7 @@ body:;
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
 	RTHOOK(8);
 	tp1 = (nstcall = 0, F280_3766(Current));
-	ti4_1 = (nstcall = 0, F76_1104(Current, tp1, ((EIF_INTEGER_32) 0L)));
+	ti4_1 = (nstcall = 0, F78_1175(Current, tp1, ((EIF_INTEGER_32) 0L)));
 	*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(9);
@@ -229,7 +229,7 @@ body:;
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) (EIF_INTEGER_32) (ti4_1 + ti4_2);
 		RTHOOK(6);
 		tp1 = (nstcall = 0, F280_3766(Current));
-		ti4_1 = (nstcall = 0, F76_1104(Current, tp1, ((EIF_INTEGER_32) 0L)));
+		ti4_1 = (nstcall = 0, F78_1175(Current, tp1, ((EIF_INTEGER_32) 0L)));
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	} else {
 		RTHOOK(7);
@@ -242,7 +242,7 @@ body:;
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_1_) = (EIF_INTEGER_32) ((EIF_INTEGER_32) 0L);
 		RTHOOK(10);
 		tp1 = (nstcall = 0, F280_3766(Current));
-		ti4_1 = (nstcall = 0, F76_1104(Current, tp1, ((EIF_INTEGER_32) 0L)));
+		ti4_1 = (nstcall = 0, F78_1175(Current, tp1, ((EIF_INTEGER_32) 0L)));
 		*(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_0_) = (EIF_INTEGER_32) ti4_1;
 	}
 	RTVI(Current, RTAL);
@@ -283,7 +283,7 @@ EIF_REFERENCE F280_3762 (EIF_REFERENCE Current)
 	tr1 = *(EIF_REFERENCE *)(Current);
 	tp1 = (nstcall = 1, (FUNCTION_CAST(EIF_POINTER, (EIF_REFERENCE)) R3308[Dtype(RTCW(tr1))-279])(tr1));
 	ti4_2 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_2_);
-	Result = (nstcall = 0, F76_1128(Current, ti4_1, tp1, ti4_2));
+	Result = (nstcall = 0, F78_1199(Current, ti4_1, tp1, ti4_2));
 	RTHOOK(2);
 	if ((EIF_BOOLEAN)(Result == NULL)) {
 		RTHOOK(3);
@@ -448,7 +448,7 @@ EIF_POINTER F280_3766 (EIF_REFERENCE Current)
 	tr1 = *(EIF_REFERENCE *)(Current);
 	tp1 = (nstcall = 1, (FUNCTION_CAST(EIF_POINTER, (EIF_REFERENCE)) R3308[Dtype(RTCW(tr1))-279])(tr1));
 	ti4_2 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_1_0_0_2_);
-	Result = (nstcall = 0, F76_1129(Current, ti4_1, tp1, ti4_2));
+	Result = (nstcall = 0, F78_1200(Current, ti4_1, tp1, ti4_2));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

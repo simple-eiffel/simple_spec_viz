@@ -522,7 +522,7 @@ void F1099_8274 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -570,7 +570,7 @@ void F1099_8275 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -618,7 +618,7 @@ void F1099_8276 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -666,7 +666,7 @@ void F1099_8277 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -712,7 +712,7 @@ void F1099_8278 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -772,7 +772,7 @@ void F1099_8279 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -844,7 +844,7 @@ void F1099_8280 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -934,7 +934,7 @@ void F1099_8281 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -987,7 +987,7 @@ void F1099_8282 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -1047,7 +1047,7 @@ void F1099_8283 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -1303,7 +1303,7 @@ void F1099_8287 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -1351,7 +1351,7 @@ void F1099_8288 (EIF_REFERENCE Current)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_readable", EX_PRE);
-		RTTE((nstcall = 0, F717_4999(Current)), label_1);
+		RTTE((nstcall = 0, F718_4999(Current)), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -2154,7 +2154,7 @@ body:;
 	RTHOOK(7);
 	tp1 = *(EIF_POINTER *)(Current+ _PTROFF_5_7_2_4_1_0_);
 	tr1 = *(EIF_REFERENCE *)(RTCW(arg1));
-	tp2 = (nstcall = 1, F903_6142(RTCW(tr1), (EIF_INTEGER_32) (arg2 - ((EIF_INTEGER_32) 1L))));
+	tp2 = (nstcall = 1, F904_6142(RTCW(tr1), (EIF_INTEGER_32) (arg2 - ((EIF_INTEGER_32) 1L))));
 	Result = (nstcall = 0, F743_5187(Current, tp1, tp2, arg3));
 	RTHOOK(8);
 	(nstcall = 1, F1078_7699(RTCW(arg1)));

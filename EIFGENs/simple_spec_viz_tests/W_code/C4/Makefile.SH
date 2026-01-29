@@ -56,10 +56,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 OBJECTS = big_file_C4_c.obj 
 
 OLDOBJECTS =  ob127.o ob127d.o se122.o se122d.o se123.o se123d.o se124.o se124d.o \
-	rt131.o rt131d.o si130.o si130d.o si128.o si128d.o si129.o si129d.o \
-	da120.o da120d.o da119.o da119d.o ob125.o ob125d.o ob126.o ob126d.o \
-	se121.o se121d.o da117.o da117d.o da118.o da118d.o ti116.o ti116d.o \
-	ti115.o ti115d.o ti114.o ti114d.o ti113.o ti113d.o co112.o co112d.o \
+	rt131.o rt131d.o si130.o si130d.o si129.o si129d.o si128.o si128d.o \
+	da119.o da119d.o da118.o da118d.o ob125.o ob125d.o ob126.o ob126d.o \
+	se121.o se121d.o ti114.o ti114d.o da116.o da116d.o da117.o da117d.o \
+	ti115.o ti115d.o ti113.o ti113d.o co120.o co120d.o ti112.o ti112d.o \
 	me111.o me111d.o ma102.o ma102d.o ma110.o ma110d.o kl103.o kl103d.o \
 	kl109.o kl109d.o kl108.o kl108d.o kl101.o kl101d.o ma106.o ma106d.o \
 	kl105.o kl105d.o kl104.o kl104d.o uc100.o uc100d.o uc99.o uc99d.o \

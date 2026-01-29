@@ -67,7 +67,7 @@ void Init38(void)
 {
 	IDSC(desc_38, 0, 37);
 	IDSC(desc_38 + 1, 4, 37);
-	IDSC(desc_38 + 32, 169, 37);
+	IDSC(desc_38 + 32, 170, 37);
 }
 
 

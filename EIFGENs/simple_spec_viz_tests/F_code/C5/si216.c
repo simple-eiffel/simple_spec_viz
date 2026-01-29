@@ -114,7 +114,7 @@ void F244_2975 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("indent_valid", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -186,7 +186,7 @@ void F244_2976 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("indent_valid", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1059,9 +1059,9 @@ EIF_REFERENCE F244_2988 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 					(nstcall = 1, F1085_8012(RTCW(Result), tr1));
 					RTHOOK(15);
 					ti4_2 = (EIF_INTEGER_32) (loc2);
-					tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+					tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 					*(EIF_INTEGER_32 *)tr1 = ti4_2;
-					tr2 = (nstcall = 1, F1004_6747(RTCW(tr1)));
+					tr2 = (nstcall = 1, F1001_6652(RTCW(tr1)));
 					loc3 = (EIF_REFERENCE) tr2;
 					for (;;) {
 						RTHOOK(16);
@@ -1287,7 +1287,7 @@ void F244_2994 (EIF_REFERENCE Current)
 		RTHOOK(3);
 		RTCT("output_empty", EX_POST);
 		tr1 = *(EIF_REFERENCE *)(Current);
-		tb1 = (nstcall = 1, F667_4976(RTCW(tr1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
 		if (tb1) {
 			RTCK;
 		} else {
@@ -1341,7 +1341,7 @@ void F244_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("indent_string_not_empty", Current);
 	tr1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
-	tb1 = (nstcall = 1, F667_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTCK;
 	} else {

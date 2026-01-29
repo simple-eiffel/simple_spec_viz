@@ -71,10 +71,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 OBJECTS = big_file_C8_c.obj 
 
 OLDOBJECTS =  po352.o po351.o st358.o st362.o im357.o im361.o re360.o re353.o \
-	re356.o po350.o st355.o rt387.o im354.o da394.o eq396.o co372.o \
-	da391.o ti389.o da380.o da392.o en381.o un383.o en382.o js368.o \
-	js363.o js367.o si371.o js366.o js369.o js370.o js365.o js364.o \
-	js386.o da390.o ti388.o da393.o fi379.o me385.o gc384.o ma398.o \
+	re356.o po350.o st355.o rt387.o im354.o eq396.o da394.o co372.o \
+	da380.o da391.o ti389.o da392.o un383.o en381.o en382.o js368.o \
+	js363.o si371.o js367.o js366.o js369.o js370.o js365.o js364.o \
+	js386.o da393.o fi379.o da390.o ti388.o me385.o gc384.o ma398.o \
 	ma399.o ma397.o kl378.o uc395.o uc376.o uc375.o uc374.o uc373.o 
 
 all: Cobj8.o

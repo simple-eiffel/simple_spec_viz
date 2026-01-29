@@ -8,7 +8,7 @@
 
 #include "mi298.h"
 #include <eif_retrieve.h>
-#include "../C11/ha502.h"
+#include "../C10/ha495.h"
 #include "../C6/mi298.h"
 
 #ifdef __cplusplus

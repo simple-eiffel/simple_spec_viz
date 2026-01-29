@@ -761,14 +761,14 @@ void F151_2052 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	(nstcall = -1, F867_5785(RTCW(loc8), ((EIF_INTEGER_32) 200L)));
 	RTHOOK(5);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {888,1005,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {889,1002,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
 		loc9 = RTLNSMART(typres0.id);
 	}
-	(nstcall = -1, F889_5902(RTCW(loc9), ((EIF_INTEGER_32) 200L)));
+	(nstcall = -1, F890_5902(RTCW(loc9), ((EIF_INTEGER_32) 200L)));
 	RTHOOK(6);
 	loc7 = (nstcall = 0, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R1996[dtype-151])(Current));
 	RTHOOK(7);
@@ -836,7 +836,7 @@ void F151_2052 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTHOOK(27);
 		ti4_1 = *(EIF_INTEGER_32 *)(RTCW(loc14)+ _LNGOFF_1_0_0_0_);
 		ti4_2 = *(EIF_INTEGER_32 *)(RTCW(loc14)+ _LNGOFF_1_0_0_0_);
-		(nstcall = 1, F889_5948(RTCW(loc9), ti4_1, ti4_2));
+		(nstcall = 1, F890_5948(RTCW(loc9), ti4_1, ti4_2));
 		RTHOOK(28);
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN)(loc10 != NULL) || (EIF_BOOLEAN)(loc11 != NULL))) {
 			RTHOOK(29);

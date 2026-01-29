@@ -1,5 +1,5 @@
 /*
- * Class ITERATION_CURSOR [CHARACTER_8]
+ * Class ITERATION_CURSOR [G#1]
  */
 
 #include "eif_macros.h"
@@ -10,19 +10,19 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_406 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_406 [] = {0xFF01,402,405,344,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_406 [] = {0xFF01,405,344,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_406 [] = {0xFF01,402,405,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_406 [] = {0xFF01,405,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_406 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_406 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_406 [] = {0xFF01,405,344,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_406 [] = {0xFF01,405,344,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_406 [] = {0xFF01,405,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_406 [] = {0xFF01,405,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_406 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_8_406 [] = {0xFF01,56,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_406 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_406 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_406 [] = {0xFF01,55,0xFFFF};
-static const EIF_TYPE_INDEX egt_12_406 [] = {405,344,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_406 [] = {0xFF01,405,344,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_406 [] = {405,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_406 [] = {0xFF01,405,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_406 [] = {0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_406 [] = {0xFFF8,1,0xFFFF};
 
@@ -69,7 +69,7 @@ void Init406(void)
 {
 	IDSC(desc_406, 0, 405);
 	IDSC(desc_406 + 1, 4, 405);
-	IDSC(desc_406 + 32, 72, 405);
+	IDSC(desc_406 + 32, 71, 405);
 }
 
 

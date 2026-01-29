@@ -71,10 +71,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 OBJECTS = big_file_C3_c.obj 
 
 OLDOBJECTS =  rt133.o it139.o rt132.o in149.o in147.o st137.o ob127.o se122.o \
-	se123.o se124.o nu141.o st146.o st143.o re138.o he145.o st135.o \
-	st144.o st136.o rt134.o rt131.o si130.o si128.o si129.o da120.o \
-	da119.o ob125.o ob126.o se121.o in142.o da117.o da118.o ti116.o \
-	ti114.o ti113.o co112.o me111.o ma102.o ma110.o kl103.o kl109.o \
+	se123.o se124.o nu141.o st146.o st143.o re138.o st145.o st135.o \
+	he144.o st136.o rt134.o rt131.o si130.o si129.o si128.o da119.o \
+	da118.o ob125.o ob126.o se121.o in142.o da116.o da117.o ti115.o \
+	ti113.o co120.o ti112.o me111.o ma102.o ma110.o kl103.o kl109.o \
 	kl108.o ma106.o kl105.o kl104.o uc100.o uc107.o 
 
 all: Cobj3.o

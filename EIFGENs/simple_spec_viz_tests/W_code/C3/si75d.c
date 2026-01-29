@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_75 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_75 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_75 [] = {0xFF01,74,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_75 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_75 [] = {0xFF01,1025,341,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_75 [] = {0xFF01,621,341,0xFFFF};
 
 
 static const struct desc_info desc_75[] = {
@@ -70,7 +70,7 @@ void Init75(void)
 {
 	IDSC(desc_75, 0, 74);
 	IDSC(desc_75 + 1, 4, 74);
-	IDSC(desc_75 + 32, 388, 74);
+	IDSC(desc_75 + 32, 391, 74);
 }
 
 

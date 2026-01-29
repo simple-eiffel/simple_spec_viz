@@ -2049,10 +2049,10 @@ body:;
 		RTCT("valid_utf8", EX_POST);
 		tb1 = '\01';
 		ti4_1 = (nstcall = 1, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R6146[Dtype(RTCW(arg1))-1079])(arg1));
-		tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)tr1 = ((EIF_INTEGER_32) 1L);
-		tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), ti4_1));
-		tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+		tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), ti4_1));
+		tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 		loc1 = (EIF_REFERENCE) tr1;
 		tb2 = EIF_TRUE;
 		for (;;) {
@@ -2175,10 +2175,10 @@ body:;
 		RTHOOK(9);
 		RTCT("valid_utf8", EX_POST);
 		tb1 = '\01';
-		tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_INTEGER_32 *)tr1 = arg2;
-		tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), arg3));
-		tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+		tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), arg3));
+		tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 		loc1 = (EIF_REFERENCE) tr1;
 		tb2 = EIF_TRUE;
 		for (;;) {
@@ -2408,10 +2408,10 @@ body:;
 		RTCO(tr1);
 		if (tb1) {
 			ti4_2 = (nstcall = 1, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R6146[Dtype(RTCW(arg2))-1079])(arg2));
-			tr3 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr3 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr3 = ((EIF_INTEGER_32) 1L);
-			tr4 = (nstcall = 1, F1004_6720(RTCW(tr3), ti4_2));
-			tr3 = (nstcall = 1, F750_5385(RTCW(tr4)));
+			tr4 = (nstcall = 1, F1001_6625(RTCW(tr3), ti4_2));
+			tr3 = (nstcall = 1, F749_5385(RTCW(tr4)));
 			loc1 = (EIF_REFERENCE) tr3;
 			tb4 = EIF_TRUE;
 			for (;;) {
@@ -2567,10 +2567,10 @@ body:;
 		tb3 = '\0';
 		RTCO(tr1);
 		if (tb1) {
-			tr3 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr3 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr3 = arg3;
-			tr4 = (nstcall = 1, F1004_6720(RTCW(tr3), arg4));
-			tr3 = (nstcall = 1, F750_5385(RTCW(tr4)));
+			tr4 = (nstcall = 1, F1001_6625(RTCW(tr3), arg4));
+			tr3 = (nstcall = 1, F749_5385(RTCW(tr4)));
 			loc3 = (EIF_REFERENCE) tr3;
 			tb4 = EIF_TRUE;
 			for (;;) {

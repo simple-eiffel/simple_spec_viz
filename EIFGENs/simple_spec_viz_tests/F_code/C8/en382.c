@@ -310,8 +310,8 @@ body:;
 					tr1 = (nstcall = 1, F1076_7654(RTCW(arg2)));
 				} else {
 					RTHOOK(56);
-					tr2 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-					tr1 = (nstcall = 0, F78_1200(RTCW(tr2), arg2));
+					tr2 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+					tr1 = (nstcall = 0, F77_1089(RTCW(tr2), arg2));
 				}
 				loc3 = (nstcall = 0, F1109_8447(Current, loc1, tr1));
 				RTHOOK(57);

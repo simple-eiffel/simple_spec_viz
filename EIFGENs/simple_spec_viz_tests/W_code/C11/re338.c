@@ -847,12 +847,12 @@ label_1:
 body:;
 	RTHOOK(2);
 	loc1 = RTCCL(arg1);
-	loc1 = RTRV(eif_new_type(316, 0x01),loc1);
+	loc1 = RTRV(eif_new_type(313, 0x01),loc1);
 	if (EIF_TEST(loc1)) {
 		RTHOOK(3);
 		RTDBGAL(0, 0x04000000, 1,0); /* Result */
 		tb1 = '\01';
-		ti4_1 = *(EIF_INTEGER_32 *)(loc1 + RTVA(5557, "item", loc1));
+		ti4_1 = *(EIF_INTEGER_32 *)(loc1 + RTVA(5504, "item", loc1));
 		if (!(EIF_BOOLEAN) (ti4_1 >= ((EIF_INTEGER_32) 0L))) {
 			tr8_1 = *(EIF_REAL_64 *)(Current + RTWA(5916, dtype));
 			tb1 = (EIF_BOOLEAN) !eif_is_equal_real_64 (tr8_1, (EIF_REAL_64) 0.0);
@@ -895,7 +895,7 @@ body:;
 		tb1 = '\01';
 		tb2 = '\01';
 		tb3 = '\0';
-		ur1 = RTLN(eif_new_type(317, 0x00).id);
+		ur1 = RTLN(eif_new_type(314, 0x00).id);
 		*(EIF_INTEGER_32 *)ur1 = ((EIF_INTEGER_32) 0L);
 		tb4 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(9, "conforms_to", arg1))(arg1, ur1x)).it_b);
 		if (tb4) {

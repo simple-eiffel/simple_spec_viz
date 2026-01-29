@@ -1439,12 +1439,12 @@ body:;
 		RTCT("iso_c99", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN)(Result != ((EIF_INTEGER_32) 0L))) {
-			tr1 = RTLN(eif_new_type(317, 0x00).id);
+			tr1 = RTLN(eif_new_type(314, 0x00).id);
 			*(EIF_INTEGER_32 *)tr1 = Result;
-			ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5558, "sign", tr1))(tr1)).it_i4);
-			tr1 = RTLN(eif_new_type(317, 0x00).id);
+			ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5505, "sign", tr1))(tr1)).it_i4);
+			tr1 = RTLN(eif_new_type(314, 0x00).id);
 			*(EIF_INTEGER_32 *)tr1 = arg1;
-			ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5558, "sign", tr1))(tr1)).it_i4);
+			ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(5505, "sign", tr1))(tr1)).it_i4);
 			tb1 = (EIF_BOOLEAN)(ti4_1 == ti4_2);
 		}
 		if (tb1) {

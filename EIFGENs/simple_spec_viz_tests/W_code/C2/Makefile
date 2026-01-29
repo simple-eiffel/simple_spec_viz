@@ -41,10 +41,10 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C2_c.obj 
 
-OLDOBJECTS =  te62.obj te62d.obj eq61.obj eq61d.obj ut59.obj ut59d.obj ut60.obj ut60d.obj is58.obj \
-	is58d.obj st57.obj st57d.obj op56.obj op56d.obj rt55.obj rt55d.obj sy54.obj sy54d.obj \
+OLDOBJECTS =  te62.obj te62d.obj eq61.obj eq61d.obj is60.obj is60d.obj ut58.obj ut58d.obj ut59.obj \
+	ut59d.obj st57.obj st57d.obj op56.obj op56d.obj rt55.obj rt55d.obj sy54.obj sy54d.obj \
 	tr53.obj tr53d.obj si52.obj si52d.obj sp51.obj sp51d.obj sp50.obj sp50d.obj sp49.obj \
-	sp49d.obj sp48.obj sp48d.obj tr47.obj tr47d.obj st46.obj st46d.obj sp45.obj sp45d.obj \
+	sp49d.obj sp48.obj sp48d.obj sp47.obj sp47d.obj tr46.obj tr46d.obj st45.obj st45d.obj \
 	sp44.obj sp44d.obj sp43.obj sp43d.obj sv42.obj sv42d.obj sc41.obj sc41d.obj sp40.obj \
 	sp40d.obj eq39.obj eq39d.obj eq38.obj eq38d.obj se37.obj se37d.obj se36.obj se36d.obj \
 	en35.obj en35d.obj sy34.obj sy34d.obj co33.obj co33d.obj ki65.obj ki65d.obj uc64.obj \

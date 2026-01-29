@@ -55,7 +55,7 @@ void F43_799 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, EIF
 		RTCK;
 		RTHOOK(2);
 		RTCT("id_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(3);
@@ -337,7 +337,7 @@ void F43_1 (EIF_REFERENCE Current, int where)
 	}
 	RTIT("id_not_empty", Current);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTCK;
 	} else {

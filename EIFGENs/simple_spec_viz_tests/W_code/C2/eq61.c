@@ -660,9 +660,9 @@ EIF_TYPED_VALUE F61_1266 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000456, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000341, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1110,0xFF01,360,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,833,0xFF01,360,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

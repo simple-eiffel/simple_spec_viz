@@ -1,5 +1,5 @@
 /*
- * Code for class ITERATION_CURSOR [CHARACTER_8]
+ * Code for class ITERATION_CURSOR [G#1]
  */
 
 #include "eif_eiffel.h"

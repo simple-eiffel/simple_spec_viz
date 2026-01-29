@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C26_c.obj 
 
-OLDOBJECTS =  sp843.o sp843d.o ar852.o ar852d.o ty833.o ty833d.o ty834.o ty834d.o \
-	ty837.o ty837d.o ty838.o ty838d.o ty835.o ty835d.o ty839.o ty839d.o \
-	sp844.o sp844d.o re847.o re847d.o ar828.o ar828d.o it848.o it848d.o \
-	it849.o it849d.o ar853.o ar853d.o re825.o re825d.o to827.o to827d.o \
-	ce840.o ce840d.o ge845.o ge845d.o in851.o in851d.o re850.o re850d.o \
-	se855.o se855d.o ar854.o ar854d.o bo826.o bo826d.o ty846.o ty846d.o \
-	se842.o se842d.o ac856.o ac856d.o ba857.o ba857d.o rt832.o rt832d.o \
-	rt836.o rt836d.o rt841.o rt841d.o kl829.o kl829d.o kl830.o kl830d.o \
-	kl831.o kl831d.o 
+OLDOBJECTS =  sp836.o sp836d.o ar845.o ar845d.o ty825.o ty825d.o sp837.o sp837d.o \
+	re840.o re840d.o it843.o it843d.o li849.o li849d.o it842.o it842d.o \
+	ar846.o ar846d.o ce826.o ce826d.o dy831.o dy831d.o ha828.o ha828d.o \
+	st827.o st827d.o st834.o st834d.o ge838.o ge838d.o in844.o in844d.o \
+	re841.o re841d.o cu850.o cu850d.o tr857.o tr857d.o se848.o se848d.o \
+	ar847.o ar847d.o ta832.o ta832d.o fi852.o fi852d.o ha829.o ha829d.o \
+	ta833.o ta833d.o ty839.o ty839d.o se835.o se835d.o ac854.o ac854d.o \
+	co851.o co851d.o ba855.o ba855d.o bo853.o bo853d.o ta830.o ta830d.o \
+	co856.o co856d.o 
 
 all: Cobj26.o
 

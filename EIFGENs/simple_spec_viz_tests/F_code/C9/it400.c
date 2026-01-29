@@ -104,8 +104,8 @@ void F1127_9005 (EIF_REFERENCE Current)
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(13);
 		tr1 = RTMS_EX_H("could not open log file \'",25,1960246567);
-		tr2 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-		tr3 = (nstcall = 0, F78_1198(RTCW(tr2), loc1));
+		tr2 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+		tr3 = (nstcall = 0, F77_1087(RTCW(tr2), loc1));
 		tr2 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr1)-1079])(tr1, tr3));
 		tr1 = RTMS_EX_H("\'.",2,10030);
 		tr1 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(RTCW(tr2))-1079])(tr2, tr1));
@@ -392,13 +392,13 @@ body:;
 				loc5 = RTLNS(eif_new_type(1080, 0x01).id, 1080, _OBJSIZ_1_1_0_3_0_0_0_0_);
 				(nstcall = -1, F1079_7731(RTCW(loc5), ((EIF_INTEGER_32) 64L)));
 				RTHOOK(13);
-				loc1 = (nstcall = 0, F76_1080(Current, (EIF_BOOLEAN) 0));
+				loc1 = (nstcall = 0, F78_1151(Current, (EIF_BOOLEAN) 0));
 				RTHOOK(14);
 				tr1 = (nstcall = 1, F1_5(loc3));
 				tr2 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R5300[Dtype(RTCW(tr1))-965])(tr1));
 				(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R6293[Dtype(RTCW(loc5))-1080])(loc5, tr2));
 				RTHOOK(15);
-				tb1 = (nstcall = 0, F76_1080(Current, loc1));
+				tb1 = (nstcall = 0, F78_1151(Current, loc1));
 				loc1 = (EIF_BOOLEAN) tb1;
 			}
 			RTHOOK(16);
@@ -769,7 +769,7 @@ void F1127_9017 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("not_a_reason_is_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1106,7 +1106,7 @@ void F1127_9024 (EIF_REFERENCE Current)
 		RTHOOK(3);
 		RTCT("output_buffer_cleared", EX_POST);
 		tr1 = *(EIF_REFERENCE *)(Current + _REFACS_2_);
-		tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 		if (tb1) {
 			RTCK;
 		} else {
@@ -1115,7 +1115,7 @@ void F1127_9024 (EIF_REFERENCE Current)
 		RTHOOK(4);
 		RTCT("error_buffer_cleared", EX_POST);
 		tr1 = *(EIF_REFERENCE *)(Current + _REFACS_3_);
-		tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 		if (tb1) {
 			RTCK;
 		} else {

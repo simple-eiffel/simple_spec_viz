@@ -576,7 +576,7 @@ body:;
 	*(EIF_REFERENCE *)(Current) = (EIF_REFERENCE) tr1;
 	RTHOOK(6);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(7);
 		(nstcall = 0, F965_6324(Current));
@@ -741,7 +741,7 @@ EIF_BOOLEAN F965_6286 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -858,7 +858,7 @@ EIF_BOOLEAN F965_6289 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if (tb1) {
 		RTHOOK(2);
 		Result = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
@@ -1582,7 +1582,7 @@ label_1:
 body:;
 	RTHOOK(3);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if (tb1) {
 		RTHOOK(4);
 		Result = (EIF_REFERENCE) arg1;
@@ -2930,7 +2930,7 @@ EIF_REFERENCE F965_6316 (EIF_REFERENCE Current)
 {
 	GTCX
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE tr1 = NULL;
 	EIF_REFERENCE Result = ((EIF_REFERENCE) 0);
@@ -2941,7 +2941,7 @@ EIF_REFERENCE F965_6316 (EIF_REFERENCE Current)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(76, 0x00).id);
 	RTLI(4);
 	RTLR(0,loc1);
 	RTLR(1,Current);
@@ -2956,7 +2956,7 @@ EIF_REFERENCE F965_6316 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = (nstcall = 0, F965_6317(Current));
-	tr1 = (nstcall = 1, F78_1204(RTCW(loc1), tr1));
+	tr1 = (nstcall = 1, F77_1093(RTCW(loc1), tr1));
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2971,7 +2971,7 @@ EIF_REFERENCE F965_6317 (EIF_REFERENCE Current)
 {
 	GTCX
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_REFERENCE loc2 = (EIF_REFERENCE) 0;
 	EIF_REFERENCE tr1 = NULL;
@@ -2983,7 +2983,7 @@ EIF_REFERENCE F965_6317 (EIF_REFERENCE Current)
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(76, 0x00).id);
 	RTLI(5);
 	RTLR(0,loc2);
 	RTLR(1,Current);
@@ -3008,12 +3008,12 @@ EIF_REFERENCE F965_6317 (EIF_REFERENCE Current)
 		if ((nstcall = 0, F263_3307(Current))) {
 			RTHOOK(4);
 			Result = RTLNS(eif_new_type(1083, 0x01).id, 1083, _OBJSIZ_1_0_0_4_0_0_0_0_);
-			tr1 = (nstcall = 1, F78_1243(RTCW(loc1), *(EIF_REFERENCE *)(Current)));
+			tr1 = (nstcall = 1, F77_1132(RTCW(loc1), *(EIF_REFERENCE *)(Current)));
 			(nstcall = -1, F1083_7899(RTCW(Result), tr1));
 		} else {
 			RTHOOK(5);
 			Result = RTLNS(eif_new_type(1083, 0x01).id, 1083, _OBJSIZ_1_0_0_4_0_0_0_0_);
-			tr1 = (nstcall = 1, F78_1216(RTCW(loc1), *(EIF_REFERENCE *)(Current)));
+			tr1 = (nstcall = 1, F77_1105(RTCW(loc1), *(EIF_REFERENCE *)(Current)));
 			(nstcall = -1, F1083_7899(RTCW(Result), tr1));
 		}
 		RTHOOK(6);
@@ -3565,7 +3565,7 @@ label_1:
 body:;
 	RTHOOK(2);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(3);
 		if ((nstcall = 0, F263_3307(Current))) {
@@ -3770,7 +3770,7 @@ label_1:
 body:;
 	RTHOOK(2);
 	tr1 = *(EIF_REFERENCE *)(Current);
-	tb1 = (nstcall = 1, F666_4976(RTCW(tr1)));
+	tb1 = (nstcall = 1, F670_4976(RTCW(tr1)));
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(3);
 		tr1 = *(EIF_REFERENCE *)(Current);
@@ -3977,7 +3977,7 @@ void F965_6331 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, E
 {
 	GTCX
 	RTEX;
-	struct eif_ex_58 sloc1;
+	struct eif_ex_57 sloc1;
 	EIF_REFERENCE loc1 = (EIF_REFERENCE) sloc1.data;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3993,7 +3993,7 @@ void F965_6331 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, E
 	
 	memset (&sloc1.overhead, 0, OVERHEAD + _OBJSIZ_0_0_0_0_0_0_0_0_);
 	sloc1.overhead.ov_flags = EO_EXP | EO_STACK;
-	RT_DFS(&sloc1.overhead, eif_new_type(77, 0x00).id);
+	RT_DFS(&sloc1.overhead, eif_new_type(76, 0x00).id);
 	RTLI(4);
 	RTLR(0,arg2);
 	RTLR(1,arg1);
@@ -4029,7 +4029,7 @@ body:;
 		tb2 = '\0';
 		tb3 = '\0';
 		if ((EIF_BOOLEAN)(arg3 != (EIF_CHARACTER_8) '\000')) {
-			tb4 = (nstcall = 1, F666_4976(RTCW(arg1)));
+			tb4 = (nstcall = 1, F670_4976(RTCW(arg1)));
 			tb3 = (EIF_BOOLEAN) !tb4;
 		}
 		if (tb3) {
@@ -4062,10 +4062,10 @@ body:;
 		RTHOOK(10);
 		if ((nstcall = 0, F263_3307(Current))) {
 			RTHOOK(11);
-			(nstcall = 1, F78_1230(RTCW(loc1), arg2, arg1));
+			(nstcall = 1, F77_1119(RTCW(loc1), arg2, arg1));
 		} else {
 			RTHOOK(12);
-			(nstcall = 1, F78_1205(RTCW(loc1), arg2, arg1));
+			(nstcall = 1, F77_1094(RTCW(loc1), arg2, arg1));
 		}
 	}
 	RTVI(Current, RTAL);
@@ -4108,7 +4108,7 @@ void F965_6332 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, E
 		RTCK;
 		RTHOOK(2);
 		RTCT("other_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4121,7 +4121,7 @@ body:;
 	tb2 = '\0';
 	tb3 = '\0';
 	if ((EIF_BOOLEAN)(arg3 != (EIF_CHARACTER_8) '\000')) {
-		tb4 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb4 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		tb3 = (EIF_BOOLEAN) !tb4;
 	}
 	if (tb3) {
@@ -4184,7 +4184,7 @@ void F965_6333 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE arg2, E
 		RTCK;
 		RTHOOK(2);
 		RTCT("other_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTHOOK(3);
@@ -4204,7 +4204,7 @@ body:;
 	tb2 = '\0';
 	tb3 = '\0';
 	if ((EIF_BOOLEAN)(arg5 != (EIF_CHARACTER_8) '\000')) {
-		tb4 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb4 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		tb3 = (EIF_BOOLEAN) !tb4;
 	}
 	if (tb3) {

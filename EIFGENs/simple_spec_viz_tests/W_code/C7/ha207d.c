@@ -58,7 +58,7 @@ static const struct desc_info desc_207[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_207), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 2745, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 2746, 0},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 2746, 0},
 };
 void Init207(void)
 {

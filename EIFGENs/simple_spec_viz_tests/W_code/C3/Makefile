@@ -45,8 +45,8 @@ OLDOBJECTS =  li98.obj li98d.obj eq96.obj eq96d.obj it95.obj it95d.obj te97.obj 
 	ad94d.obj eq92.obj eq92d.obj ob91.obj ob91d.obj se89.obj se89d.obj do84.obj do84d.obj \
 	re88.obj re88d.obj eq93.obj eq93d.obj so87.obj so87d.obj se90.obj se90d.obj sy86.obj \
 	sy86d.obj sy85.obj sy85d.obj ma83.obj ma83d.obj so82.obj so82d.obj gr81.obj gr81d.obj \
-	se80.obj se80d.obj en79.obj en79d.obj co78.obj co78d.obj js77.obj js77d.obj si75.obj \
-	si75d.obj si76.obj si76d.obj js74.obj js74d.obj js73.obj js73d.obj kl72.obj kl72d.obj \
+	se80.obj se80d.obj en79.obj en79d.obj co78.obj co78d.obj js77.obj js77d.obj si76.obj \
+	si76d.obj si75.obj si75d.obj js74.obj js74d.obj js73.obj js73d.obj kl72.obj kl72d.obj \
 	kl71.obj kl71d.obj kl70.obj kl70d.obj da68.obj da68d.obj ma69.obj ma69d.obj da67.obj \
 	da67d.obj ki66.obj ki66d.obj 
 

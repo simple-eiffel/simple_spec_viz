@@ -34,89 +34,89 @@ void O1589_init () {
 	O1589[1] = 0;
 }
 
-long O1879[980];
-void O1879_init () {
-	O1879[0] = + _R64OFF_0_0_0_1_0_0_0_0_;
-	{long i; for (i = 973; i < 975; i++) O1879[i] = + _R64OFF_0_0_0_1_0_0_0_0_;}
-	O1879[977] = + _R64OFF_0_0_0_2_0_0_0_0_;
-	O1879[978] = + _R64OFF_5_1_0_8_0_0_0_0_;
-	O1879[979] = + _R64OFF_2_0_0_2_0_0_0_0_;
+long O1853[981];
+void O1853_init () {
+	O1853[0] = + _R64OFF_0_0_0_1_0_0_0_0_;
+	{long i; for (i = 974; i < 976; i++) O1853[i] = + _R64OFF_0_0_0_1_0_0_0_0_;}
+	O1853[978] = + _R64OFF_0_0_0_2_0_0_0_0_;
+	O1853[979] = + _R64OFF_5_1_0_8_0_0_0_0_;
+	O1853[980] = + _R64OFF_2_0_0_2_0_0_0_0_;
 }
 
-long O1880[980];
-void O1880_init () {
-	O1880[0] = + _LNGOFF_0_0_0_0_;
-	{long i; for (i = 973; i < 975; i++) O1880[i] = + _LNGOFF_0_0_0_0_;}
-	O1880[977] = + _LNGOFF_0_0_0_0_;
-	O1880[978] = + _LNGOFF_5_1_0_0_;
-	O1880[979] = + _LNGOFF_2_0_0_0_;
+long O1854[981];
+void O1854_init () {
+	O1854[0] = + _LNGOFF_0_0_0_0_;
+	{long i; for (i = 974; i < 976; i++) O1854[i] = + _LNGOFF_0_0_0_0_;}
+	O1854[978] = + _LNGOFF_0_0_0_0_;
+	O1854[979] = + _LNGOFF_5_1_0_0_;
+	O1854[980] = + _LNGOFF_2_0_0_0_;
 }
 
-static EIF_TYPE_INDEX Y1920_pgtype0[] = {0xFF01,141,0xFFFF};
-static EIF_TYPE_INDEX Y1920_pgtype1[] = {0xFF01,1115,0xFFFF};
-EIF_TYPE_INDEX *Y1920_gen_type [976];
-EIF_TYPE_INDEX Y1920 [976];
-void Y1920_init (void)
+static EIF_TYPE_INDEX Y1894_pgtype0[] = {0xFF01,140,0xFFFF};
+static EIF_TYPE_INDEX Y1894_pgtype1[] = {0xFF01,1115,0xFFFF};
+EIF_TYPE_INDEX *Y1894_gen_type [977];
+EIF_TYPE_INDEX Y1894 [977];
+void Y1894_init (void)
 {
-	egc_routines_types [1920] = Y1920;
-	egc_routines_gen_types [1920] = Y1920_gen_type;
-	egc_routines_offset [1920] = 145;
-	Y1920_gen_type [0] = Y1920_pgtype0;
-	Y1920_gen_type [975] = Y1920_pgtype1;
-	Y1920[0] = 141;
-	Y1920[975] = 1115;
+	egc_routines_types [1894] = Y1894;
+	egc_routines_gen_types [1894] = Y1894_gen_type;
+	egc_routines_offset [1894] = 144;
+	Y1894_gen_type [0] = Y1894_pgtype0;
+	Y1894_gen_type [976] = Y1894_pgtype1;
+	Y1894[0] = 140;
+	Y1894[976] = 1115;
 }
 
-static EIF_TYPE_INDEX Y1921_pgtype0[] = {0xFF01,884,0xFFFF};
-static EIF_TYPE_INDEX Y1921_pgtype1[] = {0xFF01,1117,0xFFFF};
-EIF_TYPE_INDEX *Y1921_gen_type [976];
-EIF_TYPE_INDEX Y1921 [976];
-void Y1921_init (void)
+static EIF_TYPE_INDEX Y1895_pgtype0[] = {0xFF01,884,0xFFFF};
+static EIF_TYPE_INDEX Y1895_pgtype1[] = {0xFF01,1117,0xFFFF};
+EIF_TYPE_INDEX *Y1895_gen_type [977];
+EIF_TYPE_INDEX Y1895 [977];
+void Y1895_init (void)
 {
-	egc_routines_types [1921] = Y1921;
-	egc_routines_gen_types [1921] = Y1921_gen_type;
-	egc_routines_offset [1921] = 145;
-	Y1921_gen_type [0] = Y1921_pgtype0;
-	Y1921_gen_type [975] = Y1921_pgtype1;
-	Y1921[0] = 884;
-	Y1921[975] = 1117;
+	egc_routines_types [1895] = Y1895;
+	egc_routines_gen_types [1895] = Y1895_gen_type;
+	egc_routines_offset [1895] = 144;
+	Y1895_gen_type [0] = Y1895_pgtype0;
+	Y1895_gen_type [976] = Y1895_pgtype1;
+	Y1895[0] = 884;
+	Y1895[976] = 1117;
 }
 
 long O2190[4];
 void O2190_init () {
-	{long i; for (i = 0; i < 2; i++) O2190[i] = + _CHROFF_2_0_;}
-	O2190[2] = + _CHROFF_2_1_;
-	O2190[3] = + _CHROFF_2_0_;
+	O2190[0] = + _CHROFF_2_0_;
+	O2190[1] = + _CHROFF_2_1_;
+	{long i; for (i = 2; i < 4; i++) O2190[i] = + _CHROFF_2_0_;}
 }
 
 long O2191[4];
 void O2191_init () {
-	{long i; for (i = 0; i < 2; i++) O2191[i] = + _CHROFF_2_1_;}
-	O2191[2] = + _CHROFF_2_2_;
-	O2191[3] = + _CHROFF_2_1_;
+	O2191[0] = + _CHROFF_2_1_;
+	O2191[1] = + _CHROFF_2_2_;
+	{long i; for (i = 2; i < 4; i++) O2191[i] = + _CHROFF_2_1_;}
 }
 
 long O2199[4];
 void O2199_init () {
 	O2199[0] = + _LNGOFF_2_2_0_0_;
-	O2199[1] = + _LNGOFF_2_6_0_0_;
-	O2199[2] = + _LNGOFF_2_4_0_0_;
+	O2199[1] = + _LNGOFF_2_4_0_0_;
+	O2199[2] = + _LNGOFF_2_6_0_0_;
 	O2199[3] = + _LNGOFF_2_3_0_0_;
 }
 
 long O2207[4];
 void O2207_init () {
 	O2207[0] = + _LNGOFF_2_2_0_1_;
-	O2207[1] = + _LNGOFF_2_6_0_1_;
-	O2207[2] = + _LNGOFF_2_4_0_1_;
+	O2207[1] = + _LNGOFF_2_4_0_1_;
+	O2207[2] = + _LNGOFF_2_6_0_1_;
 	O2207[3] = + _LNGOFF_2_3_0_1_;
 }
 
 long O2208[4];
 void O2208_init () {
 	O2208[0] = + _LNGOFF_2_2_0_2_;
-	O2208[1] = + _LNGOFF_2_6_0_2_;
-	O2208[2] = + _LNGOFF_2_4_0_2_;
+	O2208[1] = + _LNGOFF_2_4_0_2_;
+	O2208[2] = + _LNGOFF_2_6_0_2_;
 	O2208[3] = + _LNGOFF_2_3_0_2_;
 }
 
@@ -160,8 +160,8 @@ void O2477_init () {
 }
 
 static EIF_TYPE_INDEX Y3208_pgtype0[] = {0xFF01,866,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3208_pgtype1[] = {0xFF01,868,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3208_pgtype2[] = {0xFF01,868,1005,0xFFFF};
+static EIF_TYPE_INDEX Y3208_pgtype1[] = {0xFF01,867,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y3208_pgtype2[] = {0xFF01,867,1002,0xFFFF};
 EIF_TYPE_INDEX *Y3208_gen_type [3];
 EIF_TYPE_INDEX Y3208 [3];
 void Y3208_init (void)
@@ -173,7 +173,7 @@ void Y3208_init (void)
 	Y3208_gen_type [1] = Y3208_pgtype1;
 	Y3208_gen_type [2] = Y3208_pgtype2;
 	Y3208[0] = 866;
-	{long i; for (i = 1; i < 3; i++) Y3208[i] = 868;};
+	{long i; for (i = 1; i < 3; i++) Y3208[i] = 867;};
 }
 
 static EIF_TYPE_INDEX Y3460_pgtype0[] = {0xFF01,898,0xFFF8,1,0xFFFF};
@@ -191,8 +191,8 @@ static EIF_TYPE_INDEX Y3460_pgtype11[] = {0xFF01,909,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype12[] = {0xFF01,910,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype13[] = {0xFF01,911,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype14[] = {0xFF01,912,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype15[] = {0xFF01,903,1020,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype16[] = {0xFF01,903,1020,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype15[] = {0xFF01,912,1020,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype16[] = {0xFF01,912,1020,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype17[] = {0xFF01,898,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype18[] = {0xFF01,899,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype19[] = {0xFF01,900,0xFFF8,1,0xFFFF};
@@ -209,7 +209,7 @@ static EIF_TYPE_INDEX Y3460_pgtype29[] = {0xFF01,910,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype30[] = {0xFF01,911,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype31[] = {0xFF01,912,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype32[] = {0xFF01,898,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype33[] = {0xFF01,900,0xFFF8,1,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype33[] = {0xFF01,899,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype34[] = {0xFF01,901,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype35[] = {0xFF01,906,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype36[] = {0xFF01,898,0xFFF8,1,0xFFFF};
@@ -228,11 +228,11 @@ static EIF_TYPE_INDEX Y3460_pgtype48[] = {0xFF01,910,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype49[] = {0xFF01,911,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype50[] = {0xFF01,912,0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3460_pgtype51[] = {0xFF01,898,0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype52[] = {0xFF01,902,1032,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype53[] = {0xFF01,902,1032,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype54[] = {0xFF01,912,1029,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype55[] = {0xFF01,902,1032,0xFFFF};
-static EIF_TYPE_INDEX Y3460_pgtype56[] = {0xFF01,902,1032,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype52[] = {0xFF01,903,1032,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype53[] = {0xFF01,903,1032,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype54[] = {0xFF01,902,1029,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype55[] = {0xFF01,903,1032,0xFFFF};
+static EIF_TYPE_INDEX Y3460_pgtype56[] = {0xFF01,903,1032,0xFFFF};
 EIF_TYPE_INDEX *Y3460_gen_type [848];
 EIF_TYPE_INDEX Y3460 [848];
 void Y3460_init (void)
@@ -312,7 +312,7 @@ void Y3460_init (void)
 	Y3460[12] = 910;
 	Y3460[13] = 911;
 	Y3460[14] = 912;
-	{long i; for (i = 33; i < 35; i++) Y3460[i] = 903;};
+	{long i; for (i = 33; i < 35; i++) Y3460[i] = 912;};
 	Y3460[496] = 898;
 	Y3460[497] = 899;
 	Y3460[498] = 900;
@@ -329,7 +329,7 @@ void Y3460_init (void)
 	Y3460[509] = 911;
 	Y3460[510] = 912;
 	Y3460[511] = 898;
-	Y3460[512] = 900;
+	Y3460[512] = 899;
 	Y3460[513] = 901;
 	Y3460[514] = 906;
 	Y3460[585] = 898;
@@ -348,9 +348,9 @@ void Y3460_init (void)
 	Y3460[598] = 911;
 	Y3460[599] = 912;
 	Y3460[600] = 898;
-	{long i; for (i = 799; i < 801; i++) Y3460[i] = 902;};
-	Y3460[803] = 912;
-	{long i; for (i = 846; i < 848; i++) Y3460[i] = 902;};
+	{long i; for (i = 799; i < 801; i++) Y3460[i] = 903;};
+	Y3460[803] = 902;
+	{long i; for (i = 846; i < 848; i++) Y3460[i] = 903;};
 }
 
 long O3695[793];

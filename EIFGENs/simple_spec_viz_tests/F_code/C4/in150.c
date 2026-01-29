@@ -145,7 +145,7 @@ static EIF_REFERENCE F176_2363_body (EIF_REFERENCE Current)
 	tr1 = RTLNS(eif_new_type(227, 0x01).id, 227, _OBJSIZ_1_0_0_2_0_0_0_0_);
 	tr2 = RTMS_EX_H("localhost",9,185724020);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {903,1020,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {912,1020,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -157,7 +157,7 @@ static EIF_REFERENCE F176_2363_body (EIF_REFERENCE Current)
 	*((EIF_NATURAL_8 *)tr4+1) = (EIF_NATURAL_8) (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L);
 	*((EIF_NATURAL_8 *)tr4+2) = (EIF_NATURAL_8) (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L);
 	*((EIF_NATURAL_8 *)tr4+3) = (EIF_NATURAL_8) (EIF_NATURAL_8) ((EIF_INTEGER_32) 1L);
-	tr3 = (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) F904_6145)(tr4);
+	tr3 = (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) F913_6145)(tr4);
 	(nstcall = -1, F228_2690(RTCW(tr1), tr2, tr3));
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);

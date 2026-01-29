@@ -1,5 +1,5 @@
 /*
- * Class ITERABLE [BOOLEAN]
+ * Class ITERATION_CURSOR [BOOLEAN]
  */
 
 #include "eif_macros.h"
@@ -23,7 +23,7 @@ static const EIF_TYPE_INDEX egt_10_591 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_591 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_591 [] = {590,347,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_591 [] = {0xFF01,590,347,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_591 [] = {0xFF01,591,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_591 [] = {0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_591 [] = {0xFFF8,1,0xFFFF};
 
 
@@ -61,6 +61,8 @@ static const struct desc_info desc_591[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_591), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_591), 0x00, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 0x00, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_15_591), 0x00, 0xFFFFFFFF},
 };
 void Init591(void)

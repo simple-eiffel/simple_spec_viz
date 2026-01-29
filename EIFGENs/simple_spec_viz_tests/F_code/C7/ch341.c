@@ -346,9 +346,9 @@ EIF_CHARACTER_32 F1028_7414 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
 		tu8_2 = (EIF_NATURAL_64) arg1;
-		tr1 = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		tr1 = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)tr1 = (EIF_NATURAL_64) (tu8_1 + tu8_2);
-		tb1 = (nstcall = 1, F1013_7006(RTCW(tr1)));
+		tb1 = (nstcall = 1, F1010_6911(RTCW(tr1)));
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -416,9 +416,9 @@ EIF_CHARACTER_32 F1028_7415 (EIF_REFERENCE Current, EIF_NATURAL_32 arg1)
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		ti8_1 = (EIF_INTEGER_64) tu4_1;
 		ti8_2 = (EIF_INTEGER_64) arg1;
-		tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		tr1 = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)tr1 = (EIF_INTEGER_64) (ti8_1 - ti8_2);
-		tb1 = (nstcall = 1, F1001_6611(RTCW(tr1)));
+		tb1 = (nstcall = 1, F998_6516(RTCW(tr1)));
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -557,9 +557,9 @@ EIF_CHARACTER_32 F1028_7417 (EIF_REFERENCE Current)
 		tw1 = *(EIF_CHARACTER_32 *)(Current+ _LNGOFF_0_0_0_0_);
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
-		tr1 = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		tr1 = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)tr1 = ((EIF_NATURAL_64) (tu8_1 + (EIF_NATURAL_64) ((EIF_INTEGER_32) 1L)));
-		tb1 = (nstcall = 1, F1013_7006(RTCW(tr1)));
+		tb1 = (nstcall = 1, F1010_6911(RTCW(tr1)));
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -625,9 +625,9 @@ EIF_CHARACTER_32 F1028_7418 (EIF_REFERENCE Current)
 		tw1 = *(EIF_CHARACTER_32 *)(Current+ _LNGOFF_0_0_0_0_);
 		tu4_1 = (EIF_NATURAL_32) tw1;
 		tu8_1 = (EIF_NATURAL_64) tu4_1;
-		tr1 = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		tr1 = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_NATURAL_64 *)tr1 = ((EIF_NATURAL_64) (tu8_1 - (EIF_NATURAL_64) ((EIF_INTEGER_32) 1L)));
-		tb1 = (nstcall = 1, F1013_7006(RTCW(tr1)));
+		tb1 = (nstcall = 1, F1010_6911(RTCW(tr1)));
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -722,9 +722,9 @@ EIF_REFERENCE F1028_7420 (EIF_REFERENCE Current)
 	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_CHARACTER_8)) R6297[Dtype(RTCW(Result))-1080])(Result, (EIF_CHARACTER_8) '+'));
 	RTHOOK(4);
 	tu4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_NATURAL_32, (EIF_REFERENCE)) R5952[dtype-1027])(Current));
-	tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 	*(EIF_NATURAL_32 *)tr1 = tu4_1;
-	tr2 = (nstcall = 1, F1016_7135(RTCW(tr1)));
+	tr2 = (nstcall = 1, F1013_7040(RTCW(tr1)));
 	(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R6295[Dtype(RTCW(Result))-1080])(Result, tr2));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(5);

@@ -70,10 +70,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C23_c.obj 
 
-OLDOBJECTS =  ty1105.o ce1126.o ce1127.o st1111.o rt1128.o rt1129.o rt1109.o \
-	rt1100.o rt1101.o rt1102.o rt1106.o rt1107.o rt1108.o rt1112.o \
-	rt1113.o rt1114.o rt1115.o rt1116.o rt1117.o rt1118.o rt1119.o \
-	rt1120.o rt1121.o rt1122.o mm1124.o mm1125.o kl1110.o ki1123.o 
+OLDOBJECTS =  ty1105.o ce1126.o ce1127.o ha1122.o ha1123.o rt1128.o rt1129.o \
+	rt1109.o rt1100.o rt1101.o rt1102.o rt1106.o rt1107.o rt1108.o \
+	rt1111.o rt1112.o rt1113.o rt1114.o rt1115.o rt1116.o rt1117.o \
+	rt1118.o rt1119.o rt1120.o kl1110.o ki1121.o 
 
 all: Cobj23.o
 

@@ -5,8 +5,8 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F817_9287(EIF_REFERENCE);
 extern void F301_9318(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F786_9287(EIF_REFERENCE);
 
 #ifdef __cplusplus
 }

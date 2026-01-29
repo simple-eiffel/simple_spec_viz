@@ -1,5 +1,5 @@
 /*
- * Class reference TYPED_POINTER [G#1]
+ * Class TYPED_POINTER [G#1]
  */
 
 #include "eif_macros.h"
@@ -10,19 +10,19 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_426 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_426 [] = {0xFF01,426,425,0xFFF8,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_426 [] = {0xFF01,425,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_426 [] = {0xFF01,427,425,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_426 [] = {425,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_426 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_426 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_426 [] = {0xFF01,425,0xFFF8,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_426 [] = {0xFF01,425,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_426 [] = {425,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_426 [] = {425,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_426 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_8_426 [] = {0xFF01,56,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_426 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_426 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_426 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_426 [] = {425,0xFFF8,1,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_426 [] = {0xFF01,425,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_426 [] = {425,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_426 [] = {0xFF01,349,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_426 [] = {0xFFF8,1,0xFFFF};
 
@@ -63,7 +63,7 @@ static const struct desc_info desc_426[] = {
 	{EIF_GENERIC(NULL), 2228, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 2229, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 2230, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 14480, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 14480, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 14484, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 14479, 0},
 	{EIF_GENERIC(NULL), 14481, 0xFFFFFFFF},
@@ -72,7 +72,7 @@ static const struct desc_info desc_426[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 14486, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14487, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_426), 14488, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 14462, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 14462, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14463, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14464, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14465, 0xFFFFFFFF},
@@ -83,7 +83,7 @@ static const struct desc_info desc_426[] = {
 	{EIF_GENERIC(NULL), 14471, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14472, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 14473, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 14474, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 14474, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 14475, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 14476, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02BD /*350*/), 14477, 0xFFFFFFFF},

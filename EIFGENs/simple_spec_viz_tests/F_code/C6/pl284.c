@@ -1091,8 +1091,8 @@ body:;
 			} else {
 				RTHOOK(18);
 				tr2 = (nstcall = 1, F1076_7660(RTCW(arg1)));
-				tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-				loc1 = (nstcall = 0, F78_1198(RTCW(tr1), tr2));
+				tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+				loc1 = (nstcall = 0, F77_1087(RTCW(tr1), tr2));
 			}
 		}
 	}
@@ -1971,7 +1971,7 @@ body:;
 	RTHOOK(7);
 	tp1 = *(EIF_POINTER *)(Current + O4462[dtype-742]);
 	tr1 = *(EIF_REFERENCE *)(RTCW(arg1));
-	tp2 = (nstcall = 1, F903_6142(RTCW(tr1), (EIF_INTEGER_32) (arg2 - ((EIF_INTEGER_32) 1L))));
+	tp2 = (nstcall = 1, F904_6142(RTCW(tr1), (EIF_INTEGER_32) (arg2 - ((EIF_INTEGER_32) 1L))));
 	Result = (nstcall = 0, F743_5187(Current, tp1, tp2, arg3));
 	RTHOOK(8);
 	(nstcall = 1, F1078_7699(RTCW(arg1)));

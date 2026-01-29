@@ -70,12 +70,11 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C20_c.obj 
 
-OLDOBJECTS =  sp954.o sp990.o ar963.o ar999.o na953.o na989.o sp955.o sp991.o \
-	re958.o re994.o ar952.o ar988.o li972.o ar964.o re985.o to951.o \
-	to987.o dy982.o li984.o ge956.o ge992.o in962.o in998.o re961.o \
-	re997.o tr974.o se966.o ar965.o dy977.o bo950.o bo986.o ta981.o \
-	fi970.o ch979.o ty957.o ty993.o ac967.o co969.o bi976.o dy978.o \
-	co975.o 
+OLDOBJECTS =  sp980.o ar953.o ar989.o na979.o sp981.o re984.o ar978.o li957.o \
+	li993.o ar954.o ar990.o re975.o to977.o dy972.o li974.o ge982.o \
+	in952.o in988.o re985.o tr965.o se956.o se992.o ar955.o ar991.o \
+	dy967.o bo976.o ta971.o fi960.o fi996.o ch969.o ty983.o ac962.o \
+	ac998.o co959.o co995.o bi966.o dy968.o co964.o 
 
 all: Cobj20.o
 

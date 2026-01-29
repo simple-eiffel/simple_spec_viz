@@ -25,8 +25,8 @@ static const EIF_TYPE_INDEX egt_12_49 [] = {0xFF01,48,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_49 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_49 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_49 [] = {0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_49 [] = {0xFF01,446,0xFF01,357,0xFFFF};
-static const EIF_TYPE_INDEX egt_17_49 [] = {0xFF01,446,0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_49 [] = {0xFF01,445,0xFF01,357,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_49 [] = {0xFF01,445,0xFF01,357,0xFFFF};
 
 
 static const struct desc_info desc_49[] = {

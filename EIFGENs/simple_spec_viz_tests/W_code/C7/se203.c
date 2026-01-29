@@ -646,7 +646,7 @@ body:;
 			break;
 		case 3U:
 			RTHOOK(8);
-			RTDBGAL(2, 0xF80001BE, 0, 0); /* loc2 */
+			RTDBGAL(2, 0xF80001BD, 0, 0); /* loc2 */
 			tr1 = RTLNSMART(RTWCT(2526, dtype, Dftype(Current)).id);
 			ui4_1 = ((EIF_INTEGER_32) 1L);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);
@@ -660,14 +660,14 @@ body:;
 			ur1 = RTCCL(tr2);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4401, "extend", loc2))(loc2, ur1x);
 			RTHOOK(10);
-			RTDBGAA(Current, dtype, 2526, 0xF80001BE, 0); /* retrieved_errors */
+			RTDBGAA(Current, dtype, 2526, 0xF80001BD, 0); /* retrieved_errors */
 			tr1 = RTCCL(loc2);
 			RTAR(Current, tr1);
 			*(EIF_REFERENCE *)(Current + RTWA(2526, dtype)) = (EIF_REFERENCE) tr1;
 			break;
 		default:
 			RTHOOK(11);
-			RTDBGAL(2, 0xF80001BE, 0, 0); /* loc2 */
+			RTDBGAL(2, 0xF80001BD, 0, 0); /* loc2 */
 			tr1 = RTLNSMART(RTWCT(2526, dtype, Dftype(Current)).id);
 			ui4_1 = ((EIF_INTEGER_32) 1L);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);
@@ -681,7 +681,7 @@ body:;
 			ur1 = RTCCL(tr2);
 			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(4401, "extend", loc2))(loc2, ur1x);
 			RTHOOK(13);
-			RTDBGAA(Current, dtype, 2526, 0xF80001BE, 0); /* retrieved_errors */
+			RTDBGAA(Current, dtype, 2526, 0xF80001BD, 0); /* retrieved_errors */
 			tr1 = RTCCL(loc2);
 			RTAR(Current, tr1);
 			*(EIF_REFERENCE *)(Current + RTWA(2526, dtype)) = (EIF_REFERENCE) tr1;
@@ -693,7 +693,7 @@ body:;
 		ub1 = arg2;
 		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(2368, "decode", loc1))(loc1, ub1x);
 		RTHOOK(16);
-		RTDBGAA(Current, dtype, 2526, 0xF80001BE, 0); /* retrieved_errors */
+		RTDBGAA(Current, dtype, 2526, 0xF80001BD, 0); /* retrieved_errors */
 		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2365, "errors", loc1))(loc1)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		tr1 = RTCCL(tr1);
 		RTAR(Current, tr1);

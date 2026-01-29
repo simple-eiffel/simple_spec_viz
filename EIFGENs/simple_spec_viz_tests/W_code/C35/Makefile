@@ -41,9 +41,9 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C35_c.obj 
 
-OLDOBJECTS =  ce1126.obj ce1126d.obj ce1127.obj ce1127d.obj rt1128.obj rt1128d.obj rt1129.obj \
-	rt1129d.obj rt1122.obj rt1122d.obj mm1124.obj mm1124d.obj mm1125.obj mm1125d.obj \
-	ki1123.obj ki1123d.obj 
+OLDOBJECTS =  ce1126.obj ce1126d.obj ce1127.obj ce1127d.obj ha1122.obj ha1122d.obj ha1123.obj \
+	ha1123d.obj ta1125.obj ta1125d.obj rt1128.obj rt1128d.obj rt1129.obj rt1129d.obj \
+	ta1124.obj ta1124d.obj 
 
 all::  Cobj35.lib
 

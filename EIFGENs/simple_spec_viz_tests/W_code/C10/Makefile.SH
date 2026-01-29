@@ -55,12 +55,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C10_c.obj 
 
-OLDOBJECTS =  tu310.o tu310d.o na312.o na312d.o na313.o na313d.o na327.o na327d.o \
-	na328.o na328d.o in324.o in324d.o in325.o in325d.o in321.o in321d.o \
-	in322.o in322d.o in318.o in318d.o in319.o in319d.o in315.o in315d.o \
-	in316.o in316d.o pa309.o pa309d.o ab302.o ab302d.o ha306.o ha306d.o \
-	na329.o na329d.o na326.o na326d.o in323.o in323d.o in320.o in320d.o \
-	in317.o in317d.o in314.o in314d.o na311.o na311d.o de299.o de299d.o \
+OLDOBJECTS =  tu310.o tu310d.o na327.o na327d.o na328.o na328d.o na324.o na324d.o \
+	na325.o na325d.o in321.o in321d.o in322.o in322d.o in318.o in318d.o \
+	in319.o in319d.o in315.o in315d.o in316.o in316d.o in312.o in312d.o \
+	in313.o in313d.o pa309.o pa309d.o ab302.o ab302d.o ha306.o ha306d.o \
+	na329.o na329d.o na326.o na326d.o na323.o na323d.o in320.o in320d.o \
+	in317.o in317d.o in314.o in314d.o in311.o in311d.o de299.o de299d.o \
 	it308.o it308d.o mi298.o mi298d.o nu304.o nu304d.o rt301.o rt301d.o \
 	rt303.o rt303d.o se297.o se297d.o da300.o da300d.o kl305.o kl305d.o \
 	uc307.o uc307d.o 

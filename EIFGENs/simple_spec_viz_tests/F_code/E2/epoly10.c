@@ -238,8 +238,9 @@ void O4373_init () {
 	{long i; for (i = 378; i < 394; i++) O4373[i] = + _CHROFF_1_0_;}
 	O4373[397] = + _CHROFF_7_0_;
 	O4373[398] = + _CHROFF_6_0_;
-	O4373[399] = + _CHROFF_5_0_;
-	{long i; for (i = 400; i < 403; i++) O4373[i] = + _CHROFF_4_0_;}
+	O4373[399] = + _CHROFF_4_0_;
+	O4373[400] = + _CHROFF_5_0_;
+	{long i; for (i = 401; i < 403; i++) O4373[i] = + _CHROFF_4_0_;}
 	O4373[403] = + _CHROFF_9_0_;
 	O4373[404] = + _CHROFF_7_0_;
 	O4373[405] = + _CHROFF_5_0_;
@@ -299,7 +300,7 @@ void Y4872_init (void)
 	egc_routines_types [4872] = Y4872;
 	egc_routines_gen_types [4872] = Y4872_gen_type;
 	egc_routines_offset [4872] = 864;
-	Y4872[0] = 1005;
+	Y4872[0] = 1002;
 }
 
 long O4931[237];

@@ -70,12 +70,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C13_c.obj 
 
-OLDOBJECTS =  sp624.o sp645.o ar627.o na643.o sp625.o sp646.o re649.o ar620.o \
-	ar642.o li604.o ar628.o re617.o re640.o to619.o to623.o to644.o \
-	dy614.o dy637.o li616.o li639.o ge626.o ge647.o tr606.o se630.o \
-	ar629.o dy609.o dy632.o bo618.o bo641.o ta613.o ta636.o fi602.o \
-	ch611.o ch634.o ty648.o co601.o bi608.o bi631.o dy610.o dy633.o \
-	co607.o kl621.o kl622.o 
+OLDOBJECTS =  sp622.o sp641.o ar625.o ar648.o na639.o sp623.o sp642.o re645.o \
+	ar618.o ar638.o ar626.o ar649.o re615.o to617.o to621.o to640.o \
+	dy612.o dy635.o li614.o li637.o ge624.o ge643.o in647.o re646.o \
+	tr605.o se628.o ar627.o dy607.o dy630.o bo616.o ta611.o ta634.o \
+	fi600.o ch609.o ch632.o ty644.o ac602.o bi606.o bi629.o dy608.o \
+	dy631.o co604.o kl619.o kl620.o 
 
 all: Cobj13.o
 

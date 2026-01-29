@@ -66,7 +66,7 @@ EIF_REFERENCE F245_2995 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -205,7 +205,7 @@ EIF_REFERENCE F245_2996 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -344,7 +344,7 @@ EIF_REFERENCE F245_2997 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -483,7 +483,7 @@ EIF_REFERENCE F245_2998 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -622,7 +622,7 @@ EIF_REFERENCE F245_2999 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -761,7 +761,7 @@ EIF_REFERENCE F245_3000 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -900,7 +900,7 @@ EIF_REFERENCE F245_3001 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1039,7 +1039,7 @@ EIF_REFERENCE F245_3002 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1172,7 +1172,7 @@ EIF_REFERENCE F245_3003 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1211,12 +1211,12 @@ body:;
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(10);
-		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 		tr2 = RTMS_EX_H("Cannot read file: ",18,819028000);
 		tr3 = (nstcall = 1, F1076_7654(RTCW(arg1)));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr2)-1079])(tr2, tr3));
 		tr2 = (nstcall = 1, F1076_7660(RTCW(tr3)));
-		(nstcall = -1, F20_389(RTCW(tr1), tr2));
+		(nstcall = -1, F22_411(RTCW(tr1), tr2));
 		(nstcall = 0, F245_3054(Current, tr1));
 	}
 	RTVI(Current, RTAL);
@@ -1265,7 +1265,7 @@ EIF_REFERENCE F245_3004 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1304,12 +1304,12 @@ body:;
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(10);
-		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 		tr2 = RTMS_EX_H("Cannot read file: ",18,819028000);
 		tr3 = (nstcall = 1, F1076_7654(RTCW(arg1)));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr2)-1079])(tr2, tr3));
 		tr2 = (nstcall = 1, F1076_7660(RTCW(tr3)));
-		(nstcall = -1, F20_389(RTCW(tr1), tr2));
+		(nstcall = -1, F22_411(RTCW(tr1), tr2));
 		(nstcall = 0, F245_3054(Current, tr1));
 	}
 	RTVI(Current, RTAL);
@@ -1358,7 +1358,7 @@ EIF_REFERENCE F245_3005 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1397,12 +1397,12 @@ body:;
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(10);
-		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 		tr2 = RTMS_EX_H("Cannot read file: ",18,819028000);
 		tr3 = (nstcall = 1, F1076_7654(RTCW(arg1)));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr2)-1079])(tr2, tr3));
 		tr2 = (nstcall = 1, F1076_7660(RTCW(tr3)));
-		(nstcall = -1, F20_389(RTCW(tr1), tr2));
+		(nstcall = -1, F22_411(RTCW(tr1), tr2));
 		(nstcall = 0, F245_3054(Current, tr1));
 	}
 	RTVI(Current, RTAL);
@@ -1451,7 +1451,7 @@ EIF_REFERENCE F245_3006 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1490,12 +1490,12 @@ body:;
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(10);
-		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 		tr2 = RTMS_EX_H("Cannot read file: ",18,819028000);
 		tr3 = (nstcall = 1, F1076_7654(RTCW(arg1)));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr2)-1079])(tr2, tr3));
 		tr2 = (nstcall = 1, F1076_7660(RTCW(tr3)));
-		(nstcall = -1, F20_389(RTCW(tr1), tr2));
+		(nstcall = -1, F22_411(RTCW(tr1), tr2));
 		(nstcall = 0, F245_3054(Current, tr1));
 	}
 	RTVI(Current, RTAL);
@@ -1544,7 +1544,7 @@ EIF_REFERENCE F245_3007 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1583,12 +1583,12 @@ body:;
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(10);
-		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 		tr2 = RTMS_EX_H("Cannot read file: ",18,819028000);
 		tr3 = (nstcall = 1, F1076_7654(RTCW(arg1)));
 		tr3 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_REFERENCE)) R6259[Dtype(tr2)-1079])(tr2, tr3));
 		tr2 = (nstcall = 1, F1076_7660(RTCW(tr3)));
-		(nstcall = -1, F20_389(RTCW(tr1), tr2));
+		(nstcall = -1, F22_411(RTCW(tr1), tr2));
 		(nstcall = 0, F245_3054(Current, tr1));
 	}
 	RTVI(Current, RTAL);
@@ -1635,7 +1635,7 @@ EIF_BOOLEAN F245_3008 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1776,7 +1776,7 @@ static EIF_REFERENCE F245_3010_body (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,866,0xFF01,19,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,866,0xFF01,21,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -1969,7 +1969,7 @@ EIF_REFERENCE F245_3013 (EIF_REFERENCE Current)
 		tb1 = (nstcall = 1, F421_4812(loc1));
 		if (tb1) break;
 		RTHOOK(3);
-		tb2 = (nstcall = 1, F667_4976(RTCW(Result)));
+		tb2 = (nstcall = 1, F666_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb2) {
 			RTHOOK(4);
 			tr1 = (nstcall = 1, F1076_7660(RTMS_EX_H("\012",1,10)));
@@ -1977,7 +1977,7 @@ EIF_REFERENCE F245_3013 (EIF_REFERENCE Current)
 		}
 		RTHOOK(5);
 		tr1 = (nstcall = 1, F421_4803(loc1));
-		tr2 = (nstcall = 1, F20_398(RTCW(tr1)));
+		tr2 = (nstcall = 1, F22_420(RTCW(tr1)));
 		(nstcall = 1, F1085_8012(RTCW(Result), tr2));
 		RTHOOK(6);
 		(nstcall = 1, F421_4818(loc1));
@@ -2031,7 +2031,7 @@ EIF_REFERENCE F245_3014 (EIF_REFERENCE Current)
 		tb1 = (nstcall = 1, F421_4812(loc1));
 		if (tb1) break;
 		RTHOOK(3);
-		tb2 = (nstcall = 1, F667_4976(RTCW(Result)));
+		tb2 = (nstcall = 1, F666_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb2) {
 			RTHOOK(4);
 			tr1 = (nstcall = 1, F1076_7660(RTMS_EX_H("\012\012",2,2570)));
@@ -2053,7 +2053,7 @@ EIF_REFERENCE F245_3014 (EIF_REFERENCE Current)
 		(nstcall = 1, F1085_8012(RTCW(Result), tr1));
 		RTHOOK(9);
 		tr1 = (nstcall = 1, F421_4803(loc1));
-		tr2 = (nstcall = 1, F20_399(RTCW(tr1)));
+		tr2 = (nstcall = 1, F22_421(RTCW(tr1)));
 		(nstcall = 1, F1085_8012(RTCW(Result), tr2));
 		RTHOOK(10);
 		(nstcall = 1, F421_4818(loc1));
@@ -3428,7 +3428,7 @@ EIF_REFERENCE F245_3049 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -3494,7 +3494,7 @@ EIF_INTEGER_64 F245_3050 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFEREN
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -3564,7 +3564,7 @@ EIF_REFERENCE F245_3051 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -3651,7 +3651,7 @@ EIF_REFERENCE F245_3052 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -3661,7 +3661,7 @@ label_1:
 body:;
 	RTHOOK(3);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,878,1002,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,878,999,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -3835,14 +3835,14 @@ body:;
 		RTHOOK(6);
 		if ((EIF_BOOLEAN) (loc3 > ((EIF_INTEGER_32) 0L))) {
 			RTHOOK(7);
-			tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
+			tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
 			tr2 = (nstcall = 0, F245_3057(Current, loc2));
-			(nstcall = -1, F20_390(RTCW(tr1), tr2, arg2, loc3));
+			(nstcall = -1, F22_412(RTCW(tr1), tr2, arg2, loc3));
 			loc1 = (EIF_REFERENCE) tr1;
 		} else {
 			RTHOOK(8);
-			tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_1_0_0_3_0_0_0_0_);
-			(nstcall = -1, F20_389(RTCW(tr1), loc2));
+			tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_1_0_0_3_0_0_0_0_);
+			(nstcall = -1, F22_411(RTCW(tr1), loc2));
 			loc1 = (EIF_REFERENCE) tr1;
 		}
 		RTHOOK(9);
@@ -4113,11 +4113,11 @@ EIF_REFERENCE F245_3060 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(21, 0x01).id, 21, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	(nstcall = -1, F22_409(RTCW(tr1)));
+	tr1 = RTLNS(eif_new_type(22, 0x01).id, 22, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	(nstcall = -1, F23_423(RTCW(tr1)));
 	loc1 = (EIF_REFERENCE) tr1;
 	RTHOOK(2);
-	tb1 = (nstcall = 1, F22_412(RTCW(loc1), arg1));
+	tb1 = (nstcall = 1, F23_426(RTCW(loc1), arg1));
 	if (tb1) {
 		RTHOOK(3);
 		ti4_1 = *(EIF_INTEGER_32 *)(RTCW(arg1)+ _LNGOFF_1_1_0_2_);
@@ -4183,7 +4183,7 @@ EIF_REFERENCE F245_3061 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4273,7 +4273,7 @@ EIF_REFERENCE F245_3062 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4415,7 +4415,7 @@ EIF_REFERENCE F245_3063 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4507,7 +4507,7 @@ body:;
 		tw2 = (EIF_CHARACTER_32) (EIF_CHARACTER_8) '.';
 		if ((EIF_BOOLEAN)(tw1 == tw2)) {
 			RTHOOK(16);
-			tb1 = (nstcall = 1, F667_4976(RTCW(loc3)));
+			tb1 = (nstcall = 1, F666_4976(RTCW(loc3)));
 			if ((EIF_BOOLEAN) !tb1) {
 				RTHOOK(17);
 				tr1 = (nstcall = 1, F1_14(loc3));
@@ -4521,7 +4521,7 @@ body:;
 			tw2 = (EIF_CHARACTER_32) (EIF_CHARACTER_8) '[';
 			if ((EIF_BOOLEAN)(tw1 == tw2)) {
 				RTHOOK(20);
-				tb1 = (nstcall = 1, F667_4976(RTCW(loc3)));
+				tb1 = (nstcall = 1, F666_4976(RTCW(loc3)));
 				if ((EIF_BOOLEAN) !tb1) {
 					RTHOOK(21);
 					tr1 = (nstcall = 1, F1_14(loc3));
@@ -4606,7 +4606,7 @@ body:;
 					}
 				}
 				RTHOOK(31);
-				tb2 = (nstcall = 1, F667_4976(RTCW(loc3)));
+				tb2 = (nstcall = 1, F666_4976(RTCW(loc3)));
 				if ((EIF_BOOLEAN) !tb2) {
 					RTHOOK(32);
 					tr1 = RTMS_EX_H("[",1,91);
@@ -4666,7 +4666,7 @@ body:;
 		}
 	}
 	RTHOOK(36);
-	tb2 = (nstcall = 1, F667_4976(RTCW(loc3)));
+	tb2 = (nstcall = 1, F666_4976(RTCW(loc3)));
 	if ((EIF_BOOLEAN) !tb2) {
 		RTHOOK(37);
 		(nstcall = 1, F867_5825(RTCW(loc2), loc3));
@@ -4721,7 +4721,7 @@ EIF_REFERENCE F245_3064 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("segment_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4808,7 +4808,7 @@ EIF_BOOLEAN F245_3065 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("segment_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -4931,13 +4931,13 @@ EIF_REFERENCE F245_3067 (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(22, 0x01).id, 22, _OBJSIZ_1_0_0_0_0_0_0_0_);
-	(nstcall = -1, F23_422(RTCW(tr1)));
+	tr1 = RTLNS(eif_new_type(20, 0x01).id, 20, _OBJSIZ_1_0_0_0_0_0_0_0_);
+	(nstcall = -1, F21_397(RTCW(tr1)));
 	Result = (EIF_REFERENCE) tr1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("empty", EX_POST);
-		tb1 = (nstcall = 1, F23_426(RTCW(Result)));
+		tb1 = (nstcall = 1, F21_401(RTCW(Result)));
 		if (tb1) {
 			RTCK;
 		} else {
@@ -5007,7 +5007,7 @@ EIF_REFERENCE F245_3068 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("patch_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -5026,8 +5026,8 @@ body:;
 	}
 	if (tb1) {
 		RTHOOK(4);
-		tr1 = RTLNS(eif_new_type(22, 0x01).id, 22, _OBJSIZ_1_0_0_0_0_0_0_0_);
-		(nstcall = -1, F23_422(RTCW(tr1)));
+		tr1 = RTLNS(eif_new_type(20, 0x01).id, 20, _OBJSIZ_1_0_0_0_0_0_0_0_);
+		(nstcall = -1, F21_397(RTCW(tr1)));
 		Result = (EIF_REFERENCE) tr1;
 		RTHOOK(5);
 		tr1 = (nstcall = 1, F154_2078(RTCW(loc1)));
@@ -5087,8 +5087,8 @@ body:;
 						}
 						if (tb1) {
 							RTHOOK(21);
-							tr1 = RTLNS(eif_new_type(247, 0x01).id, 247, _OBJSIZ_3_0_0_0_0_0_0_0_);
-							(nstcall = -1, F248_3094(RTCW(tr1), loc5, loc7));
+							tr1 = RTLNS(eif_new_type(249, 0x01).id, 249, _OBJSIZ_3_0_0_0_0_0_0_0_);
+							(nstcall = -1, F250_3106(RTCW(tr1), loc5, loc7));
 							loc8 = (EIF_REFERENCE) tr1;
 						} else {
 							RTHOOK(22);
@@ -5109,8 +5109,8 @@ body:;
 								}
 								if (tb1) {
 									RTHOOK(25);
-									tr1 = RTLNS(eif_new_type(250, 0x01).id, 250, _OBJSIZ_3_0_0_0_0_0_0_0_);
-									(nstcall = -1, F251_3117(RTCW(tr1), loc5, loc7));
+									tr1 = RTLNS(eif_new_type(248, 0x01).id, 248, _OBJSIZ_3_0_0_0_0_0_0_0_);
+									(nstcall = -1, F249_3100(RTCW(tr1), loc5, loc7));
 									loc8 = (EIF_REFERENCE) tr1;
 								} else {
 									RTHOOK(26);
@@ -5122,8 +5122,8 @@ body:;
 									}
 									if (tb1) {
 										RTHOOK(27);
-										tr1 = RTLNS(eif_new_type(249, 0x01).id, 249, _OBJSIZ_3_0_0_0_0_0_0_0_);
-										(nstcall = -1, F250_3110(RTCW(tr1), loc5, loc7));
+										tr1 = RTLNS(eif_new_type(250, 0x01).id, 250, _OBJSIZ_3_0_0_0_0_0_0_0_);
+										(nstcall = -1, F251_3116(RTCW(tr1), loc5, loc7));
 										loc8 = (EIF_REFERENCE) tr1;
 									} else {
 										RTHOOK(28);
@@ -5131,13 +5131,13 @@ body:;
 										tr1 = (nstcall = 1, F1076_7660(RTMS_EX_H("move",4,1836021349)));
 										tb2 = (nstcall = 1, F1083_7921(RTCW(loc4), tr1));
 										if (tb2) {
-											tb2 = (nstcall = 1, F667_4976(RTCW(loc6)));
+											tb2 = (nstcall = 1, F666_4976(RTCW(loc6)));
 											tb1 = (EIF_BOOLEAN) !tb2;
 										}
 										if (tb1) {
 											RTHOOK(29);
-											tr1 = RTLNS(eif_new_type(246, 0x01).id, 246, _OBJSIZ_3_0_0_0_0_0_0_0_);
-											(nstcall = -1, F247_3088(RTCW(tr1), loc6, loc5));
+											tr1 = RTLNS(eif_new_type(247, 0x01).id, 247, _OBJSIZ_3_0_0_0_0_0_0_0_);
+											(nstcall = -1, F248_3094(RTCW(tr1), loc6, loc5));
 											loc8 = (EIF_REFERENCE) tr1;
 										} else {
 											RTHOOK(30);
@@ -5145,13 +5145,13 @@ body:;
 											tr1 = (nstcall = 1, F1076_7660(RTMS_EX_H("copy",4,1668247673)));
 											tb2 = (nstcall = 1, F1083_7921(RTCW(loc4), tr1));
 											if (tb2) {
-												tb2 = (nstcall = 1, F667_4976(RTCW(loc6)));
+												tb2 = (nstcall = 1, F666_4976(RTCW(loc6)));
 												tb1 = (EIF_BOOLEAN) !tb2;
 											}
 											if (tb1) {
 												RTHOOK(31);
-												tr1 = RTLNS(eif_new_type(248, 0x01).id, 248, _OBJSIZ_3_0_0_0_0_0_0_0_);
-												(nstcall = -1, F249_3104(RTCW(tr1), loc6, loc5));
+												tr1 = RTLNS(eif_new_type(246, 0x01).id, 246, _OBJSIZ_3_0_0_0_0_0_0_0_);
+												(nstcall = -1, F247_3088(RTCW(tr1), loc6, loc5));
 												loc8 = (EIF_REFERENCE) tr1;
 											}
 										}
@@ -5222,7 +5222,7 @@ EIF_REFERENCE F245_3069 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENC
 		RTCK;
 		RTHOOK(2);
 		RTCT("patch_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F667_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -5235,13 +5235,13 @@ body:;
 	loc1 = tr1;
 	if (EIF_TEST(loc1)) {
 		RTHOOK(4);
-		tr1 = (nstcall = 1, F23_433(loc1, arg1));
+		tr1 = (nstcall = 1, F21_408(loc1, arg1));
 		Result = (EIF_REFERENCE) tr1;
 	} else {
 		RTHOOK(5);
-		tr1 = RTLNS(eif_new_type(20, 0x01).id, 20, _OBJSIZ_2_1_0_0_0_0_0_0_);
+		tr1 = RTLNS(eif_new_type(19, 0x01).id, 19, _OBJSIZ_2_1_0_0_0_0_0_0_);
 		tr2 = (nstcall = 1, F1076_7660(RTMS_EX_H("Failed to parse patch document",30,1523889524)));
-		(nstcall = -1, F21_402(RTCW(tr1), tr2));
+		(nstcall = -1, F20_390(RTCW(tr1), tr2));
 		Result = (EIF_REFERENCE) tr1;
 	}
 	RTVI(Current, RTAL);
@@ -5464,7 +5464,7 @@ EIF_REFERENCE F245_3073 (EIF_REFERENCE Current)
 	EIF_REFERENCE r;
 	r = *(EIF_REFERENCE *)(Current + _REFACS_5_);
 	if (!r) {
-		if (RTAT(eif_new_type(19, 0))) {
+		if (RTAT(eif_new_type(21, 0))) {
 			GTCX
 			RTLD;
 			RTLI(1);
@@ -5521,7 +5521,7 @@ EIF_REFERENCE F245_3074 (EIF_REFERENCE Current)
 	EIF_REFERENCE r;
 	r = *(EIF_REFERENCE *)(Current + _REFACS_6_);
 	if (!r) {
-		if (RTAT(eif_new_type(22, 0))) {
+		if (RTAT(eif_new_type(20, 0))) {
 			GTCX
 			RTLD;
 			RTLI(1);
@@ -5578,7 +5578,7 @@ EIF_REFERENCE F245_3075 (EIF_REFERENCE Current)
 	EIF_REFERENCE r;
 	r = *(EIF_REFERENCE *)(Current + _REFACS_7_);
 	if (!r) {
-		if (RTAT(eif_new_type(20, 0))) {
+		if (RTAT(eif_new_type(19, 0))) {
 			GTCX
 			RTLD;
 			RTLI(1);

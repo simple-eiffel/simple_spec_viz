@@ -58,7 +58,7 @@ static const struct desc_info desc_55[] = {
 	{EIF_NON_GENERIC(0x02BD /*350*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_55), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 1007, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 1008, 4},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 1008, 4},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 1009, 0},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 1010, 1},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 1011, 2},
@@ -71,7 +71,7 @@ void Init55(void)
 {
 	IDSC(desc_55, 0, 54);
 	IDSC(desc_55 + 1, 4, 54);
-	IDSC(desc_55 + 32, 97, 54);
+	IDSC(desc_55 + 32, 98, 54);
 }
 
 

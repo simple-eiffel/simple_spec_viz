@@ -118,8 +118,8 @@ EIF_REFERENCE F967_6339 (EIF_REFERENCE Current)
 			tr1 = loc2;
 		} else {
 			RTHOOK(6);
-			tr2 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-			tr1 = (nstcall = 0, F78_1200(RTCW(tr2), loc1));
+			tr2 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+			tr1 = (nstcall = 0, F77_1089(RTCW(tr2), loc1));
 		}
 		(nstcall = -1, F1079_7733(RTCW(Result), tr1));
 		RTHOOK(7);
@@ -569,7 +569,7 @@ body:;
 	RTHOOK(2);
 	ti4_1 = (nstcall = 0, F967_6341(Current));
 	ti4_2 = (nstcall = 1, F967_6341(arg1));
-	Result = (nstcall = 0, F76_1085(Current, ti4_1, ti4_2));
+	Result = (nstcall = 0, F78_1156(Current, ti4_1, ti4_2));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);

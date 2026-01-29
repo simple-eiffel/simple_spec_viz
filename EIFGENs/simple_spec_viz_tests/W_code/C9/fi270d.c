@@ -76,7 +76,7 @@ void Init270(void)
 	IDSC(desc_270 + 1, 4, 269);
 	IDSC(desc_270 + 32, 270, 269);
 	IDSC(desc_270 + 34, 301, 269);
-	IDSC(desc_270 + 39, 72, 269);
+	IDSC(desc_270 + 39, 71, 269);
 }
 
 

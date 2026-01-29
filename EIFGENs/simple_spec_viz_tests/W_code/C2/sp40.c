@@ -150,7 +150,7 @@ body:;
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(803, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(12);
-	RTDBGAA(Current, dtype, 804, 0xF80001BE, 0); /* requirements */
+	RTDBGAA(Current, dtype, 804, 0xF80001BD, 0); /* requirements */
 	tr1 = RTLNSMART(RTWCT(804, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 5L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);

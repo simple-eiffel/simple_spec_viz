@@ -322,7 +322,7 @@ void F386_8538 (EIF_REFERENCE Current)
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(6813, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(8);
-	RTDBGAA(Current, dtype, 6775, 0xF8000313, 0); /* errors */
+	RTDBGAA(Current, dtype, 6775, 0xF80002FF, 0); /* errors */
 	tr1 = RTLNSMART(RTWCT(6775, dtype, Dftype(Current)).id);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(4738, Dtype(tr1)))(tr1);
 	RTNHOOK(8,1);

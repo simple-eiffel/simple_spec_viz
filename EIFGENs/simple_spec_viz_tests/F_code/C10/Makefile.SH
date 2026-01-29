@@ -70,11 +70,11 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C10_c.obj 
 
-OLDOBJECTS =  sp457.o ar455.o ty462.o ty466.o na460.o sp458.o re471.o re486.o \
-	ar456.o li468.o li481.o re453.o to461.o ce467.o dy451.o ge459.o \
-	in474.o in489.o re472.o re487.o tr480.o tr495.o bo454.o fi475.o \
-	fi490.o ty473.o ty488.o ac477.o ac492.o co470.o co485.o dy450.o \
-	in496.o co479.o co494.o kl497.o kl498.o kl499.o 
+OLDOBJECTS =  sp456.o ar454.o ty461.o ty465.o ty476.o na459.o sp457.o re485.o \
+	ar455.o li489.o re452.o re480.o to460.o ce469.o dy498.o dy450.o \
+	ha495.o ge458.o in488.o re486.o tr494.o bo453.o bo481.o ta499.o \
+	fi482.o ha496.o ty487.o ac491.o co484.o rt473.o in472.o co493.o \
+	kl477.o kl478.o kl479.o 
 
 all: Cobj10.o
 

@@ -1,5 +1,5 @@
 /*
- * Class SIMPLE_JSON_ERROR
+ * Class SIMPLE_JSON_PATCH_RESULT
  */
 
 #include "eif_macros.h"
@@ -23,9 +23,6 @@ static const EIF_TYPE_INDEX egt_10_17 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_17 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_17 [] = {0xFF01,16,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_17 [] = {0xFF01,361,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_17 [] = {0xFF01,361,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_17 [] = {0xFF01,361,0xFFFF};
-static const EIF_TYPE_INDEX egt_16_17 [] = {0xFF01,361,0xFFFF};
 
 
 static const struct desc_info desc_17[] = {
@@ -63,16 +60,12 @@ static const struct desc_info desc_17[] = {
 	{EIF_GENERIC(egt_12_17), 30, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 394, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 395, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_17), 396, 0},
-	{EIF_NON_GENERIC(0x027B /*317*/), 397, 8},
-	{EIF_NON_GENERIC(0x027B /*317*/), 398, 12},
-	{EIF_NON_GENERIC(0x027B /*317*/), 399, 16},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 396, 16},
+	{EIF_NON_GENERIC(0x02B7 /*347*/), 397, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0xFF /*127*/), 398, 0},
+	{EIF_GENERIC(egt_13_17), 399, 8},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 400, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 401, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_14_17), 402, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_15_17), 403, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_16_17), 404, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 405, 0xFFFFFFFF},
 };
 void Init17(void)
 {

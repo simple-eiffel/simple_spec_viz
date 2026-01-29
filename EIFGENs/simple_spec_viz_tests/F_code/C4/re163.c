@@ -64,7 +64,7 @@ static EIF_REFERENCE F189_2432_body (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOUDR(114)
+	RTOUDR(115)
 
 	RTLI(3);
 	RTLR(0,tr1);
@@ -96,7 +96,7 @@ static EIF_REFERENCE F189_2432_body (EIF_REFERENCE Current)
 EIF_REFERENCE F189_2432 (EIF_REFERENCE Current)
 {
 	GTCX
-	return RTOUCR(114,F189_2432_body,(Current));
+	return RTOUCR(115,F189_2432_body,(Current));
 }
 
 void EIF_Minit163 (void)

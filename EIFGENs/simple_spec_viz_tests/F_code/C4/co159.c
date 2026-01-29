@@ -325,7 +325,7 @@ EIF_REFERENCE F185_2412 (EIF_REFERENCE Current)
 	tb1 = '\01';
 	if (!(EIF_BOOLEAN)(loc1 == NULL)) {
 		tb2 = '\0';
-		tb3 = (nstcall = 1, F666_4976(RTCW(loc1)));
+		tb3 = (nstcall = 1, F670_4976(RTCW(loc1)));
 		if (tb3) {
 			tb2 = (EIF_BOOLEAN) (*(EIF_INTEGER_32 *)(Current+ _LNGOFF_6_1_0_2_) > ((EIF_INTEGER_32) 0L));
 		}
@@ -501,9 +501,9 @@ EIF_REFERENCE F185_2416 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 	*(EIF_INTEGER_32 *)tr1 = arg1;
-	tr2 = (nstcall = 1, F1004_6747(RTCW(tr1)));
+	tr2 = (nstcall = 1, F1001_6652(RTCW(tr1)));
 	Result = (EIF_REFERENCE) tr2;
 	RTHOOK(2);
 	tr1 = RTMS_EX_H("0x",2,12408);

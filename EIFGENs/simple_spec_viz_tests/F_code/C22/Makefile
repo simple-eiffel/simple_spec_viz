@@ -56,11 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C22_c.obj 
 
-OLDOBJECTS =  fu1055.obj ty1072.obj ty1078.obj ty1082.obj ty1086.obj ty1091.obj ty1098.obj \
-	dy1052.obj ta1053.obj co1056.obj li1057.obj mm1054.obj li1060.obj li1058.obj \
-	li1059.obj rt1063.obj rt1064.obj rt1065.obj rt1066.obj rt1067.obj rt1068.obj \
-	rt1069.obj rt1075.obj rt1079.obj rt1083.obj rt1087.obj rt1088.obj rt1092.obj \
-	rt1093.obj rt1094.obj rt1095.obj rt1099.obj ar1073.obj in1062.obj st1074.obj 
+OLDOBJECTS =  fu1057.obj ty1074.obj ty1080.obj ty1084.obj ty1088.obj ty1093.obj na1051.obj \
+	ar1050.obj co1058.obj li1059.obj mm1056.obj ar1052.obj li1062.obj li1060.obj \
+	li1061.obj rt1094.obj rt1065.obj rt1066.obj rt1067.obj rt1068.obj rt1069.obj \
+	rt1070.obj rt1071.obj rt1077.obj rt1081.obj rt1085.obj rt1089.obj rt1090.obj \
+	rt1095.obj rt1096.obj rt1097.obj rt1098.obj rt1099.obj ar1055.obj di1054.obj \
+	ar1075.obj in1064.obj st1076.obj 
 
 all::  Cobj22.lib
 

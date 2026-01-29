@@ -72,7 +72,7 @@ OBJECTS = big_file_C6_c.obj
 
 OLDOBJECTS =  eq268.o ne261.o eq294.o ex267.o pl284.o ar280.o mi292.o pr281.o \
 	ne260.o st259.o na264.o ma253.o na262.o ad255.o di263.o eq285.o \
-	eq295.o st279.o ar277.o fi265.o io257.o se293.o fi282.o st276.o \
+	eq295.o st279.o fi265.o ar277.o io257.o se293.o fi282.o st276.o \
 	st278.o mi298.o in286.o ra283.o so258.o di251.o ad256.o ex254.o \
 	me252.o se297.o fi270.o si275.o da296.o si269.o ma291.o kl287.o \
 	kl274.o kl290.o kl271.o ki250.o uc289.o uc288.o uc273.o ki272.o 

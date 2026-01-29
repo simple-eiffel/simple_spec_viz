@@ -1006,10 +1006,10 @@ body:;
 	tr1 = (nstcall = 1, F1079_7751(RTCW(arg1)));
 	loc1 = (EIF_REFERENCE) tr1;
 	for (;;) {
-		tb1 = (nstcall = 1, F425_4812(loc1));
+		tb1 = (nstcall = 1, F426_4812(loc1));
 		if (tb1) break;
 		RTHOOK(4);
-		tc1 = (nstcall = 1, F425_4803(loc1));
+		tc1 = (nstcall = 1, F426_4803(loc1));
 		switch (tc1) {
 			case (EIF_CHARACTER_8) '<':
 				RTHOOK(5);
@@ -1038,12 +1038,12 @@ body:;
 				break;
 			default:
 				RTHOOK(10);
-				tc1 = (nstcall = 1, F425_4803(loc1));
+				tc1 = (nstcall = 1, F426_4803(loc1));
 				(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_CHARACTER_8)) R6297[Dtype(RTCW(Result))-1080])(Result, tc1));
 				break;
 		}
 		RTHOOK(11);
-		(nstcall = 1, F425_4818(loc1));
+		(nstcall = 1, F426_4818(loc1));
 	}
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(12);

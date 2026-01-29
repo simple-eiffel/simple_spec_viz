@@ -48,8 +48,8 @@ void F55_959 (EIF_REFERENCE Current)
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current) = (EIF_REFERENCE) tr1;
 	RTHOOK(2);
-	tr1 = RTLNSMART(eif_new_type(48, 1).id);
-	(nstcall = -1, F49_886(RTCW(tr1)));
+	tr1 = RTLNSMART(eif_new_type(47, 1).id);
+	(nstcall = -1, F48_868(RTCW(tr1)));
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + _REFACS_1_) = (EIF_REFERENCE) tr1;
 	RTHOOK(3);
@@ -172,7 +172,7 @@ EIF_REFERENCE F55_965 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("path_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -246,7 +246,7 @@ EIF_REFERENCE F55_966 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("json_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -324,7 +324,7 @@ label_1:
 body:;
 	RTHOOK(2);
 	tr1 = *(EIF_REFERENCE *)(Current + _REFACS_1_);
-	tr2 = (nstcall = 1, F49_888(RTCW(tr1), arg1));
+	tr2 = (nstcall = 1, F48_870(RTCW(tr1), arg1));
 	Result = (EIF_REFERENCE) tr2;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
@@ -520,7 +520,7 @@ EIF_BOOLEAN F55_970 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_REFERENCE ar
 		RTCK;
 		RTHOOK(3);
 		RTCT("output_dir_not_empty", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg2)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg2)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -549,7 +549,7 @@ body:;
 		}
 	} else {
 		RTHOOK(10);
-		tr1 = (nstcall = 1, F47_861(RTCW(loc1)));
+		tr1 = (nstcall = 1, F46_843(RTCW(loc1)));
 		RTAR(Current, tr1);
 		*(EIF_REFERENCE *)(Current + _REFACS_4_) = (EIF_REFERENCE) tr1;
 		RTHOOK(11);
@@ -588,7 +588,7 @@ body:;
 			} else {
 				RTHOOK(18);
 				tr1 = (nstcall = 1, F421_4803(loc4));
-				tr2 = (nstcall = 1, F47_861(RTCW(tr1)));
+				tr2 = (nstcall = 1, F46_843(RTCW(tr1)));
 				RTAR(Current, tr2);
 				*(EIF_REFERENCE *)(Current + _REFACS_4_) = (EIF_REFERENCE) tr2;
 				RTHOOK(19);
@@ -617,7 +617,7 @@ body:;
 			}
 		} else {
 			RTHOOK(26);
-			tr1 = (nstcall = 1, F47_861(RTCW(loc3)));
+			tr1 = (nstcall = 1, F46_843(RTCW(loc3)));
 			RTAR(Current, tr1);
 			*(EIF_REFERENCE *)(Current + _REFACS_4_) = (EIF_REFERENCE) tr1;
 			RTHOOK(27);

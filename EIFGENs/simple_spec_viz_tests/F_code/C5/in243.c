@@ -417,8 +417,8 @@ body:;
 	RTHOOK(2);
 	tr2 = RTCCL(arg1);
 	tr2 = (nstcall = 0, F278_3662(Current, tr2));
-	tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	Result = (nstcall = 0, F78_1198(RTCW(tr1), tr2));
+	tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	Result = (nstcall = 0, F77_1087(RTCW(tr1), tr2));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -3603,7 +3603,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	loc1 = (nstcall = 0, F76_1109(Current, arg1));
+	loc1 = (nstcall = 0, F78_1180(Current, arg1));
 	RTHOOK(3);
 	tu8_1 = (EIF_NATURAL_64) ((EIF_INTEGER_32) 2147483647L);
 	tu8_2 = eif_min_uint64 (loc1,tu8_1);
@@ -3712,7 +3712,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	Result = (nstcall = 0, F76_1109(Current, arg1));
+	Result = (nstcall = 0, F78_1180(Current, arg1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);

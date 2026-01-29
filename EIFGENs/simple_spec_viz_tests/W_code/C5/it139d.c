@@ -22,9 +22,9 @@ static const EIF_TYPE_INDEX egt_9_139 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_139 [] = {0xFF01,357,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_139 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_139 [] = {0xFF01,138,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_139 [] = {454,0,0xFFFF};
-static const EIF_TYPE_INDEX egt_14_139 [] = {0xFF01,454,0,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_139 [] = {0xFF01,584,347,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_139 [] = {453,0,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_139 [] = {0xFF01,453,0,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_139 [] = {0xFF01,582,347,0xFFFF};
 
 
 static const struct desc_info desc_139[] = {
@@ -73,7 +73,7 @@ static const struct desc_info desc_139[] = {
 	{EIF_GENERIC(egt_13_139), 2239, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_139), 2240, 0},
 	{EIF_GENERIC(egt_15_139), 2241, 8},
-	{EIF_NON_GENERIC(0x027B /*317*/), 2242, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 2242, 0xFFFFFFFF},
 };
 void Init139(void)
 {

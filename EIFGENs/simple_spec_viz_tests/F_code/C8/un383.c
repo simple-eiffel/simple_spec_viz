@@ -212,8 +212,8 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	Result = (nstcall = 0, F78_1190(RTCW(tr1), arg1));
+	tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	Result = (nstcall = 0, F77_1079(RTCW(tr1), arg1));
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -272,7 +272,7 @@ EIF_BOOLEAN F1110_8465 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 				RTHOOK(6);
 				if ((EIF_BOOLEAN) ((EIF_BOOLEAN)(loc1 == loc2) || (EIF_BOOLEAN) !Result)) break;
 				RTHOOK(7);
-				tw1 = (nstcall = 1, F913_6139(RTCW(loc3), loc1));
+				tw1 = (nstcall = 1, F903_6139(RTCW(loc3), loc1));
 				ti4_1 = (EIF_INTEGER_32) (tw1);
 				Result = (EIF_BOOLEAN) (EIF_BOOLEAN) (ti4_1 <= ((EIF_INTEGER_32) 65535L));
 				RTHOOK(8);
@@ -371,8 +371,8 @@ body:;
 				tr1 = (nstcall = 1, F1076_7654(RTCW(arg2)));
 			} else {
 				RTHOOK(14);
-				tr2 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-				tr1 = (nstcall = 0, F78_1200(RTCW(tr2), arg2));
+				tr2 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+				tr1 = (nstcall = 0, F77_1089(RTCW(tr2), arg2));
 			}
 			tr1 = (nstcall = 0, F1110_8467(Current, tr1));
 			RTAR(Current, tr1);
@@ -494,8 +494,8 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	Result = (nstcall = 0, F78_1214(RTCW(tr1), arg1));
+	tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	Result = (nstcall = 0, F77_1103(RTCW(tr1), arg1));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("result_not_void", EX_POST);
@@ -548,8 +548,8 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	Result = (nstcall = 0, F78_1200(RTCW(tr1), arg1));
+	tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	Result = (nstcall = 0, F77_1089(RTCW(tr1), arg1));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("result_not_void", EX_POST);
@@ -839,8 +839,8 @@ body:;
 		in_assertion = 0;
 	}
 	RTHOOK(3);
-	tr5 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
-	(nstcall = 0, F78_1202(RTCW(tr5), arg1, arg2));
+	tr5 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	(nstcall = 0, F77_1091(RTCW(tr5), arg1, arg2));
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(4);
 		RTCT("a_string_appended", EX_POST);
@@ -1122,7 +1122,7 @@ body:;
 	RTHOOK(37);
 	if ((EIF_BOOLEAN)(arg2 != NULL)) {
 		RTHOOK(38);
-		(nstcall = 1, F1004_6703(RTCW(arg2), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 - arg1) + ((EIF_INTEGER_32) 1L))));
+		(nstcall = 1, F1001_6608(RTCW(arg2), (EIF_INTEGER_32) ((EIF_INTEGER_32) (loc1 - arg1) + ((EIF_INTEGER_32) 1L))));
 	}
 	RTVI(Current, RTAL);
 	RTRS;

@@ -221,7 +221,7 @@ void F31_593 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	RTDBGEAA(30, Current, 604);
 	RTCC(arg1, 30, l_feature_name, 1, eif_new_type(53, 0x01), 0x01);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,623,344,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,640,344,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -301,7 +301,7 @@ void F31_594 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	RTDBGEAA(30, Current, 605);
 	RTCC(arg1, 30, l_feature_name, 1, eif_new_type(53, 0x01), 0x01);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,1025,341,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,621,341,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		

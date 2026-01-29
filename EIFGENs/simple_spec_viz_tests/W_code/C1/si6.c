@@ -75,7 +75,7 @@ void F6_200 (EIF_REFERENCE Current)
 	RTDBGEAA(5, Current, 193);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 215, 0xF8000233, 0); /* positions */
+	RTDBGAA(Current, dtype, 215, 0xF800020A, 0); /* positions */
 	tr1 = RTLNSMART(RTWCT(215, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 4L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);
@@ -84,7 +84,7 @@ void F6_200 (EIF_REFERENCE Current)
 	RTAR(Current, tr1);
 	*(EIF_REFERENCE *)(Current + RTWA(215, dtype)) = (EIF_REFERENCE) tr1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 216, 0xF8000405, 0); /* characters */
+	RTDBGAA(Current, dtype, 216, 0xF8000271, 0); /* characters */
 	tr1 = RTLNSMART(RTWCT(216, dtype, Dftype(Current)).id);
 	ui4_1 = ((EIF_INTEGER_32) 4L);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(4897, Dtype(tr1)))(tr1, ui4_1x);

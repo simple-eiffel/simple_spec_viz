@@ -24,7 +24,7 @@ static const EIF_TYPE_INDEX egt_11_25 [] = {0xFF01,55,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_25 [] = {0xFF01,24,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_25 [] = {0xFF01,352,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_25 [] = {0xFF01,352,0xFFFF};
-static const EIF_TYPE_INDEX egt_15_25 [] = {0xFF01,446,0xFF01,352,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_25 [] = {0xFF01,445,0xFF01,352,0xFFFF};
 
 
 static const struct desc_info desc_25[] = {
@@ -64,7 +64,7 @@ static const struct desc_info desc_25[] = {
 	{EIF_GENERIC(NULL), 499, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 500, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 501, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 502, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 502, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_13_25), 503, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_14_25), 504, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_15_25), 505, 0},
@@ -72,7 +72,7 @@ static const struct desc_info desc_25[] = {
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 494, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x02B7 /*347*/), 495, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 496, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x027B /*317*/), 497, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0275 /*314*/), 497, 0xFFFFFFFF},
 };
 void Init25(void)
 {

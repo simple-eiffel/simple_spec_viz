@@ -41,16 +41,16 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C34_c.obj 
 
-OLDOBJECTS =  ty1089.obj ty1089d.obj ty1090.obj ty1090d.obj ty1096.obj ty1096d.obj ty1097.obj \
-	ty1097d.obj ty1103.obj ty1103d.obj ty1104.obj ty1104d.obj ty1091.obj ty1091d.obj \
-	ty1098.obj ty1098d.obj ty1105.obj ty1105d.obj st1111.obj st1111d.obj rt1092.obj \
-	rt1092d.obj rt1093.obj rt1093d.obj rt1094.obj rt1094d.obj rt1095.obj rt1095d.obj \
-	rt1099.obj rt1099d.obj rt1100.obj rt1100d.obj rt1101.obj rt1101d.obj rt1102.obj \
-	rt1102d.obj rt1106.obj rt1106d.obj rt1107.obj rt1107d.obj rt1108.obj rt1108d.obj \
-	rt1109.obj rt1109d.obj rt1112.obj rt1112d.obj rt1113.obj rt1113d.obj rt1114.obj \
+OLDOBJECTS =  ty1091.obj ty1091d.obj ty1092.obj ty1092d.obj ty1103.obj ty1103d.obj ty1104.obj \
+	ty1104d.obj ty1093.obj ty1093d.obj ty1105.obj ty1105d.obj rt1089.obj rt1089d.obj \
+	rt1090.obj rt1090d.obj rt1094.obj rt1094d.obj rt1095.obj rt1095d.obj rt1096.obj \
+	rt1096d.obj rt1097.obj rt1097d.obj rt1098.obj rt1098d.obj rt1099.obj rt1099d.obj \
+	rt1100.obj rt1100d.obj rt1101.obj rt1101d.obj rt1102.obj rt1102d.obj rt1106.obj \
+	rt1106d.obj rt1107.obj rt1107d.obj rt1108.obj rt1108d.obj rt1109.obj rt1109d.obj \
+	rt1111.obj rt1111d.obj rt1112.obj rt1112d.obj rt1113.obj rt1113d.obj rt1114.obj \
 	rt1114d.obj rt1115.obj rt1115d.obj rt1116.obj rt1116d.obj rt1117.obj rt1117d.obj \
-	rt1118.obj rt1118d.obj rt1119.obj rt1119d.obj rt1120.obj rt1120d.obj rt1121.obj \
-	rt1121d.obj kl1110.obj kl1110d.obj 
+	rt1118.obj rt1118d.obj rt1119.obj rt1119d.obj rt1120.obj rt1120d.obj kl1110.obj \
+	kl1110d.obj ki1121.obj ki1121d.obj 
 
 all::  Cobj34.lib
 

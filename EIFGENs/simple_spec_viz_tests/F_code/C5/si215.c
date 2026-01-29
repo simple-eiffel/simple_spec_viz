@@ -186,7 +186,7 @@ body:;
 	RTHOOK(3);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
 	RTHOOK(4);
-	tb1 = (nstcall = 1, F667_4976(RTCW(arg1)));
+	tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
 	if (tb1) {
 		RTHOOK(5);
 		Result = (EIF_BOOLEAN) (EIF_BOOLEAN) 0;
@@ -222,7 +222,7 @@ body:;
 				if (tb1) break;
 				RTHOOK(13);
 				tr1 = (nstcall = 1, (FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE)) R4123[Dtype(loc3)-334])(loc3));
-				tb2 = (nstcall = 1, F667_4976(RTCW(tr1)));
+				tb2 = (nstcall = 1, F666_4976(RTCW(tr1)));
 				if ((EIF_BOOLEAN) !tb2) {
 					RTHOOK(14);
 					tr1 = (nstcall = 0, F243_2967(Current));
@@ -494,10 +494,10 @@ body:;
 			RTHOOK(11);
 			RTCT("all_segments_valid", EX_LINV);
 			ti4_1 = (nstcall = 1, F867_5806(RTCW(loc1)));
-			tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr1 = ((EIF_INTEGER_32) 1L);
-			tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), ti4_1));
-			tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+			tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), ti4_1));
+			tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 			loc4 = (EIF_REFERENCE) tr1;
 			tb1 = EIF_TRUE;
 			for (;;) {
@@ -569,10 +569,10 @@ body:;
 				RTHOOK(11);
 				RTCT("all_segments_valid", EX_LINV);
 				ti4_1 = (nstcall = 1, F867_5806(RTCW(loc1)));
-				tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+				tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 				*(EIF_INTEGER_32 *)tr1 = ((EIF_INTEGER_32) 1L);
-				tr2 = (nstcall = 1, F1004_6720(RTCW(tr1), ti4_1));
-				tr1 = (nstcall = 1, F750_5385(RTCW(tr2)));
+				tr2 = (nstcall = 1, F1001_6625(RTCW(tr1), ti4_1));
+				tr1 = (nstcall = 1, F749_5385(RTCW(tr2)));
 				loc4 = (EIF_REFERENCE) tr1;
 				tb1 = EIF_TRUE;
 				for (;;) {
@@ -820,7 +820,7 @@ void F243_1 (EIF_REFERENCE Current, int where)
 		tb2 = (nstcall = 1, F421_4812(loc2));
 		if (tb2) break;
 		tr1 = (nstcall = 1, F421_4803(loc2));
-		tb3 = (nstcall = 1, F667_4976(RTCW(tr1)));
+		tb3 = (nstcall = 1, F666_4976(RTCW(tr1)));
 		tb1 = (EIF_BOOLEAN) !tb3;
 		(nstcall = 1, F421_4818(loc2));
 	}

@@ -41,13 +41,13 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C1_c.obj 
 
-OLDOBJECTS =  an1.obj an1d.obj ch32.obj ch32d.obj sy31.obj sy31d.obj gr30.obj gr30d.obj st29.obj \
-	st29d.obj si28.obj si28d.obj do27.obj do27d.obj do26.obj do26d.obj eq25.obj eq25d.obj \
+OLDOBJECTS =  an1.obj an1d.obj ch32.obj ch32d.obj sy31.obj sy31d.obj si30.obj si30d.obj st29.obj \
+	st29d.obj gr28.obj gr28d.obj do27.obj do27d.obj do26.obj do26d.obj eq25.obj eq25d.obj \
 	c_24.obj c_24d.obj se23.obj se23d.obj se22.obj se22d.obj it21.obj it21d.obj si20.obj \
-	si20d.obj si19.obj si19d.obj si18.obj si18d.obj si17.obj si17d.obj gr16.obj gr16d.obj \
-	gr15.obj gr15d.obj do14.obj do14d.obj in13.obj in13d.obj de12.obj de12d.obj bo11.obj \
-	bo11d.obj fl10.obj fl10d.obj do9.obj do9d.obj do8.obj do8d.obj pa7.obj pa7d.obj si6.obj \
-	si6d.obj ph5.obj ph5d.obj gr4.obj gr4d.obj uc3.obj uc3d.obj kl2.obj kl2d.obj 
+	si20d.obj si19.obj si19d.obj si18.obj si18d.obj si17.obj si17d.obj bo16.obj bo16d.obj \
+	fl15.obj fl15d.obj gr14.obj gr14d.obj de13.obj de13d.obj in12.obj in12d.obj do11.obj \
+	do11d.obj gr10.obj gr10d.obj do9.obj do9d.obj do8.obj do8d.obj pa7.obj pa7d.obj si6.obj \
+	si6d.obj gr5.obj gr5d.obj ph4.obj ph4d.obj uc3.obj uc3d.obj kl2.obj kl2d.obj 
 
 all::  Cobj1.lib
 

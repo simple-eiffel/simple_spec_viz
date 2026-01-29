@@ -90,9 +90,9 @@ char *(*R2877[6])();
 void R2877_init () {
 	R2877[0] = (char *(*)()) F247_3089;
 	R2877[1] = (char *(*)()) F248_3095;
-	R2877[2] = (char *(*)()) F249_3105;
-	R2877[3] = (char *(*)()) F250_3111;
-	R2877[4] = (char *(*)()) F251_3118;
+	R2877[2] = (char *(*)()) F249_3101;
+	R2877[3] = (char *(*)()) F250_3107;
+	R2877[4] = (char *(*)()) F251_3117;
 	R2877[5] = (char *(*)()) F252_3124;
 }
 
@@ -100,9 +100,9 @@ char *(*R2884[6])();
 void R2884_init () {
 	R2884[0] = (char *(*)()) F247_3090;
 	R2884[1] = (char *(*)()) F248_3096;
-	R2884[2] = (char *(*)()) F249_3106;
-	R2884[3] = (char *(*)()) F250_3112;
-	R2884[4] = (char *(*)()) F251_3119;
+	R2884[2] = (char *(*)()) F249_3102;
+	R2884[3] = (char *(*)()) F250_3108;
+	R2884[4] = (char *(*)()) F251_3118;
 	R2884[5] = (char *(*)()) F252_3125;
 }
 
@@ -110,9 +110,9 @@ char *(*R2885[6])();
 void R2885_init () {
 	R2885[0] = (char *(*)()) F247_3091;
 	R2885[1] = (char *(*)()) F248_3097;
-	R2885[2] = (char *(*)()) F249_3107;
-	R2885[3] = (char *(*)()) F250_3113;
-	R2885[4] = (char *(*)()) F251_3120;
+	R2885[2] = (char *(*)()) F249_3103;
+	R2885[3] = (char *(*)()) F250_3109;
+	R2885[4] = (char *(*)()) F251_3119;
 	R2885[5] = (char *(*)()) F252_3126;
 }
 
@@ -120,9 +120,9 @@ char *(*R2886[6])();
 void R2886_init () {
 	R2886[0] = (char *(*)()) F247_3092;
 	R2886[1] = (char *(*)()) F248_3098;
-	R2886[2] = (char *(*)()) F249_3108;
-	R2886[3] = (char *(*)()) F250_3114;
-	R2886[4] = (char *(*)()) F251_3121;
+	R2886[2] = (char *(*)()) F249_3104;
+	R2886[3] = (char *(*)()) F250_3110;
+	R2886[4] = (char *(*)()) F251_3120;
 	R2886[5] = (char *(*)()) F252_3127;
 }
 
@@ -130,16 +130,16 @@ char *(*R2887[6])();
 void R2887_init () {
 	R2887[0] = (char *(*)()) F247_3093;
 	R2887[1] = (char *(*)()) F248_3099;
-	R2887[2] = (char *(*)()) F249_3109;
-	R2887[3] = (char *(*)()) F250_3115;
-	R2887[4] = (char *(*)()) F251_3122;
+	R2887[2] = (char *(*)()) F249_3105;
+	R2887[3] = (char *(*)()) F250_3111;
+	R2887[4] = (char *(*)()) F251_3121;
 	R2887[5] = (char *(*)()) F252_3128;
 }
 
 char *(*R2903[876])();
 void R2903_init () {
 	R2903[0] = (char *(*)()) F254_3142;
-	R2903[2] = (char *(*)()) F256_3191;
+	R2903[2] = (char *(*)()) F256_3187;
 	R2903[3] = (char *(*)()) F257_3218;
 	R2903[4] = (char *(*)()) F258_3248;
 	R2903[112] = (char *(*)()) F366_4700;
@@ -178,24 +178,24 @@ void R2903_init () {
 	R2903[741] = (char *(*)()) F995_6349;
 	R2903[742] = (char *(*)()) F996_6349;
 	R2903[744] = (char *(*)()) F998_6508;
-	R2903[745] = (char *(*)()) F999_6568_2903_2;
-	R2903[746] = (char *(*)()) F1000_6568_2903_2;
-	R2903[747] = (char *(*)()) F1001_6603;
-	R2903[748] = (char *(*)()) F1002_6665_2903_2;
-	R2903[749] = (char *(*)()) F1003_6665_2903_2;
-	R2903[750] = (char *(*)()) F1004_6701;
-	R2903[751] = (char *(*)()) F1005_6764_2903_2;
-	R2903[752] = (char *(*)()) F1006_6764_2903_2;
-	R2903[753] = (char *(*)()) F1007_6800;
-	R2903[754] = (char *(*)()) F1008_6863_2903_2;
-	R2903[755] = (char *(*)()) F1009_6863_2903_2;
-	R2903[756] = (char *(*)()) F1010_6899;
+	R2903[745] = (char *(*)()) F999_6570_2903_2;
+	R2903[746] = (char *(*)()) F1000_6570_2903_2;
+	R2903[747] = (char *(*)()) F1001_6606;
+	R2903[748] = (char *(*)()) F1002_6669_2903_2;
+	R2903[749] = (char *(*)()) F1003_6669_2903_2;
+	R2903[750] = (char *(*)()) F1004_6705;
+	R2903[751] = (char *(*)()) F1005_6768_2903_2;
+	R2903[752] = (char *(*)()) F1006_6768_2903_2;
+	R2903[753] = (char *(*)()) F1007_6804;
+	R2903[754] = (char *(*)()) F1008_6867_2903_2;
+	R2903[755] = (char *(*)()) F1009_6867_2903_2;
+	R2903[756] = (char *(*)()) F1010_6903;
 	R2903[757] = (char *(*)()) F1011_6962_2903_2;
 	R2903[758] = (char *(*)()) F1012_6962_2903_2;
-	R2903[759] = (char *(*)()) F1013_6998;
-	R2903[760] = (char *(*)()) F1014_7057_2903_2;
-	R2903[761] = (char *(*)()) F1015_7057_2903_2;
-	R2903[762] = (char *(*)()) F1016_7092;
+	R2903[759] = (char *(*)()) F1013_6997;
+	R2903[760] = (char *(*)()) F1014_7056_2903_2;
+	R2903[761] = (char *(*)()) F1015_7056_2903_2;
+	R2903[762] = (char *(*)()) F1016_7091;
 	R2903[763] = (char *(*)()) F1017_7151_2903_2;
 	R2903[764] = (char *(*)()) F1018_7151_2903_2;
 	R2903[765] = (char *(*)()) F1019_7186;
@@ -217,61 +217,61 @@ void R2903_init () {
 	R2903[867] = (char *(*)()) F1121_8767;
 	{long i; for (i = 874; i < 876; i++) R2903[i] = (char *(*)()) F1128_9093;}
 }
-static EIF_BOOLEAN F999_6568_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F999_6570_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F999_6568(Current, *(EIF_NATURAL_16 *)arg1);
+	return F999_6570(Current, *(EIF_INTEGER_64 *)arg1);
 }
-static EIF_BOOLEAN F1000_6568_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1000_6570_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1000_6568(Current, *(EIF_NATURAL_16 *)arg1);
+	return F1000_6570(Current, *(EIF_INTEGER_64 *)arg1);
 }
-static EIF_BOOLEAN F1002_6665_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1002_6669_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1002_6665(Current, *(EIF_INTEGER_64 *)arg1);
+	return F1002_6669(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static EIF_BOOLEAN F1003_6665_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1003_6669_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1003_6665(Current, *(EIF_INTEGER_64 *)arg1);
+	return F1003_6669(Current, *(EIF_INTEGER_32 *)arg1);
 }
-static EIF_BOOLEAN F1005_6764_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1005_6768_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1005_6764(Current, *(EIF_INTEGER_32 *)arg1);
+	return F1005_6768(Current, *(EIF_INTEGER_16 *)arg1);
 }
-static EIF_BOOLEAN F1006_6764_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1006_6768_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1006_6764(Current, *(EIF_INTEGER_32 *)arg1);
+	return F1006_6768(Current, *(EIF_INTEGER_16 *)arg1);
 }
-static EIF_BOOLEAN F1008_6863_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1008_6867_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1008_6863(Current, *(EIF_INTEGER_16 *)arg1);
+	return F1008_6867(Current, *(EIF_INTEGER_8 *)arg1);
 }
-static EIF_BOOLEAN F1009_6863_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1009_6867_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1009_6863(Current, *(EIF_INTEGER_16 *)arg1);
+	return F1009_6867(Current, *(EIF_INTEGER_8 *)arg1);
 }
 static EIF_BOOLEAN F1011_6962_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1011_6962(Current, *(EIF_INTEGER_8 *)arg1);
+	return F1011_6962(Current, *(EIF_NATURAL_64 *)arg1);
 }
 static EIF_BOOLEAN F1012_6962_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1012_6962(Current, *(EIF_INTEGER_8 *)arg1);
+	return F1012_6962(Current, *(EIF_NATURAL_64 *)arg1);
 }
-static EIF_BOOLEAN F1014_7057_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1014_7056_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1014_7057(Current, *(EIF_NATURAL_64 *)arg1);
+	return F1014_7056(Current, *(EIF_NATURAL_32 *)arg1);
 }
-static EIF_BOOLEAN F1015_7057_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
+static EIF_BOOLEAN F1015_7056_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1015_7057(Current, *(EIF_NATURAL_64 *)arg1);
+	return F1015_7056(Current, *(EIF_NATURAL_32 *)arg1);
 }
 static EIF_BOOLEAN F1017_7151_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1017_7151(Current, *(EIF_NATURAL_32 *)arg1);
+	return F1017_7151(Current, *(EIF_NATURAL_16 *)arg1);
 }
 static EIF_BOOLEAN F1018_7151_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
-	return F1018_7151(Current, *(EIF_NATURAL_32 *)arg1);
+	return F1018_7151(Current, *(EIF_NATURAL_16 *)arg1);
 }
 static EIF_BOOLEAN F1020_7246_2903_2 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 {
@@ -368,8 +368,8 @@ void R2905_init () {
 
 char *(*R2932[3])();
 void R2932_init () {
-	R2932[0] = (char *(*)()) F256_3194;
-	R2932[1] = (char *(*)()) F257_3222;
+	R2932[0] = (char *(*)()) F256_3191;
+	R2932[1] = (char *(*)()) F257_3221;
 	R2932[2] = (char *(*)()) F258_3252;
 }
 
@@ -383,8 +383,8 @@ void R3021_init () {
 char *(*R3089[7])();
 void R3089_init () {
 	R3089[0] = (char *(*)()) F268_3407;
-	R3089[1] = (char *(*)()) F269_3433;
-	R3089[2] = (char *(*)()) F270_3452;
+	R3089[1] = (char *(*)()) F269_3428;
+	R3089[2] = (char *(*)()) F270_3458;
 	R3089[3] = (char *(*)()) F271_3481;
 	R3089[4] = (char *(*)()) F272_3506;
 	R3089[5] = (char *(*)()) F273_3506;
@@ -486,7 +486,7 @@ void R3210_init () {
 
 static EIF_TYPE_INDEX Y3211_pgtype0[] = {0xFFF8,1,0xFFFF};
 static EIF_TYPE_INDEX Y3211_pgtype1[] = {0xFFF8,1,0xFFFF};
-static EIF_TYPE_INDEX Y3211_pgtype2[] = {1005,0xFFFF};
+static EIF_TYPE_INDEX Y3211_pgtype2[] = {1002,0xFFFF};
 EIF_TYPE_INDEX *Y3211_gen_type [3];
 EIF_TYPE_INDEX Y3211 [3];
 void Y3211_init (void)
@@ -497,7 +497,7 @@ void Y3211_init (void)
 	Y3211_gen_type [0] = Y3211_pgtype0;
 	Y3211_gen_type [1] = Y3211_pgtype1;
 	Y3211_gen_type [2] = Y3211_pgtype2;
-	Y3211[2] = 1005;
+	Y3211[2] = 1002;
 }
 
 char *(*R3242[2])();
@@ -541,7 +541,7 @@ void R3458_init () {
 	R3458[12] = (char *(*)()) F294_3779;
 	R3458[13] = (char *(*)()) F295_3779;
 	R3458[14] = (char *(*)()) F296_3779;
-	{long i; for (i = 33; i < 35; i++) R3458[i] = (char *(*)()) F287_3779;}
+	{long i; for (i = 33; i < 35; i++) R3458[i] = (char *(*)()) F296_3779;}
 	R3458[496] = (char *(*)()) F282_3779;
 	R3458[497] = (char *(*)()) F283_3779;
 	R3458[498] = (char *(*)()) F284_3779;
@@ -558,7 +558,7 @@ void R3458_init () {
 	R3458[509] = (char *(*)()) F295_3779;
 	R3458[510] = (char *(*)()) F296_3779;
 	R3458[511] = (char *(*)()) F282_3779;
-	R3458[512] = (char *(*)()) F284_3779;
+	R3458[512] = (char *(*)()) F283_3779;
 	R3458[513] = (char *(*)()) F285_3779;
 	R3458[514] = (char *(*)()) F290_3779;
 	R3458[585] = (char *(*)()) F282_3779;
@@ -577,9 +577,9 @@ void R3458_init () {
 	R3458[598] = (char *(*)()) F295_3779;
 	R3458[599] = (char *(*)()) F296_3779;
 	R3458[600] = (char *(*)()) F282_3779;
-	{long i; for (i = 799; i < 801; i++) R3458[i] = (char *(*)()) F286_3779;}
-	R3458[803] = (char *(*)()) F296_3779;
-	{long i; for (i = 846; i < 848; i++) R3458[i] = (char *(*)()) F286_3779;}
+	{long i; for (i = 799; i < 801; i++) R3458[i] = (char *(*)()) F287_3779;}
+	R3458[803] = (char *(*)()) F286_3779;
+	{long i; for (i = 846; i < 848; i++) R3458[i] = (char *(*)()) F287_3779;}
 }
 
 char *(*R3459[848])();
@@ -599,7 +599,7 @@ void R3459_init () {
 	R3459[12] = (char *(*)()) F294_3780_3459_58;
 	R3459[13] = (char *(*)()) F295_3780_3459_58;
 	R3459[14] = (char *(*)()) F296_3780_3459_58;
-	{long i; for (i = 33; i < 35; i++) R3459[i] = (char *(*)()) F287_3780_3459_58;}
+	{long i; for (i = 33; i < 35; i++) R3459[i] = (char *(*)()) F296_3780_3459_58;}
 	R3459[496] = (char *(*)()) F282_3780;
 	R3459[497] = (char *(*)()) F283_3780_3459_58;
 	R3459[498] = (char *(*)()) F284_3780_3459_58;
@@ -616,7 +616,7 @@ void R3459_init () {
 	R3459[509] = (char *(*)()) F295_3780_3459_58;
 	R3459[510] = (char *(*)()) F296_3780_3459_58;
 	R3459[511] = (char *(*)()) F282_3780;
-	R3459[512] = (char *(*)()) F284_3780_3459_58;
+	R3459[512] = (char *(*)()) F283_3780_3459_58;
 	R3459[513] = (char *(*)()) F285_3780_3459_58;
 	R3459[514] = (char *(*)()) F290_3780_3459_58;
 	R3459[585] = (char *(*)()) F282_3780;
@@ -635,17 +635,17 @@ void R3459_init () {
 	R3459[598] = (char *(*)()) F295_3780_3459_58;
 	R3459[599] = (char *(*)()) F296_3780_3459_58;
 	R3459[600] = (char *(*)()) F282_3780;
-	{long i; for (i = 799; i < 801; i++) R3459[i] = (char *(*)()) F286_3780_3459_58;}
-	R3459[803] = (char *(*)()) F296_3780_3459_58;
-	{long i; for (i = 846; i < 848; i++) R3459[i] = (char *(*)()) F286_3780_3459_58;}
+	{long i; for (i = 799; i < 801; i++) R3459[i] = (char *(*)()) F287_3780_3459_58;}
+	R3459[803] = (char *(*)()) F286_3780_3459_58;
+	{long i; for (i = 846; i < 848; i++) R3459[i] = (char *(*)()) F287_3780_3459_58;}
 }
 static void F283_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F283_3780(Current, *(EIF_NATURAL_64 *)arg1, arg2);
+	F283_3780(Current, *(EIF_INTEGER_32 *)arg1, arg2);
 }
 static void F284_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F284_3780(Current, *(EIF_INTEGER_32 *)arg1, arg2);
+	F284_3780(Current, *(EIF_NATURAL_64 *)arg1, arg2);
 }
 static void F285_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -653,11 +653,11 @@ static void F285_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F286_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F286_3780(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
+	F286_3780(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
 }
 static void F287_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F287_3780(Current, *(EIF_NATURAL_8 *)arg1, arg2);
+	F287_3780(Current, *(EIF_CHARACTER_8 *)arg1, arg2);
 }
 static void F288_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
@@ -693,7 +693,7 @@ static void F295_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_IN
 }
 static void F296_3780_3459_58 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_32 arg2)
 {
-	F296_3780(Current, *(EIF_CHARACTER_32 *)arg1, arg2);
+	F296_3780(Current, *(EIF_NATURAL_8 *)arg1, arg2);
 }
 
 char *(*R3461[848])();
@@ -713,7 +713,7 @@ void R3461_init () {
 	R3461[12] = (char *(*)()) F294_3782_3461_16;
 	R3461[13] = (char *(*)()) F295_3782_3461_16;
 	R3461[14] = (char *(*)()) F296_3782_3461_16;
-	{long i; for (i = 33; i < 35; i++) R3461[i] = (char *(*)()) F287_3782_3461_16;}
+	{long i; for (i = 33; i < 35; i++) R3461[i] = (char *(*)()) F296_3782_3461_16;}
 	R3461[496] = (char *(*)()) F778_5435;
 	R3461[497] = (char *(*)()) F779_5435_3461_16;
 	R3461[498] = (char *(*)()) F780_5435_3461_16;
@@ -730,7 +730,7 @@ void R3461_init () {
 	R3461[509] = (char *(*)()) F791_5435_3461_16;
 	R3461[510] = (char *(*)()) F792_5435_3461_16;
 	R3461[511] = (char *(*)()) F778_5435;
-	R3461[512] = (char *(*)()) F780_5435_3461_16;
+	R3461[512] = (char *(*)()) F779_5435_3461_16;
 	R3461[513] = (char *(*)()) F781_5435_3461_16;
 	R3461[514] = (char *(*)()) F786_5435_3461_16;
 	R3461[585] = (char *(*)()) F282_3782;
@@ -758,14 +758,14 @@ static EIF_REFERENCE F283_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F283_3782(Current, arg1);
+	EIF_INTEGER_32 r = F283_3782(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -774,14 +774,14 @@ static EIF_REFERENCE F284_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F284_3782(Current, arg1);
+	EIF_NATURAL_64 r = F284_3782(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
@@ -806,14 +806,14 @@ static EIF_REFERENCE F286_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F286_3782(Current, arg1);
+	EIF_CHARACTER_32 r = F286_3782(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
+		eif_optimized_return_value.it_c4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
 	} else {
-		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_CHARACTER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_CHARACTER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -822,14 +822,14 @@ static EIF_REFERENCE F287_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F287_3782(Current, arg1);
+	EIF_CHARACTER_8 r = F287_3782(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
+		eif_optimized_return_value.it_c1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
 	} else {
-		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_NATURAL_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_CHARACTER_8 *)Result = r;
 		return Result;
 	}
 }
@@ -860,7 +860,7 @@ static EIF_REFERENCE F289_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -876,7 +876,7 @@ static EIF_REFERENCE F290_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -924,7 +924,7 @@ static EIF_REFERENCE F293_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -940,7 +940,7 @@ static EIF_REFERENCE F294_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
@@ -956,7 +956,7 @@ static EIF_REFERENCE F295_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -966,14 +966,14 @@ static EIF_REFERENCE F296_3782_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F296_3782(Current, arg1);
+	EIF_NATURAL_8 r = F296_3782(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
+		eif_optimized_return_value.it_n1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
 	} else {
-		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_CHARACTER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_NATURAL_8 *)Result = r;
 		return Result;
 	}
 }
@@ -982,14 +982,14 @@ static EIF_REFERENCE F779_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_64 r = F779_5435(Current, arg1);
+	EIF_INTEGER_32 r = F779_5435(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n8 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
+		eif_optimized_return_value.it_i4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
 	} else {
-		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_0_0_0_1_0_);
-		*(EIF_NATURAL_64 *)Result = r;
+		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_INTEGER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -998,14 +998,14 @@ static EIF_REFERENCE F780_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_INTEGER_32 r = F780_5435(Current, arg1);
+	EIF_NATURAL_64 r = F780_5435(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_i4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_i4;
+		eif_optimized_return_value.it_n8 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n8;
 	} else {
-		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_INTEGER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		*(EIF_NATURAL_64 *)Result = r;
 		return Result;
 	}
 }
@@ -1030,14 +1030,14 @@ static EIF_REFERENCE F782_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_8 r = F782_5435(Current, arg1);
+	EIF_CHARACTER_32 r = F782_5435(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
+		eif_optimized_return_value.it_c4 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
 	} else {
-		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_CHARACTER_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		*(EIF_CHARACTER_32 *)Result = r;
 		return Result;
 	}
 }
@@ -1046,14 +1046,14 @@ static EIF_REFERENCE F783_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_NATURAL_8 r = F783_5435(Current, arg1);
+	EIF_CHARACTER_8 r = F783_5435(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_n1 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
+		eif_optimized_return_value.it_c1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_c1;
 	} else {
-		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
-		*(EIF_NATURAL_8 *)Result = r;
+		Result = RTLNS(eif_new_type(1032, 0x00).id, 1032, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_CHARACTER_8 *)Result = r;
 		return Result;
 	}
 }
@@ -1084,7 +1084,7 @@ static EIF_REFERENCE F785_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_n4 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n4;
 	} else {
-		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 		*(EIF_NATURAL_32 *)Result = r;
 		return Result;
 	}
@@ -1100,7 +1100,7 @@ static EIF_REFERENCE F786_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i1 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i1;
 	} else {
-		Result = RTLNS(eif_new_type(1011, 0x00).id, 1011, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_1_0_0_0_0_0_0_);
 		*(EIF_INTEGER_8 *)Result = r;
 		return Result;
 	}
@@ -1148,7 +1148,7 @@ static EIF_REFERENCE F789_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i2;
 	} else {
-		Result = RTLNS(eif_new_type(1008, 0x00).id, 1008, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_INTEGER_16 *)Result = r;
 		return Result;
 	}
@@ -1164,7 +1164,7 @@ static EIF_REFERENCE F790_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_i8 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_i8;
 	} else {
-		Result = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_0_0_0_1_0_);
+		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_0_0_0_0_1_0_);
 		*(EIF_INTEGER_64 *)Result = r;
 		return Result;
 	}
@@ -1180,7 +1180,7 @@ static EIF_REFERENCE F791_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 		eif_optimized_return_value.it_n2 = r;
 		return (EIF_REFERENCE) &eif_optimized_return_value.it_n2;
 	} else {
-		Result = RTLNS(eif_new_type(999, 0x00).id, 999, _OBJSIZ_0_0_1_0_0_0_0_0_);
+		Result = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_1_0_0_0_0_0_);
 		*(EIF_NATURAL_16 *)Result = r;
 		return Result;
 	}
@@ -1190,14 +1190,14 @@ static EIF_REFERENCE F792_5435_3461_16 (EIF_REFERENCE Current, EIF_INTEGER_32 ar
 	GTCX
 	EIF_REFERENCE Result;
 	int l_eif_optimize_return = eif_optimize_return;
-	EIF_CHARACTER_32 r = F792_5435(Current, arg1);
+	EIF_NATURAL_8 r = F792_5435(Current, arg1);
 	if (l_eif_optimize_return) {
 		eif_optimize_return = 0;
-		eif_optimized_return_value.it_c4 = r;
-		return (EIF_REFERENCE) &eif_optimized_return_value.it_c4;
+		eif_optimized_return_value.it_n1 = r;
+		return (EIF_REFERENCE) &eif_optimized_return_value.it_n1;
 	} else {
-		Result = RTLNS(eif_new_type(1029, 0x00).id, 1029, _OBJSIZ_0_0_0_1_0_0_0_0_);
-		*(EIF_CHARACTER_32 *)Result = r;
+		Result = RTLNS(eif_new_type(1020, 0x00).id, 1020, _OBJSIZ_0_1_0_0_0_0_0_0_);
+		*(EIF_NATURAL_8 *)Result = r;
 		return Result;
 	}
 }
@@ -1267,7 +1267,7 @@ void R3463_init () {
 	R3463[12] = (char *(*)()) F294_3784;
 	R3463[13] = (char *(*)()) F295_3784;
 	R3463[14] = (char *(*)()) F296_3784;
-	{long i; for (i = 33; i < 35; i++) R3463[i] = (char *(*)()) F287_3784;}
+	{long i; for (i = 33; i < 35; i++) R3463[i] = (char *(*)()) F296_3784;}
 	R3463[496] = (char *(*)()) F778_5450;
 	R3463[497] = (char *(*)()) F779_5450;
 	R3463[498] = (char *(*)()) F780_5450;
@@ -1284,7 +1284,7 @@ void R3463_init () {
 	R3463[509] = (char *(*)()) F791_5450;
 	R3463[510] = (char *(*)()) F792_5450;
 	R3463[511] = (char *(*)()) F778_5450;
-	R3463[512] = (char *(*)()) F780_5450;
+	R3463[512] = (char *(*)()) F779_5450;
 	R3463[513] = (char *(*)()) F781_5450;
 	R3463[514] = (char *(*)()) F786_5450;
 	R3463[585] = (char *(*)()) F282_3784;
@@ -1325,7 +1325,7 @@ void R3465_init () {
 	R3465[12] = (char *(*)()) F294_3786;
 	R3465[13] = (char *(*)()) F295_3786;
 	R3465[14] = (char *(*)()) F296_3786;
-	{long i; for (i = 33; i < 35; i++) R3465[i] = (char *(*)()) F287_3786;}
+	{long i; for (i = 33; i < 35; i++) R3465[i] = (char *(*)()) F296_3786;}
 	R3465[496] = (char *(*)()) F282_3786;
 	R3465[497] = (char *(*)()) F283_3786;
 	R3465[498] = (char *(*)()) F284_3786;
@@ -1342,7 +1342,7 @@ void R3465_init () {
 	R3465[509] = (char *(*)()) F295_3786;
 	R3465[510] = (char *(*)()) F296_3786;
 	R3465[511] = (char *(*)()) F282_3786;
-	R3465[512] = (char *(*)()) F284_3786;
+	R3465[512] = (char *(*)()) F283_3786;
 	R3465[513] = (char *(*)()) F285_3786;
 	R3465[514] = (char *(*)()) F290_3786;
 	R3465[585] = (char *(*)()) F282_3786;
@@ -1361,9 +1361,9 @@ void R3465_init () {
 	R3465[598] = (char *(*)()) F295_3786;
 	R3465[599] = (char *(*)()) F296_3786;
 	R3465[600] = (char *(*)()) F282_3786;
-	{long i; for (i = 799; i < 801; i++) R3465[i] = (char *(*)()) F286_3786;}
-	R3465[803] = (char *(*)()) F296_3786;
-	{long i; for (i = 846; i < 848; i++) R3465[i] = (char *(*)()) F286_3786;}
+	{long i; for (i = 799; i < 801; i++) R3465[i] = (char *(*)()) F287_3786;}
+	R3465[803] = (char *(*)()) F286_3786;
+	{long i; for (i = 846; i < 848; i++) R3465[i] = (char *(*)()) F287_3786;}
 }
 
 

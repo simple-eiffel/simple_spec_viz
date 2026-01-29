@@ -252,14 +252,14 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	ti4_1 = (nstcall = 1, F783_5442(RTCW(arg1)));
+	ti4_1 = (nstcall = 1, F792_5442(RTCW(arg1)));
 	if ((EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L))) {
 		RTHOOK(3);
 		Result = RTLNS(eif_new_type(227, 0x01).id, 227, _OBJSIZ_1_0_0_2_0_0_0_0_);
 		(nstcall = -1, F228_2690(RTCW(Result), NULL, arg1));
 	} else {
 		RTHOOK(4);
-		ti4_1 = (nstcall = 1, F783_5442(RTCW(arg1)));
+		ti4_1 = (nstcall = 1, F792_5442(RTCW(arg1)));
 		if ((EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 16L))) {
 			RTHOOK(5);
 			loc1 = (nstcall = 0, F240_2889(Current, arg1));
@@ -553,7 +553,7 @@ EIF_REFERENCE F240_2885 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 						}
 						(nstcall = -1, F867_5785(RTCW(Result), ((EIF_INTEGER_32) 1L)));
 						RTHOOK(27);
-						ti4_1 = (nstcall = 1, F783_5442(RTCW(loc3)));
+						ti4_1 = (nstcall = 1, F792_5442(RTCW(loc3)));
 						if ((EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L))) {
 							RTHOOK(28);
 							loc4 = RTLNS(eif_new_type(227, 0x01).id, 227, _OBJSIZ_1_0_0_2_0_0_0_0_);
@@ -733,14 +733,14 @@ body:;
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(3);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,782,1020,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,791,1020,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-			Result = RTLNS(typres0.id, 782, _OBJSIZ_1_1_0_2_0_0_0_0_);
+			Result = RTLNS(typres0.id, 791, _OBJSIZ_1_1_0_2_0_0_0_0_);
 		}
-		(nstcall = -1, F783_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
+		(nstcall = -1, F792_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
 		RTHOOK(4);
 		loc1 = (nstcall = 0, F240_2892(Current, arg1, (EIF_CHARACTER_8) '.'));
 		RTHOOK(5);
@@ -761,23 +761,23 @@ body:;
 						ti4_1 = eif_bit_shift_right(loc2,((EIF_INTEGER_32) 24L));
 						ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_2;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
 						RTHOOK(10);
 						ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 16777215L));
 						ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 16L));
 						ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_1;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
 						RTHOOK(11);
 						ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 65535L));
 						ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 8L));
 						ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_1;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
 						RTHOOK(12);
 						ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_1;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
 					} else {
 						RTHOOK(13);
 						Result = (EIF_REFERENCE) NULL;
@@ -801,7 +801,7 @@ body:;
 						RTHOOK(18);
 						ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_1;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 1L)));
 						RTHOOK(19);
 						tr1 = (nstcall = 1, F867_5791(RTCW(loc1), ((EIF_INTEGER_32) 2L)));
 						tb1 = (nstcall = 1, F1076_7633(RTCW(tr1)));
@@ -816,17 +816,17 @@ body:;
 								ti4_1 = eif_bit_shift_right(loc2,((EIF_INTEGER_32) 16L));
 								ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 								tu1_1 = (EIF_NATURAL_8) ti4_2;
-								(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
+								(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 2L)));
 								RTHOOK(23);
 								ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 65535L));
 								ti4_2 = eif_bit_shift_right(ti4_1,((EIF_INTEGER_32) 8L));
 								ti4_1 = eif_bit_and(ti4_2,((EIF_INTEGER_32) 255L));
 								tu1_1 = (EIF_NATURAL_8) ti4_1;
-								(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
+								(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
 								RTHOOK(24);
 								ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 								tu1_1 = (EIF_NATURAL_8) ti4_1;
-								(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
+								(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
 							} else {
 								RTHOOK(25);
 								Result = (EIF_REFERENCE) NULL;
@@ -860,7 +860,7 @@ body:;
 							RTHOOK(33);
 							ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 							tu1_1 = (EIF_NATURAL_8) ti4_1;
-							(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc3));
+							(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc3));
 						} else {
 							RTHOOK(34);
 							Result = (EIF_REFERENCE) NULL;
@@ -890,11 +890,11 @@ body:;
 						ti4_1 = eif_bit_shift_right(loc2,((EIF_INTEGER_32) 8L));
 						ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_2;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 3L)));
 						RTHOOK(41);
 						ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 						tu1_1 = (EIF_NATURAL_8) ti4_1;
-						(nstcall = 1, F783_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
+						(nstcall = 1, F792_5454(RTCW(Result), tu1_1, ((EIF_INTEGER_32) 4L)));
 					} else {
 						RTHOOK(42);
 						Result = (EIF_REFERENCE) NULL;
@@ -923,7 +923,7 @@ body:;
 							RTHOOK(49);
 							ti4_1 = eif_bit_and(loc2,((EIF_INTEGER_32) 255L));
 							tu1_1 = (EIF_NATURAL_8) ti4_1;
-							(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc3));
+							(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc3));
 						} else {
 							RTHOOK(50);
 							Result = (EIF_REFERENCE) NULL;
@@ -1020,14 +1020,14 @@ body:;
 		if ((EIF_BOOLEAN) (loc1 < loc2)) {
 			RTHOOK(6);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,782,1020,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,791,1020,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
 				typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-				Result = RTLNS(typres0.id, 782, _OBJSIZ_1_1_0_2_0_0_0_0_);
+				Result = RTLNS(typres0.id, 791, _OBJSIZ_1_1_0_2_0_0_0_0_);
 			}
-			(nstcall = -1, F783_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 16L)));
+			(nstcall = -1, F792_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 16L)));
 			RTHOOK(7);
 			if ((EIF_BOOLEAN)(loc1 != ((EIF_INTEGER_32) 0L))) {
 				RTHOOK(8);
@@ -1120,13 +1120,13 @@ body:;
 										ti4_1 = eif_bit_shift_right(loc10,((EIF_INTEGER_32) 8L));
 										ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 										tu1_1 = (EIF_NATURAL_8) ti4_2;
-										(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc4));
+										(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc4));
 										RTHOOK(41);
 										loc4++;
 										RTHOOK(42);
 										ti4_1 = eif_bit_and(loc10,((EIF_INTEGER_32) 255L));
 										tu1_1 = (EIF_NATURAL_8) ti4_1;
-										(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc4));
+										(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc4));
 										RTHOOK(43);
 										loc4++;
 										RTHOOK(44);
@@ -1160,8 +1160,8 @@ body:;
 											RTHOOK(54);
 											if ((EIF_BOOLEAN) (loc5 > ((EIF_INTEGER_32) 4L))) break;
 											RTHOOK(55);
-											tu1_1 = (nstcall = 1, F783_5435(RTCW(loc13), loc5));
-											(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc4));
+											tu1_1 = (nstcall = 1, F792_5435(RTCW(loc13), loc5));
+											(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc4));
 											RTHOOK(56);
 											loc4++;
 											RTHOOK(57);
@@ -1193,13 +1193,13 @@ body:;
 							ti4_1 = eif_bit_shift_right(loc10,((EIF_INTEGER_32) 8L));
 							ti4_2 = eif_bit_and(ti4_1,((EIF_INTEGER_32) 255L));
 							tu1_1 = (EIF_NATURAL_8) ti4_2;
-							(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc4));
+							(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc4));
 							RTHOOK(66);
 							loc4++;
 							RTHOOK(67);
 							ti4_1 = eif_bit_and(loc10,((EIF_INTEGER_32) 255L));
 							tu1_1 = (EIF_NATURAL_8) ti4_1;
-							(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc4));
+							(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc4));
 							RTHOOK(68);
 							loc4++;
 						}
@@ -1222,10 +1222,10 @@ body:;
 								RTHOOK(75);
 								if ((EIF_BOOLEAN) (loc3 >= loc6)) break;
 								RTHOOK(76);
-								tu1_1 = (nstcall = 1, F783_5435(RTCW(Result), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc8 + loc6) - loc3) - ((EIF_INTEGER_32) 1L))));
-								(nstcall = 1, F783_5454(RTCW(Result), tu1_1, (EIF_INTEGER_32) (((EIF_INTEGER_32) 16L) - loc3)));
+								tu1_1 = (nstcall = 1, F792_5435(RTCW(Result), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc8 + loc6) - loc3) - ((EIF_INTEGER_32) 1L))));
+								(nstcall = 1, F792_5454(RTCW(Result), tu1_1, (EIF_INTEGER_32) (((EIF_INTEGER_32) 16L) - loc3)));
 								RTHOOK(77);
-								(nstcall = 1, F783_5454(RTCW(Result), (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc8 + loc6) - loc3) - ((EIF_INTEGER_32) 1L))));
+								(nstcall = 1, F792_5454(RTCW(Result), (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L), (EIF_INTEGER_32) ((EIF_INTEGER_32) ((EIF_INTEGER_32) (loc8 + loc6) - loc3) - ((EIF_INTEGER_32) 1L))));
 								RTHOOK(78);
 								loc3++;
 							}
@@ -1295,22 +1295,22 @@ EIF_REFERENCE F240_2889 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 	if ((nstcall = 0, F240_2890(Current, arg1))) {
 		RTHOOK(2);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,782,1020,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,791,1020,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
 			typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-			Result = RTLNS(typres0.id, 782, _OBJSIZ_1_1_0_2_0_0_0_0_);
+			Result = RTLNS(typres0.id, 791, _OBJSIZ_1_1_0_2_0_0_0_0_);
 		}
-		(nstcall = -1, F783_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
+		(nstcall = -1, F792_5430(RTCW(Result), ((EIF_NATURAL_8) 0U), ((EIF_INTEGER_32) 1L), ((EIF_INTEGER_32) 4L)));
 		RTHOOK(3);
 		loc1 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 		for (;;) {
 			RTHOOK(4);
 			if ((EIF_BOOLEAN) (loc1 > ((EIF_INTEGER_32) 4L))) break;
 			RTHOOK(5);
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), (EIF_INTEGER_32) (loc1 + ((EIF_INTEGER_32) 12L))));
-			(nstcall = 1, F783_5454(RTCW(Result), tu1_1, loc1));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), (EIF_INTEGER_32) (loc1 + ((EIF_INTEGER_32) 12L))));
+			(nstcall = 1, F792_5454(RTCW(Result), tu1_1, loc1));
 			RTHOOK(6);
 			loc1++;
 		}
@@ -1320,7 +1320,7 @@ EIF_REFERENCE F240_2889 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCT("valid_array", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN)(Result != NULL)) {
-			ti4_1 = (nstcall = 1, F783_5442(RTCW(Result)));
+			ti4_1 = (nstcall = 1, F792_5442(RTCW(Result)));
 			tb1 = (EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 4L));
 		}
 		if (tb1) {
@@ -1381,7 +1381,7 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	ti4_1 = (nstcall = 1, F783_5442(RTCW(arg1)));
+	ti4_1 = (nstcall = 1, F792_5442(RTCW(arg1)));
 	if ((EIF_BOOLEAN)(ti4_1 == ((EIF_INTEGER_32) 16L))) {
 		RTHOOK(3);
 		Result = '\0';
@@ -1395,49 +1395,49 @@ body:;
 		tb8 = '\0';
 		tb9 = '\0';
 		tb10 = '\0';
-		tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 1L)));
+		tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 1L)));
 		if ((EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L))) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 2L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 2L)));
 			tb10 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb10) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 3L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 3L)));
 			tb9 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb9) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 4L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 4L)));
 			tb8 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb8) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 5L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 5L)));
 			tb7 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb7) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 6L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 6L)));
 			tb6 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb6) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 7L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 7L)));
 			tb5 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb5) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 8L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 8L)));
 			tb4 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb4) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 9L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 9L)));
 			tb3 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb3) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 10L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 10L)));
 			tb2 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 0L));
 		}
 		if (tb2) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 11L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 11L)));
 			tb1 = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 255L));
 		}
 		if (tb1) {
-			tu1_1 = (nstcall = 1, F783_5435(RTCW(arg1), ((EIF_INTEGER_32) 12L)));
+			tu1_1 = (nstcall = 1, F792_5435(RTCW(arg1), ((EIF_INTEGER_32) 12L)));
 			Result = (EIF_BOOLEAN)(tu1_1 == (EIF_NATURAL_8) ((EIF_INTEGER_32) 255L));
 		}
 	}

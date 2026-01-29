@@ -506,7 +506,7 @@ EIF_REFERENCE F313_4370 (EIF_REFERENCE Current)
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("name_not_empty", EX_POST);
-		tb1 = (nstcall = 1, F666_4976(RTCW(Result)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(Result)));
 		if ((EIF_BOOLEAN) !tb1) {
 			RTCK;
 		} else {

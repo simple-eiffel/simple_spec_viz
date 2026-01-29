@@ -70,10 +70,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.obj 
 
-OLDOBJECTS =  te62.o li98.o eq96.o eq61.o ut60.o ut59.o is58.o st57.o op56.o \
+OLDOBJECTS =  te62.o li98.o eq96.o eq61.o is60.o ut59.o ut58.o st57.o op56.o \
 	rt55.o sy54.o tr53.o si52.o sp51.o sp50.o te97.o ad94.o eq92.o ob91.o \
 	se89.o do84.o re88.o eq93.o so87.o se90.o sy86.o so82.o gr81.o se80.o \
-	en79.o co78.o si75.o si76.o js74.o js73.o kl72.o kl71.o kl70.o da68.o \
+	en79.o co78.o si76.o si75.o js74.o js73.o kl72.o kl71.o kl70.o da68.o \
 	ma69.o uc99.o uc63.o 
 
 all: Cobj2.o

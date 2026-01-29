@@ -175,7 +175,7 @@ void F885_5888 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2,
 		RTCK;
 		RTHOOK(4);
 		RTCT("d_small_enough", EX_PRE);
-		RTTE((EIF_BOOLEAN) (arg3 <= (nstcall = 0, F143_1946(Current, arg2, arg1))), label_1);
+		RTTE((EIF_BOOLEAN) (arg3 <= (nstcall = 0, F142_1920(Current, arg2, arg1))), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -210,21 +210,21 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(12);
 		RTCT("day_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current)) == arg3)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current)) == arg3)) {
 			RTCK;
 		} else {
 			RTCF;
 		}
 		RTHOOK(13);
 		RTCT("month_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current)) == arg2)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current)) == arg2)) {
 			RTCK;
 		} else {
 			RTCF;
 		}
 		RTHOOK(14);
 		RTCT("year_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current)) == arg1)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current)) == arg1)) {
 			RTCK;
 		} else {
 			RTCF;
@@ -266,7 +266,7 @@ void F885_5889 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("d_small_enough", EX_PRE);
-		RTTE((EIF_BOOLEAN) (arg1 <= (nstcall = 0, F144_1961(Current))), label_1);
+		RTTE((EIF_BOOLEAN) (arg1 <= (nstcall = 0, F143_1935(Current))), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -287,7 +287,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(7);
 		RTCT("day_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current)) == arg1)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current)) == arg1)) {
 			RTCK;
 		} else {
 			RTCF;
@@ -333,8 +333,8 @@ void F885_5890 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 		RTCK;
 		RTHOOK(3);
 		RTCT("d_small_enough", EX_PRE);
-		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current));
-		RTTE((EIF_BOOLEAN) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current)) <= (nstcall = 0, F143_1946(Current, arg1, ti4_1))), label_1);
+		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current));
+		RTTE((EIF_BOOLEAN) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current)) <= (nstcall = 0, F142_1920(Current, arg1, ti4_1))), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -356,7 +356,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(8);
 		RTCT("month_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current)) == arg1)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current)) == arg1)) {
 			RTCK;
 		} else {
 			RTCF;
@@ -394,8 +394,8 @@ void F885_5891 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("can_not_cut_29th_feb", EX_PRE);
-		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current));
-		RTTE((EIF_BOOLEAN) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current)) <= (nstcall = 0, F143_1946(Current, ti4_1, arg1))), label_1);
+		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current));
+		RTTE((EIF_BOOLEAN) ((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current)) <= (nstcall = 0, F142_1920(Current, ti4_1, arg1))), label_1);
 		RTCK;
 		RTJB;
 label_1:
@@ -417,7 +417,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(6);
 		RTCT("year_set", EX_POST);
-		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current)) == arg1)) {
+		if ((EIF_BOOLEAN)((nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current)) == arg1)) {
 			RTCK;
 		} else {
 			RTCF;
@@ -494,10 +494,10 @@ void F885_5893 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	tr1 = RTOUCR(12,(nstcall = 0, F864_5720), (Current));
-	tr2 = RTOUCR(374,(nstcall = 0, F885_5900), (Current));
+	tr2 = RTOUCR(375,(nstcall = 0, F885_5900), (Current));
 	tr2 = (nstcall = 1, F886_5908(RTCW(tr1), tr2));
 	loc1 = RTCCL(tr2);
-	loc1 = RTRV(eif_new_type(1003, 0x01),loc1);
+	loc1 = RTRV(eif_new_type(1000, 0x01),loc1);
 	if (EIF_TEST(loc1)) {
 		RTHOOK(2);
 		ti4_1 = *(EIF_INTEGER_32 *)(loc1+ _LNGOFF_0_0_0_0_);
@@ -518,7 +518,7 @@ void F885_5893 (EIF_REFERENCE Current)
 EIF_REFERENCE F885_5900 (EIF_REFERENCE Current)
 {
 	GTCX
-	RTOUC (374,RTMS_EX_H("compact_date",12,1114629989));
+	RTOUC (375,RTMS_EX_H("compact_date",12,1114629989));
 }
 
 /* {DATE_VALUE}.set_private_internal_compact_date */
@@ -555,11 +555,11 @@ void F885_5901 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("compact_date_set", EX_POST);
-		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1904[dtype-256])(Current));
-		ti4_2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1903[dtype-256])(Current));
+		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1878[dtype-255])(Current));
+		ti4_2 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1877[dtype-255])(Current));
 		ti4_3 = eif_bit_shift_left(ti4_2,((EIF_INTEGER_32) 16L));
 		ti4_2 = eif_bit_or(ti4_1,ti4_3);
-		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1902[dtype-256])(Current));
+		ti4_1 = (nstcall = 0, (FUNCTION_CAST(EIF_INTEGER_32, (EIF_REFERENCE)) R1876[dtype-255])(Current));
 		ti4_3 = eif_bit_shift_left(ti4_1,((EIF_INTEGER_32) 24L));
 		ti4_1 = eif_bit_or(ti4_2,ti4_3);
 		if ((EIF_BOOLEAN)(ti4_1 == arg1)) {

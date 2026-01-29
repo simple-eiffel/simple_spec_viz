@@ -68,7 +68,7 @@ void F777_5390 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1, EIF_INTEGER_32 arg2)
 		RTCT("empty_if_not_in_order", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN) (arg1 > arg2)) {
-			tb1 = (nstcall = 0, F668_4976(Current));
+			tb1 = (nstcall = 0, F667_4976(Current));
 		}
 		if (tb1) {
 			RTCK;
@@ -294,7 +294,7 @@ EIF_BOOLEAN F777_5398 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 		RTCT("not_found_in_empty", EX_POST);
 		tb1 = '\01';
 		if (Result) {
-			tb1 = (EIF_BOOLEAN) !(nstcall = 0, F668_4976(Current));
+			tb1 = (EIF_BOOLEAN) !(nstcall = 0, F667_4976(Current));
 		}
 		if (tb1) {
 			RTCK;
@@ -556,7 +556,7 @@ EIF_REFERENCE F777_5403 (EIF_REFERENCE Current)
 		RTCT("empty_if_not_in_order", EX_POST);
 		tb1 = '\01';
 		if ((EIF_BOOLEAN) (*(EIF_INTEGER_32 *)(Current+ _LNGOFF_0_1_0_1_) > *(EIF_INTEGER_32 *)(Current+ _LNGOFF_0_1_0_0_))) {
-			tb2 = (nstcall = 1, F668_4976(RTCW(Result)));
+			tb2 = (nstcall = 1, F667_4976(RTCW(Result)));
 			tb1 = tb2;
 		}
 		if (tb1) {
@@ -898,7 +898,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(6);
 		RTCT("item_inserted", EX_POST);
-		if ((nstcall = 0, F552_4911(Current, arg1))) {
+		if ((nstcall = 0, F551_4911(Current, arg1))) {
 			RTCK;
 		} else {
 			RTCF;
@@ -1239,7 +1239,7 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(4);
 		RTCT("wiped_out", EX_POST);
-		if ((nstcall = 0, F668_4976(Current))) {
+		if ((nstcall = 0, F667_4976(Current))) {
 			RTCK;
 		} else {
 			RTCF;
@@ -1289,19 +1289,19 @@ body:;
 	loc2 = *(EIF_INTEGER_32 *)(Current+ _LNGOFF_0_1_0_0_);
 	RTHOOK(4);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,779,1005,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,778,1002,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-		Result = RTLNS(typres0.id, 779, _OBJSIZ_1_1_0_2_0_0_0_0_);
+		Result = RTLNS(typres0.id, 778, _OBJSIZ_1_1_0_2_0_0_0_0_);
 	}
-	(nstcall = -1, F780_5430(RTCW(Result), ((EIF_INTEGER_32) 0L), loc1, loc2));
+	(nstcall = -1, F779_5430(RTCW(Result), ((EIF_INTEGER_32) 0L), loc1, loc2));
 	for (;;) {
 		RTHOOK(5);
 		if ((EIF_BOOLEAN) (loc1 > loc2)) break;
 		RTHOOK(6);
-		(nstcall = 1, F780_5454(RTCW(Result), loc1, loc1));
+		(nstcall = 1, F779_5454(RTCW(Result), loc1, loc1));
 		RTHOOK(7);
 		loc1++;
 	}
@@ -1391,7 +1391,7 @@ EIF_REFERENCE F777_5417 (EIF_REFERENCE Current)
 	
 	RTHOOK(1);
 	tr1 = (nstcall = 0, F777_5415(Current));
-	tr2 = (nstcall = 1, F780_5482(RTCW(tr1)));
+	tr2 = (nstcall = 1, F779_5482(RTCW(tr1)));
 	Result = (EIF_REFERENCE) tr2;
 	RTVI(Current, RTAL);
 	RTRS;

@@ -584,10 +584,10 @@ body:;
 	loc1 = tr1;
 	if (EIF_TEST(loc1)) {
 		RTHOOK(3);
-		ti4_1 = (nstcall = 1, F901_6149(loc1));
+		ti4_1 = (nstcall = 1, F900_6149(loc1));
 		if ((EIF_BOOLEAN) (arg1 < ti4_1)) {
 			RTHOOK(4);
-			ti4_1 = (nstcall = 1, F901_6139(loc1, arg1));
+			ti4_1 = (nstcall = 1, F900_6139(loc1, arg1));
 			Result = (EIF_INTEGER_32) ti4_1;
 		} else {
 			RTHOOK(5);
@@ -1939,7 +1939,7 @@ body:;
 		case 2L:
 			RTHOOK(6);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,902,1032,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,903,1032,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -1951,7 +1951,7 @@ body:;
 		case 12L:
 			RTHOOK(7);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,912,1029,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,902,1029,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -1963,7 +1963,7 @@ body:;
 		case 13L:
 			RTHOOK(8);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,903,1020,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,912,1020,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -1975,7 +1975,7 @@ body:;
 		case 14L:
 			RTHOOK(9);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,911,999,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,911,1017,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -1987,7 +1987,7 @@ body:;
 		case 15L:
 			RTHOOK(10);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,905,1017,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,905,1014,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -1999,7 +1999,7 @@ body:;
 		case 16L:
 			RTHOOK(11);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1014,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1011,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2011,7 +2011,7 @@ body:;
 		case 9L:
 			RTHOOK(12);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,906,1011,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,906,1008,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2023,7 +2023,7 @@ body:;
 		case 10L:
 			RTHOOK(13);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,909,1008,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,909,1005,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2035,7 +2035,7 @@ body:;
 		case 4L:
 			RTHOOK(14);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1005,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1002,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2047,7 +2047,7 @@ body:;
 		case 11L:
 			RTHOOK(15);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,910,1002,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,910,999,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2223,7 +2223,7 @@ body:;
 			RTHOOK(7);
 			loc4 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,902,1032,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,903,1032,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2241,7 +2241,7 @@ body:;
 			RTHOOK(9);
 			loc5 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,912,1029,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,902,1029,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2259,7 +2259,7 @@ body:;
 			RTHOOK(11);
 			loc6 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,903,1020,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,912,1020,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2277,7 +2277,7 @@ body:;
 			RTHOOK(13);
 			loc7 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,911,999,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,911,1017,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2295,7 +2295,7 @@ body:;
 			RTHOOK(15);
 			loc8 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,905,1017,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,905,1014,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2313,7 +2313,7 @@ body:;
 			RTHOOK(17);
 			loc9 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1014,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1011,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2331,7 +2331,7 @@ body:;
 			RTHOOK(19);
 			loc10 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,906,1011,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,906,1008,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2349,7 +2349,7 @@ body:;
 			RTHOOK(21);
 			loc11 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,909,1008,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,909,1005,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2367,7 +2367,7 @@ body:;
 			RTHOOK(23);
 			loc12 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,900,1005,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,899,1002,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2385,7 +2385,7 @@ body:;
 			RTHOOK(25);
 			loc13 = RTCCL(arg1);
 			{
-				static EIF_TYPE_INDEX typarr0[] = {0xFF01,910,1002,0xFFFF};
+				static EIF_TYPE_INDEX typarr0[] = {0xFF01,910,999,0xFFFF};
 				EIF_TYPE typres0;
 				static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 				
@@ -2571,7 +2571,7 @@ body:;
 		if ((EIF_BOOLEAN)(loc1 == arg2)) break;
 		RTHOOK(4);
 		tc1 = (nstcall = 1, F109_1505(RTCW(loc2)));
-		(nstcall = 1, F903_6156(RTCW(arg1), tc1));
+		(nstcall = 1, F904_6156(RTCW(arg1), tc1));
 		RTHOOK(5);
 		loc1++;
 	}
@@ -2622,7 +2622,7 @@ body:;
 		if ((EIF_BOOLEAN)(loc1 == arg2)) break;
 		RTHOOK(4);
 		tw1 = (nstcall = 1, F109_1506(RTCW(loc2)));
-		(nstcall = 1, F913_6156(RTCW(arg1), tw1));
+		(nstcall = 1, F903_6156(RTCW(arg1), tw1));
 		RTHOOK(5);
 		loc1++;
 	}
@@ -2673,7 +2673,7 @@ body:;
 		if ((EIF_BOOLEAN)(loc1 == arg2)) break;
 		RTHOOK(4);
 		tu1_1 = (nstcall = 1, F110_1550(RTCW(loc2)));
-		(nstcall = 1, F904_6156(RTCW(arg1), tu1_1));
+		(nstcall = 1, F913_6156(RTCW(arg1), tu1_1));
 		RTHOOK(5);
 		loc1++;
 	}
@@ -2826,7 +2826,7 @@ body:;
 		if ((EIF_BOOLEAN)(loc1 == arg2)) break;
 		RTHOOK(4);
 		tu8_1 = (nstcall = 1, F110_1553(RTCW(loc2)));
-		(nstcall = 1, F900_6156(RTCW(arg1), tu8_1));
+		(nstcall = 1, F901_6156(RTCW(arg1), tu8_1));
 		RTHOOK(5);
 		loc1++;
 	}
@@ -2979,7 +2979,7 @@ body:;
 		if ((EIF_BOOLEAN)(loc1 == arg2)) break;
 		RTHOOK(4);
 		ti4_1 = (nstcall = 1, F110_1556(RTCW(loc2)));
-		(nstcall = 1, F901_6156(RTCW(arg1), ti4_1));
+		(nstcall = 1, F900_6156(RTCW(arg1), ti4_1));
 		RTHOOK(5);
 		loc1++;
 	}

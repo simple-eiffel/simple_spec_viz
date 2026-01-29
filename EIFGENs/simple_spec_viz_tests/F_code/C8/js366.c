@@ -678,9 +678,9 @@ void F1089_8136 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 							RTHOOK(27);
 							loc5 = (nstcall = 0, F1089_8148(Current, loc6));
 							RTHOOK(28);
-							tr1 = RTLNS(eif_new_type(1017, 0x00).id, 1017, _OBJSIZ_0_0_0_1_0_0_0_0_);
+							tr1 = RTLNS(eif_new_type(1014, 0x00).id, 1014, _OBJSIZ_0_0_0_1_0_0_0_0_);
 							*(EIF_NATURAL_32 *)tr1 = loc5;
-							tb1 = (nstcall = 1, F1016_7099(RTCW(tr1)));
+							tb1 = (nstcall = 1, F1013_7004(RTCW(tr1)));
 							if (tb1) {
 								RTHOOK(29);
 								(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_NATURAL_32)) R6206[Dtype(RTCW(arg1))-1080])(arg1, loc5));
@@ -1665,9 +1665,9 @@ body:;
 			(nstcall = 1, (FUNCTION_CAST(void, (EIF_REFERENCE, EIF_REFERENCE)) R6293[Dtype(RTCW(Result))-1080])(Result, tr1));
 			RTHOOK(25);
 			ti4_1 = (EIF_INTEGER_32) (loc4);
-			tr1 = RTLNS(eif_new_type(1005, 0x00).id, 1005, _OBJSIZ_0_0_0_1_0_0_0_0_);
+			tr1 = RTLNS(eif_new_type(1002, 0x00).id, 1002, _OBJSIZ_0_0_0_1_0_0_0_0_);
 			*(EIF_INTEGER_32 *)tr1 = ti4_1;
-			tr2 = (nstcall = 1, F1004_6747(RTCW(tr1)));
+			tr2 = (nstcall = 1, F1001_6652(RTCW(tr1)));
 			loc6 = (EIF_REFERENCE) tr2;
 			RTHOOK(26);
 			loc2 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
@@ -1710,7 +1710,7 @@ body:;
 	if (loc7) {
 		RTHOOK(35);
 		tr1 = RTOUCR(314,(nstcall = 0, F1089_8150), (Current));
-		tr2 = (nstcall = 1, F78_1200(RTCW(tr1), Result));
+		tr2 = (nstcall = 1, F77_1089(RTCW(tr1), Result));
 		Result = (EIF_REFERENCE) tr2;
 		
 	}
@@ -1746,9 +1746,9 @@ static EIF_REFERENCE F1089_8150_body (EIF_REFERENCE Current)
 	RTGC;
 	RTIV(Current, RTAL);
 	RTOTP;
-	Result= RTLN(eif_new_type(77, 0x00).id);
+	Result= RTLN(eif_new_type(76, 0x00).id);
 	RTHOOK(1);
-	tr1 = RTLNS(eif_new_type(77, 0x00).id, 77, _OBJSIZ_0_0_0_0_0_0_0_0_);
+	tr1 = RTLNS(eif_new_type(76, 0x00).id, 76, _OBJSIZ_0_0_0_0_0_0_0_0_);
 	tr1 = (tr1);
 	RTXA(tr1, Result);
 	RTVI(Current, RTAL);

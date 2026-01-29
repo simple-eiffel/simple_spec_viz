@@ -56,12 +56,12 @@ SYSTEM_IN_DYNAMIC_LIB = test_runner.dll
 
 OBJECTS = big_file_C19_c.obj 
 
-OLDOBJECTS =  sp918.obj ar927.obj na914.obj sp919.obj re922.obj ar913.obj li936.obj ar928.obj \
-	re910.obj re949.obj to912.obj dy907.obj dy946.obj li909.obj li948.obj ge920.obj \
-	in926.obj re925.obj tr938.obj se930.obj ar929.obj dy902.obj dy941.obj bo911.obj \
-	ta906.obj ta945.obj fi934.obj mm916.obj ch904.obj ch943.obj ty921.obj ac931.obj \
-	co933.obj bi901.obj bi940.obj dy903.obj dy942.obj mm915.obj co900.obj co939.obj \
-	mm917.obj 
+OLDOBJECTS =  sp908.obj sp944.obj ar917.obj na907.obj na943.obj sp909.obj sp945.obj re912.obj \
+	re948.obj ar906.obj ar942.obj li921.obj ar918.obj re903.obj re939.obj to905.obj \
+	to941.obj dy900.obj dy936.obj li902.obj li938.obj ge910.obj ge946.obj in916.obj \
+	re913.obj re949.obj tr929.obj se920.obj ar919.obj dy931.obj bo904.obj bo940.obj \
+	ta935.obj fi924.obj ch933.obj ty911.obj ty947.obj ac926.obj co923.obj bi930.obj \
+	dy932.obj co928.obj 
 
 all::  Cobj19.lib
 

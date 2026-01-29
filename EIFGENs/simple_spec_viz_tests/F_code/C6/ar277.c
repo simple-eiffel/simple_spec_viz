@@ -378,7 +378,7 @@ EIF_INTEGER_32 F368_4730 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("opt_meaningful", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -447,7 +447,7 @@ EIF_INTEGER_32 F368_4731 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("opt_meaningful", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -682,7 +682,7 @@ EIF_REFERENCE F368_4735 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("opt_meaningful", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -894,7 +894,7 @@ EIF_REFERENCE F368_4739 (EIF_REFERENCE Current, EIF_REFERENCE arg1)
 		RTCK;
 		RTHOOK(2);
 		RTCT("opt_meaningful", EX_PRE);
-		tb1 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb1 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1101,7 +1101,7 @@ body:;
 	} else {
 		RTHOOK(5);
 		tb1 = '\0';
-		tb2 = (nstcall = 1, F666_4976(RTCW(arg1)));
+		tb2 = (nstcall = 1, F670_4976(RTCW(arg1)));
 		if ((EIF_BOOLEAN) !tb2) {
 			tc1 = (nstcall = 1, eif_optimize_return = 1, *(EIF_CHARACTER_8 *)(FUNCTION_CAST(EIF_REFERENCE, (EIF_REFERENCE, EIF_INTEGER_32)) R4657[Dtype(RTCW(arg1))-776])(arg1, ((EIF_INTEGER_32) 1L)));
 			tc2 = *(EIF_CHARACTER_8 *)(RTCV(RTOUCR(159,(nstcall = 0, F368_4740), (Current)))+ _CHROFF_0_0_);

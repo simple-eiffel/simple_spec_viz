@@ -70,11 +70,11 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C1_c.obj 
 
-OLDOBJECTS =  an1.o sp49.o sp48.o tr47.o st46.o sp45.o sp44.o sp43.o sv42.o \
+OLDOBJECTS =  an1.o sp49.o sp48.o sp47.o tr46.o st45.o sp44.o sp43.o sv42.o \
 	sc41.o sp40.o eq39.o eq38.o se37.o se36.o en35.o sy34.o co33.o ch32.o \
-	sy31.o gr30.o st29.o si28.o do27.o do26.o eq25.o c_24.o se22.o si20.o \
-	si19.o si18.o si17.o gr16.o gr15.o do14.o in13.o de12.o bo11.o fl10.o \
-	do9.o do8.o pa7.o si6.o ph5.o gr4.o kl2.o 
+	sy31.o si30.o st29.o gr28.o do27.o do26.o eq25.o c_24.o se22.o si20.o \
+	si19.o si18.o si17.o bo16.o fl15.o gr14.o de13.o in12.o do11.o gr10.o \
+	do9.o do8.o pa7.o si6.o gr5.o ph4.o kl2.o 
 
 all: Cobj1.o
 

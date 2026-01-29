@@ -233,7 +233,7 @@ body:;
 		tr1 = (nstcall = 0, F229_2715(Current, *(EIF_REFERENCE *)(Current + _REFACS_1_)));
 		loc4 = RTCCL(tr1);
 		{
-			static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,3,996,1080,1080,1005,0xFFFF};
+			static EIF_TYPE_INDEX typarr0[] = {0xFF01,0xFFF9,3,996,1080,1080,1002,0xFFFF};
 			EIF_TYPE typres0;
 			static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 			
@@ -393,7 +393,7 @@ EIF_REFERENCE F319_4548 (EIF_REFERENCE Current, EIF_REFERENCE arg1, EIF_INTEGER_
 	}
 	RTHOOK(3);
 	{
-		EIF_TYPE_INDEX typarr0[] = {0xFFF9,2,996,0xFF01,0,1005,0xFFFF};
+		EIF_TYPE_INDEX typarr0[] = {0xFFF9,2,996,0xFF01,0,1002,0xFFFF};
 		EIF_TYPE typres0;
 		typarr0[4] = dftype;
 		
