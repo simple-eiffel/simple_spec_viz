@@ -5,6 +5,13 @@ All notable changes to simple_spec_viz are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-10-08
+
+### Fixed
+- DEBUG_DOT_CAPTURE called the removed `SPEC_LOADER.parse_json`; it now uses `load_from_string` (VEEN, VJAR).
+- Removed two unused locals in SPEC_VIZ_CLI.
+- Needed simple_graphviz fix: EIFFEL_GRAPH_GENERATOR.find_eiffel_files now reads `DIRECTORY.entries` as PATH.
+
 ## [1.0.0] - 2026-01-25
 
 ### Initial Release ✓

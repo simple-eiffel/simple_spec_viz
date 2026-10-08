@@ -52,8 +52,6 @@ feature {NONE} -- Argument Parsing
 
 	parse_arguments
 			-- Parse command line arguments.
-		local
-			i: INTEGER
 		do
 			is_valid := False
 
@@ -75,8 +73,6 @@ feature {NONE} -- Argument Parsing
 
 	parse_docs_command
 			-- Parse docs subcommand.
-		local
-			i: INTEGER
 		do
 			if argument_count >= 2 then
 				subcommand := argument (2).to_string_8

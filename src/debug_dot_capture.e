@@ -13,14 +13,14 @@ feature -- Generation
 		require
 			json_not_void: a_screen_json /= Void
 		local
-			l_doc: SPEC_DOCUMENT
+			l_doc: detachable SPEC_DOCUMENT
 			l_loader: SPEC_LOADER
 			l_generator: SCREEN_MOCKUP_GENERATOR
 			l_screen: SPEC_SCREEN
 		do
 			-- Parse the JSON
 			create l_loader.make
-			l_doc := l_loader.parse_json (a_screen_json)
+			l_doc := l_loader.load_from_string (a_screen_json)
 
 			if l_doc /= Void and then l_doc.screens.count > 0 then
 				l_screen := l_doc.screens [1]
