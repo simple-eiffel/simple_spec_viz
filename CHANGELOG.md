@@ -5,6 +5,18 @@ All notable changes to simple_spec_viz are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-11-23
+
+### Security
+- `bin/libexpat.dll` is Expat 2.9.0 and `bin/libpng16.dll` is libpng 1.6.59, the same files as
+  simple_cairo 1.8.2 (conda-forge `libexpat-2.9.0-hac47afa_0`, `libpng-1.6.59-hdc8cecf_0`),
+  replacing Graphviz 14.1.1's Expat 2.5.0 and libpng 1.6.39 (40 and 12 CVEs fixed since, per
+  their changelogs). gvc.dll and fontconfig-1.dll import Expat by ordinal; every ordinal they
+  use names the same function in 2.9.0. cairo-2.dll, libgd.dll and freetype.dll find every
+  libpng function they import. The new libpng reads zlib through `zlib.dll` (added in 1.0.2),
+  not `zlib1.dll`. Suite passes; simple_graphviz 72/0 on the same DLLs, and its CLI renders a
+  graph with an HTML label (Expat) to PNG (libpng).
+
 ## [1.0.2] - 2026-11-22
 
 ### Security
