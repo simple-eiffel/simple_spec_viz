@@ -5,6 +5,18 @@ All notable changes to simple_spec_viz are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-11-22
+
+### Security
+- `bin/freetype.dll` is FreeType 2.14.3 (conda-forge `libfreetype6-2.14.3-hdbac1cb_2`, the
+  same file as simple_cairo 1.8.1), replacing Graphviz 14.1.1's 2.12.1, which has
+  CVE-2025-27363. Graphviz still ships 2.12.1 (16.1.1, checked 2026-11-22), so its build
+  could not be used. This build reads zlib through `zlib.dll` (added, the same zlib 1.3.1 file
+  simple_cairo ships), not `zlib1.dll`, and has no bzip2 or Brotli font decompression, which
+  only old bitmap fonts and WOFF2 web fonts use. cairo-2, fontconfig, harfbuzz, libgd and
+  pangoft2 find every FreeType function they import. Suite passes; simple_graphviz 72/0
+  on the same DLLs.
+
 ## [1.0.1] - 2026-10-08
 
 ### Fixed
