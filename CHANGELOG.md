@@ -5,6 +5,20 @@ All notable changes to simple_spec_viz are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-11-26
+
+### Security
+- `bin/` is Graphviz 16.1.2 (14.1.1 before; 2026-11-20 release, which fixes many layout crashes),
+  with the fleet owners' copies where a DLL name has an owner: fontconfig-1 and pixman-1-0 from
+  simple_cairo; tiff 4.7.2 (4.6.0 before), liblzma 5.8.3 (5.4.4 before), zstd, deflate, jpeg8
+  and Lerc from simple_pdf. jpeg62 is libjpeg-turbo 3.2.1 (3.0.1 before) from the project's
+  signed Windows build; the Visual C++ runtime is 14.50.35719 (14.42 before), Microsoft-signed.
+  Removed the Tcl 8.6.10 set (tcl86t, tcldot, tcldot_builtin, tclplan, gdtclft) and gvpr, ANN
+  and getopt, which only Tcl and Graphviz's command-line programs load. 63 DLLs to 60. Every
+  import resolves by name and ordinal. Suite 60/0 from a clean build, with only `bin/` and
+  System32 on PATH; the CLI's output on `samples/devkit_cli.json` is identical to 14.1.1's but
+  for the version comment. Sources and checks in `bin/README.md`.
+
 ## [1.0.3] - 2026-11-23
 
 ### Security
