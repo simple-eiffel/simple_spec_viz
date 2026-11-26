@@ -19,7 +19,7 @@
 | File | Size | Purpose |
 |------|------|---------|
 | `simple_spec_viz.exe` | 2.2 MB | Main executable (F_code finalized) |
-| `*.dll` (63 files) | 18 MB | GraphViz runtime libraries |
+| `*.dll` (60 files) | 18 MB | GraphViz runtime libraries |
 | `graphviz/` | Headers | GraphViz header files (required) |
 | `config8` | 3.9 KB | GraphViz plugin configuration |
 | `README.md` | 2.5 KB | Distribution documentation |
@@ -37,7 +37,7 @@
 - ✅ No external compilation needed
 
 ### Runtime Dependencies
-- ✅ 63 GraphViz DLLs included
+- ✅ 60 runtime DLLs included (see README.md for sources)
 - ✅ Core libs: gvc.dll, cgraph.dll, cdt.dll
 - ✅ Layout engines: gvplugin_dot_layout.dll, gvplugin_neato_layout.dll
 - ✅ Rendering: cairo-2.dll, pango, fontconfig
@@ -127,7 +127,7 @@ powershell Compress-Archive -Path bin -DestinationPath simple_spec_viz-cli-1.0.0
 **The following MUST be kept together in the same directory:**
 
 1. **simple_spec_viz.exe** - Main binary
-2. **All 63 .dll files** - Runtime dependencies
+2. **All 60 .dll files** - Runtime dependencies
 3. **config8** - GraphViz configuration
 4. **graphviz/ directory** - Header files
 
@@ -143,7 +143,7 @@ powershell Compress-Archive -Path bin -DestinationPath simple_spec_viz-cli-1.0.0
 | Metric | Value |
 |--------|-------|
 | Main binary | 2.2 MB |
-| Runtime DLLs | 63 files, 18 MB |
+| Runtime DLLs | 60 files, 18 MB |
 | Config files | 1 file, 3.9 KB |
 | Documentation | 2.5 KB |
 | **Total** | **21 MB** |
